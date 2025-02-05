@@ -1,0 +1,131 @@
+
+
+
+>>> >>> >>>
+T = f(ceap=comp) : 2024-12-28 11:35:23
+T : size:2 type:<class 'pandas.core.frame.DataFrame'>
+ceap   C0   C2   C3  C4  C5   C6
+Kins    1   24  104  51  32  175
+Bonn  294  439  412  88  19    3
+:Index(['Kins', 'Bonn'], dtype='object')
+:Index(['C0', 'C2', 'C3', 'C4', 'C5', 'C6'], dtype='object', name='ceap')
+>>> >>> >>>
+
+Contingency table  : df_tabl.size:2 df_tabl.type:<class 'pandas.core.frame.DataFrame'>
+ceap   C0   C2   C3  C4  C5   C6
+Kins    1   24  104  51  32  175
+Bonn  294  439  412  88  19    3
+:Index(['Kins', 'Bonn'], dtype='object')
+:Index(['C0', 'C2', 'C3', 'C4', 'C5', 'C6'], dtype='object', name='ceap')
+
+
+>>> >>> >>>
+2024-12-28 11:35:26 : stat_glob_perp_2024_12_15
+>>> >>> >>>
+
+Data : 'comp' 'ceap' ; ['Kins', 'Bonn'] ['C0', 'C2', 'C3', 'C4', 'C5', 'C6']
+Chi2 2024_12_15 : Iterations per ceap
+Chi2 2024_12_15: Reject the null hypothesis:
+Ha : The proportions in Kins and Bonn are not similar for column ceap
+Chi2 2024_12_15: Reject the null hypothesis:
+Ha : The proportions in Kins and Bonn are not similar for column ceap
+Chi2 2024_12_15: Reject the null hypothesis:
+Ha : The proportions in Kins and Bonn are not similar for column ceap
+Chi2 2024_12_15: Reject the null hypothesis:
+Ha : The proportions in Kins and Bonn are not similar for column ceap
+Chi2 2024_12_15: Reject the null hypothesis:
+Ha : The proportions in Kins and Bonn are not similar for column ceap
+Chi2 2024_12_15: Reject the null hypothesis:
+Ha : The proportions in Kins and Bonn are not similar for column ceap
+
+Data : 'comp' 'ceap' ; ['Kins', 'Bonn'] ['C0', 'C2', 'C3', 'C4', 'C5', 'C6']
+Chi2 2024_12_15 :
+H0 : The proportions in Kins and Bonn are similar for column ceap
+Ha : The proportions in Kins and Bonn are not similar for column ceap
+
+   ceap  Kins  Bonn  Kins_thi  Kins_tha  Kins_sum  Bonn_thi  Bonn_tha  Bonn_sum  _sum     stat        pval   H
+C0   C0     1   294         1       386       387       294       961      1255  1642  106.158   6.810e-25  Ha
+C2   C2    24   439        24       363       387       439       816      1255  1642  119.579   7.824e-28  Ha
+C3   C3   104   412       104       283       387       412       843      1255  1642    4.596       0.032  Ha
+C4   C4    51    88        51       336       387        88      1167      1255  1642   13.730   2.111e-04  Ha
+C5   C5    32    19        32       355       387        19      1236      1255  1642   42.628   6.619e-11  Ha
+C6   C6   175     3       175       212       387         3      1252      1255  1642  614.535  1.154e-135  Ha
+(['C0', 'C2', 'C3', 'C4', 'C5', 'C6']) vs (['Kins', 'Bonn'])
+
+Data : 'comp' 'ceap' ; ['Kins', 'Bonn'] ['C0', 'C2', 'C3', 'C4', 'C5', 'C6']
+Fisher Exact odds ratio 2024_12_15 : Iterations per ceap
+Fisher Exact odds ratio 2024_12_15: Reject the null hypothesis:
+Ha : The proportions in Kins and Bonn are not similar for column ceap
+Fisher Exact odds ratio 2024_12_15: Reject the null hypothesis:
+Ha : The proportions in Kins and Bonn are not similar for column ceap
+Fisher Exact odds ratio 2024_12_15: Reject the null hypothesis:
+Ha : The proportions in Kins and Bonn are not similar for column ceap
+Fisher Exact odds ratio 2024_12_15: Reject the null hypothesis:
+Ha : The proportions in Kins and Bonn are not similar for column ceap
+Fisher Exact odds ratio 2024_12_15: Reject the null hypothesis:
+Ha : The proportions in Kins and Bonn are not similar for column ceap
+Fisher Exact odds ratio 2024_12_15: Reject the null hypothesis:
+Ha : The proportions in Kins and Bonn are not similar for column ceap
+
+Data : 'comp' 'ceap' ; ['Kins', 'Bonn'] ['C0', 'C2', 'C3', 'C4', 'C5', 'C6']
+Fisher Exact odds ratio 2024_12_15 :
+H0 : The proportions in Kins and Bonn are similar for column ceap
+Ha : The proportions in Kins and Bonn are not similar for column ceap
+
+   ceap  Kins  Bonn  Kins_thi  Kins_tha  Kins_sum  Bonn_thi  Bonn_tha  Bonn_sum  _sum stat (odds_ratio)        pval    ci_lower     ci_upper   H
+C0   C0     1   294         1       386       387       294       961      1255  1642             0.008   4.635e-37    0.001185     0.060531  Ha
+C2   C2    24   439        24       363       387       439       816      1255  1642             0.123   8.433e-34    0.080018     0.188744  Ha
+C3   C3   104   412       104       283       387       412       843      1255  1642             0.752       0.028    0.583408     0.969130  Ha
+C4   C4    51    88        51       336       387        88      1167      1255  1642             2.013   3.377e-04    1.396430     2.901477  Ha
+C5   C5    32    19        32       355       387        19      1236      1255  1642             5.864   1.473e-09    3.283877    10.470952  Ha
+C6   C6   175     3       175       212       387         3      1252      1255  1642           344.497  4.374e-121  109.027003  1088.520096  Ha
+(['C0', 'C2', 'C3', 'C4', 'C5', 'C6']) vs (['Kins', 'Bonn'])
+
+Data : 'comp' 'ceap' ; ['Kins', 'Bonn'] ['C0', 'C2', 'C3', 'C4', 'C5', 'C6']
+Proportional (1) [ceap/colu]: Iterations per ceap
+Proportion (1) [ceap/colu]: Reject the null hypothesis:
+Ha : The proportions in Kins and Bonn are unequal for the given ceap (Two-tailed test)
+Proportion (1) [ceap/colu]: Reject the null hypothesis:
+Ha : The proportions in Kins and Bonn are unequal for the given ceap (Two-tailed test)
+Proportion (1) [ceap/colu]: Reject the null hypothesis:
+Ha : The proportions in Kins and Bonn are unequal for the given ceap (Two-tailed test)
+Proportion (1) [ceap/colu]: Reject the null hypothesis:
+Ha : The proportions in Kins and Bonn are unequal for the given ceap (Two-tailed test)
+Proportion (1) [ceap/colu]: Reject the null hypothesis:
+Ha : The proportions in Kins and Bonn are unequal for the given ceap (Two-tailed test)
+Proportion (1) [ceap/colu]: Reject the null hypothesis:
+Ha : The proportions in Kins and Bonn are unequal for the given ceap (Two-tailed test)
+
+Data : 'comp' 'ceap' ; ['Kins', 'Bonn'] ['C0', 'C2', 'C3', 'C4', 'C5', 'C6']
+Proportional (1) [ceap/colu]:
+H0 : The proportions in Kins and Bonn are equal for the given ceap (Two-tailed test)
+Ha : The proportions in Kins and Bonn are unequal for the given ceap (Two-tailed test)
+
+   ceap  Kins  Bonn  totKins  totBonn proKins proBonn        stat        pval   H
+C0   C0     1   294      295      295   0.003   0.997  -2.413e+01  1.359e-128  Ha
+C2   C2    24   439      463      463   0.052   0.948  -2.728e+01  8.286e-164  Ha
+C3   C3   104   412      516      516   0.202   0.798  -1.918e+01   5.959e-82  Ha
+C4   C4    51    88      139      139   0.367   0.633  -4.438e+00   9.070e-06  Ha
+C5   C5    32    19       51       51   0.627   0.373       2.574       0.010  Ha
+C6   C6   175     3      178      178   0.983   0.017      18.232   2.878e-74  Ha
+(['C0', 'C2', 'C3', 'C4', 'C5', 'C6']) vs (['Kins', 'Bonn'])
+
+Data : 'comp' 'ceap' ; ['Kins', 'Bonn'] ['C0', 'C2', 'C3', 'C4', 'C5', 'C6']
+Proportional (1) [ceap/line]: Iterations per ceap
+Proportion (1) [ceap/line]: Reject the null hypothesis:
+Ha : The proportions in Kins and Bonn are unequal for the given ceap (Two-tailed test)
+Proportion (1) [ceap/line]: Reject the null hypothesis:
+Ha : The proportions in Kins and Bonn are unequal for the given ceap (Two-tailed test)
+Proportion (1) [ceap/line]: Reject the null hypothesis:
+Ha : The proportions in Kins and Bonn are unequal for the given ceap (Two-tailed test)
+Proportion (1) [ceap/line]: Reject the null hypothesis:
+Ha : The proportions in Kins and Bonn are unequal for the given ceap (Two-tailed test)
+Proportion (1) [ceap/line]: Reject the null hypothesis:
+Ha : The proportions in Kins and Bonn are unequal for the given ceap (Two-tailed test)
+Proportion (1) [ceap/line]: Reject the null hypothesis:
+Ha : The proportions in Kins and Bonn are unequal for the given ceap (Two-tailed test)
+
+Data : 'comp' 'ceap' ; ['Kins', 'Bonn'] ['C0', 'C2', 'C3', 'C4', 'C5', 'C6']
+Proportional (1) [ceap/colu]:
+H0 : The proportions in Kins and Bonn are equal for the given ceap (Two-tailed test)
+Ha : The proportions in Kins and Bonn are unequal for the given ceap (Two-tailed test)

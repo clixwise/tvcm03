@@ -1,0 +1,139 @@
+
+Coefficients for CEAP > 0:
+Intercept                 1.821459
+age_bin_20_29[T.True]     0.560897
+age_bin_30_39[T.True]    -0.038934
+age_bin_40_49[T.True]     0.699229
+age_bin_50_59[T.True]     0.260596
+age_bin_60_69[T.True]     0.317182
+age_bin_70_79[T.True]     0.490708
+age_bin_80_89[T.True]    -0.028096
+age_bin_90_99[T.True]    18.574513
+sexe_M[T.True]           -0.233959
+mbre_G[T.True]            0.691814
+dtype: float64
+Warning: Maximum number of iterations has been exceeded.
+         Current function value: 0.321471
+         Iterations: 35
+C:\Users\mrmar\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\statsmodels\base\model.py:607: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  warnings.warn("Maximum Likelihood optimization failed to "
+
+Coefficients for CEAP > 1:
+Intercept                 1.840281
+age_bin_20_29[T.True]     0.095512
+age_bin_30_39[T.True]    -0.036506
+age_bin_40_49[T.True]     0.418457
+age_bin_50_59[T.True]     0.071742
+age_bin_60_69[T.True]     0.062063
+age_bin_70_79[T.True]     0.388703
+age_bin_80_89[T.True]    -0.030932
+age_bin_90_99[T.True]    14.535075
+sexe_M[T.True]           -0.208979
+mbre_G[T.True]            0.625426
+dtype: float64
+Warning: Maximum number of iterations has been exceeded.
+         Current function value: 0.523108
+         Iterations: 35
+C:\Users\mrmar\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\statsmodels\base\model.py:607: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  warnings.warn("Maximum Likelihood optimization failed to "
+
+Coefficients for CEAP > 2:
+Intercept                 1.038138
+age_bin_20_29[T.True]    -0.321890
+age_bin_30_39[T.True]    -0.452474
+age_bin_40_49[T.True]     0.451017
+age_bin_50_59[T.True]    -0.000310
+age_bin_60_69[T.True]    -0.011776
+age_bin_70_79[T.True]     0.141334
+age_bin_80_89[T.True]    -0.360320
+age_bin_90_99[T.True]    18.897656
+sexe_M[T.True]           -0.230348
+mbre_G[T.True]            0.588981
+dtype: float64
+Optimization terminated successfully.
+         Current function value: 0.678375
+         Iterations 5
+
+Coefficients for CEAP > 3:
+Intercept               -1.633103
+age_bin_20_29[T.True]    0.927880
+age_bin_30_39[T.True]    1.100194
+age_bin_40_49[T.True]    1.347419
+age_bin_50_59[T.True]    0.973514
+age_bin_60_69[T.True]    1.256772
+age_bin_70_79[T.True]    1.264964
+age_bin_80_89[T.True]    1.118302
+age_bin_90_99[T.True]    0.799044
+sexe_M[T.True]           0.147964
+mbre_G[T.True]           0.405310
+dtype: float64
+Optimization terminated successfully.
+         Current function value: 0.620080
+         Iterations 5
+
+Coefficients for CEAP > 4:
+Intercept               -1.673613
+age_bin_20_29[T.True]    0.400079
+age_bin_30_39[T.True]    0.697589
+age_bin_40_49[T.True]    0.760391
+age_bin_50_59[T.True]    0.700801
+age_bin_60_69[T.True]    0.348441
+age_bin_70_79[T.True]    0.759049
+age_bin_80_89[T.True]    0.890781
+age_bin_90_99[T.True]    0.848556
+sexe_M[T.True]           0.232562
+mbre_G[T.True]           0.380338
+dtype: float64
+Optimization terminated successfully.
+         Current function value: 0.553667
+         Iterations 6
+
+Coefficients for CEAP > 5:
+Intercept               -2.632124
+age_bin_20_29[T.True]    1.053780
+age_bin_30_39[T.True]    1.368048
+age_bin_40_49[T.True]    1.340290
+age_bin_50_59[T.True]    1.255304
+age_bin_60_69[T.True]    0.741241
+age_bin_70_79[T.True]    1.274630
+age_bin_80_89[T.True]    1.510208
+age_bin_90_99[T.True]    1.806649
+sexe_M[T.True]           0.408207
+mbre_G[T.True]           0.381501
+dtype: float64
+
+Thank you for providing the detailed output. Let's analyze the results of the proportional odds assumption check:
+
+1. Convergence Issues:
+   For the first three thresholds (CEAP > 0, CEAP > 1, CEAP > 2), we see warnings about the maximum number of iterations being exceeded. This suggests that the model had difficulty converging for these thresholds, which could affect the reliability of these results.
+
+2. Coefficient Stability:
+   The proportional odds assumption requires that the effect of each predictor is consistent across all thresholds. Let's examine the stability of coefficients:
+
+   a. Age bins: The coefficients for age bins vary considerably across thresholds. For example, age_bin_20_29 ranges from -0.321890 to 1.053780.
+   
+   b. Gender (sexe_M): The coefficient for males ranges from -0.233959 to 0.408207, changing sign across thresholds.
+   
+   c. Limb (mbre_G): This shows more stability, ranging from 0.380338 to 0.691814, consistently positive.
+
+3. Interpretation:
+   - The proportional odds assumption appears to be violated for most predictors, particularly for age bins and gender.
+   - The limb variable (mbre_G) shows more consistency across thresholds, suggesting it might satisfy the proportional odds assumption better than other predictors.
+
+4. Recommendations:
+   a. Consider using a partial proportional odds model, where you relax the proportional odds assumption for variables that violate it (like age bins and gender) while maintaining it for others (like limb).
+   
+   b. You might want to explore alternative ways of including age in the model, such as using it as a continuous variable or using a different categorization scheme.
+   
+   c. For gender, given its inconsistent effect across thresholds, you might want to investigate if there are interactions between gender and other variables.
+   
+   d. The limb variable seems to be the most consistent predictor across thresholds. This suggests that the effect of limb laterality on CEAP classification is relatively stable regardless of the severity level.
+
+5. Model Refinement:
+   Given these results, you might want to consider:
+   - Using a generalized ordered logit model or a partial proportional odds model.
+   - Investigating potential interactions, especially involving gender.
+   - Reassessing the age categorization or considering age as a continuous variable.
+   - Focusing on the limb variable as a key predictor, given its relative stability across thresholds.
+
+In conclusion, the proportional odds assumption does not hold for this model, particularly for age and gender variables. This suggests that a more complex model structure might be necessary to accurately capture the relationships in your data.

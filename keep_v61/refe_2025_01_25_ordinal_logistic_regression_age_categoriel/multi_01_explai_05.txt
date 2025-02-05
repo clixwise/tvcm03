@@ -1,0 +1,54 @@
+Thank you for the feedback. You're right, the code is cleaner now, but we're still encountering an issue. The error "There should not be a constant in the model" persists, and we're also seeing some infinity values in the Variance Inflation Factors (VIF). Let's address these issues:
+
+1. VIF Infinity: This occurs due to perfect multicollinearity between some variables. In this case, it's likely because we have binary variables that are perfectly correlated (e.g., sexe[F] and sexe[M] are perfectly negatively correlated).
+
+2. Constant in the model: Despite our efforts, the model still detects a constant. This could be due to how patsy is handling the categorical variables.
+
+Let's modify the code to address these issues:
+
+```python
+import pandas as pd
+import numpy as np
+from statsmodels.miscmodels.ordinal_model import OrderedModel
+from patsy import dmatrix
+
+# ... (previous code for creating the DataFrame remains the same)
+
+# Create design matrix without intercept and drop one level of each categorical variable
+X = dmatrix('0 + C(sexe, Drop(1)) + C(limb, Drop(1)) + C(age_bin, Drop(1))', data=df, return_type='dataframe')
+
+# Prepare y (outcome)
+y = pd.Categorical(df['ceap']).codes
+
+print("Predictors (X):")
+print(X)
+print("\n")
+
+print("Outcome (y):")
+print(pd.Series(y).value_counts())
+print("\n")
+
+# Fit the ordinal logistic regression model
+try:
+    model = OrderedModel(y, X, distr='logit')
+    results = model.fit()
+
+    # Print the summary of results
+    print(results.summary())
+
+    # Calculate and print odds ratios
+    odds_ratios = np.exp(results.params)
+    print("\nOdds Ratios:")
+    print(odds_ratios)
+
+except ValueError as e:
+    print(f"An error occurred: {e}")
+```
+
+This modified code:
+
+1. Uses `C(variable, Drop(1))` in the dmatrix formula to explicitly drop one level of each categorical variable, avoiding perfect multicollinearity.
+2. Removes the VIF calculation as it's not necessary for this small example and was causing issues.
+3. Simplifies the output to focus on the model results.
+
+This approach should resolve both the multicollinearity and constant term issues. However, please note that with only 6 observations and multiple predictors, the model may still be overfit and results should be interpreted with extreme caution. In practice, you would need a much larger dataset (like your full 326 patients) to draw meaningful conclusions.

@@ -1,0 +1,943 @@
+
+>>> >>> >>>
+2025-02-01 17:43:39
+>>> >>> >>>
+
+>>> >>> >>>
+2025-02-01 17:43:39 NA_YES
+>>> >>> >>>
+
+Input file filtered : df_line.size:876 df_line.type:<class 'pandas.core.frame.DataFrame'>
+      #        date                       name   doss  age age_bin sexe unbi mbas mbre ceap c0c6 c3c6    seve
+0     1  2021-01-27         YENGE MARCELA JOAO  D9972   54   50-59    F    B   G2    G   C2   VI   NA  C0..C2
+1     1  2021-01-27         YENGE MARCELA JOAO  D9972   54   50-59    F    B   G2    G   C6   VI   VI  C3..C6
+2     1  2021-01-27         YENGE MARCELA JOAO  D9972   54   50-59    F    B   G2    D   C2   VI   NA  C0..C2
+3     1  2021-01-27         YENGE MARCELA JOAO  D9972   54   50-59    F    B   G2    D   C6   VI   VI  C3..C6
+4     2  2021-01-21  TSHIBASU KAPUNGI DONATIEN  D9921   54   50-59    M    B   G2    G   C3   VI   VI  C3..C6
+..   ..         ...                        ...    ...  ...     ...  ...  ...  ...  ...  ...  ...  ...     ...
+871  44  2020-10-06       MIYALU MAMUD JEANINE  D8930   45   40-49    F    U   NA    D   NA   NA   NA      NA
+872  37  2020-10-07      KIEMBI LUSIKILA FANNY  D8956   50   50-59    F    U   NA    G   NA   NA   NA      NA
+873  33  2021-11-29       DIGATA MAFUTA CLAUDE  D9113   55   50-59    M    U   NA    D   NA   NA   NA      NA
+874  12  2020-12-09      BOLUA LIWONGU CAMILLE  D9574   60   60-69    M    U   NA    G   NA   NA   NA      NA
+875  11  2020-12-14   NGALULA MUTEBA ADOLPHINE  D9609   76   70-79    F    U   NA    D   NA   NA   NA      NA
+
+[876 rows x 14 columns]
+:RangeIndex(start=0, stop=876, step=1)
+:Index(['#', 'date', 'name', 'doss', 'age', 'age_bin', 'sexe', 'unbi', 'mbas',
+       'mbre', 'ceap', 'c0c6', 'c3c6', 'seve'],
+      dtype='object')
+
+---
+Data : 'ceap' 'age' ; sexe ['M', 'F']
+(open) Mann-Whitney U 2024_12_15 : ceap, age, sexe, ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+H0 : (open) Mann-Whitney U : the distribution of ages does not differ significantly between the C(EAP) Cx: C(EAP)C0..C6, without assuming normality.
+Ha : (open) Mann-Whitney U : the distribution of ages differs significantly between the C(EAP) Cx: C(EAP)C0..C6, without assuming normality.
+---
+
+   iden ages_c.mean ages_t.mean  ages_c.size  ages_t.size        stat CEAP   pval pval_corr_fdr pval_corr__bonferroni  Hx Hx_corr_fdr Hx_corr__bonferroni
+C4   AA      59.196      56.723           97          876   46611.500   C4  0.116         0.929                 0.929  H0          H0                  H0
+NA   AA      55.019      56.723          105          876   42949.000   NA  0.268         0.963                 1.000  H0          H0                  H0
+C1   AA      53.818      56.723           11          876    4209.000   C1  0.471         0.963                 1.000  H0          H0                  H0
+C5   AA      57.849      56.723           53          876   24368.000   C5  0.543         0.963                 1.000  H0          H0                  H0
+C2   AA      55.694      56.723           98          876   41733.000   C2  0.652         0.963                 1.000  H0          H0                  H0
+C0   AA      55.940      56.723           67          876   28582.500   C0  0.722         0.963                 1.000  H0          H0                  H0
+C3   AA      56.815      56.723          249          876  109433.000   C3  0.935         0.991                 1.000  H0          H0                  H0
+C6   AA      56.934      56.723          196          876   85802.000   C6  0.991         0.991                 1.000  H0          H0                  H0
+(open) Mann-Whitney U : assesses whether, for each CEAP, the distribution of ages differs significantly between the C(EAP) Cx: C(EAP)C0..C6, without assuming normality.
+
+---
+Data : 'ceap' 'age' ; sexe ['M', 'F']
+(open) Mann-Whitney U 2024_12_15 : ceap, age, sexe, ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+H0 : (open) Mann-Whitney U : the distribution of ages does not differ significantly between the C(EAP) Cx: C(EAP)C0..C6, without assuming normality.
+Ha : (open) Mann-Whitney U : the distribution of ages differs significantly between the C(EAP) Cx: C(EAP)C0..C6, without assuming normality.
+---
+
+   iden ages_c.mean ages_t.mean  ages_c.size  ages_t.size      stat CEAP   pval pval_corr_fdr pval_corr__bonferroni  Hx Hx_corr_fdr Hx_corr__bonferroni
+C3   MF      60.301      54.737           93          156  8922.500   C3  0.002         0.019                 0.019  Ha          Ha                  Ha
+C6   MF      54.691      59.131           97           99  3974.000   C6  0.037         0.149                 0.298  Ha          H0                  H0
+C4   MF      61.605      57.644           38           59  1293.500   C4  0.203         0.466                 1.000  H0          H0                  H0
+NA   MF      52.712      57.283           52           53  1191.500   NA  0.233         0.466                 1.000  H0          H0                  H0
+C2   MF      55.227      56.074           44           54  1119.000   C2  0.624         0.961                 1.000  H0          H0                  H0
+C1   MF      54.200      53.500            5            6    17.000   C1  0.784         0.961                 1.000  H0          H0                  H0
+C0   MF      56.613      55.361           31           36   574.500   C0  0.840         0.961                 1.000  H0          H0                  H0
+C5   MF      57.000      58.286           18           35   312.000   C5  0.963         0.963                 1.000  H0          H0                  H0
+(open) Mann-Whitney U : assesses whether, for each CEAP, the distribution of ages differs significantly between the C(EAP) Cx: C(EAP)C0..C6, without assuming normality.
+
+---
+Data : 'ceap' 'age' ; sexe ['M', 'F']
+Spearman [2025_01_19] : ceap, age, sexe, ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+H0 : rhos == 0 : no monotonic relationship exists between ceap, age for sexe
+Ha : rhos <> 0 :  a monotonic relationship exists between ceap, age for sexe
+---
+
+'age_10+ ceap count:876'
+                         stat intp   pval   H
+A two-side (two-sided)  0.047  0/5  0.160  H0
+A positive (greater)    0.047  0/5  0.080  H0
+A negative (less)       0.047  0/5  0.920  H0
+M two-side (two-sided)  0.022  0/5  0.671  H0
+M positive (greater)    0.022  0/5  0.336  H0
+M negative (less)       0.022  0/5  0.664  H0
+F two-side (two-sided)  0.067  0/5  0.134  H0
+F positive (greater)    0.067  0/5  0.067  H0
+F negative (less)       0.067  0/5  0.933  H0
+
+'age_20+ ceap count:864'
+                         stat intp   pval   H
+A two-side (two-sided)  0.038  0/5  0.261  H0
+A positive (greater)    0.038  0/5  0.131  H0
+A negative (less)       0.038  0/5  0.869  H0
+M two-side (two-sided)  0.008  0/5  0.881  H0
+M positive (greater)    0.008  0/5  0.441  H0
+M negative (less)       0.008  0/5  0.559  H0
+F two-side (two-sided)  0.061  0/5  0.176  H0
+F positive (greater)    0.061  0/5  0.088  H0
+F negative (less)       0.061  0/5  0.912  H0
+
+'age_30+ ceap count:833'
+                              stat  intp   pval   H
+A two-side (two-sided)       0.029   0/5  0.410  H0
+A positive (greater)         0.029   0/5  0.205  H0
+A negative (less)            0.029   0/5  0.795  H0
+M two-side (two-sided)  -1.793e-02  -0/5  0.736  H0
+M positive (greater)    -1.793e-02  -0/5  0.632  H0
+M negative (less)       -1.793e-02  -0/5  0.368  H0
+F two-side (two-sided)       0.063   0/5  0.169  H0
+F positive (greater)         0.063   0/5  0.084  H0
+F negative (less)            0.063   0/5  0.916  H0
+
+'age_40+ ceap count:746'
+                         stat intp   pval   H
+A two-side (two-sided)  0.031  0/5  0.397  H0
+A positive (greater)    0.031  0/5  0.199  H0
+A negative (less)       0.031  0/5  0.801  H0
+M two-side (two-sided)  0.013  0/5  0.809  H0
+M positive (greater)    0.013  0/5  0.404  H0
+M negative (less)       0.013  0/5  0.596  H0
+F two-side (two-sided)  0.046  0/5  0.350  H0
+F positive (greater)    0.046  0/5  0.175  H0
+F negative (less)       0.046  0/5  0.825  H0
+
+'age_50+ ceap count:611'
+                         stat intp   pval   H
+A two-side (two-sided)  0.030  0/5  0.466  H0
+A positive (greater)    0.030  0/5  0.233  H0
+A negative (less)       0.030  0/5  0.767  H0
+M two-side (two-sided)  0.019  0/5  0.754  H0
+M positive (greater)    0.019  0/5  0.377  H0
+M negative (less)       0.019  0/5  0.623  H0
+F two-side (two-sided)  0.038  0/5  0.482  H0
+F positive (greater)    0.038  0/5  0.241  H0
+F negative (less)       0.038  0/5  0.759  H0
+
+'age_60+ ceap count:404'
+                              stat  intp   pval   H
+A two-side (two-sided)       0.015   0/5  0.762  H0
+A positive (greater)         0.015   0/5  0.381  H0
+A negative (less)            0.015   0/5  0.619  H0
+M two-side (two-sided)       0.056   0/5  0.467  H0
+M positive (greater)         0.056   0/5  0.234  H0
+M negative (less)            0.056   0/5  0.766  H0
+F two-side (two-sided)  -1.247e-02  -0/5  0.849  H0
+F positive (greater)    -1.247e-02  -0/5  0.575  H0
+F negative (less)       -1.247e-02  -0/5  0.425  H0
+
+'age_70+ ceap count:207'
+                              stat  intp   pval   H
+A two-side (two-sided)  -8.288e-02  -0/5  0.235  H0
+A positive (greater)    -8.288e-02  -0/5  0.882  H0
+A negative (less)       -8.288e-02  -0/5  0.118  H0
+M two-side (two-sided)  -4.328e-02  -0/5  0.692  H0
+M positive (greater)    -4.328e-02  -0/5  0.654  H0
+M negative (less)       -4.328e-02  -0/5  0.346  H0
+F two-side (two-sided)  -1.130e-01  -1/5  0.217  H0
+F positive (greater)    -1.130e-01  -1/5  0.891  H0
+F negative (less)       -1.130e-01  -1/5  0.109  H0
+(ceap) vs (age for sexe)
+
+---
+Data : 'ceap' 'age' ; sexe ['M', 'F']
+Kendall [2025_01_19] : ceap, age, sexe, ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+H0 : tau == 0 : no monotonic relationship exists between ceap, age for sexe
+Ha : tau <> 0 :  a monotonic relationship exists between ceap, age for sexe
+---
+
+'age_10+ ceap count:876'
+                         stat intp   pval   H
+A two-side (two-sided)  0.035  0/5  0.153  H0
+A positive (greater)    0.035  0/5  0.077  H0
+A negative (less)       0.035  0/5  0.923  H0
+M two-side (two-sided)  0.016  0/5  0.674  H0
+M positive (greater)    0.016  0/5  0.337  H0
+M negative (less)       0.016  0/5  0.663  H0
+F two-side (two-sided)  0.053  0/5  0.105  H0
+F positive (greater)    0.053  0/5  0.052  H0
+F negative (less)       0.053  0/5  0.948  H0
+
+'age_20+ ceap count:864'
+                         stat intp   pval   H
+A two-side (two-sided)  0.029  0/5  0.249  H0
+A positive (greater)    0.029  0/5  0.125  H0
+A negative (less)       0.029  0/5  0.875  H0
+M two-side (two-sided)  0.006  0/5  0.877  H0
+M positive (greater)    0.006  0/5  0.438  H0
+M negative (less)       0.006  0/5  0.562  H0
+F two-side (two-sided)  0.049  0/5  0.139  H0
+F positive (greater)    0.049  0/5  0.069  H0
+F negative (less)       0.049  0/5  0.931  H0
+
+'age_30+ ceap count:833'
+                              stat  intp   pval   H
+A two-side (two-sided)       0.022   0/5  0.391  H0
+A positive (greater)         0.022   0/5  0.196  H0
+A negative (less)            0.022   0/5  0.804  H0
+M two-side (two-sided)  -1.109e-02  -0/5  0.776  H0
+M positive (greater)    -1.109e-02  -0/5  0.612  H0
+M negative (less)       -1.109e-02  -0/5  0.388  H0
+F two-side (two-sided)       0.051   0/5  0.131  H0
+F positive (greater)         0.051   0/5  0.066  H0
+F negative (less)            0.051   0/5  0.934  H0
+
+'age_40+ ceap count:746'
+                         stat intp   pval   H
+A two-side (two-sided)  0.024  0/5  0.376  H0
+A positive (greater)    0.024  0/5  0.188  H0
+A negative (less)       0.024  0/5  0.812  H0
+M two-side (two-sided)  0.010  0/5  0.802  H0
+M positive (greater)    0.010  0/5  0.401  H0
+M negative (less)       0.010  0/5  0.599  H0
+F two-side (two-sided)  0.037  0/5  0.303  H0
+F positive (greater)    0.037  0/5  0.152  H0
+F negative (less)       0.037  0/5  0.848  H0
+
+'age_50+ ceap count:611'
+                         stat intp   pval   H
+A two-side (two-sided)  0.023  0/5  0.432  H0
+A positive (greater)    0.023  0/5  0.216  H0
+A negative (less)       0.023  0/5  0.784  H0
+M two-side (two-sided)  0.014  0/5  0.749  H0
+M positive (greater)    0.014  0/5  0.375  H0
+M negative (less)       0.014  0/5  0.625  H0
+F two-side (two-sided)  0.034  0/5  0.396  H0
+F positive (greater)    0.034  0/5  0.198  H0
+F negative (less)       0.034  0/5  0.802  H0
+
+'age_60+ ceap count:404'
+                              stat  intp   pval   H
+A two-side (two-sided)       0.014   0/5  0.710  H0
+A positive (greater)         0.014   0/5  0.355  H0
+A negative (less)            0.014   0/5  0.645  H0
+M two-side (two-sided)       0.040   0/5  0.482  H0
+M positive (greater)         0.040   0/5  0.241  H0
+M negative (less)            0.040   0/5  0.759  H0
+F two-side (two-sided)  -2.611e-03  -0/5  0.957  H0
+F positive (greater)    -2.611e-03  -0/5  0.522  H0
+F negative (less)       -2.611e-03  -0/5  0.478  H0
+
+'age_70+ ceap count:207'
+                              stat  intp   pval   H
+A two-side (two-sided)  -6.215e-02  -0/5  0.236  H0
+A positive (greater)    -6.215e-02  -0/5  0.882  H0
+A negative (less)       -6.215e-02  -0/5  0.118  H0
+M two-side (two-sided)  -3.459e-02  -0/5  0.678  H0
+M positive (greater)    -3.459e-02  -0/5  0.661  H0
+M negative (less)       -3.459e-02  -0/5  0.339  H0
+F two-side (two-sided)  -8.407e-02  -0/5  0.222  H0
+F positive (greater)    -8.407e-02  -0/5  0.889  H0
+F negative (less)       -8.407e-02  -0/5  0.111  H0
+(ceap) vs (age for sexe)
+
+---
+Data : 'ceap' 'age' ; sexe ['M', 'F']
+Goodman Kruskal Gamma [2025_01_19] : ceap, age, sexe, ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+H0 : gamma == 0 : no monotonic relationship exists between ceap, age for sexe
+Ha : gamma <> 0 :  a monotonic relationship exists between ceap, age for sexe
+---
+
+'age_10+ ceap count:876'
+         stat  intp      pval   H
+A       0.009   0/5  9999.000  H0
+M  -9.256e-02  -0/5  9999.000  H0
+F       0.085   0/5  9999.000  H0
+(ceap) vs (age for sexe)
+
+---
+Data : 'ceap' 'age' ; sexe ['M', 'F']
+(open) Mann-Whitney U 2024_12_15 : seve, age, sexe, ['NA', 'C0..C2', 'C3..C6']
+H0 : (open) Mann-Whitney U : the distribution of ages does not differ significantly between the C(EAP) Cx: C(EAP)C0..C6, without assuming normality.
+Ha : (open) Mann-Whitney U : the distribution of ages differs significantly between the C(EAP) Cx: C(EAP)C0..C6, without assuming normality.
+---
+
+       iden ages_c.mean ages_t.mean  ages_c.size  ages_t.size        stat    CEAP   pval pval_corr_fdr pval_corr__bonferroni  Hx Hx_corr_fdr Hx_corr__bonferroni
+NA       AA      55.019      56.723          105          876   42949.000      NA  0.268         0.486                 0.803  H0          H0                  H0
+C3..C6   AA      57.334      56.723          595          876  266214.500  C3..C6  0.483         0.486                 1.000  H0          H0                  H0
+C0..C2   AA      55.670      56.723          176          876   74524.500  C0..C2  0.486         0.486                 1.000  H0          H0                  H0
+(open) Mann-Whitney U : assesses whether, for each CEAP, the distribution of ages differs significantly between the C(EAP) Cx: C(EAP)C0..C6, without assuming normality.
+
+---
+Data : 'ceap' 'age' ; sexe ['M', 'F']
+(open) Mann-Whitney U 2024_12_15 : seve, age, sexe, ['NA', 'C0..C2', 'C3..C6']
+H0 : (open) Mann-Whitney U : the distribution of ages does not differ significantly between the C(EAP) Cx: C(EAP)C0..C6, without assuming normality.
+Ha : (open) Mann-Whitney U : the distribution of ages differs significantly between the C(EAP) Cx: C(EAP)C0..C6, without assuming normality.
+---
+
+   iden ages_c.mean ages_t.mean  ages_c.size  ages_t.size      stat CEAP   pval pval_corr_fdr pval_corr__bonferroni  Hx Hx_corr_fdr Hx_corr__bonferroni
+NA   MF      52.712      57.283           52           53  1191.500   NA  0.233         0.233                 0.233  H0          H0                  H0
+(open) Mann-Whitney U : assesses whether, for each CEAP, the distribution of ages differs significantly between the C(EAP) Cx: C(EAP)C0..C6, without assuming normality.
+
+---
+Data : 'ceap' 'age' ; mbre ['G', 'D']
+(open) Mann-Whitney U 2024_12_15 : ceap, age, mbre, ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+H0 : (open) Mann-Whitney U : the distribution of ages does not differ significantly between the C(EAP) Cx: C(EAP)C0..C6, without assuming normality.
+Ha : (open) Mann-Whitney U : the distribution of ages differs significantly between the C(EAP) Cx: C(EAP)C0..C6, without assuming normality.
+---
+
+   iden ages_c.mean ages_t.mean  ages_c.size  ages_t.size        stat CEAP   pval pval_corr_fdr pval_corr__bonferroni  Hx Hx_corr_fdr Hx_corr__bonferroni
+C4   AA      59.196      56.723           97          876   46611.500   C4  0.116         0.929                 0.929  H0          H0                  H0
+NA   AA      55.019      56.723          105          876   42949.000   NA  0.268         0.963                 1.000  H0          H0                  H0
+C1   AA      53.818      56.723           11          876    4209.000   C1  0.471         0.963                 1.000  H0          H0                  H0
+C5   AA      57.849      56.723           53          876   24368.000   C5  0.543         0.963                 1.000  H0          H0                  H0
+C2   AA      55.694      56.723           98          876   41733.000   C2  0.652         0.963                 1.000  H0          H0                  H0
+C0   AA      55.940      56.723           67          876   28582.500   C0  0.722         0.963                 1.000  H0          H0                  H0
+C3   AA      56.815      56.723          249          876  109433.000   C3  0.935         0.991                 1.000  H0          H0                  H0
+C6   AA      56.934      56.723          196          876   85802.000   C6  0.991         0.991                 1.000  H0          H0                  H0
+(open) Mann-Whitney U : assesses whether, for each CEAP, the distribution of ages differs significantly between the C(EAP) Cx: C(EAP)C0..C6, without assuming normality.
+
+---
+Data : 'ceap' 'age' ; mbre ['G', 'D']
+(open) Mann-Whitney U 2024_12_15 : ceap, age, mbre, ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+H0 : (open) Mann-Whitney U : the distribution of ages does not differ significantly between the C(EAP) Cx: C(EAP)C0..C6, without assuming normality.
+Ha : (open) Mann-Whitney U : the distribution of ages differs significantly between the C(EAP) Cx: C(EAP)C0..C6, without assuming normality.
+---
+
+   iden ages_c.mean ages_t.mean  ages_c.size  ages_t.size      stat CEAP   pval pval_corr_fdr pval_corr__bonferroni  Hx Hx_corr_fdr Hx_corr__bonferroni
+C0   GD      63.167      51.907           24           43   734.000   C0  0.004         0.018                 0.035  Ha          Ha                  Ha
+C6   GD      54.221      60.627          113           83  3544.000   C6  0.004         0.018                 0.028  Ha          Ha                  Ha
+C2   GD      58.439      53.719           41           57  1368.000   C2  0.152         0.404                 1.000  H0          H0                  H0
+NA   GD      55.897      54.500           39           66  1365.000   NA  0.607         0.850                 1.000  H0          H0                  H0
+C5   GD      58.724      56.792           29           24   375.500   C5  0.629         0.850                 1.000  H0          H0                  H0
+C4   GD      59.500      58.844           52           45  1235.500   C4  0.638         0.850                 1.000  H0          H0                  H0
+C1   GD      50.200      56.833            5            6    13.500   C1  0.855         0.887                 1.000  H0          H0                  H0
+C3   GD      56.778      56.854          126          123  7668.000   C3  0.887         0.887                 1.000  H0          H0                  H0
+(open) Mann-Whitney U : assesses whether, for each CEAP, the distribution of ages differs significantly between the C(EAP) Cx: C(EAP)C0..C6, without assuming normality.
+
+---
+Data : 'ceap' 'age' ; mbre ['G', 'D']
+Spearman [2025_01_19] : ceap, age, mbre, ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+H0 : rhos == 0 : no monotonic relationship exists between ceap, age for mbre
+Ha : rhos <> 0 :  a monotonic relationship exists between ceap, age for mbre
+---
+
+'age_10+ ceap count:876'
+                              stat  intp       pval   H
+A two-side (two-sided)       0.047   0/5      0.160  H0
+A positive (greater)         0.047   0/5      0.080  H0
+A negative (less)            0.047   0/5      0.920  H0
+G two-side (two-sided)  -7.926e-02  -0/5      0.101  H0
+G positive (greater)    -7.926e-02  -0/5      0.949  H0
+G negative (less)       -7.926e-02  -0/5      0.051  H0
+D two-side (two-sided)       0.157   1/5  8.968e-04  Ha
+D positive (greater)         0.157   1/5  4.484e-04  Ha
+D negative (less)            0.157   1/5      1.000  H0
+
+'age_20+ ceap count:864'
+                              stat  intp   pval   H
+A two-side (two-sided)       0.038   0/5  0.261  H0
+A positive (greater)         0.038   0/5  0.131  H0
+A negative (less)            0.038   0/5  0.869  H0
+G two-side (two-sided)  -7.875e-02  -0/5  0.106  H0
+G positive (greater)    -7.875e-02  -0/5  0.947  H0
+G negative (less)       -7.875e-02  -0/5  0.053  H0
+D two-side (two-sided)       0.137   1/5  0.004  Ha
+D positive (greater)         0.137   1/5  0.002  Ha
+D negative (less)            0.137   1/5  0.998  H0
+
+'age_30+ ceap count:833'
+                              stat  intp   pval   H
+A two-side (two-sided)       0.029   0/5  0.410  H0
+A positive (greater)         0.029   0/5  0.205  H0
+A negative (less)            0.029   0/5  0.795  H0
+G two-side (two-sided)  -1.069e-01  -1/5  0.031  Ha
+G positive (greater)    -1.069e-01  -1/5  0.985  H0
+G negative (less)       -1.069e-01  -1/5  0.015  Ha
+D two-side (two-sided)       0.148   1/5  0.002  Ha
+D positive (greater)         0.148   1/5  0.001  Ha
+D negative (less)            0.148   1/5  0.999  H0
+
+'age_40+ ceap count:746'
+                              stat  intp   pval   H
+A two-side (two-sided)       0.031   0/5  0.397  H0
+A positive (greater)         0.031   0/5  0.199  H0
+A negative (less)            0.031   0/5  0.801  H0
+G two-side (two-sided)  -6.672e-02  -0/5  0.203  H0
+G positive (greater)    -6.672e-02  -0/5  0.899  H0
+G negative (less)       -6.672e-02  -0/5  0.101  H0
+D two-side (two-sided)       0.115   1/5  0.025  Ha
+D positive (greater)         0.115   1/5  0.012  Ha
+D negative (less)            0.115   1/5  0.988  H0
+
+'age_50+ ceap count:611'
+                              stat  intp   pval   H
+A two-side (two-sided)       0.030   0/5  0.466  H0
+A positive (greater)         0.030   0/5  0.233  H0
+A negative (less)            0.030   0/5  0.767  H0
+G two-side (two-sided)  -2.153e-02  -0/5  0.709  H0
+G positive (greater)    -2.153e-02  -0/5  0.645  H0
+G negative (less)       -2.153e-02  -0/5  0.355  H0
+D two-side (two-sided)       0.073   0/5  0.202  H0
+D positive (greater)         0.073   0/5  0.101  H0
+D negative (less)            0.073   0/5  0.899  H0
+
+'age_60+ ceap count:404'
+                              stat  intp   pval   H
+A two-side (two-sided)       0.015   0/5  0.762  H0
+A positive (greater)         0.015   0/5  0.381  H0
+A negative (less)            0.015   0/5  0.619  H0
+G two-side (two-sided)  -4.728e-03  -0/5  0.947  H0
+G positive (greater)    -4.728e-03  -0/5  0.527  H0
+G negative (less)       -4.728e-03  -0/5  0.473  H0
+D two-side (two-sided)       0.029   0/5  0.681  H0
+D positive (greater)         0.029   0/5  0.340  H0
+D negative (less)            0.029   0/5  0.660  H0
+
+'age_70+ ceap count:207'
+                              stat  intp   pval   H
+A two-side (two-sided)  -8.288e-02  -0/5  0.235  H0
+A positive (greater)    -8.288e-02  -0/5  0.882  H0
+A negative (less)       -8.288e-02  -0/5  0.118  H0
+G two-side (two-sided)  -4.304e-02  -0/5  0.668  H0
+G positive (greater)    -4.304e-02  -0/5  0.666  H0
+G negative (less)       -4.304e-02  -0/5  0.334  H0
+D two-side (two-sided)  -1.170e-01  -1/5  0.235  H0
+D positive (greater)    -1.170e-01  -1/5  0.883  H0
+D negative (less)       -1.170e-01  -1/5  0.117  H0
+(ceap) vs (age for mbre)
+
+---
+Data : 'ceap' 'age' ; mbre ['G', 'D']
+Kendall [2025_01_19] : ceap, age, mbre, ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+H0 : tau == 0 : no monotonic relationship exists between ceap, age for mbre
+Ha : tau <> 0 :  a monotonic relationship exists between ceap, age for mbre
+---
+
+'age_10+ ceap count:876'
+                              stat  intp       pval   H
+A two-side (two-sided)       0.035   0/5      0.153  H0
+A positive (greater)         0.035   0/5      0.077  H0
+A negative (less)            0.035   0/5      0.923  H0
+G two-side (two-sided)  -5.814e-02  -0/5      0.101  H0
+G positive (greater)    -5.814e-02  -0/5      0.950  H0
+G negative (less)       -5.814e-02  -0/5      0.050  H0
+D two-side (two-sided)       0.115   1/5  8.081e-04  Ha
+D positive (greater)         0.115   1/5  4.041e-04  Ha
+D negative (less)            0.115   1/5      1.000  H0
+
+'age_20+ ceap count:864'
+                              stat  intp   pval   H
+A two-side (two-sided)       0.029   0/5  0.249  H0
+A positive (greater)         0.029   0/5  0.125  H0
+A negative (less)            0.029   0/5  0.875  H0
+G two-side (two-sided)  -5.795e-02  -0/5  0.104  H0
+G positive (greater)    -5.795e-02  -0/5  0.948  H0
+G negative (less)       -5.795e-02  -0/5  0.052  H0
+D two-side (two-sided)       0.101   1/5  0.004  Ha
+D positive (greater)         0.101   1/5  0.002  Ha
+D negative (less)            0.101   1/5  0.998  H0
+
+'age_30+ ceap count:833'
+                              stat  intp       pval   H
+A two-side (two-sided)       0.022   0/5      0.391  H0
+A positive (greater)         0.022   0/5      0.196  H0
+A negative (less)            0.022   0/5      0.804  H0
+G two-side (two-sided)  -7.794e-02  -0/5      0.032  Ha
+G positive (greater)    -7.794e-02  -0/5      0.984  H0
+G negative (less)       -7.794e-02  -0/5      0.016  Ha
+D two-side (two-sided)       0.110   1/5      0.002  Ha
+D positive (greater)         0.110   1/5  9.550e-04  Ha
+D negative (less)            0.110   1/5      0.999  H0
+
+'age_40+ ceap count:746'
+                              stat  intp   pval   H
+A two-side (two-sided)       0.024   0/5  0.376  H0
+A positive (greater)         0.024   0/5  0.188  H0
+A negative (less)            0.024   0/5  0.812  H0
+G two-side (two-sided)  -4.883e-02  -0/5  0.204  H0
+G positive (greater)    -4.883e-02  -0/5  0.898  H0
+G negative (less)       -4.883e-02  -0/5  0.102  H0
+D two-side (two-sided)       0.087   0/5  0.021  Ha
+D positive (greater)         0.087   0/5  0.010  Ha
+D negative (less)            0.087   0/5  0.990  H0
+
+'age_50+ ceap count:611'
+                              stat  intp   pval   H
+A two-side (two-sided)       0.023   0/5  0.432  H0
+A positive (greater)         0.023   0/5  0.216  H0
+A negative (less)            0.023   0/5  0.784  H0
+G two-side (two-sided)  -1.609e-02  -0/5  0.704  H0
+G positive (greater)    -1.609e-02  -0/5  0.648  H0
+G negative (less)       -1.609e-02  -0/5  0.352  H0
+D two-side (two-sided)       0.057   0/5  0.170  H0
+D positive (greater)         0.057   0/5  0.085  H0
+D negative (less)            0.057   0/5  0.915  H0
+
+'age_60+ ceap count:404'
+                              stat  intp   pval   H
+A two-side (two-sided)       0.014   0/5  0.710  H0
+A positive (greater)         0.014   0/5  0.355  H0
+A negative (less)            0.014   0/5  0.645  H0
+G two-side (two-sided)  -3.626e-03  -0/5  0.945  H0
+G positive (greater)    -3.626e-03  -0/5  0.528  H0
+G negative (less)       -3.626e-03  -0/5  0.472  H0
+D two-side (two-sided)       0.028   0/5  0.592  H0
+D positive (greater)         0.028   0/5  0.296  H0
+D negative (less)            0.028   0/5  0.704  H0
+
+'age_70+ ceap count:207'
+                              stat  intp   pval   H
+A two-side (two-sided)  -6.215e-02  -0/5  0.236  H0
+A positive (greater)    -6.215e-02  -0/5  0.882  H0
+A negative (less)       -6.215e-02  -0/5  0.118  H0
+G two-side (two-sided)  -2.808e-02  -0/5  0.708  H0
+G positive (greater)    -2.808e-02  -0/5  0.646  H0
+G negative (less)       -2.808e-02  -0/5  0.354  H0
+D two-side (two-sided)  -8.785e-02  -0/5  0.235  H0
+D positive (greater)    -8.785e-02  -0/5  0.882  H0
+D negative (less)       -8.785e-02  -0/5  0.118  H0
+(ceap) vs (age for mbre)
+
+---
+Data : 'ceap' 'age' ; mbre ['G', 'D']
+Goodman Kruskal Gamma [2025_01_19] : ceap, age, mbre, ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+H0 : gamma == 0 : no monotonic relationship exists between ceap, age for mbre
+Ha : gamma <> 0 :  a monotonic relationship exists between ceap, age for mbre
+---
+
+'age_10+ ceap count:876'
+         stat  intp      pval   H
+A       0.009   0/5  9999.000  H0
+G  -8.749e-02  -0/5  9999.000  H0
+D       0.096   0/5  9999.000  H0
+(ceap) vs (age for mbre)
+
+>>> >>> >>>
+2025-02-01 17:43:39 NA_NOT
+>>> >>> >>>
+
+Input file filtered : df_line.size:771 df_line.type:<class 'pandas.core.frame.DataFrame'>
+       #        date                       name    doss  age age_bin sexe unbi mbas mbre ceap c0c6 c3c6    seve
+0      1  2021-01-27         YENGE MARCELA JOAO   D9972   54   50-59    F    B   G2    G   C2   VI   NA  C0..C2
+1      1  2021-01-27         YENGE MARCELA JOAO   D9972   54   50-59    F    B   G2    G   C6   VI   VI  C3..C6
+2      1  2021-01-27         YENGE MARCELA JOAO   D9972   54   50-59    F    B   G2    D   C2   VI   NA  C0..C2
+3      1  2021-01-27         YENGE MARCELA JOAO   D9972   54   50-59    F    B   G2    D   C6   VI   VI  C3..C6
+4      2  2021-01-21  TSHIBASU KAPUNGI DONATIEN   D9921   54   50-59    M    B   G2    G   C3   VI   VI  C3..C6
+..   ...         ...                        ...     ...  ...     ...  ...  ...  ...  ...  ...  ...  ...     ...
+766  520  2022-02-24         KASEYA GIBISI JEAN  D10129   75   70-79    M    B   G2    G   C3   VI   VI  C3..C6
+767  520  2022-02-24         KASEYA GIBISI JEAN  D10129   75   70-79    M    B   G2    D   C3   VI   VI  C3..C6
+768  523  2022-12-16     EFONDA LIYOKE PATIENCE  D10120   48   40-49    F    U   G2    G   C6   VI   VI  C3..C6
+769  526  2021-02-15         NGOMA BALO CHARLES  D10103   68   60-69    M    U   G2    D   C3   VI   VI  C3..C6
+770  527  2022-02-18   DILUABANZA MAVEMA ARIANA  D10077   67   60-69    F    U   G2    D   C3   VI   VI  C3..C6
+
+[771 rows x 14 columns]
+:Index([  0,   1,   2,   3,   4,   5,   6,   7,   8,   9,
+       ...
+       761, 762, 763, 764, 765, 766, 767, 768, 769, 770],
+      dtype='int64', length=771)
+:Index(['#', 'date', 'name', 'doss', 'age', 'age_bin', 'sexe', 'unbi', 'mbas',
+       'mbre', 'ceap', 'c0c6', 'c3c6', 'seve'],
+      dtype='object')
+
+---
+Data : 'ceap' 'age' ; sexe ['M', 'F']
+Spearman [2025_01_19] : ceap, age, sexe, ['C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+H0 : rhos == 0 : no monotonic relationship exists between ceap, age for sexe
+Ha : rhos <> 0 :  a monotonic relationship exists between ceap, age for sexe
+---
+
+'age_10+ ceap count:771'
+                              stat  intp   pval   H
+A two-side (two-sided)       0.031   0/5  0.397  H0
+A positive (greater)         0.031   0/5  0.198  H0
+A negative (less)            0.031   0/5  0.802  H0
+M two-side (two-sided)  -6.502e-02  -0/5  0.242  H0
+M positive (greater)    -6.502e-02  -0/5  0.879  H0
+M negative (less)       -6.502e-02  -0/5  0.121  H0
+F two-side (two-sided)       0.098   0/5  0.039  Ha
+F positive (greater)         0.098   0/5  0.019  Ha
+F negative (less)            0.098   0/5  0.981  H0
+
+'age_20+ ceap count:762'
+                              stat  intp   pval   H
+A two-side (two-sided)       0.025   0/5  0.492  H0
+A positive (greater)         0.025   0/5  0.246  H0
+A negative (less)            0.025   0/5  0.754  H0
+M two-side (two-sided)  -7.703e-02  -0/5  0.169  H0
+M positive (greater)    -7.703e-02  -0/5  0.915  H0
+M negative (less)       -7.703e-02  -0/5  0.085  H0
+F two-side (two-sided)       0.095   0/5  0.047  Ha
+F positive (greater)         0.095   0/5  0.023  Ha
+F negative (less)            0.095   0/5  0.977  H0
+
+'age_30+ ceap count:736'
+                              stat  intp   pval   H
+A two-side (two-sided)       0.017   0/5  0.642  H0
+A positive (greater)         0.017   0/5  0.321  H0
+A negative (less)            0.017   0/5  0.679  H0
+M two-side (two-sided)  -1.187e-01  -1/5  0.038  Ha
+M positive (greater)    -1.187e-01  -1/5  0.981  H0
+M negative (less)       -1.187e-01  -1/5  0.019  Ha
+F two-side (two-sided)       0.108   1/5  0.025  Ha
+F positive (greater)         0.108   1/5  0.012  Ha
+F negative (less)            0.108   1/5  0.988  H0
+
+'age_40+ ceap count:657'
+                              stat  intp   pval   H
+A two-side (two-sided)       0.003   0/5  0.943  H0
+A positive (greater)         0.003   0/5  0.471  H0
+A negative (less)            0.003   0/5  0.529  H0
+M two-side (two-sided)  -6.543e-02  -0/5  0.268  H0
+M positive (greater)    -6.543e-02  -0/5  0.866  H0
+M negative (less)       -6.543e-02  -0/5  0.134  H0
+F two-side (two-sided)       0.062   0/5  0.239  H0
+F positive (greater)         0.062   0/5  0.119  H0
+F negative (less)            0.062   0/5  0.881  H0
+
+'age_50+ ceap count:546'
+                              stat  intp   pval   H
+A two-side (two-sided)       0.043   0/5  0.313  H0
+A positive (greater)         0.043   0/5  0.156  H0
+A negative (less)            0.043   0/5  0.844  H0
+M two-side (two-sided)  -4.236e-02  -0/5  0.515  H0
+M positive (greater)    -4.236e-02  -0/5  0.743  H0
+M negative (less)       -4.236e-02  -0/5  0.257  H0
+F two-side (two-sided)       0.115   1/5  0.043  Ha
+F positive (greater)         0.115   1/5  0.022  Ha
+F negative (less)            0.115   1/5  0.978  H0
+
+'age_60+ ceap count:364'
+                         stat intp   pval   H
+A two-side (two-sided)  0.070  0/5  0.182  H0
+A positive (greater)    0.070  0/5  0.091  H0
+A negative (less)       0.070  0/5  0.909  H0
+M two-side (two-sided)  0.030  0/5  0.712  H0
+M positive (greater)    0.030  0/5  0.356  H0
+M negative (less)       0.030  0/5  0.644  H0
+F two-side (two-sided)  0.100  1/5  0.147  H0
+F positive (greater)    0.100  1/5  0.073  H0
+F negative (less)       0.100  1/5  0.927  H0
+
+'age_70+ ceap count:182'
+                              stat  intp   pval   H
+A two-side (two-sided)  -2.699e-02  -0/5  0.718  H0
+A positive (greater)    -2.699e-02  -0/5  0.641  H0
+A negative (less)       -2.699e-02  -0/5  0.359  H0
+M two-side (two-sided)  -1.122e-02  -0/5  0.922  H0
+M positive (greater)    -1.122e-02  -0/5  0.539  H0
+M negative (less)       -1.122e-02  -0/5  0.461  H0
+F two-side (two-sided)  -5.342e-02  -0/5  0.592  H0
+F positive (greater)    -5.342e-02  -0/5  0.704  H0
+F negative (less)       -5.342e-02  -0/5  0.296  H0
+(ceap) vs (age for sexe)
+
+---
+Data : 'ceap' 'age' ; sexe ['M', 'F']
+Kendall [2025_01_19] : ceap, age, sexe, ['C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+H0 : tau == 0 : no monotonic relationship exists between ceap, age for sexe
+Ha : tau <> 0 :  a monotonic relationship exists between ceap, age for sexe
+---
+
+'age_10+ ceap count:771'
+                              stat  intp   pval   H
+A two-side (two-sided)       0.023   0/5  0.385  H0
+A positive (greater)         0.023   0/5  0.193  H0
+A negative (less)            0.023   0/5  0.807  H0
+M two-side (two-sided)  -4.866e-02  -0/5  0.236  H0
+M positive (greater)    -4.866e-02  -0/5  0.882  H0
+M negative (less)       -4.866e-02  -0/5  0.118  H0
+F two-side (two-sided)       0.076   0/5  0.029  Ha
+F positive (greater)         0.076   0/5  0.015  Ha
+F negative (less)            0.076   0/5  0.985  H0
+
+'age_20+ ceap count:762'
+                              stat  intp   pval   H
+A two-side (two-sided)       0.019   0/5  0.476  H0
+A positive (greater)         0.019   0/5  0.238  H0
+A negative (less)            0.019   0/5  0.762  H0
+M two-side (two-sided)  -5.743e-02  -0/5  0.167  H0
+M positive (greater)    -5.743e-02  -0/5  0.917  H0
+M negative (less)       -5.743e-02  -0/5  0.083  H0
+F two-side (two-sided)       0.074   0/5  0.036  Ha
+F positive (greater)         0.074   0/5  0.018  Ha
+F negative (less)            0.074   0/5  0.982  H0
+
+'age_30+ ceap count:736'
+                              stat  intp   pval   H
+A two-side (two-sided)       0.013   0/5  0.621  H0
+A positive (greater)         0.013   0/5  0.310  H0
+A negative (less)            0.013   0/5  0.690  H0
+M two-side (two-sided)  -8.658e-02  -0/5  0.041  Ha
+M positive (greater)    -8.658e-02  -0/5  0.979  H0
+M negative (less)       -8.658e-02  -0/5  0.021  Ha
+F two-side (two-sided)       0.085   0/5  0.018  Ha
+F positive (greater)         0.085   0/5  0.009  Ha
+F negative (less)            0.085   0/5  0.991  H0
+
+'age_40+ ceap count:657'
+                              stat  intp   pval   H
+A two-side (two-sided)       0.003   0/5  0.919  H0
+A positive (greater)         0.003   0/5  0.459  H0
+A negative (less)            0.003   0/5  0.541  H0
+M two-side (two-sided)  -4.894e-02  -0/5  0.264  H0
+M positive (greater)    -4.894e-02  -0/5  0.868  H0
+M negative (less)       -4.894e-02  -0/5  0.132  H0
+F two-side (two-sided)       0.048   0/5  0.213  H0
+F positive (greater)         0.048   0/5  0.106  H0
+F negative (less)            0.048   0/5  0.894  H0
+
+'age_50+ ceap count:546'
+                              stat  intp   pval   H
+A two-side (two-sided)       0.034   0/5  0.291  H0
+A positive (greater)         0.034   0/5  0.145  H0
+A negative (less)            0.034   0/5  0.855  H0
+M two-side (two-sided)  -3.206e-02  -0/5  0.506  H0
+M positive (greater)    -3.206e-02  -0/5  0.747  H0
+M negative (less)       -3.206e-02  -0/5  0.253  H0
+F two-side (two-sided)       0.091   0/5  0.032  Ha
+F positive (greater)         0.091   0/5  0.016  Ha
+F negative (less)            0.091   0/5  0.984  H0
+
+'age_60+ ceap count:364'
+                         stat intp   pval   H
+A two-side (two-sided)  0.054  0/5  0.165  H0
+A positive (greater)    0.054  0/5  0.083  H0
+A negative (less)       0.054  0/5  0.917  H0
+M two-side (two-sided)  0.021  0/5  0.732  H0
+M positive (greater)    0.021  0/5  0.366  H0
+M negative (less)       0.021  0/5  0.634  H0
+F two-side (two-sided)  0.081  0/5  0.117  H0
+F positive (greater)    0.081  0/5  0.058  H0
+F negative (less)       0.081  0/5  0.942  H0
+
+'age_70+ ceap count:182'
+                              stat  intp   pval   H
+A two-side (two-sided)  -1.926e-02  -0/5  0.734  H0
+A positive (greater)    -1.926e-02  -0/5  0.633  H0
+A negative (less)       -1.926e-02  -0/5  0.367  H0
+M two-side (two-sided)  -9.767e-03  -0/5  0.912  H0
+M positive (greater)    -9.767e-03  -0/5  0.544  H0
+M negative (less)       -9.767e-03  -0/5  0.456  H0
+F two-side (two-sided)  -3.660e-02  -0/5  0.630  H0
+F positive (greater)    -3.660e-02  -0/5  0.685  H0
+F negative (less)       -3.660e-02  -0/5  0.315  H0
+(ceap) vs (age for sexe)
+
+---
+Data : 'ceap' 'age' ; sexe ['M', 'F']
+Goodman Kruskal Gamma [2025_01_19] : ceap, age, sexe, ['C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+H0 : gamma == 0 : no monotonic relationship exists between ceap, age for sexe
+Ha : gamma <> 0 :  a monotonic relationship exists between ceap, age for sexe
+---
+
+'age_10+ ceap count:771'
+         stat  intp      pval   H
+A       0.013   0/5  9999.000  H0
+M  -8.502e-02  -0/5  9999.000  H0
+F       0.080   0/5  9999.000  H0
+(ceap) vs (age for sexe)
+
+---
+Data : 'ceap' 'age' ; mbre ['G', 'D']
+Spearman [2025_01_19] : ceap, age, mbre, ['C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+H0 : rhos == 0 : no monotonic relationship exists between ceap, age for mbre
+Ha : rhos <> 0 :  a monotonic relationship exists between ceap, age for mbre
+---
+
+'age_10+ ceap count:771'
+                              stat  intp       pval   H
+A two-side (two-sided)       0.031   0/5      0.397  H0
+A positive (greater)         0.031   0/5      0.198  H0
+A negative (less)            0.031   0/5      0.802  H0
+G two-side (two-sided)  -1.093e-01  -1/5      0.031  Ha
+G positive (greater)    -1.093e-01  -1/5      0.985  H0
+G negative (less)       -1.093e-01  -1/5      0.015  Ha
+D two-side (two-sided)       0.168   1/5  9.633e-04  Ha
+D positive (greater)         0.168   1/5  4.816e-04  Ha
+D negative (less)            0.168   1/5      1.000  H0
+
+'age_20+ ceap count:762'
+                              stat  intp   pval   H
+A two-side (two-sided)       0.025   0/5  0.492  H0
+A positive (greater)         0.025   0/5  0.246  H0
+A negative (less)            0.025   0/5  0.754  H0
+G two-side (two-sided)  -1.144e-01  -1/5  0.025  Ha
+G positive (greater)    -1.144e-01  -1/5  0.988  H0
+G negative (less)       -1.144e-01  -1/5  0.012  Ha
+D two-side (two-sided)       0.158   1/5  0.002  Ha
+D positive (greater)         0.158   1/5  0.001  Ha
+D negative (less)            0.158   1/5  0.999  H0
+
+'age_30+ ceap count:736'
+                              stat  intp   pval   H
+A two-side (two-sided)       0.017   0/5  0.642  H0
+A positive (greater)         0.017   0/5  0.321  H0
+A negative (less)            0.017   0/5  0.679  H0
+G two-side (two-sided)  -1.212e-01  -1/5  0.019  Ha
+G positive (greater)    -1.212e-01  -1/5  0.990  H0
+G negative (less)       -1.212e-01  -1/5  0.010  Ha
+D two-side (two-sided)       0.158   1/5  0.003  Ha
+D positive (greater)         0.158   1/5  0.001  Ha
+D negative (less)            0.158   1/5  0.999  H0
+
+'age_40+ ceap count:657'
+                              stat  intp   pval   H
+A two-side (two-sided)       0.003   0/5  0.943  H0
+A positive (greater)         0.003   0/5  0.471  H0
+A negative (less)            0.003   0/5  0.529  H0
+G two-side (two-sided)  -1.048e-01  -1/5  0.056  H0
+G positive (greater)    -1.048e-01  -1/5  0.972  H0
+G negative (less)       -1.048e-01  -1/5  0.028  Ha
+D two-side (two-sided)       0.109   1/5  0.050  H0
+D positive (greater)         0.109   1/5  0.025  Ha
+D negative (less)            0.109   1/5  0.975  H0
+
+'age_50+ ceap count:546'
+                              stat  intp   pval   H
+A two-side (two-sided)       0.043   0/5  0.313  H0
+A positive (greater)         0.043   0/5  0.156  H0
+A negative (less)            0.043   0/5  0.844  H0
+G two-side (two-sided)  -1.765e-02  -0/5  0.770  H0
+G positive (greater)    -1.765e-02  -0/5  0.615  H0
+G negative (less)       -1.765e-02  -0/5  0.385  H0
+D two-side (two-sided)       0.103   1/5  0.093  H0
+D positive (greater)         0.103   1/5  0.047  Ha
+D negative (less)            0.103   1/5  0.953  H0
+
+'age_60+ ceap count:364'
+                         stat intp   pval   H
+A two-side (two-sided)  0.070  0/5  0.182  H0
+A positive (greater)    0.070  0/5  0.091  H0
+A negative (less)       0.070  0/5  0.909  H0
+G two-side (two-sided)  0.009  0/5  0.905  H0
+G positive (greater)    0.009  0/5  0.452  H0
+G negative (less)       0.009  0/5  0.548  H0
+D two-side (two-sided)  0.127  1/5  0.090  H0
+D positive (greater)    0.127  1/5  0.045  Ha
+D negative (less)       0.127  1/5  0.955  H0
+
+'age_70+ ceap count:182'
+                              stat  intp   pval   H
+A two-side (two-sided)  -2.699e-02  -0/5  0.718  H0
+A positive (greater)    -2.699e-02  -0/5  0.641  H0
+A negative (less)       -2.699e-02  -0/5  0.359  H0
+G two-side (two-sided)  -1.568e-02  -0/5  0.882  H0
+G positive (greater)    -1.568e-02  -0/5  0.559  H0
+G negative (less)       -1.568e-02  -0/5  0.441  H0
+D two-side (two-sided)  -3.260e-02  -0/5  0.760  H0
+D positive (greater)    -3.260e-02  -0/5  0.620  H0
+D negative (less)       -3.260e-02  -0/5  0.380  H0
+(ceap) vs (age for mbre)
+
+---
+Data : 'ceap' 'age' ; mbre ['G', 'D']
+Kendall [2025_01_19] : ceap, age, mbre, ['C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+H0 : tau == 0 : no monotonic relationship exists between ceap, age for mbre
+Ha : tau <> 0 :  a monotonic relationship exists between ceap, age for mbre
+---
+
+'age_10+ ceap count:771'
+                              stat  intp       pval   H
+A two-side (two-sided)       0.023   0/5      0.385  H0
+A positive (greater)         0.023   0/5      0.193  H0
+A negative (less)            0.023   0/5      0.807  H0
+G two-side (two-sided)  -8.149e-02  -0/5      0.030  Ha
+G positive (greater)    -8.149e-02  -0/5      0.985  H0
+G negative (less)       -8.149e-02  -0/5      0.015  Ha
+D two-side (two-sided)       0.126   1/5  8.708e-04  Ha
+D positive (greater)         0.126   1/5  4.354e-04  Ha
+D negative (less)            0.126   1/5      1.000  H0
+
+'age_20+ ceap count:762'
+                              stat  intp       pval   H
+A two-side (two-sided)       0.019   0/5      0.476  H0
+A positive (greater)         0.019   0/5      0.238  H0
+A negative (less)            0.019   0/5      0.762  H0
+G two-side (two-sided)  -8.540e-02  -0/5      0.024  Ha
+G positive (greater)    -8.540e-02  -0/5      0.988  H0
+G negative (less)       -8.540e-02  -0/5      0.012  Ha
+D two-side (two-sided)       0.118   1/5      0.002  Ha
+D positive (greater)         0.118   1/5  9.205e-04  Ha
+D negative (less)            0.118   1/5      0.999  H0
+
+'age_30+ ceap count:736'
+                              stat  intp   pval   H
+A two-side (two-sided)       0.013   0/5  0.621  H0
+A positive (greater)         0.013   0/5  0.310  H0
+A negative (less)            0.013   0/5  0.690  H0
+G two-side (two-sided)  -9.034e-02  -0/5  0.019  Ha
+G positive (greater)    -9.034e-02  -0/5  0.991  H0
+G negative (less)       -9.034e-02  -0/5  0.009  Ha
+D two-side (two-sided)       0.119   1/5  0.002  Ha
+D positive (greater)         0.119   1/5  0.001  Ha
+D negative (less)            0.119   1/5  0.999  H0
+
+'age_40+ ceap count:657'
+                              stat  intp   pval   H
+A two-side (two-sided)       0.003   0/5  0.919  H0
+A positive (greater)         0.003   0/5  0.459  H0
+A negative (less)            0.003   0/5  0.541  H0
+G two-side (two-sided)  -7.790e-02  -0/5  0.057  H0
+G positive (greater)    -7.790e-02  -0/5  0.972  H0
+G negative (less)       -7.790e-02  -0/5  0.028  Ha
+D two-side (two-sided)       0.083   0/5  0.044  Ha
+D positive (greater)         0.083   0/5  0.022  Ha
+D negative (less)            0.083   0/5  0.978  H0
+
+'age_50+ ceap count:546'
+                              stat  intp   pval   H
+A two-side (two-sided)       0.034   0/5  0.291  H0
+A positive (greater)         0.034   0/5  0.145  H0
+A negative (less)            0.034   0/5  0.855  H0
+G two-side (two-sided)  -1.348e-02  -0/5  0.763  H0
+G positive (greater)    -1.348e-02  -0/5  0.618  H0
+G negative (less)       -1.348e-02  -0/5  0.382  H0
+D two-side (two-sided)       0.080   0/5  0.078  H0
+D positive (greater)         0.080   0/5  0.039  Ha
+D negative (less)            0.080   0/5  0.961  H0
+
+'age_60+ ceap count:364'
+                         stat intp   pval   H
+A two-side (two-sided)  0.054  0/5  0.165  H0
+A positive (greater)    0.054  0/5  0.083  H0
+A negative (less)       0.054  0/5  0.917  H0
+G two-side (two-sided)  0.006  0/5  0.908  H0
+G positive (greater)    0.006  0/5  0.454  H0
+G negative (less)       0.006  0/5  0.546  H0
+D two-side (two-sided)  0.101  1/5  0.071  H0
+D positive (greater)    0.101  1/5  0.036  Ha
+D negative (less)       0.101  1/5  0.964  H0
+
+'age_70+ ceap count:182'
+                              stat  intp   pval   H
+A two-side (two-sided)  -1.926e-02  -0/5  0.734  H0
+A positive (greater)    -1.926e-02  -0/5  0.633  H0
+A negative (less)       -1.926e-02  -0/5  0.367  H0
+G two-side (two-sided)  -6.431e-03  -0/5  0.936  H0
+G positive (greater)    -6.431e-03  -0/5  0.532  H0
+G negative (less)       -6.431e-03  -0/5  0.468  H0
+D two-side (two-sided)  -2.449e-02  -0/5  0.763  H0
+D positive (greater)    -2.449e-02  -0/5  0.618  H0
+D negative (less)       -2.449e-02  -0/5  0.382  H0
+(ceap) vs (age for mbre)
+
+---
+Data : 'ceap' 'age' ; mbre ['G', 'D']
+Goodman Kruskal Gamma [2025_01_19] : ceap, age, mbre, ['C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+H0 : gamma == 0 : no monotonic relationship exists between ceap, age for mbre
+Ha : gamma <> 0 :  a monotonic relationship exists between ceap, age for mbre
+---
+
+'age_10+ ceap count:771'
+         stat  intp      pval   H
+A       0.013   0/5  9999.000  H0
+G  -3.248e-02  -0/5  9999.000  H0
+D       0.057   0/5  9999.000  H0
+(ceap) vs (age for mbre)

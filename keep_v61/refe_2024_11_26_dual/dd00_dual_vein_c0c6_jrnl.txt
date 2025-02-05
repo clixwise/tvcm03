@@ -1,0 +1,375 @@
+
+>>> >>> >>>
+VEIN = f(MBRE) :  2025-01-29 11:17:49
+>>> >>> >>>
+
+Step 0 : df.size:876 df2.type:<class 'pandas.core.frame.DataFrame'>
+      #        date                       name   doss  age age_bin sexe unbi mbas mbre ceap clin c0c6 c3c6    seve
+0     1  2021-01-27         YENGE MARCELA JOAO  D9972   54   50-59    F    B   G2    G   C2   C6   VI   NA  C0..C2
+1     1  2021-01-27         YENGE MARCELA JOAO  D9972   54   50-59    F    B   G2    G   C6   C6   VI   VI  C3..C6
+2     1  2021-01-27         YENGE MARCELA JOAO  D9972   54   50-59    F    B   G2    D   C2   C6   VI   NA  C0..C2
+3     1  2021-01-27         YENGE MARCELA JOAO  D9972   54   50-59    F    B   G2    D   C6   C6   VI   VI  C3..C6
+4     2  2021-01-21  TSHIBASU KAPUNGI DONATIEN  D9921   54   50-59    M    B   G2    G   C3   C3   VI   VI  C3..C6
+..   ..         ...                        ...    ...  ...     ...  ...  ...  ...  ...  ...  ...  ...  ...     ...
+871  44  2020-10-06       MIYALU MAMUD JEANINE  D8930   45   40-49    F    U   NA    D   NA   C3   NA   NA      NA
+872  37  2020-10-07      KIEMBI LUSIKILA FANNY  D8956   50   50-59    F    U   NA    G   NA   C6   NA   NA      NA
+873  33  2021-11-29       DIGATA MAFUTA CLAUDE  D9113   55   50-59    M    U   NA    D   NA   C6   NA   NA      NA
+874  12  2020-12-09      BOLUA LIWONGU CAMILLE  D9574   60   60-69    M    U   NA    G   NA   C4   NA   NA      NA
+875  11  2020-12-14   NGALULA MUTEBA ADOLPHINE  D9609   76   70-79    F    U   NA    D   NA   C4   NA   NA      NA
+
+[876 rows x 15 columns]
+:RangeIndex(start=0, stop=876, step=1)
+:Index(['#', 'date', 'name', 'doss', 'age', 'age_bin', 'sexe', 'unbi', 'mbas',
+       'mbre', 'ceap', 'clin', 'c0c6', 'c3c6', 'seve'],
+      dtype='object')
+
+Step 1 : df3.size:2 df3.type:<class 'pandas.core.frame.DataFrame'>
+c0c6  NA   VI
+mbre         
+G     39  323
+D     66  296
+:Index(['G', 'D'], dtype='object', name='mbre')
+:Index(['NA', 'VI'], dtype='object', name='c0c6')
+
+Step 1 : df4.size:2 df4.type:<class 'pandas.core.frame.DataFrame'>
+mbre    G    D
+c0c6          
+NA     39   66
+VI    323  296
+:Index(['NA', 'VI'], dtype='object', name='c0c6')
+:Index(['G', 'D'], dtype='object', name='mbre')
+
+Step 2 : df9.size:3 df9.type:<class 'pandas.core.frame.DataFrame'>
+c0c6   NA   VI  tota
+mbre                
+G      39  323   362
+D      66  296   362
+tota  105  619   724
+:Index(['G', 'D', 'tota'], dtype='object', name='mbre')
+:Index(['NA', 'VI', 'tota'], dtype='object', name='c0c6') sum:724
+
+Step 1 : df3.size:2 df3.type:<class 'pandas.core.frame.DataFrame'>
+c0c6  NA   VI
+mbre         
+G      0  323
+D      0  296
+:Index(['G', 'D'], dtype='object', name='mbre')
+:Index(['NA', 'VI'], dtype='object', name='c0c6')
+
+Step 1 : df4.size:2 df4.type:<class 'pandas.core.frame.DataFrame'>
+mbre    G    D
+c0c6          
+NA      0    0
+VI    323  296
+:Index(['NA', 'VI'], dtype='object', name='c0c6')
+:Index(['G', 'D'], dtype='object', name='mbre')
+
+Step 2 : df9.size:3 df9.type:<class 'pandas.core.frame.DataFrame'>
+c0c6  NA   VI  tota
+mbre               
+G      0  323   323
+D      0  296   296
+tota   0  619   619
+:Index(['G', 'D', 'tota'], dtype='object', name='mbre')
+:Index(['NA', 'VI', 'tota'], dtype='object', name='c0c6') sum:619
+
+Step 1 : df3.size:2 df3.type:<class 'pandas.core.frame.DataFrame'>
+c0c6  NA   VI
+mbre         
+G      0  290
+D      0  246
+:Index(['G', 'D'], dtype='object', name='mbre')
+:Index(['NA', 'VI'], dtype='object', name='c0c6')
+
+Step 1 : df4.size:2 df4.type:<class 'pandas.core.frame.DataFrame'>
+mbre    G    D
+c0c6          
+NA      0    0
+VI    290  246
+:Index(['NA', 'VI'], dtype='object', name='c0c6')
+:Index(['G', 'D'], dtype='object', name='mbre')
+
+Step 2 : df9.size:3 df9.type:<class 'pandas.core.frame.DataFrame'>
+c0c6  NA   VI  tota
+mbre               
+G      0  290   290
+D      0  246   246
+tota   0  536   536
+:Index(['G', 'D', 'tota'], dtype='object', name='mbre')
+:Index(['NA', 'VI', 'tota'], dtype='object', name='c0c6') sum:536
+
+Step 0 : df2.size:724 df2.type:<class 'pandas.core.frame.DataFrame'>
+       doss mbre    #        date                       name  age age_bin  ... mbas clin c0c6 c3c6    seve sexe_stra age_bin_ordi
+0    D10077    D  527  2022-02-18   DILUABANZA MAVEMA ARIANA   67   60-69  ...   G2   C3   VI   VI  C3..C6         1            1
+1    D10077    G  527  2022-02-18   DILUABANZA MAVEMA ARIANA   67   60-69  ...   NA   C3   NA   NA      NA         0            0
+2    D10103    D  526  2021-02-15         NGOMA BALO CHARLES   68   60-69  ...   G2   C3   VI   VI  C3..C6         1            1
+3    D10103    G  526  2021-02-15         NGOMA BALO CHARLES   68   60-69  ...   NA   C3   NA   NA      NA         0            0
+4    D10120    D  523  2022-12-16     EFONDA LIYOKE PATIENCE   48   40-49  ...   NA   C6   NA   NA      NA         1            0
+..      ...  ...  ...         ...                        ...  ...     ...  ...  ...  ...  ...  ...     ...       ...          ...
+719   D9908    G    3  2021-01-21      LUKOMBO KIANIAZA ATHY   51   50-59  ...   G2   C4   VI   VI  C3..C6         0            1
+720   D9921    D    2  2021-01-21  TSHIBASU KAPUNGI DONATIEN   54   50-59  ...   G2   C3   VI   VI  C3..C6         1            1
+721   D9921    G    2  2021-01-21  TSHIBASU KAPUNGI DONATIEN   54   50-59  ...   G2   C3   VI   VI  C3..C6         0            1
+722   D9972    D    1  2021-01-27         YENGE MARCELA JOAO   54   50-59  ...   G2   C6   VI   NA  C0..C2         1            1
+723   D9972    G    1  2021-01-27         YENGE MARCELA JOAO   54   50-59  ...   G2   C6   VI   NA  C0..C2         0            1
+
+[724 rows x 16 columns]
+:RangeIndex(start=0, stop=724, step=1)
+:Index(['doss', 'mbre', '#', 'date', 'name', 'age', 'age_bin', 'sexe', 'unbi',
+       'mbas', 'clin', 'c0c6', 'c3c6', 'seve', 'sexe_stra', 'age_bin_ordi'],
+      dtype='object')
+\Input file filtered : df_line.size:724 df_line.type:<class 'pandas.core.frame.DataFrame'>
+       doss mbre    #        date                       name  age age_bin  ... mbas clin c0c6 c3c6    seve sexe_stra age_bin_ordi
+0    D10077    D  527  2022-02-18   DILUABANZA MAVEMA ARIANA   67   60-69  ...   G2   C3   VI   VI  C3..C6         1            1
+1    D10077    G  527  2022-02-18   DILUABANZA MAVEMA ARIANA   67   60-69  ...   NA   C3   NA   NA      NA         0            0
+2    D10103    D  526  2021-02-15         NGOMA BALO CHARLES   68   60-69  ...   G2   C3   VI   VI  C3..C6         1            1
+3    D10103    G  526  2021-02-15         NGOMA BALO CHARLES   68   60-69  ...   NA   C3   NA   NA      NA         0            0
+4    D10120    D  523  2022-12-16     EFONDA LIYOKE PATIENCE   48   40-49  ...   NA   C6   NA   NA      NA         1            0
+..      ...  ...  ...         ...                        ...  ...     ...  ...  ...  ...  ...  ...     ...       ...          ...
+719   D9908    G    3  2021-01-21      LUKOMBO KIANIAZA ATHY   51   50-59  ...   G2   C4   VI   VI  C3..C6         0            1
+720   D9921    D    2  2021-01-21  TSHIBASU KAPUNGI DONATIEN   54   50-59  ...   G2   C3   VI   VI  C3..C6         1            1
+721   D9921    G    2  2021-01-21  TSHIBASU KAPUNGI DONATIEN   54   50-59  ...   G2   C3   VI   VI  C3..C6         0            1
+722   D9972    D    1  2021-01-27         YENGE MARCELA JOAO   54   50-59  ...   G2   C6   VI   NA  C0..C2         1            1
+723   D9972    G    1  2021-01-27         YENGE MARCELA JOAO   54   50-59  ...   G2   C6   VI   NA  C0..C2         0            1
+
+[724 rows x 16 columns]
+:RangeIndex(start=0, stop=724, step=1)
+:Index(['doss', 'mbre', '#', 'date', 'name', 'age', 'age_bin', 'sexe', 'unbi',
+       'mbas', 'clin', 'c0c6', 'c3c6', 'seve', 'sexe_stra', 'age_bin_ordi'],
+      dtype='object')
+
+Contingency table  : df_tabl.size:2 df_tabl.type:<class 'pandas.core.frame.DataFrame'>
+c0c6  NA   VI
+mbre         
+G     39  323
+D     66  296
+:Index(['G', 'D'], dtype='object', name='mbre')
+:Index(['NA', 'VI'], dtype='object', name='c0c6')
+
+Data : 'mbre' 'c0c6' ; ['G', 'D'] ['NA', 'VI']
+Desc : mbre: tota:724 - G:362 (50.00%) - D:362 (50.00%)
+Desc : c0c6: tota:724 - NA:105 (14.50%) - VI:619 (85.50%)
+
+Data : 'mbre' 'c0c6' ; ['G', 'D'] ['NA', 'VI']
+Chi-Square : Stat:7.530 Pval:0.006 Dof:1
+
+Data : 'mbre' 'c0c6' ; ['G', 'D'] ['NA', 'VI']
+Fisher-Exact : Stat:0.542 Pval:0.006
+
+Data : 'mbre' 'c0c6' ; ['G', 'D'] ['NA', 'VI']
+PHI Coefficient : Stat:0.102
+
+Data : 'mbre' 'c0c6' ; ['G', 'D'] ['NA', 'VI']
+Cramer V : Stat:0.102
+
+Data : 'mbre' 'c0c6' ; ['G', 'D'] ['NA', 'VI']
+Relative risk(/):1.091 risk(-):0.075 number needed to treat:13.407
+
+Data : 'mbre' 'c0c6' ; ['G', 'D'] ['NA', 'VI']
+Proportion Effect Size : CI_G:0.902 CI_D:0.688
+95%CI : G: 0.856 - 0.920
+95%CI : D: 0.775 - 0.854
+
+Data : 'mbre' 'c0c6' ; ['G', 'D'] ['NA', 'VI']
+Logistic regression :
+                           Logit Regression Results                           
+==============================================================================
+Dep. Variable:                   c0c6   No. Observations:                  724
+Model:                          Logit   Df Residuals:                      722
+Method:                           MLE   Df Model:                            1
+Date:                Wed, 29 Jan 2025   Pseudo R-squ.:                 0.01368
+Time:                        11:17:49   Log-Likelihood:                -295.63
+converged:                       True   LL-Null:                       -299.73
+Covariance Type:            nonrobust   LLR p-value:                  0.004190
+==============================================================================
+                 coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------
+const          1.5007      0.136     11.024      0.000       1.234       1.768
+G              0.6134      0.217      2.821      0.005       0.187       1.040
+==============================================================================
+>>> >>> >>>
+VEIN = f(SEXE) :  2025-01-29 11:17:49
+>>> >>> >>>
+
+Step 0 : df.size:876 df2.type:<class 'pandas.core.frame.DataFrame'>
+      #        date                       name   doss  age age_bin sexe unbi mbas mbre ceap clin c0c6 c3c6    seve
+0     1  2021-01-27         YENGE MARCELA JOAO  D9972   54   50-59    F    B   G2    G   C2   C6   VI   NA  C0..C2
+1     1  2021-01-27         YENGE MARCELA JOAO  D9972   54   50-59    F    B   G2    G   C6   C6   VI   VI  C3..C6
+2     1  2021-01-27         YENGE MARCELA JOAO  D9972   54   50-59    F    B   G2    D   C2   C6   VI   NA  C0..C2
+3     1  2021-01-27         YENGE MARCELA JOAO  D9972   54   50-59    F    B   G2    D   C6   C6   VI   VI  C3..C6
+4     2  2021-01-21  TSHIBASU KAPUNGI DONATIEN  D9921   54   50-59    M    B   G2    G   C3   C3   VI   VI  C3..C6
+..   ..         ...                        ...    ...  ...     ...  ...  ...  ...  ...  ...  ...  ...  ...     ...
+871  44  2020-10-06       MIYALU MAMUD JEANINE  D8930   45   40-49    F    U   NA    D   NA   C3   NA   NA      NA
+872  37  2020-10-07      KIEMBI LUSIKILA FANNY  D8956   50   50-59    F    U   NA    G   NA   C6   NA   NA      NA
+873  33  2021-11-29       DIGATA MAFUTA CLAUDE  D9113   55   50-59    M    U   NA    D   NA   C6   NA   NA      NA
+874  12  2020-12-09      BOLUA LIWONGU CAMILLE  D9574   60   60-69    M    U   NA    G   NA   C4   NA   NA      NA
+875  11  2020-12-14   NGALULA MUTEBA ADOLPHINE  D9609   76   70-79    F    U   NA    D   NA   C4   NA   NA      NA
+
+[876 rows x 15 columns]
+:RangeIndex(start=0, stop=876, step=1)
+:Index(['#', 'date', 'name', 'doss', 'age', 'age_bin', 'sexe', 'unbi', 'mbas',
+       'mbre', 'ceap', 'clin', 'c0c6', 'c3c6', 'seve'],
+      dtype='object')
+
+Step 1 : df3.size:2 df3.type:<class 'pandas.core.frame.DataFrame'>
+c0c6  NA   VI
+sexe         
+M     52  260
+F     53  359
+:Index(['M', 'F'], dtype='object', name='sexe')
+:Index(['NA', 'VI'], dtype='object', name='c0c6')
+
+Step 1 : df4.size:2 df4.type:<class 'pandas.core.frame.DataFrame'>
+sexe    M    F
+c0c6          
+NA     52   53
+VI    260  359
+:Index(['NA', 'VI'], dtype='object', name='c0c6')
+:Index(['M', 'F'], dtype='object', name='sexe')
+
+Step 2 : df9.size:3 df9.type:<class 'pandas.core.frame.DataFrame'>
+c0c6   NA   VI  tota
+sexe                
+M      52  260   312
+F      53  359   412
+tota  105  619   724
+:Index(['M', 'F', 'tota'], dtype='object', name='sexe')
+:Index(['NA', 'VI', 'tota'], dtype='object', name='c0c6') sum:724
+
+Step 1 : df3.size:2 df3.type:<class 'pandas.core.frame.DataFrame'>
+c0c6  NA   VI
+sexe         
+M      0  260
+F      0  359
+:Index(['M', 'F'], dtype='object', name='sexe')
+:Index(['NA', 'VI'], dtype='object', name='c0c6')
+
+Step 1 : df4.size:2 df4.type:<class 'pandas.core.frame.DataFrame'>
+sexe    M    F
+c0c6          
+NA      0    0
+VI    260  359
+:Index(['NA', 'VI'], dtype='object', name='c0c6')
+:Index(['M', 'F'], dtype='object', name='sexe')
+
+Step 2 : df9.size:3 df9.type:<class 'pandas.core.frame.DataFrame'>
+c0c6  NA   VI  tota
+sexe               
+M      0  260   260
+F      0  359   359
+tota   0  619   619
+:Index(['M', 'F', 'tota'], dtype='object', name='sexe')
+:Index(['NA', 'VI', 'tota'], dtype='object', name='c0c6') sum:619
+
+Step 1 : df3.size:2 df3.type:<class 'pandas.core.frame.DataFrame'>
+c0c6  NA   VI
+sexe         
+M      0  219
+F      0  317
+:Index(['M', 'F'], dtype='object', name='sexe')
+:Index(['NA', 'VI'], dtype='object', name='c0c6')
+
+Step 1 : df4.size:2 df4.type:<class 'pandas.core.frame.DataFrame'>
+sexe    M    F
+c0c6          
+NA      0    0
+VI    219  317
+:Index(['NA', 'VI'], dtype='object', name='c0c6')
+:Index(['M', 'F'], dtype='object', name='sexe')
+
+Step 2 : df9.size:3 df9.type:<class 'pandas.core.frame.DataFrame'>
+c0c6  NA   VI  tota
+sexe               
+M      0  219   219
+F      0  317   317
+tota   0  536   536
+:Index(['M', 'F', 'tota'], dtype='object', name='sexe')
+:Index(['NA', 'VI', 'tota'], dtype='object', name='c0c6') sum:536
+
+Step 0 : df2.size:724 df2.type:<class 'pandas.core.frame.DataFrame'>
+       doss mbre    #        date                       name  age age_bin  ... mbas clin c0c6 c3c6    seve sexe_stra age_bin_ordi
+0    D10077    D  527  2022-02-18   DILUABANZA MAVEMA ARIANA   67   60-69  ...   G2   C3   VI   VI  C3..C6         1            1
+1    D10077    G  527  2022-02-18   DILUABANZA MAVEMA ARIANA   67   60-69  ...   NA   C3   NA   NA      NA         1            0
+2    D10103    D  526  2021-02-15         NGOMA BALO CHARLES   68   60-69  ...   G2   C3   VI   VI  C3..C6         0            1
+3    D10103    G  526  2021-02-15         NGOMA BALO CHARLES   68   60-69  ...   NA   C3   NA   NA      NA         0            0
+4    D10120    D  523  2022-12-16     EFONDA LIYOKE PATIENCE   48   40-49  ...   NA   C6   NA   NA      NA         1            0
+..      ...  ...  ...         ...                        ...  ...     ...  ...  ...  ...  ...  ...     ...       ...          ...
+719   D9908    G    3  2021-01-21      LUKOMBO KIANIAZA ATHY   51   50-59  ...   G2   C4   VI   VI  C3..C6         1            1
+720   D9921    D    2  2021-01-21  TSHIBASU KAPUNGI DONATIEN   54   50-59  ...   G2   C3   VI   VI  C3..C6         0            1
+721   D9921    G    2  2021-01-21  TSHIBASU KAPUNGI DONATIEN   54   50-59  ...   G2   C3   VI   VI  C3..C6         0            1
+722   D9972    D    1  2021-01-27         YENGE MARCELA JOAO   54   50-59  ...   G2   C6   VI   NA  C0..C2         1            1
+723   D9972    G    1  2021-01-27         YENGE MARCELA JOAO   54   50-59  ...   G2   C6   VI   NA  C0..C2         1            1
+
+[724 rows x 16 columns]
+:RangeIndex(start=0, stop=724, step=1)
+:Index(['doss', 'mbre', '#', 'date', 'name', 'age', 'age_bin', 'sexe', 'unbi',
+       'mbas', 'clin', 'c0c6', 'c3c6', 'seve', 'sexe_stra', 'age_bin_ordi'],
+      dtype='object')
+\Input file filtered : df_line.size:724 df_line.type:<class 'pandas.core.frame.DataFrame'>
+       doss mbre    #        date                       name  age age_bin  ... mbas clin c0c6 c3c6    seve sexe_stra age_bin_ordi
+0    D10077    D  527  2022-02-18   DILUABANZA MAVEMA ARIANA   67   60-69  ...   G2   C3   VI   VI  C3..C6         1            1
+1    D10077    G  527  2022-02-18   DILUABANZA MAVEMA ARIANA   67   60-69  ...   NA   C3   NA   NA      NA         1            0
+2    D10103    D  526  2021-02-15         NGOMA BALO CHARLES   68   60-69  ...   G2   C3   VI   VI  C3..C6         0            1
+3    D10103    G  526  2021-02-15         NGOMA BALO CHARLES   68   60-69  ...   NA   C3   NA   NA      NA         0            0
+4    D10120    D  523  2022-12-16     EFONDA LIYOKE PATIENCE   48   40-49  ...   NA   C6   NA   NA      NA         1            0
+..      ...  ...  ...         ...                        ...  ...     ...  ...  ...  ...  ...  ...     ...       ...          ...
+719   D9908    G    3  2021-01-21      LUKOMBO KIANIAZA ATHY   51   50-59  ...   G2   C4   VI   VI  C3..C6         1            1
+720   D9921    D    2  2021-01-21  TSHIBASU KAPUNGI DONATIEN   54   50-59  ...   G2   C3   VI   VI  C3..C6         0            1
+721   D9921    G    2  2021-01-21  TSHIBASU KAPUNGI DONATIEN   54   50-59  ...   G2   C3   VI   VI  C3..C6         0            1
+722   D9972    D    1  2021-01-27         YENGE MARCELA JOAO   54   50-59  ...   G2   C6   VI   NA  C0..C2         1            1
+723   D9972    G    1  2021-01-27         YENGE MARCELA JOAO   54   50-59  ...   G2   C6   VI   NA  C0..C2         1            1
+
+[724 rows x 16 columns]
+:RangeIndex(start=0, stop=724, step=1)
+:Index(['doss', 'mbre', '#', 'date', 'name', 'age', 'age_bin', 'sexe', 'unbi',
+       'mbas', 'clin', 'c0c6', 'c3c6', 'seve', 'sexe_stra', 'age_bin_ordi'],
+      dtype='object')
+
+Contingency table  : df_tabl.size:2 df_tabl.type:<class 'pandas.core.frame.DataFrame'>
+c0c6  NA   VI
+sexe         
+M     52  260
+F     53  359
+:Index(['M', 'F'], dtype='object', name='sexe')
+:Index(['NA', 'VI'], dtype='object', name='c0c6')
+
+Data : 'sexe' 'c0c6' ; ['M', 'F'] ['NA', 'VI']
+Desc : sexe: tota:724 - M:312 (43.09%) - F:412 (56.91%)
+Desc : c0c6: tota:724 - NA:105 (14.50%) - VI:619 (85.50%)
+
+Data : 'sexe' 'c0c6' ; ['M', 'F'] ['NA', 'VI']
+Chi-Square : Stat:1.775 Pval:0.183 Dof:1
+
+Data : 'sexe' 'c0c6' ; ['M', 'F'] ['NA', 'VI']
+Fisher-Exact : Stat:1.355 Pval:0.166
+
+Data : 'sexe' 'c0c6' ; ['M', 'F'] ['NA', 'VI']
+PHI Coefficient : Stat:0.050
+
+Data : 'sexe' 'c0c6' ; ['M', 'F'] ['NA', 'VI']
+Cramer V : Stat:0.050
+
+Data : 'sexe' 'c0c6' ; ['M', 'F'] ['NA', 'VI']
+Relative risk(/):0.956 risk(-):-3.803e-02 number needed to treat:26.298
+
+Data : 'sexe' 'c0c6' ; ['M', 'F'] ['NA', 'VI']
+Proportion Effect Size : CI_M:0.730 CI_F:0.837
+95%CI : M: 0.788 - 0.871
+95%CI : F: 0.836 - 0.900
+
+Data : 'sexe' 'c0c6' ; ['M', 'F'] ['NA', 'VI']
+Logistic regression :
+                           Logit Regression Results                           
+==============================================================================
+Dep. Variable:                   c0c6   No. Observations:                  724
+Model:                          Logit   Df Residuals:                      722
+Method:                           MLE   Df Model:                            1
+Date:                Wed, 29 Jan 2025   Pseudo R-squ.:                0.003428
+Time:                        11:17:50   Log-Likelihood:                -298.70
+converged:                       True   LL-Null:                       -299.73
+Covariance Type:            nonrobust   LLR p-value:                    0.1517
+==============================================================================
+                 coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------
+const          1.9130      0.147     13.000      0.000       1.625       2.201
+M             -0.3036      0.211     -1.435      0.151      -0.718       0.111
+==============================================================================

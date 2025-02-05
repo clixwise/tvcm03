@@ -1,0 +1,43 @@
+
+sexe : None : df1.size=876 df2.size=876
+\Input file filtered : df_line.size:876 df_line.type:<class 'pandas.core.frame.DataFrame'>
+      #        date                       name   doss  age age_bin sexe unbi mbas mbre ceap c0c6 c3c6    seve
+0     1  2021-01-27         YENGE MARCELA JOAO  D9972   54   50-59    F    B   G2    G   C2   VI   NA  C0..C2
+1     1  2021-01-27         YENGE MARCELA JOAO  D9972   54   50-59    F    B   G2    G   C6   VI   VI  C3..C6
+2     1  2021-01-27         YENGE MARCELA JOAO  D9972   54   50-59    F    B   G2    D   C2   VI   NA  C0..C2
+3     1  2021-01-27         YENGE MARCELA JOAO  D9972   54   50-59    F    B   G2    D   C6   VI   VI  C3..C6
+4     2  2021-01-21  TSHIBASU KAPUNGI DONATIEN  D9921   54   50-59    M    B   G2    G   C3   VI   VI  C3..C6
+..   ..         ...                        ...    ...  ...     ...  ...  ...  ...  ...  ...  ...  ...     ...
+871  44  2020-10-06       MIYALU MAMUD JEANINE  D8930   45   40-49    F    U   NA    D   NA   NA   NA      NA
+872  37  2020-10-07      KIEMBI LUSIKILA FANNY  D8956   50   50-59    F    U   NA    G   NA   NA   NA      NA
+873  33  2021-11-29       DIGATA MAFUTA CLAUDE  D9113   55   50-59    M    U   NA    D   NA   NA   NA      NA
+874  12  2020-12-09      BOLUA LIWONGU CAMILLE  D9574   60   60-69    M    U   NA    G   NA   NA   NA      NA
+875  11  2020-12-14   NGALULA MUTEBA ADOLPHINE  D9609   76   70-79    F    U   NA    D   NA   NA   NA      NA
+
+[876 rows x 14 columns]
+:RangeIndex(start=0, stop=876, step=1)
+:Index(['#', 'date', 'name', 'doss', 'age', 'age_bin', 'sexe', 'unbi', 'mbas',
+       'mbre', 'ceap', 'c0c6', 'c3c6', 'seve'],
+      dtype='object')
+['C2' 'C6' 'C3' 'C4' 'C5' 'C1' 'C0' 'NA']
+Results
+  CEAP   p_value  p_value_corrected_bonferroni  p_value_corrected_fdr
+0   C2  0.624497                      1.000000               0.960523
+1   C6  0.037209                      0.297669               0.148834
+2   C3  0.002404                      0.019228               0.019228
+3   C4  0.203181                      1.000000               0.466077
+4   C5  0.962516                      1.000000               0.962516
+5   C1  0.783711                      1.000000               0.960523
+6   C0  0.840457                      1.000000               0.960523
+7   NA  0.233038                      1.000000               0.466077
+
+Results sorted
+  CEAP   p_value  p_value_corrected_bonferroni  p_value_corrected_fdr
+2   C3  0.002404                      0.019228               0.019228
+1   C6  0.037209                      0.297669               0.148834
+3   C4  0.203181                      1.000000               0.466077
+7   NA  0.233038                      1.000000               0.466077
+0   C2  0.624497                      1.000000               0.960523
+5   C1  0.783711                      1.000000               0.960523
+6   C0  0.840457                      1.000000               0.960523
+4   C5  0.962516                      1.000000               0.962516

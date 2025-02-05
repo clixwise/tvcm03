@@ -1,0 +1,254 @@
+
+
+
+>>> >>> >>>
+AGCO = f(mbre=None) : 2025-01-26 11:18:17
+>>> >>> >>>
+
+Step 1 : df11.size:876 df11.type:<class 'pandas.core.frame.DataFrame'>
+      #        date                       name   doss  age age_bin sexe unbi mbas mbre ceap c0c6 c3c6    seve
+0     1  2021-01-27         YENGE MARCELA JOAO  D9972   54   50-59    F    B   G2    G   C2   VI   NA  C0..C2
+1     1  2021-01-27         YENGE MARCELA JOAO  D9972   54   50-59    F    B   G2    G   C6   VI   VI  C3..C6
+2     1  2021-01-27         YENGE MARCELA JOAO  D9972   54   50-59    F    B   G2    D   C2   VI   NA  C0..C2
+3     1  2021-01-27         YENGE MARCELA JOAO  D9972   54   50-59    F    B   G2    D   C6   VI   VI  C3..C6
+4     2  2021-01-21  TSHIBASU KAPUNGI DONATIEN  D9921   54   50-59    M    B   G2    G   C3   VI   VI  C3..C6
+..   ..         ...                        ...    ...  ...     ...  ...  ...  ...  ...  ...  ...  ...     ...
+871  44  2020-10-06       MIYALU MAMUD JEANINE  D8930   45   40-49    F    U   NA    D   NA   NA   NA      NA
+872  37  2020-10-07      KIEMBI LUSIKILA FANNY  D8956   50   50-59    F    U   NA    G   NA   NA   NA      NA
+873  33  2021-11-29       DIGATA MAFUTA CLAUDE  D9113   55   50-59    M    U   NA    D   NA   NA   NA      NA
+874  12  2020-12-09      BOLUA LIWONGU CAMILLE  D9574   60   60-69    M    U   NA    G   NA   NA   NA      NA
+875  11  2020-12-14   NGALULA MUTEBA ADOLPHINE  D9609   76   70-79    F    U   NA    D   NA   NA   NA      NA
+
+[876 rows x 14 columns]
+:RangeIndex(start=0, stop=876, step=1)
+:Index(['#', 'date', 'name', 'doss', 'age', 'age_bin', 'sexe', 'unbi', 'mbas',
+       'mbre', 'ceap', 'c0c6', 'c3c6', 'seve'],
+      dtype='object')
+
+Step 1 : df12.size:771 df12.type:<class 'pandas.core.frame.DataFrame'>
+       #        date                       name    doss  age age_bin sexe unbi mbas mbre ceap c0c6 c3c6    seve
+0      1  2021-01-27         YENGE MARCELA JOAO   D9972   54   50-59    F    B   G2    G   C2   VI   NA  C0..C2
+1      1  2021-01-27         YENGE MARCELA JOAO   D9972   54   50-59    F    B   G2    G   C6   VI   VI  C3..C6
+2      1  2021-01-27         YENGE MARCELA JOAO   D9972   54   50-59    F    B   G2    D   C2   VI   NA  C0..C2
+3      1  2021-01-27         YENGE MARCELA JOAO   D9972   54   50-59    F    B   G2    D   C6   VI   VI  C3..C6
+4      2  2021-01-21  TSHIBASU KAPUNGI DONATIEN   D9921   54   50-59    M    B   G2    G   C3   VI   VI  C3..C6
+..   ...         ...                        ...     ...  ...     ...  ...  ...  ...  ...  ...  ...  ...     ...
+766  520  2022-02-24         KASEYA GIBISI JEAN  D10129   75   70-79    M    B   G2    G   C3   VI   VI  C3..C6
+767  520  2022-02-24         KASEYA GIBISI JEAN  D10129   75   70-79    M    B   G2    D   C3   VI   VI  C3..C6
+768  523  2022-12-16     EFONDA LIYOKE PATIENCE  D10120   48   40-49    F    U   G2    G   C6   VI   VI  C3..C6
+769  526  2021-02-15         NGOMA BALO CHARLES  D10103   68   60-69    M    U   G2    D   C3   VI   VI  C3..C6
+770  527  2022-02-18   DILUABANZA MAVEMA ARIANA  D10077   67   60-69    F    U   G2    D   C3   VI   VI  C3..C6
+
+[771 rows x 14 columns]
+:Index([  0,   1,   2,   3,   4,   5,   6,   7,   8,   9,
+       ...
+       761, 762, 763, 764, 765, 766, 767, 768, 769, 770],
+      dtype='int64', length=771)
+:Index(['#', 'date', 'name', 'doss', 'age', 'age_bin', 'sexe', 'unbi', 'mbas',
+       'mbre', 'ceap', 'c0c6', 'c3c6', 'seve'],
+      dtype='object')
+
+Step 1 : df2.size:619 df2.type:<class 'pandas.core.frame.DataFrame'>
+       #        date                       name    doss  age age_bin sexe unbi mbas mbre ceap c0c6 c3c6    seve
+0      1  2021-01-27         YENGE MARCELA JOAO   D9972   54   50-59    F    B   G2    G   C2   VI   NA  C0..C2
+2      1  2021-01-27         YENGE MARCELA JOAO   D9972   54   50-59    F    B   G2    D   C2   VI   NA  C0..C2
+4      2  2021-01-21  TSHIBASU KAPUNGI DONATIEN   D9921   54   50-59    M    B   G2    G   C3   VI   VI  C3..C6
+5      2  2021-01-21  TSHIBASU KAPUNGI DONATIEN   D9921   54   50-59    M    B   G2    D   C3   VI   VI  C3..C6
+6      3  2021-01-21      LUKOMBO KIANIAZA ATHY   D9908   51   50-59    F    B   G2    G   C4   VI   VI  C3..C6
+..   ...         ...                        ...     ...  ...     ...  ...  ...  ...  ...  ...  ...  ...     ...
+766  520  2022-02-24         KASEYA GIBISI JEAN  D10129   75   70-79    M    B   G2    G   C3   VI   VI  C3..C6
+767  520  2022-02-24         KASEYA GIBISI JEAN  D10129   75   70-79    M    B   G2    D   C3   VI   VI  C3..C6
+768  523  2022-12-16     EFONDA LIYOKE PATIENCE  D10120   48   40-49    F    U   G2    G   C6   VI   VI  C3..C6
+769  526  2021-02-15         NGOMA BALO CHARLES  D10103   68   60-69    M    U   G2    D   C3   VI   VI  C3..C6
+770  527  2022-02-18   DILUABANZA MAVEMA ARIANA  D10077   67   60-69    F    U   G2    D   C3   VI   VI  C3..C6
+
+[619 rows x 14 columns]
+:Index([  0,   2,   4,   5,   6,   7,   8,   9,  10,  11,
+       ...
+       759, 761, 762, 764, 765, 766, 767, 768, 769, 770],
+      dtype='int64', length=619)
+:Index(['#', 'date', 'name', 'doss', 'age', 'age_bin', 'sexe', 'unbi', 'mbas',
+       'mbre', 'ceap', 'c0c6', 'c3c6', 'seve'],
+      dtype='object')
+
+Data : 'indx' 'colu' ['age'] 'mbre'='None'
+Shapiro-Wilk test for Normality age: Stat:0.982 Pval:5.358e-07
+Shapiro-Wilk test for Normality : Reject the null hypothesis:
+The data does not appear to be normally distributed
+
+Data : 'indx' 'colu' ['age'] 'mbre'='None'
+Desc age:
+
+       Mu   Sigma      Q1      Q3 Below_Q1 Above_Q3 Within_IQR Patients_Below_Q1 Patients_Within_IQR Patients_Above_Q3 5th_perc 10th_perc 90th_perc 95th_perc  Median     Mad    Mean     Std    Mode    Skewness    Kurtosis Shapiro-Wilk Stat Shapiro-Wilk Pval
+0  57.010  15.127  47.500  69.000  155.000  145.000    319.000            25.040              51.535            23.425   30.000    35.000    76.000    78.000  58.000  11.000  57.010  15.127  52.000  -3.724e-01  -4.033e-01             0.982         5.358e-07
+
+
+>>> >>> >>>
+AGCO = f(mbre=G) : 2025-01-26 11:18:17
+>>> >>> >>>
+
+Step 1 : df11.size:876 df11.type:<class 'pandas.core.frame.DataFrame'>
+      #        date                       name   doss  age age_bin sexe unbi mbas mbre ceap c0c6 c3c6    seve
+0     1  2021-01-27         YENGE MARCELA JOAO  D9972   54   50-59    F    B   G2    G   C2   VI   NA  C0..C2
+1     1  2021-01-27         YENGE MARCELA JOAO  D9972   54   50-59    F    B   G2    G   C6   VI   VI  C3..C6
+2     1  2021-01-27         YENGE MARCELA JOAO  D9972   54   50-59    F    B   G2    D   C2   VI   NA  C0..C2
+3     1  2021-01-27         YENGE MARCELA JOAO  D9972   54   50-59    F    B   G2    D   C6   VI   VI  C3..C6
+4     2  2021-01-21  TSHIBASU KAPUNGI DONATIEN  D9921   54   50-59    M    B   G2    G   C3   VI   VI  C3..C6
+..   ..         ...                        ...    ...  ...     ...  ...  ...  ...  ...  ...  ...  ...     ...
+871  44  2020-10-06       MIYALU MAMUD JEANINE  D8930   45   40-49    F    U   NA    D   NA   NA   NA      NA
+872  37  2020-10-07      KIEMBI LUSIKILA FANNY  D8956   50   50-59    F    U   NA    G   NA   NA   NA      NA
+873  33  2021-11-29       DIGATA MAFUTA CLAUDE  D9113   55   50-59    M    U   NA    D   NA   NA   NA      NA
+874  12  2020-12-09      BOLUA LIWONGU CAMILLE  D9574   60   60-69    M    U   NA    G   NA   NA   NA      NA
+875  11  2020-12-14   NGALULA MUTEBA ADOLPHINE  D9609   76   70-79    F    U   NA    D   NA   NA   NA      NA
+
+[876 rows x 14 columns]
+:RangeIndex(start=0, stop=876, step=1)
+:Index(['#', 'date', 'name', 'doss', 'age', 'age_bin', 'sexe', 'unbi', 'mbas',
+       'mbre', 'ceap', 'c0c6', 'c3c6', 'seve'],
+      dtype='object')
+
+Step 1 : df12.size:771 df12.type:<class 'pandas.core.frame.DataFrame'>
+       #        date                       name    doss  age age_bin sexe unbi mbas mbre ceap c0c6 c3c6    seve
+0      1  2021-01-27         YENGE MARCELA JOAO   D9972   54   50-59    F    B   G2    G   C2   VI   NA  C0..C2
+1      1  2021-01-27         YENGE MARCELA JOAO   D9972   54   50-59    F    B   G2    G   C6   VI   VI  C3..C6
+2      1  2021-01-27         YENGE MARCELA JOAO   D9972   54   50-59    F    B   G2    D   C2   VI   NA  C0..C2
+3      1  2021-01-27         YENGE MARCELA JOAO   D9972   54   50-59    F    B   G2    D   C6   VI   VI  C3..C6
+4      2  2021-01-21  TSHIBASU KAPUNGI DONATIEN   D9921   54   50-59    M    B   G2    G   C3   VI   VI  C3..C6
+..   ...         ...                        ...     ...  ...     ...  ...  ...  ...  ...  ...  ...  ...     ...
+766  520  2022-02-24         KASEYA GIBISI JEAN  D10129   75   70-79    M    B   G2    G   C3   VI   VI  C3..C6
+767  520  2022-02-24         KASEYA GIBISI JEAN  D10129   75   70-79    M    B   G2    D   C3   VI   VI  C3..C6
+768  523  2022-12-16     EFONDA LIYOKE PATIENCE  D10120   48   40-49    F    U   G2    G   C6   VI   VI  C3..C6
+769  526  2021-02-15         NGOMA BALO CHARLES  D10103   68   60-69    M    U   G2    D   C3   VI   VI  C3..C6
+770  527  2022-02-18   DILUABANZA MAVEMA ARIANA  D10077   67   60-69    F    U   G2    D   C3   VI   VI  C3..C6
+
+[771 rows x 14 columns]
+:Index([  0,   1,   2,   3,   4,   5,   6,   7,   8,   9,
+       ...
+       761, 762, 763, 764, 765, 766, 767, 768, 769, 770],
+      dtype='int64', length=771)
+:Index(['#', 'date', 'name', 'doss', 'age', 'age_bin', 'sexe', 'unbi', 'mbas',
+       'mbre', 'ceap', 'c0c6', 'c3c6', 'seve'],
+      dtype='object')
+
+Step 1 : df2.size:323 df2.type:<class 'pandas.core.frame.DataFrame'>
+       #        date                       name    doss  age age_bin sexe unbi mbas mbre ceap c0c6 c3c6    seve
+0      1  2021-01-27         YENGE MARCELA JOAO   D9972   54   50-59    F    B   G2    G   C2   VI   NA  C0..C2
+4      2  2021-01-21  TSHIBASU KAPUNGI DONATIEN   D9921   54   50-59    M    B   G2    G   C3   VI   VI  C3..C6
+6      3  2021-01-21      LUKOMBO KIANIAZA ATHY   D9908   51   50-59    F    B   G2    G   C4   VI   VI  C3..C6
+8      4  2021-01-18       LIFENYA LOFITI CATHY   D9894   55   50-59    F    B   G2    G   C5   VI   VI  C3..C6
+10     5  2021-01-12  FULAKIO DIAMFUMU JOACHIME   D9825   70   70-79    M    B   G2    G   C4   VI   VI  C3..C6
+..   ...         ...                        ...     ...  ...     ...  ...  ...  ...  ...  ...  ...  ...     ...
+758  515  2021-09-17       KEGBA MINGI CLEMENCE  D10261   76   70-79    F    B   G2    G   C3   VI   VI  C3..C6
+761  516  2021-04-02      BAJAY TCHUMAH RAPHAEL  D10213   67   60-69    M    B   G2    G   C3   VI   VI  C3..C6
+765  518  2021-10-19   MUKALABAMA MUNGO ROMANIE  D10188   48   40-49    F    U   G2    G   C4   VI   VI  C3..C6
+766  520  2022-02-24         KASEYA GIBISI JEAN  D10129   75   70-79    M    B   G2    G   C3   VI   VI  C3..C6
+768  523  2022-12-16     EFONDA LIYOKE PATIENCE  D10120   48   40-49    F    U   G2    G   C6   VI   VI  C3..C6
+
+[323 rows x 14 columns]
+:Index([  0,   4,   6,   8,  10,  12,  14,  16,  18,  20,
+       ...
+       748, 750, 751, 753, 756, 758, 761, 765, 766, 768],
+      dtype='int64', length=323)
+:Index(['#', 'date', 'name', 'doss', 'age', 'age_bin', 'sexe', 'unbi', 'mbas',
+       'mbre', 'ceap', 'c0c6', 'c3c6', 'seve'],
+      dtype='object')
+
+Data : 'indx' 'colu' ['age'] 'mbre'='G'
+Shapiro-Wilk test for Normality age: Stat:0.984 Pval:9.503e-04
+Shapiro-Wilk test for Normality : Reject the null hypothesis:
+The data does not appear to be normally distributed
+
+Data : 'indx' 'colu' ['age'] 'mbre'='G'
+Desc age:
+
+       Mu   Sigma      Q1      Q3 Below_Q1 Above_Q3 Within_IQR Patients_Below_Q1 Patients_Within_IQR Patients_Above_Q3 5th_perc 10th_perc 90th_perc 95th_perc  Median     Mad    Mean     Std    Mode    Skewness    Kurtosis Shapiro-Wilk Stat Shapiro-Wilk Pval
+0  56.820  15.246  47.000  69.000   79.000   75.000    169.000            24.458              52.322            23.220   30.100    35.000    76.000    78.000  58.000  11.000  56.820  15.246  52.000  -3.413e-01  -4.147e-01             0.984         9.503e-04
+
+
+>>> >>> >>>
+AGCO = f(mbre=D) : 2025-01-26 11:18:17
+>>> >>> >>>
+
+Step 1 : df11.size:876 df11.type:<class 'pandas.core.frame.DataFrame'>
+      #        date                       name   doss  age age_bin sexe unbi mbas mbre ceap c0c6 c3c6    seve
+0     1  2021-01-27         YENGE MARCELA JOAO  D9972   54   50-59    F    B   G2    G   C2   VI   NA  C0..C2
+1     1  2021-01-27         YENGE MARCELA JOAO  D9972   54   50-59    F    B   G2    G   C6   VI   VI  C3..C6
+2     1  2021-01-27         YENGE MARCELA JOAO  D9972   54   50-59    F    B   G2    D   C2   VI   NA  C0..C2
+3     1  2021-01-27         YENGE MARCELA JOAO  D9972   54   50-59    F    B   G2    D   C6   VI   VI  C3..C6
+4     2  2021-01-21  TSHIBASU KAPUNGI DONATIEN  D9921   54   50-59    M    B   G2    G   C3   VI   VI  C3..C6
+..   ..         ...                        ...    ...  ...     ...  ...  ...  ...  ...  ...  ...  ...     ...
+871  44  2020-10-06       MIYALU MAMUD JEANINE  D8930   45   40-49    F    U   NA    D   NA   NA   NA      NA
+872  37  2020-10-07      KIEMBI LUSIKILA FANNY  D8956   50   50-59    F    U   NA    G   NA   NA   NA      NA
+873  33  2021-11-29       DIGATA MAFUTA CLAUDE  D9113   55   50-59    M    U   NA    D   NA   NA   NA      NA
+874  12  2020-12-09      BOLUA LIWONGU CAMILLE  D9574   60   60-69    M    U   NA    G   NA   NA   NA      NA
+875  11  2020-12-14   NGALULA MUTEBA ADOLPHINE  D9609   76   70-79    F    U   NA    D   NA   NA   NA      NA
+
+[876 rows x 14 columns]
+:RangeIndex(start=0, stop=876, step=1)
+:Index(['#', 'date', 'name', 'doss', 'age', 'age_bin', 'sexe', 'unbi', 'mbas',
+       'mbre', 'ceap', 'c0c6', 'c3c6', 'seve'],
+      dtype='object')
+
+Step 1 : df12.size:771 df12.type:<class 'pandas.core.frame.DataFrame'>
+       #        date                       name    doss  age age_bin sexe unbi mbas mbre ceap c0c6 c3c6    seve
+0      1  2021-01-27         YENGE MARCELA JOAO   D9972   54   50-59    F    B   G2    G   C2   VI   NA  C0..C2
+1      1  2021-01-27         YENGE MARCELA JOAO   D9972   54   50-59    F    B   G2    G   C6   VI   VI  C3..C6
+2      1  2021-01-27         YENGE MARCELA JOAO   D9972   54   50-59    F    B   G2    D   C2   VI   NA  C0..C2
+3      1  2021-01-27         YENGE MARCELA JOAO   D9972   54   50-59    F    B   G2    D   C6   VI   VI  C3..C6
+4      2  2021-01-21  TSHIBASU KAPUNGI DONATIEN   D9921   54   50-59    M    B   G2    G   C3   VI   VI  C3..C6
+..   ...         ...                        ...     ...  ...     ...  ...  ...  ...  ...  ...  ...  ...     ...
+766  520  2022-02-24         KASEYA GIBISI JEAN  D10129   75   70-79    M    B   G2    G   C3   VI   VI  C3..C6
+767  520  2022-02-24         KASEYA GIBISI JEAN  D10129   75   70-79    M    B   G2    D   C3   VI   VI  C3..C6
+768  523  2022-12-16     EFONDA LIYOKE PATIENCE  D10120   48   40-49    F    U   G2    G   C6   VI   VI  C3..C6
+769  526  2021-02-15         NGOMA BALO CHARLES  D10103   68   60-69    M    U   G2    D   C3   VI   VI  C3..C6
+770  527  2022-02-18   DILUABANZA MAVEMA ARIANA  D10077   67   60-69    F    U   G2    D   C3   VI   VI  C3..C6
+
+[771 rows x 14 columns]
+:Index([  0,   1,   2,   3,   4,   5,   6,   7,   8,   9,
+       ...
+       761, 762, 763, 764, 765, 766, 767, 768, 769, 770],
+      dtype='int64', length=771)
+:Index(['#', 'date', 'name', 'doss', 'age', 'age_bin', 'sexe', 'unbi', 'mbas',
+       'mbre', 'ceap', 'c0c6', 'c3c6', 'seve'],
+      dtype='object')
+
+Step 1 : df2.size:296 df2.type:<class 'pandas.core.frame.DataFrame'>
+       #        date                       name    doss  age age_bin sexe unbi mbas mbre ceap c0c6 c3c6    seve
+2      1  2021-01-27         YENGE MARCELA JOAO   D9972   54   50-59    F    B   G2    D   C2   VI   NA  C0..C2
+5      2  2021-01-21  TSHIBASU KAPUNGI DONATIEN   D9921   54   50-59    M    B   G2    D   C3   VI   VI  C3..C6
+7      3  2021-01-21      LUKOMBO KIANIAZA ATHY   D9908   51   50-59    F    B   G2    D   C3   VI   VI  C3..C6
+9      4  2021-01-18       LIFENYA LOFITI CATHY   D9894   55   50-59    F    B   G2    D   C5   VI   VI  C3..C6
+11     5  2021-01-12  FULAKIO DIAMFUMU JOACHIME   D9825   70   70-79    M    B   G2    D   C5   VI   VI  C3..C6
+..   ...         ...                        ...     ...  ...     ...  ...  ...  ...  ...  ...  ...  ...     ...
+762  516  2021-04-02      BAJAY TCHUMAH RAPHAEL  D10213   67   60-69    M    B   G1    D   C0   VI   NA  C0..C2
+764  517  2021-02-27      MBUYI MUAMBA PATRICIA  D10211   26   20-29    F    U   G2    D   C6   VI   VI  C3..C6
+767  520  2022-02-24         KASEYA GIBISI JEAN  D10129   75   70-79    M    B   G2    D   C3   VI   VI  C3..C6
+769  526  2021-02-15         NGOMA BALO CHARLES  D10103   68   60-69    M    U   G2    D   C3   VI   VI  C3..C6
+770  527  2022-02-18   DILUABANZA MAVEMA ARIANA  D10077   67   60-69    F    U   G2    D   C3   VI   VI  C3..C6
+
+[296 rows x 14 columns]
+:Index([  2,   5,   7,   9,  11,  13,  15,  17,  19,  21,
+       ...
+       749, 752, 754, 757, 759, 762, 764, 767, 769, 770],
+      dtype='int64', length=296)
+:Index(['#', 'date', 'name', 'doss', 'age', 'age_bin', 'sexe', 'unbi', 'mbas',
+       'mbre', 'ceap', 'c0c6', 'c3c6', 'seve'],
+      dtype='object')
+
+Data : 'indx' 'colu' ['age'] 'mbre'='D'
+Shapiro-Wilk test for Normality age: Stat:0.979 Pval:2.858e-04
+Shapiro-Wilk test for Normality : Reject the null hypothesis:
+The data does not appear to be normally distributed
+
+Data : 'indx' 'colu' ['age'] 'mbre'='D'
+Desc age:
+
+       Mu   Sigma      Q1      Q3 Below_Q1 Above_Q3 Within_IQR Patients_Below_Q1 Patients_Within_IQR Patients_Above_Q3 5th_perc 10th_perc 90th_perc 95th_perc  Median     Mad    Mean     Std    Mode    Skewness    Kurtosis Shapiro-Wilk Stat Shapiro-Wilk Pval
+0  57.216  14.992  48.000  69.000   72.000   70.000    154.000            24.324              52.027            23.649   30.000    35.000    76.000    78.000  58.000  11.000  57.216  14.992  52.000  -4.068e-01  -3.891e-01             0.979         2.858e-04
+
+RESU
+MBRE ages continus
+       Mu   Sigma      Q1      Q3 Below_Q1 Above_Q3 Within_IQR Patients_Below_Q1 Patients_Within_IQR Patients_Above_Q3 5th_perc 10th_perc 90th_perc 95th_perc  Median     Mad    Mean     Std    Mode    Skewness    Kurtosis Shapiro-Wilk Stat Shapiro-Wilk Pval
+T  57.010  15.127  47.500  69.000  155.000  145.000    319.000            25.040              51.535            23.425   30.000    35.000    76.000    78.000  58.000  11.000  57.010  15.127  52.000  -3.724e-01  -4.033e-01             0.982         5.358e-07
+M  56.820  15.246  47.000  69.000   79.000   75.000    169.000            24.458              52.322            23.220   30.100    35.000    76.000    78.000  58.000  11.000  56.820  15.246  52.000  -3.413e-01  -4.147e-01             0.984         9.503e-04
+F  57.216  14.992  48.000  69.000   72.000   70.000    154.000            24.324              52.027            23.649   30.000    35.000    76.000    78.000  58.000  11.000  57.216  14.992  52.000  -4.068e-01  -3.891e-01             0.979         2.858e-04

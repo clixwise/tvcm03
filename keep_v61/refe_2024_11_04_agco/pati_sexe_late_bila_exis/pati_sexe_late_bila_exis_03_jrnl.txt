@@ -1,0 +1,326 @@
+
+
+
+>>> >>> >>>
+pati_sexe_late_bila_exis_03_ = SEXE (sexe) : 2025-01-28 17:09:34
+>>> >>> >>>
+
+
+>>> >>> >>>
+2025-01-28 17:09:34 PATI_SEXE : Sexe: M:156 F:206 Ratio:1.3205128205128205
+>>> >>> >>>
+
+Data : 'sexe' 'freq' ; ['M', 'F'] ['coun']
+stats.chisquare : Stat:6.906 Pval:0.009
+
+Data : 'sexe' 'freq' ; ['M', 'F'] ['coun']
+stats.binomtest : Stat:0.431 Pval:0.010
+
+Data : 'sexe' 'freq' ; ['M', 'F'] ['coun']
+stats.fisher_exact : Stat:0.757 Pval:0.074 95%CI:0.565-1.015
+
+Data : 'sexe' 'freq' ; ['M', 'F'] ['coun']
+Wilson score interval : Proportion of unilateral CVI: 0.431 95% Confidence Interval: (0.381, 0.482)
+
+Data : 'sexe' 'freq' ; ['M', 'F'] ['coun']
+Wilson score interval : Proportion of bilateral CVI: 0.569 95% Confidence Interval: (0.518, 0.619)
+
+
+>>> >>> >>>
+pati_sexe_late_bila_exis_03_ = LATE (mbre) : 2025-01-28 17:09:34
+>>> >>> >>>
+
+
+>>> >>> >>>
+2025-01-28 17:09:34 PATI_LATE : Mbre[Sexe:M&F]: G:323 D:296 Ratio:0.9164086687306502
+>>> >>> >>>
+
+Data : Sexe:M&F 'late' 'freq' ; ['G', 'D'] ['coun']
+stats.chisquare : Stat:1.178 Pval:0.278
+
+Data : Sexe:M&F 'late' 'freq' ; ['G', 'D'] ['coun']
+stats.binomtest : Stat:0.522 Pval:0.296
+
+Data : Sexe:M&F 'late' 'freq' ; ['G', 'D'] ['coun']
+stats.fisher_exact : Stat:1.091 Pval:0.460 95%CI:0.873-1.364
+
+Data : Sexe:M&F 'late' 'freq' ; ['G', 'D'] ['coun']
+Wilson score interval : Proportion of unilateral CVI: 0.522 95% Confidence Interval: (0.482, 0.561)
+
+Data : Sexe:M&F 'late' 'freq' ; ['G', 'D'] ['coun']
+Wilson score interval : Proportion of bilateral CVI: 0.478 95% Confidence Interval: (0.439, 0.518)
+
+
+>>> >>> >>>
+2025-01-28 17:09:34 PATI_LATE : Mbre[Sexe:M]: G:138 D:122 Ratio:0.8840579710144928
+>>> >>> >>>
+
+Data : Sexe:M 'late' 'freq' ; ['G', 'D'] ['coun']
+stats.chisquare : Stat:0.985 Pval:0.321
+
+Data : Sexe:M 'late' 'freq' ; ['G', 'D'] ['coun']
+stats.binomtest : Stat:0.531 Pval:0.352
+
+Data : Sexe:M 'late' 'freq' ; ['G', 'D'] ['coun']
+stats.fisher_exact : Stat:1.131 Pval:0.539 95%CI:0.802-1.596
+
+Data : Sexe:M 'late' 'freq' ; ['G', 'D'] ['coun']
+Wilson score interval : Proportion of unilateral CVI: 0.531 95% Confidence Interval: (0.470, 0.591)
+
+Data : Sexe:M 'late' 'freq' ; ['G', 'D'] ['coun']
+Wilson score interval : Proportion of bilateral CVI: 0.469 95% Confidence Interval: (0.409, 0.530)
+
+
+>>> >>> >>>
+2025-01-28 17:09:34 PATI_LATE : Mbre[Sexe:F]: G:185 D:174 Ratio:0.9405405405405406
+>>> >>> >>>
+
+Data : Sexe:F 'late' 'freq' ; ['G', 'D'] ['coun']
+stats.chisquare : Stat:0.337 Pval:0.562
+
+Data : Sexe:F 'late' 'freq' ; ['G', 'D'] ['coun']
+stats.binomtest : Stat:0.515 Pval:0.598
+
+Data : Sexe:F 'late' 'freq' ; ['G', 'D'] ['coun']
+stats.fisher_exact : Stat:1.063 Pval:0.709 95%CI:0.793-1.425
+
+Data : Sexe:F 'late' 'freq' ; ['G', 'D'] ['coun']
+Wilson score interval : Proportion of unilateral CVI: 0.515 95% Confidence Interval: (0.464, 0.567)
+
+Data : Sexe:F 'late' 'freq' ; ['G', 'D'] ['coun']
+Wilson score interval : Proportion of bilateral CVI: 0.485 95% Confidence Interval: (0.433, 0.536)
+
+
+>>> >>> >>>
+2025-01-28 17:09:34 PATI_LATE : Mbre[Sexe:M<>F]
+>>> >>> >>>
+
+Data : Sexe:M<>F 'sexe' ['M', 'F'] ; 'mbre' ['G', 'D']
+chi2_contingency : Stat:0.089 Pval:0.766 Dof: 1 Exp:
+[[135.67043619 124.32956381]
+ [187.32956381 171.67043619]]
+
+
+>>> >>> >>>
+pati_sexe_late_bila_exis_03_ = BILA (unbi) : 2025-01-28 17:09:34
+>>> >>> >>>
+
+
+>>> >>> >>>
+2025-01-28 17:09:34 PATI_BILA : Unbi[Sexe:M&F]: U:105 B:257 Ratio:2.447619047619048
+>>> >>> >>>
+
+Data : Sexe:M&F 'bila' 'freq' ; ['U', 'B'] ['coun']
+stats.chisquare : Stat:63.823 Pval:1.361e-15
+
+Data : Sexe:M&F 'bila' 'freq' ; ['U', 'B'] ['coun']
+stats.binomtest : Stat:0.290 Pval:7.791e-16
+
+Data : Sexe:M&F 'bila' 'freq' ; ['U', 'B'] ['coun']
+stats.fisher_exact : Stat:0.409 Pval:1.023e-08 95%CI:0.301-0.555
+
+Data : Sexe:M&F 'bila' 'freq' ; ['U', 'B'] ['coun']
+Wilson score interval : Proportion of unilateral CVI: 0.290 95% Confidence Interval: (0.246, 0.339)
+
+Data : Sexe:M&F 'bila' 'freq' ; ['U', 'B'] ['coun']
+Wilson score interval : Proportion of bilateral CVI: 0.710 95% Confidence Interval: (0.661, 0.754)
+
+
+>>> >>> >>>
+2025-01-28 17:09:34 PATI_BILA : Unbi[Sexe:M]: U:52 B:104 Ratio:2.0
+>>> >>> >>>
+
+Data : Sexe:M 'bila' 'freq' ; ['U', 'B'] ['coun']
+stats.chisquare : Stat:17.333 Pval:3.136e-05
+
+Data : Sexe:M 'bila' 'freq' ; ['U', 'B'] ['coun']
+stats.binomtest : Stat:0.333 Pval:3.808e-05
+
+Data : Sexe:M 'bila' 'freq' ; ['U', 'B'] ['coun']
+stats.fisher_exact : Stat:0.500 Pval:0.004 95%CI:0.316-0.790
+
+Data : Sexe:M 'bila' 'freq' ; ['U', 'B'] ['coun']
+Wilson score interval : Proportion of unilateral CVI: 0.333 95% Confidence Interval: (0.264, 0.411)
+
+Data : Sexe:M 'bila' 'freq' ; ['U', 'B'] ['coun']
+Wilson score interval : Proportion of bilateral CVI: 0.667 95% Confidence Interval: (0.589, 0.736)
+
+
+>>> >>> >>>
+2025-01-28 17:09:34 PATI_BILA : Unbi[Sexe:F]: U:53 B:153 Ratio:2.8867924528301887
+>>> >>> >>>
+
+Data : Sexe:F 'bila' 'freq' ; ['U', 'B'] ['coun']
+stats.chisquare : Stat:48.544 Pval:3.230e-12
+
+Data : Sexe:F 'bila' 'freq' ; ['U', 'B'] ['coun']
+stats.binomtest : Stat:0.257 Pval:1.923e-12
+
+Data : Sexe:F 'bila' 'freq' ; ['U', 'B'] ['coun']
+stats.fisher_exact : Stat:0.346 Pval:5.504e-07 95%CI:0.229-0.525
+
+Data : Sexe:F 'bila' 'freq' ; ['U', 'B'] ['coun']
+Wilson score interval : Proportion of unilateral CVI: 0.257 95% Confidence Interval: (0.202, 0.321)
+
+Data : Sexe:F 'bila' 'freq' ; ['U', 'B'] ['coun']
+Wilson score interval : Proportion of bilateral CVI: 0.743 95% Confidence Interval: (0.679, 0.798)
+
+
+>>> >>> >>>
+2025-01-28 17:09:34 PATI_BILA : Unbi[Sexe:M<>F]
+>>> >>> >>>
+
+Data : Sexe:M<>F 'sexe' ['M', 'F']; 'bila' ['U', 'B']
+chi2_contingency : Stat:2.138 Pval:0.144 Dof: 1 Exp:
+[[ 45.24861878 110.75138122]
+ [ 59.75138122 146.24861878]]
+
+
+>>> >>> >>>
+pati_sexe_late_bila_exis_03_ = EXIS (exis) : 2025-01-28 17:09:34
+>>> >>> >>>
+
+
+>>> >>> >>>
+2025-01-28 17:09:34 PATI_EXIS : Exis[Sexe:M&F]: G:39 D:66 Ratio:1.6923076923076923
+>>> >>> >>>
+
+Data : Sexe:M&F 'exis' 'freq' ; ['G', 'D'] ['coun']
+stats.chisquare : Stat:6.943 Pval:0.008
+
+Data : Sexe:M&F 'exis' 'freq' ; ['G', 'D'] ['coun']
+stats.binomtest : Stat:0.371 Pval:0.011
+
+Data : Sexe:M&F 'exis' 'freq' ; ['G', 'D'] ['coun']
+stats.fisher_exact : Stat:0.591 Pval:0.070 95%CI:0.341-1.025
+
+Data : Sexe:M&F 'exis' 'freq' ; ['G', 'D'] ['coun']
+Wilson score interval : Proportion of unilateral CVI: 0.371 95% Confidence Interval: (0.285, 0.467)
+
+Data : Sexe:M&F 'exis' 'freq' ; ['G', 'D'] ['coun']
+Wilson score interval : Proportion of bilateral CVI: 0.629 95% Confidence Interval: (0.533, 0.715)
+
+
+>>> >>> >>>
+2025-01-28 17:09:34 PATI_EXIS : Exis[Sexe:M]: G:18 D:34 Ratio:1.8888888888888888
+>>> >>> >>>
+
+Data : Sexe:M 'exis' 'freq' ; ['G', 'D'] ['coun']
+stats.chisquare : Stat:4.923 Pval:0.027
+
+Data : Sexe:M 'exis' 'freq' ; ['G', 'D'] ['coun']
+stats.binomtest : Stat:0.346 Pval:0.036
+
+Data : Sexe:M 'exis' 'freq' ; ['G', 'D'] ['coun']
+stats.fisher_exact : Stat:0.529 Pval:0.164 95%CI:0.241-1.165
+
+Data : Sexe:M 'exis' 'freq' ; ['G', 'D'] ['coun']
+Wilson score interval : Proportion of unilateral CVI: 0.346 95% Confidence Interval: (0.232, 0.482)
+
+Data : Sexe:M 'exis' 'freq' ; ['G', 'D'] ['coun']
+Wilson score interval : Proportion of bilateral CVI: 0.654 95% Confidence Interval: (0.518, 0.768)
+
+
+>>> >>> >>>
+2025-01-28 17:09:34 PATI_EXIS : Exis[Sexe:F]: G:21 D:32 Ratio:1.5238095238095237
+>>> >>> >>>
+
+Data : Sexe:F 'exis' 'freq' ; ['G', 'D'] ['coun']
+stats.chisquare : Stat:2.283 Pval:0.131
+
+Data : Sexe:F 'exis' 'freq' ; ['G', 'D'] ['coun']
+stats.binomtest : Stat:0.396 Pval:0.169
+
+Data : Sexe:F 'exis' 'freq' ; ['G', 'D'] ['coun']
+stats.fisher_exact : Stat:0.656 Pval:0.329 95%CI:0.304-1.417
+
+Data : Sexe:F 'exis' 'freq' ; ['G', 'D'] ['coun']
+Wilson score interval : Proportion of unilateral CVI: 0.396 95% Confidence Interval: (0.276, 0.531)
+
+Data : Sexe:F 'exis' 'freq' ; ['G', 'D'] ['coun']
+Wilson score interval : Proportion of bilateral CVI: 0.604 95% Confidence Interval: (0.469, 0.724)
+
+
+>>> >>> >>>
+2025-01-28 17:09:34 PATI_EXIS : Exis[Sexe:M<>F]
+>>> >>> >>>
+
+Data : Sexe:M<>F 'sexe' ['M', 'F']; 'mbre' ['G', 'D']
+chi2_contingency : Stat:0.108 Pval:0.742 Dof: 1 Exp:
+[[19.31428571 32.68571429]
+ [19.68571429 33.31428571]]
+
+Data :
+stat indx                                             what              test    stat       pval  ci_lower  ci_upper
+0       1                                                                                                          
+1       2              'sexe' 'freq' ; ['M', 'F'] ['coun']         chisquare   6.906      0.009                    
+2       3              'sexe' 'freq' ; ['M', 'F'] ['coun']         binomtest   0.431      0.010                    
+3       4              'sexe' 'freq' ; ['M', 'F'] ['coun']      fisher_exact   0.757      0.074                    
+4       5              'sexe' 'freq' ; ['M', 'F'] ['coun']     wilson unilat                     0.380915  0.482414
+5       6              'sexe' 'freq' ; ['M', 'F'] ['coun']      wilson bilat                     0.380915  0.482414
+6       7                                                                                                          
+7       8                                              ---               ---     ---        ---       ---       ---
+8       9                                                                                                          
+9      10     Sexe:M&F 'late' 'freq' ; ['G', 'D'] ['coun']         chisquare   1.178      0.278                    
+10     11     Sexe:M&F 'late' 'freq' ; ['G', 'D'] ['coun']         binomtest   0.522      0.296                    
+11     12     Sexe:M&F 'late' 'freq' ; ['G', 'D'] ['coun']      fisher_exact   1.091      0.460                    
+12     13     Sexe:M&F 'late' 'freq' ; ['G', 'D'] ['coun']     wilson unilat                     0.482445  0.560905
+13     14     Sexe:M&F 'late' 'freq' ; ['G', 'D'] ['coun']      wilson bilat                     0.482445  0.560905
+14     15                                                                                                          
+15     16       Sexe:M 'late' 'freq' ; ['G', 'D'] ['coun']         chisquare   0.985      0.321                    
+16     17       Sexe:M 'late' 'freq' ; ['G', 'D'] ['coun']         binomtest   0.531      0.352                    
+17     18       Sexe:M 'late' 'freq' ; ['G', 'D'] ['coun']      fisher_exact   1.131      0.539                    
+18     19       Sexe:M 'late' 'freq' ; ['G', 'D'] ['coun']     wilson unilat                     0.470102   0.59054
+19     20       Sexe:M 'late' 'freq' ; ['G', 'D'] ['coun']      wilson bilat                     0.470102   0.59054
+20     21                                                                                                          
+21     22       Sexe:F 'late' 'freq' ; ['G', 'D'] ['coun']         chisquare   0.337      0.562                    
+22     23       Sexe:F 'late' 'freq' ; ['G', 'D'] ['coun']         binomtest   0.515      0.598                    
+23     24       Sexe:F 'late' 'freq' ; ['G', 'D'] ['coun']      fisher_exact   1.063      0.709                    
+24     25       Sexe:F 'late' 'freq' ; ['G', 'D'] ['coun']     wilson unilat                     0.463735  0.566581
+25     26       Sexe:F 'late' 'freq' ; ['G', 'D'] ['coun']      wilson bilat                     0.463735  0.566581
+26     27                                                                                                          
+27     28  Sexe:M<>F 'sexe' ['M', 'F'] ; 'mbre' ['G', 'D']  chi2_contingency   0.089      0.766                    
+28     29                                                                                                          
+29     30                                              ---               ---     ---        ---       ---       ---
+30     31                                                                                                          
+31     32     Sexe:M&F 'bila' 'freq' ; ['U', 'B'] ['coun']         chisquare  63.823  1.361e-15                    
+32     33     Sexe:M&F 'bila' 'freq' ; ['U', 'B'] ['coun']         binomtest   0.290  7.791e-16                    
+33     34     Sexe:M&F 'bila' 'freq' ; ['U', 'B'] ['coun']      fisher_exact   0.409  1.023e-08                    
+34     35     Sexe:M&F 'bila' 'freq' ; ['U', 'B'] ['coun']     wilson unilat                     0.245707  0.338812
+35     36     Sexe:M&F 'bila' 'freq' ; ['U', 'B'] ['coun']      wilson bilat                     0.245707  0.338812
+36     37                                                                                                          
+37     38       Sexe:M 'bila' 'freq' ; ['U', 'B'] ['coun']         chisquare  17.333  3.136e-05                    
+38     39       Sexe:M 'bila' 'freq' ; ['U', 'B'] ['coun']         binomtest   0.333  3.808e-05                    
+39     40       Sexe:M 'bila' 'freq' ; ['U', 'B'] ['coun']      fisher_exact   0.500      0.004                    
+40     41       Sexe:M 'bila' 'freq' ; ['U', 'B'] ['coun']     wilson unilat                     0.264149  0.410528
+41     42       Sexe:M 'bila' 'freq' ; ['U', 'B'] ['coun']      wilson bilat                     0.264149  0.410528
+42     43                                                                                                          
+43     44       Sexe:F 'bila' 'freq' ; ['U', 'B'] ['coun']         chisquare  48.544  3.230e-12                    
+44     45       Sexe:F 'bila' 'freq' ; ['U', 'B'] ['coun']         binomtest   0.257  1.923e-12                    
+45     46       Sexe:F 'bila' 'freq' ; ['U', 'B'] ['coun']      fisher_exact   0.346  5.504e-07                    
+46     47       Sexe:F 'bila' 'freq' ; ['U', 'B'] ['coun']     wilson unilat                     0.202413  0.321037
+47     48       Sexe:F 'bila' 'freq' ; ['U', 'B'] ['coun']      wilson bilat                     0.202413  0.321037
+48     49                                                                                                          
+49     50   Sexe:M<>F 'sexe' ['M', 'F']; 'bila' ['U', 'B']  chi2_contingency   2.138      0.144                    
+50     51                                                                                                          
+51     52                                              ---               ---     ---        ---       ---       ---
+52     53                                                                                                          
+53     54     Sexe:M&F 'exis' 'freq' ; ['G', 'D'] ['coun']         chisquare   6.943      0.008                    
+54     55     Sexe:M&F 'exis' 'freq' ; ['G', 'D'] ['coun']         binomtest   0.371      0.011                    
+55     56     Sexe:M&F 'exis' 'freq' ; ['G', 'D'] ['coun']      fisher_exact   0.591      0.070                    
+56     57     Sexe:M&F 'exis' 'freq' ; ['G', 'D'] ['coun']     wilson unilat                     0.285078  0.466855
+57     58     Sexe:M&F 'exis' 'freq' ; ['G', 'D'] ['coun']      wilson bilat                     0.285078  0.466855
+58     59                                                                                                          
+59     60       Sexe:M 'exis' 'freq' ; ['G', 'D'] ['coun']         chisquare   4.923      0.027                    
+60     61       Sexe:M 'exis' 'freq' ; ['G', 'D'] ['coun']         binomtest   0.346      0.036                    
+61     62       Sexe:M 'exis' 'freq' ; ['G', 'D'] ['coun']      fisher_exact   0.529      0.164                    
+62     63       Sexe:M 'exis' 'freq' ; ['G', 'D'] ['coun']     wilson unilat                      0.23151  0.481964
+63     64       Sexe:M 'exis' 'freq' ; ['G', 'D'] ['coun']      wilson bilat                      0.23151  0.481964
+64     65                                                                                                          
+65     66       Sexe:F 'exis' 'freq' ; ['G', 'D'] ['coun']         chisquare   2.283      0.131                    
+66     67       Sexe:F 'exis' 'freq' ; ['G', 'D'] ['coun']         binomtest   0.396      0.169                    
+67     68       Sexe:F 'exis' 'freq' ; ['G', 'D'] ['coun']      fisher_exact   0.656      0.329                    
+68     69       Sexe:F 'exis' 'freq' ; ['G', 'D'] ['coun']     wilson unilat                     0.275894  0.530585
+69     70       Sexe:F 'exis' 'freq' ; ['G', 'D'] ['coun']      wilson bilat                     0.275894  0.530585
+70     71                                                                                                          
+71     72   Sexe:M<>F 'sexe' ['M', 'F']; 'mbre' ['G', 'D']  chi2_contingency   0.108      0.742                    

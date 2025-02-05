@@ -1,0 +1,1014 @@
+
+>>> >>> >>>
+2025-01-13 09:28:17
+>>> >>> >>>
+sexe : None : df1.size=876 df2.size=876
+
+Step 1 : df2.size:876 df2.type:<class 'pandas.core.frame.DataFrame'>
+      doss age_bin sexe mbre unbi ceap
+0    D9972   50-59    F    G    B   C2
+1    D9972   50-59    F    G    B   C6
+2    D9972   50-59    F    D    B   C2
+3    D9972   50-59    F    D    B   C6
+4    D9921   50-59    M    G    B   C3
+..     ...     ...  ...  ...  ...  ...
+871  D8930   40-49    F    D    U   NA
+872  D8956   50-59    F    G    U   NA
+873  D9113   50-59    M    D    U   NA
+874  D9574   60-69    M    G    U   NA
+875  D9609   70-79    F    D    U   NA
+
+[876 rows x 6 columns]
+:RangeIndex(start=0, stop=876, step=1)
+:Index(['doss', 'age_bin', 'sexe', 'mbre', 'unbi', 'ceap'], dtype='object')
+
+Step 1 : df2.size:876 df2.type:<class 'pandas.core.frame.DataFrame'>
+      doss age_bin sexe mbre unbi ceap
+0    D9972   50-59    F    G    B   C2
+1    D9972   50-59    F    G    B   C6
+2    D9972   50-59    F    D    B   C2
+3    D9972   50-59    F    D    B   C6
+4    D9921   50-59    M    G    B   C3
+..     ...     ...  ...  ...  ...  ...
+871  D8930   40-49    F    D    U   NA
+872  D8956   50-59    F    G    U   NA
+873  D9113   50-59    M    D    U   NA
+874  D9574   60-69    M    G    U   NA
+875  D9609   70-79    F    D    U   NA
+
+[876 rows x 6 columns]
+:RangeIndex(start=0, stop=876, step=1)
+:Index(['doss', 'age_bin', 'sexe', 'mbre', 'unbi', 'ceap'], dtype='object')
+sexe : None : df1.size=876 df2.size=876
+
+df1.size:876 df1.type:<class 'pandas.core.frame.DataFrame'>
+      doss age_bin sexe mbre unbi ceap
+0    D9972   50-59    F    G    B   C2
+1    D9972   50-59    F    G    B   C6
+2    D9972   50-59    F    D    B   C2
+3    D9972   50-59    F    D    B   C6
+4    D9921   50-59    M    G    B   C3
+..     ...     ...  ...  ...  ...  ...
+871  D8930   40-49    F    D    U   NA
+872  D8956   50-59    F    G    U   NA
+873  D9113   50-59    M    D    U   NA
+874  D9574   60-69    M    G    U   NA
+875  D9609   70-79    F    D    U   NA
+
+[876 rows x 6 columns]
+:RangeIndex(start=0, stop=876, step=1)
+:Index(['doss', 'age_bin', 'sexe', 'mbre', 'unbi', 'ceap'], dtype='object')
+
+Step 1 : df2.size:2 df2.type:<class 'pandas.core.frame.DataFrame'>
+   NA  C0  C1  C2   C3  C4  C5   C6
+G  39  24   5  41  126  52  29  113
+D  66  43   6  57  123  45  24   83
+:Index(['G', 'D'], dtype='object')
+:Index(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6'], dtype='object')
+
+Step 2 : df2.size:3 df2.type:<class 'pandas.core.frame.DataFrame'>
+       NA  C0  C1  C2   C3  C4  C5   C6  tota
+G      39  24   5  41  126  52  29  113   429
+D      66  43   6  57  123  45  24   83   447
+tota  105  67  11  98  249  97  53  196   876
+:Index(['G', 'D', 'tota'], dtype='object')
+:Index(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6', 'tota'], dtype='object')
+
+Step 3 : df2.size:2 df2.type:<class 'pandas.core.frame.DataFrame'>
+      NA  C0  C1  C2   C3  C4  C5   C6
+mbre                                  
+G     39  24   5  41  126  52  29  113
+D     66  43   6  57  123  45  24   83
+:Index(['G', 'D'], dtype='object', name='mbre')
+:Index(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6'], dtype='object')
+df2.size2 df2.type:<class 'pandas.core.frame.DataFrame'>
+ceap  NA  C0  C1  C2   C3  C4  C5   C6
+mbre                                  
+G     39  24   5  41  126  52  29  113
+D     66  43   6  57  123  45  24   83
+:Index(['G', 'D'], dtype='object', name='mbre')
+:Index(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6'], dtype='object', name='ceap')
+:876
+
+Step 0 : df2.size:876 df2.type:<class 'pandas.core.frame.DataFrame'>
+      #        date                       name   doss  age age_bin sexe unbi mbas mbre ceap c0c6 c3c6    seve  mbre_stra  ceap_ordi
+0     1  2021-01-27         YENGE MARCELA JOAO  D9972   54   50-59    F    B   G2    G   C2   VI   NA  C0..C2          0          3
+1     1  2021-01-27         YENGE MARCELA JOAO  D9972   54   50-59    F    B   G2    G   C6   VI   VI  C3..C6          0          7
+2     1  2021-01-27         YENGE MARCELA JOAO  D9972   54   50-59    F    B   G2    D   C2   VI   NA  C0..C2          1          3
+3     1  2021-01-27         YENGE MARCELA JOAO  D9972   54   50-59    F    B   G2    D   C6   VI   VI  C3..C6          1          7
+4     2  2021-01-21  TSHIBASU KAPUNGI DONATIEN  D9921   54   50-59    M    B   G2    G   C3   VI   VI  C3..C6          0          4
+..   ..         ...                        ...    ...  ...     ...  ...  ...  ...  ...  ...  ...  ...     ...        ...        ...
+871  44  2020-10-06       MIYALU MAMUD JEANINE  D8930   45   40-49    F    U   NA    D   NA   NA   NA      NA          1          0
+872  37  2020-10-07      KIEMBI LUSIKILA FANNY  D8956   50   50-59    F    U   NA    G   NA   NA   NA      NA          0          0
+873  33  2021-11-29       DIGATA MAFUTA CLAUDE  D9113   55   50-59    M    U   NA    D   NA   NA   NA      NA          1          0
+874  12  2020-12-09      BOLUA LIWONGU CAMILLE  D9574   60   60-69    M    U   NA    G   NA   NA   NA      NA          0          0
+875  11  2020-12-14   NGALULA MUTEBA ADOLPHINE  D9609   76   70-79    F    U   NA    D   NA   NA   NA      NA          1          0
+
+[876 rows x 16 columns]
+:RangeIndex(start=0, stop=876, step=1)
+:Index(['#', 'date', 'name', 'doss', 'age', 'age_bin', 'sexe', 'unbi', 'mbas',
+       'mbre', 'ceap', 'c0c6', 'c3c6', 'seve', 'mbre_stra', 'ceap_ordi'],
+      dtype='object')
+\Input file filtered : df.size:2 df.type:<class 'pandas.core.frame.DataFrame'>
+ceap  NA  C0  C1  C2   C3  C4  C5   C6
+mbre                                  
+G     39  24   5  41  126  52  29  113
+D     66  43   6  57  123  45  24   83
+:Index(['G', 'D'], dtype='object', name='mbre')
+:Index(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6'], dtype='object', name='ceap')
+
+Contingency table  : totals:        G    D    T
+mbre  429  447  876
+\Input file filtered : dfc.size:0 dfc.type:<class 'pandas.core.frame.DataFrame'>
+Empty DataFrame
+Columns: []
+Index: []
+:RangeIndex(start=0, stop=0, step=1)
+:RangeIndex(start=0, stop=0, step=1)
+\Input file filtered : dfc.size:8 dfc.type:<class 'pandas.core.frame.DataFrame'>
+        G    D      G_expe      D_expe
+ceap                                  
+NA     39   66   51.421233   53.578767
+C0     24   43   32.811644   34.188356
+C1      5    6    5.386986    5.613014
+C2     41   57   47.993151   50.006849
+C3    126  123  121.941781  127.058219
+C4     52   45   47.503425   49.496575
+C5     29   24   25.955479   27.044521
+C6    113   83   95.986301  100.013699
+:Index(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6'], dtype='object', name='ceap')
+:Index(['G', 'D', 'G_expe', 'D_expe'], dtype='object')
+\Input file filtered : dfc.size:4 dfc.type:<class 'pandas.core.frame.DataFrame'>
+ceap           NA         C0        C1         C2          C3         C4         C5          C6
+G       39.000000  24.000000  5.000000  41.000000  126.000000  52.000000  29.000000  113.000000
+D       66.000000  43.000000  6.000000  57.000000  123.000000  45.000000  24.000000   83.000000
+G_expe  51.421233  32.811644  5.386986  47.993151  121.941781  47.503425  25.955479   95.986301
+D_expe  53.578767  34.188356  5.613014  50.006849  127.058219  49.496575  27.044521  100.013699
+:Index(['G', 'D', 'G_expe', 'D_expe'], dtype='object')
+:Index(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6'], dtype='object', name='ceap')
+\Input file filtered : df_line.size:876 df_line.type:<class 'pandas.core.frame.DataFrame'>
+      #        date                       name   doss  age age_bin sexe unbi mbas mbre ceap c0c6 c3c6    seve  mbre_stra  ceap_ordi
+0     1  2021-01-27         YENGE MARCELA JOAO  D9972   54   50-59    F    B   G2    G   C2   VI   NA  C0..C2          0          3
+1     1  2021-01-27         YENGE MARCELA JOAO  D9972   54   50-59    F    B   G2    G   C6   VI   VI  C3..C6          0          7
+2     1  2021-01-27         YENGE MARCELA JOAO  D9972   54   50-59    F    B   G2    D   C2   VI   NA  C0..C2          1          3
+3     1  2021-01-27         YENGE MARCELA JOAO  D9972   54   50-59    F    B   G2    D   C6   VI   VI  C3..C6          1          7
+4     2  2021-01-21  TSHIBASU KAPUNGI DONATIEN  D9921   54   50-59    M    B   G2    G   C3   VI   VI  C3..C6          0          4
+..   ..         ...                        ...    ...  ...     ...  ...  ...  ...  ...  ...  ...  ...     ...        ...        ...
+871  44  2020-10-06       MIYALU MAMUD JEANINE  D8930   45   40-49    F    U   NA    D   NA   NA   NA      NA          1          0
+872  37  2020-10-07      KIEMBI LUSIKILA FANNY  D8956   50   50-59    F    U   NA    G   NA   NA   NA      NA          0          0
+873  33  2021-11-29       DIGATA MAFUTA CLAUDE  D9113   55   50-59    M    U   NA    D   NA   NA   NA      NA          1          0
+874  12  2020-12-09      BOLUA LIWONGU CAMILLE  D9574   60   60-69    M    U   NA    G   NA   NA   NA      NA          0          0
+875  11  2020-12-14   NGALULA MUTEBA ADOLPHINE  D9609   76   70-79    F    U   NA    D   NA   NA   NA      NA          1          0
+
+[876 rows x 16 columns]
+:RangeIndex(start=0, stop=876, step=1)
+:Index(['#', 'date', 'name', 'doss', 'age', 'age_bin', 'sexe', 'unbi', 'mbas',
+       'mbre', 'ceap', 'c0c6', 'c3c6', 'seve', 'mbre_stra', 'ceap_ordi'],
+      dtype='object')
+
+Contingency table  : df_tabl.size:2 df_tabl.type:<class 'pandas.core.frame.DataFrame'>
+ceap  NA  C0  C1  C2   C3  C4  C5   C6
+mbre                                  
+G     39  24   5  41  126  52  29  113
+D     66  43   6  57  123  45  24   83
+:Index(['G', 'D'], dtype='object', name='mbre')
+
+Contingency table  : totals:        G    D    T
+mbre  429  447  876
+
+Contingency table normalized : df_norm.size:8 df_norm.type:<class 'pandas.core.frame.DataFrame'>
+        G    D      G_expe      D_expe
+ceap                                  
+NA     39   66   51.421233   53.578767
+C0     24   43   32.811644   34.188356
+C1      5    6    5.386986    5.613014
+C2     41   57   47.993151   50.006849
+C3    126  123  121.941781  127.058219
+C4     52   45   47.503425   49.496575
+C5     29   24   25.955479   27.044521
+C6    113   83   95.986301  100.013699
+:Index(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6'], dtype='object', name='ceap')
+:Index(['G', 'D', 'G_expe', 'D_expe'], dtype='object')
+
+
+>>> >>> >>>
+2025-01-13 09:28:17 : stat_glob_perp_2024_12_15
+>>> >>> >>>
+
+Data : 'mbre' 'ceap' ; ['G', 'D'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+Chi2 2024_12_15 : Iterations per ceap
+Chi2 2024_12_15: Reject the null hypothesis:
+Ha : The proportions in G and D are not similar for column ceap
+Chi2 2024_12_15: Reject the null hypothesis:
+Ha : The proportions in G and D are not similar for column ceap
+Chi2 2024_12_15: Fail to reject the null hypothesis:
+H0 : The proportions in G and D are similar for column ceap
+Chi2 2024_12_15: Fail to reject the null hypothesis:
+H0 : The proportions in G and D are similar for column ceap
+Chi2 2024_12_15: Fail to reject the null hypothesis:
+H0 : The proportions in G and D are similar for column ceap
+Chi2 2024_12_15: Fail to reject the null hypothesis:
+H0 : The proportions in G and D are similar for column ceap
+Chi2 2024_12_15: Fail to reject the null hypothesis:
+H0 : The proportions in G and D are similar for column ceap
+Chi2 2024_12_15: Reject the null hypothesis:
+Ha : The proportions in G and D are not similar for column ceap
+
+Data : 'mbre' 'ceap' ; ['G', 'D'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+Chi2 2024_12_15 :
+H0 : The proportions in G and D are similar for column ceap
+Ha : The proportions in G and D are not similar for column ceap
+
+   ceap    G    D  G_thi  G_tha  G_sum  D_thi  D_tha  D_sum  _sum       stat   pval   H
+NA   NA   39   66     39    390    429     66    381    447   876      6.154  0.013  Ha
+C0   C0   24   43     24    405    429     43    404    447   876      4.468  0.035  Ha
+C1   C1    5    6      5    424    429      6    441    447   876  0.000e+00  1.000  H0
+C2   C2   41   57     41    388    429     57    390    447   876      1.938  0.164  H0
+C3   C3  126  123    126    303    429    123    324    447   876      0.284  0.594  H0
+C4   C4   52   45     52    377    429     45    402    447   876      0.741  0.389  H0
+C5   C5   29   24     29    400    429     24    423    447   876      0.520  0.471  H0
+C6   C6  113   83    113    316    429     83    364    447   876      7.173  0.007  Ha
+(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']) vs (['G', 'D'])
+
+Data : 'mbre' 'ceap' ; ['G', 'D'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+Fisher Exact odds ratio 2024_12_15 : Iterations per ceap
+Fisher Exact odds ratio 2024_12_15: Reject the null hypothesis:
+Ha : The proportions in G and D are not similar for column ceap
+Fisher Exact odds ratio 2024_12_15: Reject the null hypothesis:
+Ha : The proportions in G and D are not similar for column ceap
+Fisher Exact odds ratio 2024_12_15: Fail to reject the null hypothesis:
+H0 : The proportions in G and D are similar for column ceap
+Fisher Exact odds ratio 2024_12_15: Fail to reject the null hypothesis:
+H0 : The proportions in G and D are similar for column ceap
+Fisher Exact odds ratio 2024_12_15: Fail to reject the null hypothesis:
+H0 : The proportions in G and D are similar for column ceap
+Fisher Exact odds ratio 2024_12_15: Fail to reject the null hypothesis:
+H0 : The proportions in G and D are similar for column ceap
+Fisher Exact odds ratio 2024_12_15: Fail to reject the null hypothesis:
+H0 : The proportions in G and D are similar for column ceap
+Fisher Exact odds ratio 2024_12_15: Reject the null hypothesis:
+Ha : The proportions in G and D are not similar for column ceap
+
+Data : 'mbre' 'ceap' ; ['G', 'D'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+Fisher Exact odds ratio 2024_12_15 :
+H0 : The proportions in G and D are similar for column ceap
+Ha : The proportions in G and D are not similar for column ceap
+
+   ceap    G    D  G_thi  G_tha  G_sum  D_thi  D_tha  D_sum  _sum stat (odds_ratio)   pval  ci_lower  ci_upper   H
+NA   NA   39   66     39    390    429     66    381    447   876             0.577  0.012  0.379189  0.878833  Ha
+C0   C0   24   43     24    405    429     43    404    447   876             0.557  0.030  0.331647  0.934677  Ha
+C1   C1    5    6      5    424    429      6    441    447   876             0.867  1.000  0.262556  2.861283  H0
+C2   C2   41   57     41    388    429     57    390    447   876             0.723  0.163  0.472561  1.106181  H0
+C3   C3  126  123    126    303    429    123    324    447   876             1.095  0.550  0.816620  1.469317  H0
+C4   C4   52   45     52    377    429     45    402    447   876             1.232  0.335  0.807124  1.881096  H0
+C5   C5   29   24     29    400    429     24    423    447   876             1.278  0.399  0.731460  2.232254  H0
+C6   C6  113   83    113    316    429     83    364    447   876             1.568  0.006  1.137738  2.161659  Ha
+(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']) vs (['G', 'D'])
+
+Data : 'mbre' 'ceap' ; ['G', 'D'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+Proportion (1) [ceap/colu]: Iterations per ceap
+Proportion (1) [ceap/colu]: Reject the null hypothesis:
+Ha : The proportions in G and D are unequal for the given ceap (Two-tailed test)
+Proportion (1) [ceap/colu]: Reject the null hypothesis:
+Ha : The proportions in G and D are unequal for the given ceap (Two-tailed test)
+Proportion (1) [ceap/colu]: Fail to reject the null hypothesis:
+H0 : The proportions in G and D are equal for the given ceap (Two-tailed test)
+Proportion (1) [ceap/colu]: Reject the null hypothesis:
+Ha : The proportions in G and D are unequal for the given ceap (Two-tailed test)
+Proportion (1) [ceap/colu]: Fail to reject the null hypothesis:
+H0 : The proportions in G and D are equal for the given ceap (Two-tailed test)
+Proportion (1) [ceap/colu]: Fail to reject the null hypothesis:
+H0 : The proportions in G and D are equal for the given ceap (Two-tailed test)
+Proportion (1) [ceap/colu]: Fail to reject the null hypothesis:
+H0 : The proportions in G and D are equal for the given ceap (Two-tailed test)
+Proportion (1) [ceap/colu]: Reject the null hypothesis:
+Ha : The proportions in G and D are unequal for the given ceap (Two-tailed test)
+
+Data : 'mbre' 'ceap' ; ['G', 'D'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+Proportion (1) [ceap/colu]:
+H0 : The proportions in G and D are equal for the given ceap (Two-tailed test)
+Ha : The proportions in G and D are unequal for the given ceap (Two-tailed test)
+
+   ceap    G    D  totG  totD   proG   proD        stat       pval   H
+NA   NA   39   66   105   105  0.371  0.629  -3.726e+00  1.943e-04  Ha
+C0   C0   24   43    67    67  0.358  0.642  -3.283e+00      0.001  Ha
+C1   C1    5    6    11    11  0.455  0.545  -4.264e-01      0.670  H0
+C2   C2   41   57    98    98  0.418  0.582  -2.286e+00      0.022  Ha
+C3   C3  126  123   249   249  0.506  0.494       0.269      0.788  H0
+C4   C4   52   45    97    97  0.536  0.464       1.005      0.315  H0
+C5   C5   29   24    53    53  0.547  0.453       0.971      0.331  H0
+C6   C6  113   83   196   196  0.577  0.423       3.030      0.002  Ha
+(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']) vs (['G', 'D'])
+
+Data : 'mbre' 'ceap' ; ['G', 'D'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+Proportion (2) [ceap/line]: Iterations per ceap
+Proportion (2) [ceap/line]: Reject the null hypothesis:
+Ha : The proportions in G and D are unequal for the given ceap (Two-tailed test)
+Proportion (2) [ceap/line]: Reject the null hypothesis:
+Ha : The proportions in G and D are unequal for the given ceap (Two-tailed test)
+Proportion (2) [ceap/line]: Fail to reject the null hypothesis:
+H0 : The proportions in G and D are equal for the given ceap (Two-tailed test)
+Proportion (2) [ceap/line]: Fail to reject the null hypothesis:
+H0 : The proportions in G and D are equal for the given ceap (Two-tailed test)
+Proportion (2) [ceap/line]: Fail to reject the null hypothesis:
+H0 : The proportions in G and D are equal for the given ceap (Two-tailed test)
+Proportion (2) [ceap/line]: Fail to reject the null hypothesis:
+H0 : The proportions in G and D are equal for the given ceap (Two-tailed test)
+Proportion (2) [ceap/line]: Fail to reject the null hypothesis:
+H0 : The proportions in G and D are equal for the given ceap (Two-tailed test)
+Proportion (2) [ceap/line]: Reject the null hypothesis:
+Ha : The proportions in G and D are unequal for the given ceap (Two-tailed test)
+
+Data : 'mbre' 'ceap' ; ['G', 'D'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+Proportion (2) [ceap/colu]:
+H0 : The proportions in G and D are equal for the given ceap (Two-tailed test)
+Ha : The proportions in G and D are unequal for the given ceap (Two-tailed test)
+
+   ceap    G    D  totG  totD   proG   proD        stat   pval   H
+NA   NA   39   66   429   447  0.091  0.148  -2.585e+00  0.010  Ha
+C0   C0   24   43   429   447  0.056  0.096  -2.241e+00  0.025  Ha
+C1   C1    5    6   429   447  0.012  0.013  -2.349e-01  0.814  H0
+C2   C2   41   57   429   447  0.096  0.128  -1.499e+00  0.134  H0
+C3   C3  126  123   429   447  0.294  0.275       0.608  0.543  H0
+C4   C4   52   45   429   447  0.121  0.101       0.969  0.333  H0
+C5   C5   29   24   429   447  0.068  0.054       0.863  0.388  H0
+C6   C6  113   83   429   447  0.263  0.186       2.759  0.006  Ha
+(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']) vs (['G', 'D'])
+
+Data : 'mbre' 'ceap' ; ['G', 'D'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+Proportion (3) [weighted analysis]: Iterations per ceap
+Proportion (3) [weighted analysis]: Reject the null hypothesis:
+Ha : The proportions in G and D are unequal for the given ceap (Two-tailed test)
+Proportion (3) [weighted analysis]: Reject the null hypothesis:
+Ha : The proportions in G and D are unequal for the given ceap (Two-tailed test)
+Proportion (3) [weighted analysis]: Reject the null hypothesis:
+Ha : The proportions in G and D are unequal for the given ceap (Two-tailed test)
+Proportion (3) [weighted analysis]: Reject the null hypothesis:
+Ha : The proportions in G and D are unequal for the given ceap (Two-tailed test)
+Proportion (3) [weighted analysis]: Reject the null hypothesis:
+Ha : The proportions in G and D are unequal for the given ceap (Two-tailed test)
+Proportion (3) [weighted analysis]: Reject the null hypothesis:
+Ha : The proportions in G and D are unequal for the given ceap (Two-tailed test)
+Proportion (3) [weighted analysis]: Reject the null hypothesis:
+Ha : The proportions in G and D are unequal for the given ceap (Two-tailed test)
+Proportion (3) [weighted analysis]: Reject the null hypothesis:
+Ha : The proportions in G and D are unequal for the given ceap (Two-tailed test)
+
+Data : 'mbre' 'ceap' ; ['G', 'D'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+Proportion (3) [ceap/colu]:
+H0 : The proportions in G and D are equal for the given ceap (Two-tailed test)
+Ha : The proportions in G and D are unequal for the given ceap (Two-tailed test)
+
+   ceap    G    D  totG  totD   proG   proD  stat       pval   H
+NA   NA   39   66   429   447  0.091  0.148   inf  0.000e+00  Ha
+C0   C0   24   43   429   447  0.056  0.096   inf  0.000e+00  Ha
+C1   C1    5    6   429   447  0.012  0.013   inf  0.000e+00  Ha
+C2   C2   41   57   429   447  0.096  0.128   inf  0.000e+00  Ha
+C3   C3  126  123   429   447  0.294  0.275  -inf  0.000e+00  Ha
+C4   C4   52   45   429   447  0.121  0.101  -inf  0.000e+00  Ha
+C5   C5   29   24   429   447  0.068  0.054  -inf  0.000e+00  Ha
+C6   C6  113   83   429   447  0.263  0.186  -inf  0.000e+00  Ha
+(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']) vs (['G', 'D'])
+
+Data : 'mbre' 'ceap' ; ['G', 'D'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+Proportion (4) : Iterations per ceap and mbre
+Proportion (4): Reject the null hypothesis:
+Ha : The proportions in G and D are unequal for the given ceap (Two-tailed test)
+Proportion (4): Reject the null hypothesis:
+Ha : The proportions in G and D are unequal for the given ceap (Two-tailed test)
+Proportion (4): Reject the null hypothesis:
+Ha : The proportions in G and D are unequal for the given ceap (Two-tailed test)
+Proportion (4): Reject the null hypothesis:
+Ha : The proportions in G and D are unequal for the given ceap (Two-tailed test)
+Proportion (4): Fail to reject the null hypothesis:
+H0 : The proportions in G and D are equal for the given ceap (Two-tailed test)
+Proportion (4): Fail to reject the null hypothesis:
+H0 : The proportions in G and D are equal for the given ceap (Two-tailed test)
+Proportion (4): Fail to reject the null hypothesis:
+H0 : The proportions in G and D are equal for the given ceap (Two-tailed test)
+Proportion (4): Fail to reject the null hypothesis:
+H0 : The proportions in G and D are equal for the given ceap (Two-tailed test)
+Proportion (4): Fail to reject the null hypothesis:
+H0 : The proportions in G and D are equal for the given ceap (Two-tailed test)
+Proportion (4): Fail to reject the null hypothesis:
+H0 : The proportions in G and D are equal for the given ceap (Two-tailed test)
+Proportion (4): Fail to reject the null hypothesis:
+H0 : The proportions in G and D are equal for the given ceap (Two-tailed test)
+Proportion (4): Fail to reject the null hypothesis:
+H0 : The proportions in G and D are equal for the given ceap (Two-tailed test)
+Proportion (4): Fail to reject the null hypothesis:
+H0 : The proportions in G and D are equal for the given ceap (Two-tailed test)
+Proportion (4): Fail to reject the null hypothesis:
+H0 : The proportions in G and D are equal for the given ceap (Two-tailed test)
+Proportion (4): Reject the null hypothesis:
+Ha : The proportions in G and D are unequal for the given ceap (Two-tailed test)
+Proportion (4): Reject the null hypothesis:
+Ha : The proportions in G and D are unequal for the given ceap (Two-tailed test)
+
+Data : 'mbre' 'ceap' ; ['G', 'D'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+Proportion (4) :
+H0 : The proportions in G and D are equal for the given ceap (Two-tailed test)
+Ha : The proportions in G and D are unequal for the given ceap (Two-tailed test)
+
+     ceap mbre  coun  tota  obs_prop  exp_prop        stat   pval   H
+NA_G   NA    G    39   105  0.371429  0.489726  -2.509e+00  0.012  Ha
+NA_D   NA    D    66   105  0.628571  0.510274       2.509  0.012  Ha
+C0_G   C0    G    24    67  0.358209  0.489726  -2.245e+00  0.025  Ha
+C0_D   C0    D    43    67  0.641791  0.510274       2.245  0.025  Ha
+C1_G   C1    G     5    11  0.454545  0.489726  -2.343e-01  0.815  H0
+C1_D   C1    D     6    11  0.545455  0.510274       0.234  0.815  H0
+C2_G   C2    G    41    98  0.418367  0.489726  -1.432e+00  0.152  H0
+C2_D   C2    D    57    98  0.581633  0.510274       1.432  0.152  H0
+C3_G   C3    G   126   249  0.506024  0.489726       0.514  0.607  H0
+C3_D   C3    D   123   249  0.493976  0.510274  -5.144e-01  0.607  H0
+C4_G   C4    G    52    97  0.536082  0.489726       0.916  0.360  H0
+C4_D   C4    D    45    97  0.463918  0.510274  -9.155e-01  0.360  H0
+C5_G   C5    G    29    53  0.547170  0.489726       0.840  0.401  H0
+C5_D   C5    D    24    53  0.452830  0.510274  -8.401e-01  0.401  H0
+C6_G   C6    G   113   196  0.576531  0.489726       2.460  0.014  Ha
+C6_D   C6    D    83   196  0.423469  0.510274  -2.460e+00  0.014  Ha
+(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']) vs (['G', 'D'])
+
+Data : 'mbre' 'ceap' ; ['G', 'D'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+Binomial (1) : Iterations per ceap
+
+Data : 'mbre' 'ceap' ; ['G', 'D'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+Binomial (1) :
+H0 : Observed 'G' and 'D' counts for 'ceap' do not differ from the expected count
+Ha : Observed 'G' and 'D' counts for 'ceap' differ from the expected count
+
+   ceap    G    D  tota   stat   pval   H
+NA   NA   39   66   105  0.371  0.011  Ha
+C0   C0   24   43    67  0.358  0.027  Ha
+C1   C1    5    6    11  0.455  1.000  H0
+C2   C2   41   57    98  0.418  0.129  H0
+C3   C3  126  123   249  0.506  0.899  H0
+C4   C4   52   45    97  0.536  0.543  H0
+C5   C5   29   24    53  0.547  0.583  H0
+C6   C6  113   83   196  0.577  0.038  Ha
+(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']) vs (['G', 'D'])
+
+Data : 'mbre' 'ceap' ; ['G', 'D'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+Binomial (2) : Iterations per ceap and mbre
+
+Data : 'mbre' 'ceap' ; ['G', 'D'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+Binomial (2) :
+H0 : Observed 'G' or 'D' count for 'ceap' does not differ from the expected count
+Ha : Observed 'G' or 'D' count for 'ceap' differs from the expected count
+     ceap mbre  count  tota   stat   pval   H obse_prop expe_prop ci_lowr ci_uppr
+NA_G   NA    G     39   105  0.371  0.019  Ha     0.371     0.490   0.279   0.471
+NA_D   NA    D     66   105  0.629  0.019  Ha     0.629     0.510   0.529   0.721
+C0_G   C0    G     24    67  0.358  0.037  Ha     0.358     0.490   0.245   0.485
+C0_D   C0    D     43    67  0.642  0.037  Ha     0.642     0.510   0.515   0.755
+C1_G   C1    G      5    11  0.455  1.000  H0     0.455     0.490   0.167   0.766
+C1_D   C1    D      6    11  0.545  1.000  H0     0.545     0.510   0.234   0.833
+C2_G   C2    G     41    98  0.418  0.189  H0     0.418     0.490   0.319   0.522
+C2_D   C2    D     57    98  0.582  0.189  H0     0.582     0.510   0.478   0.681
+C3_G   C3    G    126   249  0.506  0.613  H0     0.506     0.490   0.442   0.570
+C3_D   C3    D    123   249  0.494  0.613  H0     0.494     0.510   0.430   0.558
+C4_G   C4    G     52    97  0.536  0.363  H0     0.536     0.490   0.432   0.638
+C4_D   C4    D     45    97  0.464  0.363  H0     0.464     0.510   0.362   0.568
+C5_G   C5    G     29    53  0.547  0.414  H0     0.547     0.490   0.404   0.684
+C5_D   C5    D     24    53  0.453  0.414  H0     0.453     0.510   0.316   0.596
+C6_G   C6    G    113   196  0.577  0.015  Ha     0.577     0.490   0.504   0.647
+C6_D   C6    D     83   196  0.423  0.015  Ha     0.423     0.510   0.353   0.496
+(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']) vs (['G', 'D'])
+
+
+>>> >>> >>>
+2025-01-13 09:28:18 : stat_glob_clau_2024_10_01
+>>> >>> >>>
+
+Data : 'mbre' 'ceap' ; ['G', 'D'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+Median Test : Stat:11.061 Pval:8.816e-04 Left median: 4.0 Median: 4.0 Righ median: 4.0 Contingency table:[[194, 152], [235, 295]]
+Median Test : Reject the null hypothesis:
+Ha : There is a difference in the central tendency (median) of 'ceap' values between 'G' and 'D'
+
+Data : 'mbre' 'ceap' ; ['G', 'D'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+Variance : Brown-Forsythe : Stat:1.089 Pval:0.297 Effect Size (Eta squared) : 0.001 (negligible)
+Variance : Brown-Forsythe : Fail to reject the null hypothesis:
+H0 : There is no difference in the dispersion (spread) of 'ceap' values between 'G' and 'D'
+
+Data : 'mbre' 'ceap' ; ['G', 'D'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+Variance : Fligner-Killeen : Stat:2.574 Pval:0.109 Effect Size (Cramer's V) : 0.054 (negligible)
+Fligner-Killeen : Fail to reject the null hypothesis:
+H0 : There is no difference in the dispersion (spread) of 'ceap' values between 'G' and 'D'
+
+Data : 'mbre' 'ceap' ; ['G', 'D'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+Variance : Ansari-Bradley : Stat:100075.000 Pval:0.007 Effect Size (Cliff's delta) : 0.166 (small)
+Ansari-Bradley : Reject the null hypothesis:
+Ha : There is a difference in the dispersion (spread) of 'ceap' values between 'G' and 'D'
+
+Data : 'mbre' 'ceap' ; ['G', 'D'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+Chi-Square : Stat:20.278 Pval:0.005 Dof:7
+Chi-Square : Reject the null hypothesis:
+Ha : there is a association between the categorical 'ceap' and the group 'mbre' variables
+(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']) vs (['G', 'D'])
+
+Data : 'mbre' 'ceap' ; ['G', 'D'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+Residuals
+Residuals : Observed:
+ceap  NA  C0  C1  C2   C3  C4  C5   C6
+mbre                                  
+G     39  24   5  41  126  52  29  113
+D     66  43   6  57  123  45  24   83
+:Index(['G', 'D'], dtype='object', name='mbre')
+:Index(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6'], dtype='object', name='ceap')
+Residuals : Expected:
+      NA     C0    C1     C2      C3    C4     C5      C6
+G  51.42  32.81  5.39  47.99  121.94  47.5  25.96   95.99
+D  53.58  34.19  5.61  50.01  127.06  49.5  27.04  100.01
+:Index(['G', 'D'], dtype='object', name='mbre')
+:Index(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6'], dtype='object', name='ceap')
+Residuals : Residuals standardized:
+     NA    C0    C1    C2    C3    C4    C5    C6
+G -1.73 -1.54 -0.17 -1.01  0.37  0.65  0.60  1.74
+D  1.70  1.51  0.16  0.99 -0.36 -0.64 -0.59 -1.70
+:Index(['G', 'D'], dtype='object', name='mbre')
+:Index(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6'], dtype='object', name='ceap')
+Residuals : Residuals adjusted:
+ceap    NA    C0    C1   C2    C3    C4    C5    C6
+mbre                                               
+G    -2.58 -2.24 -0.23 -1.5  0.61  0.97  0.86  2.76
+D     2.58  2.24  0.23  1.5 -0.61 -0.97 -0.86 -2.76
+:Index(['G', 'D'], dtype='object', name='mbre')
+:Index(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6'], dtype='object', name='ceap')
+Residuals : Freeman-Tukey Deviates:
+ceap     NA     C0    C1     C2     C3     C4     C5     C6
+mbre                                                       
+G      1.85   1.65  0.17   1.05  44.58  28.28  21.05  40.90
+D     30.95  24.89  9.84  29.31   0.36   0.65   0.60   1.78
+:Index(['G', 'D'], dtype='object', name='mbre')
+:Index(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6'], dtype='object', name='ceap')
+Residuals : Observed,Expected,Residuals std,Residuals adj,Deviates:
+       NA     C0    C1     C2      C3     C4     C5      C6
+GO  39.00  24.00  5.00  41.00  126.00  52.00  29.00  113.00
+DO  66.00  43.00  6.00  57.00  123.00  45.00  24.00   83.00
+GE  51.42  32.81  5.39  47.99  121.94  47.50  25.96   95.99
+DE  53.58  34.19  5.61  50.01  127.06  49.50  27.04  100.01
+GR  -1.73  -1.54 -0.17  -1.01    0.37   0.65   0.60    1.74
+DR   1.70   1.51  0.16   0.99   -0.36  -0.64  -0.59   -1.70
+GA  -2.58  -2.24 -0.23  -1.50    0.61   0.97   0.86    2.76
+DA   2.58   2.24  0.23   1.50   -0.61  -0.97  -0.86   -2.76
+GD   1.85   1.65  0.17   1.05   44.58  28.28  21.05   40.90
+DD  30.95  24.89  9.84  29.31    0.36   0.65   0.60    1.78
+Residuals standard: Symbol table threshold_05:1.960, threshold_01:2.576 
+     NA C0 C1 C2 C3 C4 C5 C6
+mbre                        
+G     .  .  .  .  .  .  .  .
+D     .  .  .  .  .  .  .  .
+Residuals standard: Symbol list
+Classes  Obs(abs)  Diagonal Obs(abs)  Off-Diagonal Obs(abs)  C6 Row Obs(abs)  C6 Column Obs(abs)  Obs(%)
+     ++         0                  0                      0                0                   0       0
+     --         0                  0                      0                0                   0       0
+      +         0                  0                      0                0                   0       0
+      -         0                  0                      0                0                   0       0
+      .       876                  0                    876                0                 196     100
+  Total       876                  0                    876                0                 196     100
+Residuals adjusted: Symbol table threshold_05:1.960, threshold_01:2.576 
+ceap  NA C0 C1 C2 C3 C4 C5  C6
+mbre                          
+G     --  -  .  .  .  .  .  ++
+D     ++  +  .  .  .  .  .  --
+Residuals adjusted: Symbol list
+Classes  Obs(abs)  Diagonal Obs(abs)  Off-Diagonal Obs(abs)  C6 Row Obs(abs)  C6 Column Obs(abs)  Obs(%)
+     ++       179                  0                    179                0                 113      20
+     --       122                  0                    122                0                  83      14
+      +        43                  0                     43                0                   0       5
+      -        24                  0                     24                0                   0       3
+      .       508                  0                    508                0                   0      58
+  Total       876                  0                    876                0                 196     100
+
+Data : 'mbre' 'ceap' ; ['G', 'D'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+Fisher Exact : Stat:- Pval:1.000
+Fisher Exact : Fail to reject the null hypothesis:
+H0 : there is no association between the categorical 'ceap' and the group 'mbre' variables
+(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']) vs (['G', 'D'])
+
+Data : 'mbre' 'ceap' ; ['G', 'D'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+(perp) Cramer V : Stat:0.152 Intp: asso(effect size):medium Pval:0.005 Dof:7
+(perp) Cramer V : Reject the null hypothesis:
+(perp) Ha : There is an association between the 'ceap' and the counts for 'mbre' groups
+(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']) vs (['G', 'D'])
+
+Data : 'mbre' 'ceap' ; ['G', 'D'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+(clau) Cramer V : Stat:0.152 Intp: asso(effect size):Weak association between the variables. Pval:0.005 Dof:7
+(clau) Cramer V : Reject the null hypothesis:
+(clau) Ha : There is an association between the 'mbre' and 'ceap' variables.
+(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']) vs (['G', 'D'])
+
+Data : 'mbre' 'ceap' ; ['G', 'D'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+(mist) Cramer V : Stat:0.123 Intp: asso(effect size):Weak association between the variables. Pval:0.005 Dof:7
+(mist) Cramer V : Reject the null hypothesis:
+(mist) Ha : There is an association between the 'ceap' categories for the 'mbre' categories.
+(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']) vs (['G', 'D'])
+
+Data : 'mbre' 'ceap' ; ['G', 'D'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+Goodman and Kruskal's Lambda [Tabl] predicting 'ceap' from 'mbre' : Stat:0.716 (Strong association) Pval:0.005 Dof:7
+
+Data : 'mbre' 'ceap' ; ['G', 'D'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+Goodman and Kruskal's Lambda [Tabl] predicting 'mbre' from 'ceap' : Stat:0.438 (Moderate association) Pval:0.005 Dof:7
+Goodman and Kruskal's Lambda [Tabl] : Reject the null hypothesis:
+Ha : there is a predictability between the categorical 'ceap' and the group 'mbre' variables
+(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']) vs (['G', 'D'])
+
+Step 0 : colu_list_ord1.size:429 df2.type:<class 'pandas.core.series.Series'>
+0      3
+1      7
+4      4
+6      5
+8      6
+      ..
+865    0
+868    0
+869    0
+872    0
+874    0
+Name: ceap_ordi, Length: 429, dtype: int64
+:Index([  0,   1,   4,   6,   8,  10,  12,  14,  16,  18,
+       ...
+       853, 856, 859, 860, 862, 865, 868, 869, 872, 874],
+      dtype='int64', length=429)
+
+Step 0 : colu_list_ord2.size:447 df2.type:<class 'pandas.core.series.Series'>
+2      3
+3      7
+5      4
+7      4
+9      6
+      ..
+867    0
+870    0
+871    0
+873    0
+875    0
+Name: ceap_ordi, Length: 447, dtype: int64
+:Index([  2,   3,   5,   7,   9,  11,  13,  15,  17,  19,
+       ...
+       858, 861, 863, 864, 866, 867, 870, 871, 873, 875],
+      dtype='int64', length=447)
+
+Data : 'mbre' 'ceap' ; ['G', 'D'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+(perp) Mann-Whitney U : Stat:111791.000 Pval:1.453e-05
+Effect size:0.144(small) ; Median for 'mbre' groups : G=4.000,D=4.000
+(perp) Mann-Whitney U : Reject the null hypothesis:
+Ha : There is a difference in 'ceap' distribution between 'mbre' groups
+(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']) vs (['G', 'D'])
+
+Step 0 : colu_list_ord1.size:429 df2.type:<class 'pandas.core.series.Series'>
+0      3
+1      7
+4      4
+6      5
+8      6
+      ..
+865    0
+868    0
+869    0
+872    0
+874    0
+Name: ceap_ordi, Length: 429, dtype: int64
+:Index([  0,   1,   4,   6,   8,  10,  12,  14,  16,  18,
+       ...
+       853, 856, 859, 860, 862, 865, 868, 869, 872, 874],
+      dtype='int64', length=429)
+
+Step 0 : colu_list_ord2.size:447 df2.type:<class 'pandas.core.series.Series'>
+2      3
+3      7
+5      4
+7      4
+9      6
+      ..
+867    0
+870    0
+871    0
+873    0
+875    0
+Name: ceap_ordi, Length: 447, dtype: int64
+:Index([  2,   3,   5,   7,   9,  11,  13,  15,  17,  19,
+       ...
+       858, 861, 863, 864, 866, 867, 870, 871, 873, 875],
+      dtype='int64', length=447)
+
+Data : 'mbre' 'ceap' ; ['G', 'D'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+(perp) Mann-Whitney U : Stat:111791.000 Pval:1.453e-05
+Effect size:0.144(small) ; Median for 'mbre' groups : G=4.000,D=4.000
+(perp) Mann-Whitney U : Reject the null hypothesis:
+Ha : H0: The 'ceap' distributions have different central tendency (median) across 'mbre'.
+(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']) vs (['G', 'D'])
+
+Data : 'mbre' 'ceap' ; ['G', 'D'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+(perp) Stuart-Maxwell : table must be square
+
+Data : 'mbre' 'ceap' ; ['G', 'D'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+(perp) Stuart-Maxwell : table must be square
+
+Data : 'mbre' 'ceap' ; ['G', 'D'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+Chi2 : Iterations per ceap
+Chi2: Reject the null hypothesis:
+Ha : The proportions in G and D are distant from a 50-50 split for the given ceap
+Chi2: Reject the null hypothesis:
+Ha : The proportions in G and D are distant from a 50-50 split for the given ceap
+Chi2: Fail to reject the null hypothesis:
+H0 : The proportions in G and D approach a 50-50 split for the given ceap
+Chi2: Fail to reject the null hypothesis:
+H0 : The proportions in G and D approach a 50-50 split for the given ceap
+Chi2: Fail to reject the null hypothesis:
+H0 : The proportions in G and D approach a 50-50 split for the given ceap
+Chi2: Fail to reject the null hypothesis:
+H0 : The proportions in G and D approach a 50-50 split for the given ceap
+Chi2: Fail to reject the null hypothesis:
+H0 : The proportions in G and D approach a 50-50 split for the given ceap
+Chi2: Reject the null hypothesis:
+Ha : The proportions in G and D are distant from a 50-50 split for the given ceap
+
+Data : 'mbre' 'ceap' ; ['G', 'D'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+Chi2 :
+H0 : The proportions in G and D approach a 50-50 split for the given ceap
+Ha : The proportions in G and D are distant from a 50-50 split for the given ceap
+
+   ceap    G    D  totG  totD   tot50%   stat   pval   H
+NA   NA   39   66    39    66   52.500  6.943  0.008  Ha
+C0   C0   24   43    24    43   33.500  5.388  0.020  Ha
+C1   C1    5    6     5     6    5.500  0.091  0.763  H0
+C2   C2   41   57    41    57   49.000  2.612  0.106  H0
+C3   C3  126  123   126   123  124.500  0.036  0.849  H0
+C4   C4   52   45    52    45   48.500  0.505  0.477  H0
+C5   C5   29   24    29    24   26.500  0.472  0.492  H0
+C6   C6  113   83   113    83   98.000  4.592  0.032  Ha
+(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']) vs (['G', 'D'])
+
+Data : 'mbre' 'ceap' ; ['G', 'D'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+Fisher Exact odds ratio : Iterations per ceap
+Fisher Exact odds ratio : Reject the null hypothesis:
+Ha : There is an association between the 'ceap' and the counts for 'mbre' groups
+This suggests that the odds ratio is significantly different from 1.
+Fisher Exact odds ratio : Reject the null hypothesis:
+Ha : There is an association between the 'ceap' and the counts for 'mbre' groups
+This suggests that the odds ratio is significantly different from 1.
+Fisher Exact odds ratio : Fail to reject the null hypothesis:
+H0 : There is no association between the 'ceap' and the counts for 'mbre' groups
+This suggests that the odds ratio is not significantly different from 1.
+Fisher Exact odds ratio : Fail to reject the null hypothesis:
+H0 : There is no association between the 'ceap' and the counts for 'mbre' groups
+This suggests that the odds ratio is not significantly different from 1.
+Fisher Exact odds ratio : Fail to reject the null hypothesis:
+H0 : There is no association between the 'ceap' and the counts for 'mbre' groups
+This suggests that the odds ratio is not significantly different from 1.
+Fisher Exact odds ratio : Fail to reject the null hypothesis:
+H0 : There is no association between the 'ceap' and the counts for 'mbre' groups
+This suggests that the odds ratio is not significantly different from 1.
+Fisher Exact odds ratio : Fail to reject the null hypothesis:
+H0 : There is no association between the 'ceap' and the counts for 'mbre' groups
+This suggests that the odds ratio is not significantly different from 1.
+Fisher Exact odds ratio : Reject the null hypothesis:
+Ha : There is an association between the 'ceap' and the counts for 'mbre' groups
+This suggests that the odds ratio is significantly different from 1.
+
+Data : 'mbre' 'ceap' ; ['G', 'D'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+Fisher Exact odds ratio :
+H0 : There is no association between the 'ceap' and the counts for 'mbre' groups
+This suggests that the odds ratio is not significantly different from 1.
+Ha : There is an association between the 'ceap' and the counts for 'mbre' groups
+This suggests that the odds ratio is significantly different from 1.
+
+    odds_ratio      pval  ci_lower  ci_upper   H
+NA    0.577273  0.012245  0.379189  0.878833  Ha
+C0    0.556761  0.030173  0.331647  0.934677  Ha
+C1    0.866745  1.000000  0.262556  2.861283  H0
+C2    0.723006  0.163130  0.472561  1.106181  H0
+C3    1.095388  0.549827  0.816620  1.469317  H0
+C4    1.232184  0.335220  0.807124  1.881096  H0
+C5    1.277813  0.399055  0.731460  2.232254  H0
+C6    1.568248  0.005906  1.137738  2.161659  Ha
+(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']) vs (['G', 'D'])
+
+Data : 'mbre' 'ceap' ; ['G', 'D'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+Proportional (1) : Iterations per ceap
+Proportion (1): Reject the null hypothesis:
+Ha : The proportions in G and D are unequal for the given ceap (Two-tailed test)
+Proportion (1): Reject the null hypothesis:
+Ha : The proportions in G and D are unequal for the given ceap (Two-tailed test)
+Proportion (1): Fail to reject the null hypothesis:
+H0 : The proportions in G and D are equal for the given ceap (Two-tailed test)
+Proportion (1): Fail to reject the null hypothesis:
+H0 : The proportions in G and D are equal for the given ceap (Two-tailed test)
+Proportion (1): Fail to reject the null hypothesis:
+H0 : The proportions in G and D are equal for the given ceap (Two-tailed test)
+Proportion (1): Fail to reject the null hypothesis:
+H0 : The proportions in G and D are equal for the given ceap (Two-tailed test)
+Proportion (1): Fail to reject the null hypothesis:
+H0 : The proportions in G and D are equal for the given ceap (Two-tailed test)
+Proportion (1): Reject the null hypothesis:
+Ha : The proportions in G and D are unequal for the given ceap (Two-tailed test)
+
+Data : 'mbre' 'ceap' ; ['G', 'D'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+Proportional (1) :
+H0 : The proportions in G and D are equal for the given ceap (Two-tailed test)
+Ha : The proportions in G and D are unequal for the given ceap (Two-tailed test)
+
+   ceap    G    D  totG  totD   proG   proD        stat   pval   H
+NA   NA   39   66   429   447  0.091  0.148  -2.585e+00  0.010  Ha
+C0   C0   24   43   429   447  0.056  0.096  -2.241e+00  0.025  Ha
+C1   C1    5    6   429   447  0.012  0.013  -2.349e-01  0.814  H0
+C2   C2   41   57   429   447  0.096  0.128  -1.499e+00  0.134  H0
+C3   C3  126  123   429   447  0.294  0.275       0.608  0.543  H0
+C4   C4   52   45   429   447  0.121  0.101       0.969  0.333  H0
+C5   C5   29   24   429   447  0.068  0.054       0.863  0.388  H0
+C6   C6  113   83   429   447  0.263  0.186       2.759  0.006  Ha
+(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']) vs (['G', 'D'])
+
+Data : 'mbre' 'ceap' ; ['G', 'D'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+Proportional (2) : Iterations per ceap and mbre
+Proportion (2): Reject the null hypothesis:
+Ha : The proportions in G and D are unequal for the given ceap (Two-tailed test)
+Proportion (2): Reject the null hypothesis:
+Ha : The proportions in G and D are unequal for the given ceap (Two-tailed test)
+Proportion (2): Reject the null hypothesis:
+Ha : The proportions in G and D are unequal for the given ceap (Two-tailed test)
+Proportion (2): Reject the null hypothesis:
+Ha : The proportions in G and D are unequal for the given ceap (Two-tailed test)
+Proportion (2): Fail to reject the null hypothesis:
+H0 : The proportions in G and D are equal for the given ceap (Two-tailed test)
+Proportion (2): Fail to reject the null hypothesis:
+H0 : The proportions in G and D are equal for the given ceap (Two-tailed test)
+Proportion (2): Fail to reject the null hypothesis:
+H0 : The proportions in G and D are equal for the given ceap (Two-tailed test)
+Proportion (2): Fail to reject the null hypothesis:
+H0 : The proportions in G and D are equal for the given ceap (Two-tailed test)
+Proportion (2): Fail to reject the null hypothesis:
+H0 : The proportions in G and D are equal for the given ceap (Two-tailed test)
+Proportion (2): Fail to reject the null hypothesis:
+H0 : The proportions in G and D are equal for the given ceap (Two-tailed test)
+Proportion (2): Fail to reject the null hypothesis:
+H0 : The proportions in G and D are equal for the given ceap (Two-tailed test)
+Proportion (2): Fail to reject the null hypothesis:
+H0 : The proportions in G and D are equal for the given ceap (Two-tailed test)
+Proportion (2): Fail to reject the null hypothesis:
+H0 : The proportions in G and D are equal for the given ceap (Two-tailed test)
+Proportion (2): Fail to reject the null hypothesis:
+H0 : The proportions in G and D are equal for the given ceap (Two-tailed test)
+Proportion (2): Reject the null hypothesis:
+Ha : The proportions in G and D are unequal for the given ceap (Two-tailed test)
+Proportion (2): Reject the null hypothesis:
+Ha : The proportions in G and D are unequal for the given ceap (Two-tailed test)
+
+Data : 'mbre' 'ceap' ; ['G', 'D'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+Proportional (2) :
+H0 : The proportions in G and D are equal for the given ceap (Two-tailed test)
+Ha : The proportions in G and D are unequal for the given ceap (Two-tailed test)
+
+     ceap mbre  coun  tota  obs_prop  exp_prop        stat   pval   H
+NA_G   NA    G    39   105  0.371429  0.489726  -2.509e+00  0.012  Ha
+NA_D   NA    D    66   105  0.628571  0.510274       2.509  0.012  Ha
+C0_G   C0    G    24    67  0.358209  0.489726  -2.245e+00  0.025  Ha
+C0_D   C0    D    43    67  0.641791  0.510274       2.245  0.025  Ha
+C1_G   C1    G     5    11  0.454545  0.489726  -2.343e-01  0.815  H0
+C1_D   C1    D     6    11  0.545455  0.510274       0.234  0.815  H0
+C2_G   C2    G    41    98  0.418367  0.489726  -1.432e+00  0.152  H0
+C2_D   C2    D    57    98  0.581633  0.510274       1.432  0.152  H0
+C3_G   C3    G   126   249  0.506024  0.489726       0.514  0.607  H0
+C3_D   C3    D   123   249  0.493976  0.510274  -5.144e-01  0.607  H0
+C4_G   C4    G    52    97  0.536082  0.489726       0.916  0.360  H0
+C4_D   C4    D    45    97  0.463918  0.510274  -9.155e-01  0.360  H0
+C5_G   C5    G    29    53  0.547170  0.489726       0.840  0.401  H0
+C5_D   C5    D    24    53  0.452830  0.510274  -8.401e-01  0.401  H0
+C6_G   C6    G   113   196  0.576531  0.489726       2.460  0.014  Ha
+C6_D   C6    D    83   196  0.423469  0.510274  -2.460e+00  0.014  Ha
+(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']) vs (['G', 'D'])
+
+Data : 'mbre' 'ceap' ; ['G', 'D'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+Binomial (1) : Iterations per ceap
+
+Data : 'mbre' 'ceap' ; ['G', 'D'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+Binomial (1) :
+H0 : Observed 'G' and 'D' counts for 'ceap' do not differ from the expected count
+Ha : Observed 'G' and 'D' counts for 'ceap' differ from the expected count
+
+   ceap    G    D  tota   stat   pval   H
+NA   NA   39   66   105  0.371  0.011  Ha
+C0   C0   24   43    67  0.358  0.027  Ha
+C1   C1    5    6    11  0.455  1.000  H0
+C2   C2   41   57    98  0.418  0.129  H0
+C3   C3  126  123   249  0.506  0.899  H0
+C4   C4   52   45    97  0.536  0.543  H0
+C5   C5   29   24    53  0.547  0.583  H0
+C6   C6  113   83   196  0.577  0.038  Ha
+(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']) vs (['G', 'D'])
+
+Data : 'mbre' 'ceap' ; ['G', 'D'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+Binomial (2) : Iterations per ceap and mbre
+
+Data : 'mbre' 'ceap' ; ['G', 'D'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+Binomial (2) :
+H0 : Observed 'G' or 'D' count for 'ceap' does not differ from the expected count
+Ha : Observed 'G' or 'D' count for 'ceap' differs from the expected count
+     ceap mbre  count  tota   stat   pval   H obse_prop expe_prop ci_lowr ci_uppr
+NA_G   NA    G     39   105  0.371  0.019  Ha     0.371     0.490   0.279   0.471
+NA_D   NA    D     66   105  0.629  0.019  Ha     0.629     0.510   0.529   0.721
+C0_G   C0    G     24    67  0.358  0.037  Ha     0.358     0.490   0.245   0.485
+C0_D   C0    D     43    67  0.642  0.037  Ha     0.642     0.510   0.515   0.755
+C1_G   C1    G      5    11  0.455  1.000  H0     0.455     0.490   0.167   0.766
+C1_D   C1    D      6    11  0.545  1.000  H0     0.545     0.510   0.234   0.833
+C2_G   C2    G     41    98  0.418  0.189  H0     0.418     0.490   0.319   0.522
+C2_D   C2    D     57    98  0.582  0.189  H0     0.582     0.510   0.478   0.681
+C3_G   C3    G    126   249  0.506  0.613  H0     0.506     0.490   0.442   0.570
+C3_D   C3    D    123   249  0.494  0.613  H0     0.494     0.510   0.430   0.558
+C4_G   C4    G     52    97  0.536  0.363  H0     0.536     0.490   0.432   0.638
+C4_D   C4    D     45    97  0.464  0.363  H0     0.464     0.510   0.362   0.568
+C5_G   C5    G     29    53  0.547  0.414  H0     0.547     0.490   0.404   0.684
+C5_D   C5    D     24    53  0.453  0.414  H0     0.453     0.510   0.316   0.596
+C6_G   C6    G    113   196  0.577  0.015  Ha     0.577     0.490   0.504   0.647
+C6_D   C6    D     83   196  0.423  0.015  Ha     0.423     0.510   0.353   0.496
+(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']) vs (['G', 'D'])
+
+Data : 'mbre' 'ceap' ; ['G', 'D'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+Wilson score interval : Iterations per ceap
+
+Data : 'mbre' 'ceap' ; ['G', 'D'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+Wilson score interval :
+
+   ceap    G    D G_proport G_ci_lowr G_ci_uppr D_proport D_ci_lowr D_ci_uppr
+NA   NA   39   66     0.371     0.285     0.467     0.629     0.533     0.715
+C0   C0   24   43     0.358     0.254     0.478     0.642     0.522     0.746
+C1   C1    5    6     0.455     0.213     0.720     0.545     0.280     0.787
+C2   C2   41   57     0.418     0.326     0.517     0.582     0.483     0.674
+C3   C3  126  123     0.506     0.444     0.568     0.494     0.432     0.556
+C4   C4   52   45     0.536     0.437     0.632     0.464     0.368     0.563
+C5   C5   29   24     0.547     0.415     0.673     0.453     0.327     0.585
+C6   C6  113   83     0.577     0.507     0.644     0.423     0.356     0.493
+
+Step 4 : X.size:876 X.type:<class 'pandas.core.frame.DataFrame'>
+     NA  C0  C1  C2  C3  C4  C5  C6
+0     0   0   0   1   0   0   0   0
+1     0   0   0   0   0   0   0   1
+2     0   0   0   1   0   0   0   0
+3     0   0   0   0   0   0   0   1
+4     0   0   0   0   1   0   0   0
+..   ..  ..  ..  ..  ..  ..  ..  ..
+871   1   0   0   0   0   0   0   0
+872   1   0   0   0   0   0   0   0
+873   1   0   0   0   0   0   0   0
+874   1   0   0   0   0   0   0   0
+875   1   0   0   0   0   0   0   0
+
+[876 rows x 8 columns]
+:RangeIndex(start=0, stop=876, step=1)
+
+Step 4 : y.size:876 y.type:<class 'pandas.core.series.Series'>
+0      0
+1      0
+2      1
+3      1
+4      0
+      ..
+871    1
+872    0
+873    1
+874    0
+875    1
+Name: mbre_stra, Length: 876, dtype: int64
+:RangeIndex(start=0, stop=876, step=1)
+
+Data : 'mbre' 'ceap' ; ['G', 'D'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+Logit :
+                           Logit Regression Results                           
+==============================================================================
+Dep. Variable:              mbre_stra   No. Observations:                  876
+Model:                          Logit   Df Residuals:                      868
+Method:                           MLE   Df Model:                            7
+Date:                Mon, 13 Jan 2025   Pseudo R-squ.:                 0.01685
+Time:                        09:28:19   Log-Likelihood:                -596.79
+converged:                       True   LL-Null:                       -607.01
+Covariance Type:            nonrobust   LLR p-value:                  0.004669
+==============================================================================
+                 coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------
+const          0.1061        nan        nan        nan         nan         nan
+NA             0.4200        nan        nan        nan         nan         nan
+C0             0.4771        nan        nan        nan         nan         nan
+C1             0.0763        nan        nan        nan         nan         nan
+C2             0.2234        nan        nan        nan         nan         nan
+C3            -0.1302        nan        nan        nan         nan         nan
+C4            -0.2506        nan        nan        nan         nan         nan
+C5            -0.2953        nan        nan        nan         nan         nan
+C6            -0.4146        nan        nan        nan         nan         nan
+==============================================================================
+
+Data : 'mbre' 'ceap' ; ['G', 'D'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+Logit regression :
+H0 : No association between 'mbre' and 'ceap' (coef EQ 0)
+Ha : Association between 'mbre' and 'ceap' (coef NE 0)
+
+            Coef. Std.Err.    z  P>|z| [0.025 0.975]   H
+const       0.106      nan  nan    NaN    nan    nan  H0
+NA          0.420      nan  nan    NaN    nan    nan  H0
+C0          0.477      nan  nan    NaN    nan    nan  H0
+C1          0.076      nan  nan    NaN    nan    nan  H0
+C2          0.223      nan  nan    NaN    nan    nan  H0
+C3     -1.302e-01      nan  nan    NaN    nan    nan  H0
+C4     -2.506e-01      nan  nan    NaN    nan    nan  H0
+C5     -2.953e-01      nan  nan    NaN    nan    nan  H0
+C6     -4.146e-01      nan  nan    NaN    nan    nan  H0
+(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']) vs (['G', 'D'])

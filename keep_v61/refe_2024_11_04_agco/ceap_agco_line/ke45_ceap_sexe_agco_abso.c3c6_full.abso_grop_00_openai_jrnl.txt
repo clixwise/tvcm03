@@ -1,0 +1,5 @@
+
+severity  p_value  p_value_corrected_bonferroni  p_value_corrected_fdr
+  Absent 0.233038                      0.699115               0.513954
+    Mild 0.912420                      1.000000               0.912420
+  Severe 0.342636                      1.000000               0.513954

@@ -1,0 +1,407 @@
+
+>>> >>> >>>
+2024-12-30 11:39:05
+>>> >>> >>>
+
+Step 1 : df2.size:876 df2.type:<class 'pandas.core.frame.DataFrame'>
+      doss sexe mbre ceap
+0    D9972    F    G   C2
+1    D9972    F    G   C6
+2    D9972    F    D   C2
+3    D9972    F    D   C6
+4    D9921    M    G   C3
+..     ...  ...  ...  ...
+871  D8930    F    D   NA
+872  D8956    F    G   NA
+873  D9113    M    D   NA
+874  D9574    M    G   NA
+875  D9609    F    D   NA
+
+[876 rows x 4 columns]
+:RangeIndex(start=0, stop=876, step=1)
+:Index(['doss', 'sexe', 'mbre', 'ceap'], dtype='object')
+Step 2 : df3.size:362 df3.type:<class 'pandas.core.frame.DataFrame'>
+       doss sexe                      lisL                      lisR
+0    D10077    F  [1, 0, 0, 0, 0, 0, 0, 0]  [0, 0, 0, 0, 1, 0, 0, 0]
+1    D10103    M  [1, 0, 0, 0, 0, 0, 0, 0]  [0, 0, 0, 0, 1, 0, 0, 0]
+2    D10120    F  [0, 0, 0, 0, 0, 0, 0, 1]  [1, 0, 0, 0, 0, 0, 0, 0]
+3    D10129    M  [0, 0, 0, 0, 1, 0, 0, 0]  [0, 0, 0, 0, 1, 0, 0, 0]
+4    D10188    F  [0, 0, 0, 0, 0, 1, 0, 0]  [1, 0, 0, 0, 0, 0, 0, 0]
+..      ...  ...                       ...                       ...
+357   D9825    M  [0, 0, 0, 0, 0, 1, 0, 0]  [0, 0, 0, 0, 0, 0, 1, 0]
+358   D9894    F  [0, 0, 0, 0, 0, 0, 1, 0]  [0, 0, 0, 0, 0, 0, 1, 0]
+359   D9908    F  [0, 0, 0, 0, 0, 1, 0, 0]  [0, 0, 0, 0, 1, 0, 0, 0]
+360   D9921    M  [0, 0, 0, 0, 1, 0, 0, 0]  [0, 0, 0, 0, 1, 0, 0, 0]
+361   D9972    F  [0, 0, 0, 1, 0, 0, 0, 1]  [0, 0, 0, 1, 0, 0, 0, 1]
+
+[362 rows x 4 columns]
+:RangeIndex(start=0, stop=362, step=1)
+:Index(['doss', 'sexe', 'lisL', 'lisR'], dtype='object')
+sexe : F : df1.size=362 df2.size=206
+
+Step 2 : df2.size:9 df2.type:<class 'pandas.core.frame.DataFrame'>
+      NA  C0  C1  C2  C3  C4  C5  C6  tota
+NA     0   0   0   2  13   2   0  10    27
+C0     0   0   0   1   6   1   1   7    16
+C1     0   0   1   0   1   2   0   0     4
+C2     0   0   1   7  10   2   1   8    29
+C3    13   3   0   7  52   9   1   8    93
+C4     4   1   0   2  10  15   4   3    39
+C5     4   3   1   3   2   2   5   7    27
+C6    15  16   1  19   3   3   4  12    73
+tota  36  23   4  41  97  36  16  55   308
+:Index(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6', 'tota'], dtype='object')
+:Index(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6', 'tota'], dtype='object')
+
+Step 3 : df2.size:8 df2.type:<class 'pandas.core.frame.DataFrame'>
+      NA  C0  C1  C2  C3  C4  C5  C6
+ceap                                
+NA     0   0   0   2  13   2   0  10
+C0     0   0   0   1   6   1   1   7
+C1     0   0   1   0   1   2   0   0
+C2     0   0   1   7  10   2   1   8
+C3    13   3   0   7  52   9   1   8
+C4     4   1   0   2  10  15   4   3
+C5     4   3   1   3   2   2   5   7
+C6    15  16   1  19   3   3   4  12
+:Index(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6'], dtype='object', name='ceap')
+:Index(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6'], dtype='object')
+df2.size
+8 df2.type:<class 'pandas.core.frame.DataFrame'>
+ceap  NA  C0  C1  C2  C3  C4  C5  C6
+ceap                                
+NA     0   0   0   2  13   2   0  10
+C0     0   0   0   1   6   1   1   7
+C1     0   0   1   0   1   2   0   0
+C2     0   0   1   7  10   2   1   8
+C3    13   3   0   7  52   9   1   8
+C4     4   1   0   2  10  15   4   3
+C5     4   3   1   3   2   2   5   7
+C6    15  16   1  19   3   3   4  12
+:Index(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6'], dtype='object', name='ceap')
+:Index(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6'], dtype='object', name='ceap')
+:308
+ceap_unbi_abso_deta:<class 'pandas.core.frame.DataFrame'>
+       doss sexe unbi                      ceaL                      ceaR                           L                           R
+0    D10077    F    U  [1, 0, 0, 0, 0, 0, 0, 0]  [0, 0, 0, 0, 1, 0, 0, 0]   [NA, x, x, x, x, x, x, x]   [x, x, x, x, C3, x, x, x]
+1    D10103    M    U  [1, 0, 0, 0, 0, 0, 0, 0]  [0, 0, 0, 0, 1, 0, 0, 0]   [NA, x, x, x, x, x, x, x]   [x, x, x, x, C3, x, x, x]
+2    D10120    F    U  [0, 0, 0, 0, 0, 0, 0, 1]  [1, 0, 0, 0, 0, 0, 0, 0]   [x, x, x, x, x, x, x, C6]   [NA, x, x, x, x, x, x, x]
+3    D10129    M    B  [0, 0, 0, 0, 1, 0, 0, 0]  [0, 0, 0, 0, 1, 0, 0, 0]   [x, x, x, x, C3, x, x, x]   [x, x, x, x, C3, x, x, x]
+4    D10188    F    U  [0, 0, 0, 0, 0, 1, 0, 0]  [1, 0, 0, 0, 0, 0, 0, 0]   [x, x, x, x, x, C4, x, x]   [NA, x, x, x, x, x, x, x]
+..      ...  ...  ...                       ...                       ...                         ...                         ...
+357   D9825    M    B  [0, 0, 0, 0, 0, 1, 0, 0]  [0, 0, 0, 0, 0, 0, 1, 0]   [x, x, x, x, x, C4, x, x]   [x, x, x, x, x, x, C5, x]
+358   D9894    F    B  [0, 0, 0, 0, 0, 0, 1, 0]  [0, 0, 0, 0, 0, 0, 1, 0]   [x, x, x, x, x, x, C5, x]   [x, x, x, x, x, x, C5, x]
+359   D9908    F    B  [0, 0, 0, 0, 0, 1, 0, 0]  [0, 0, 0, 0, 1, 0, 0, 0]   [x, x, x, x, x, C4, x, x]   [x, x, x, x, C3, x, x, x]
+360   D9921    M    B  [0, 0, 0, 0, 1, 0, 0, 0]  [0, 0, 0, 0, 1, 0, 0, 0]   [x, x, x, x, C3, x, x, x]   [x, x, x, x, C3, x, x, x]
+361   D9972    F    B  [0, 0, 0, 1, 0, 0, 0, 1]  [0, 0, 0, 1, 0, 0, 0, 1]  [x, x, x, C2, x, x, x, C6]  [x, x, x, C2, x, x, x, C6]
+
+[362 rows x 7 columns]
+:RangeIndex(start=0, stop=362, step=1)
+Total1 'ceaL':[39, 24, 5, 41, 126, 52, 29, 113] 'ceaR':[66, 43, 6, 57, 123, 45, 24, 83] list:[105, 67, 11, 98, 249, 97, 53, 196]
+Total2 'ceaL:429 'ceaR':447 list:876
+\Input file filtered : df_line.size:362 df_line.type:<class 'pandas.core.frame.DataFrame'>
+       doss sexe unbi                      ceaL                      ceaR                           L                           R
+0    D10077    F    U  [1, 0, 0, 0, 0, 0, 0, 0]  [0, 0, 0, 0, 1, 0, 0, 0]   [NA, x, x, x, x, x, x, x]   [x, x, x, x, C3, x, x, x]
+1    D10103    M    U  [1, 0, 0, 0, 0, 0, 0, 0]  [0, 0, 0, 0, 1, 0, 0, 0]   [NA, x, x, x, x, x, x, x]   [x, x, x, x, C3, x, x, x]
+2    D10120    F    U  [0, 0, 0, 0, 0, 0, 0, 1]  [1, 0, 0, 0, 0, 0, 0, 0]   [x, x, x, x, x, x, x, C6]   [NA, x, x, x, x, x, x, x]
+3    D10129    M    B  [0, 0, 0, 0, 1, 0, 0, 0]  [0, 0, 0, 0, 1, 0, 0, 0]   [x, x, x, x, C3, x, x, x]   [x, x, x, x, C3, x, x, x]
+4    D10188    F    U  [0, 0, 0, 0, 0, 1, 0, 0]  [1, 0, 0, 0, 0, 0, 0, 0]   [x, x, x, x, x, C4, x, x]   [NA, x, x, x, x, x, x, x]
+..      ...  ...  ...                       ...                       ...                         ...                         ...
+357   D9825    M    B  [0, 0, 0, 0, 0, 1, 0, 0]  [0, 0, 0, 0, 0, 0, 1, 0]   [x, x, x, x, x, C4, x, x]   [x, x, x, x, x, x, C5, x]
+358   D9894    F    B  [0, 0, 0, 0, 0, 0, 1, 0]  [0, 0, 0, 0, 0, 0, 1, 0]   [x, x, x, x, x, x, C5, x]   [x, x, x, x, x, x, C5, x]
+359   D9908    F    B  [0, 0, 0, 0, 0, 1, 0, 0]  [0, 0, 0, 0, 1, 0, 0, 0]   [x, x, x, x, x, C4, x, x]   [x, x, x, x, C3, x, x, x]
+360   D9921    M    B  [0, 0, 0, 0, 1, 0, 0, 0]  [0, 0, 0, 0, 1, 0, 0, 0]   [x, x, x, x, C3, x, x, x]   [x, x, x, x, C3, x, x, x]
+361   D9972    F    B  [0, 0, 0, 1, 0, 0, 0, 1]  [0, 0, 0, 1, 0, 0, 0, 1]  [x, x, x, C2, x, x, x, C6]  [x, x, x, C2, x, x, x, C6]
+
+[362 rows x 7 columns]
+:RangeIndex(start=0, stop=362, step=1)
+:Index(['doss', 'sexe', 'unbi', 'ceaL', 'ceaR', 'L', 'R'], dtype='object')
+
+Contingency table  : df_tabl.size:8 df_tabl.type:<class 'pandas.core.frame.DataFrame'>
+ceap  NA  C0  C1  C2  C3  C4  C5  C6
+ceap                                
+NA     0   0   0   2  13   2   0  10
+C0     0   0   0   1   6   1   1   7
+C1     0   0   1   0   1   2   0   0
+C2     0   0   1   7  10   2   1   8
+C3    13   3   0   7  52   9   1   8
+C4     4   1   0   2  10  15   4   3
+C5     4   3   1   3   2   2   5   7
+C6    15  16   1  19   3   3   4  12
+:Index(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6'], dtype='object', name='ceap')
+:Index(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6'], dtype='object', name='ceap')
+
+Data : 'ceap' 'ceap' ; ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+(perp) Mood's Median : Stat:8.882 Pval:0.003
+(perp) Mood's Median : Median for 'ceap' groups : ceap=5.000,ceap=4.000
+(perp) Mood's Median : The Stat:'8.882' follows a chi-square distribution with 1 degree of freedom.
+A larger test statistic indicates a greater difference between the medians.
+(perp) Mood's Median : assesses whether the distribution of CEAP classifications differs significantly between left and right legs, without assuming normality.
+(perp) Mood's Median : Reject the null hypothesis:
+Ha : There is a difference in the median CEAP classifications between left and right legs.
+
+Data : 'ceap' 'ceap' ; ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+Variance : Brown-Forsythe : Stat:0.838 Pval:0.360 Effect Size (Eta squared) : 0.001 (negligible)
+Variance : Brown-Forsythe : Fail to reject the null hypothesis:
+H0 : There is no difference in variances of 'ceap' and 'ceap' values
+
+Data : 'ceap' 'ceap' ; ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+Variance : (prep) Fligner-Killeen : Stat:0.448 Pval:0.503
+(prep) Fligner-Killeen : Stat:0.448 indicates the degree of difference in variances.
+(prep) Fligner-Killeen : A larger test statistic suggests greater differences in variability between the two groups.
+(prep) Fligner-Killeen : Fail to reject the null hypothesis:
+H0 : There is no difference in variances of 'ceap' and 'ceap' values
+
+Data : 'ceap' 'ceap' ; ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+Variance : (prep) Ansari-Bradley : Stat:67355.500 Pval:0.208
+(prep) Ansari-Bradley : Stat:67355.500 indicates the degree of difference in variances.
+(prep) Ansari-Bradley : A larger test statistic suggests greater differences in variability between the two groups.
+Ansari-Bradley : Fail to reject the null hypothesis:
+H0 : There is no difference in variances of 'ceap' and 'ceap' values
+
+Data : 'ceap' 'ceap' ; ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+Chi-Square : Stat:199.408 Pval:4.826e-20 Dof:49
+Chi-Square : Reject the null hypothesis:
+Ha : there is a association between the categorical 'ceap' and the group 'ceap' variables
+(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']) vs (['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6'])
+
+Data : 'ceap' 'ceap' ; ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+Residuals
+Residuals : Observed:
+ceap  NA  C0  C1  C2  C3  C4  C5  C6
+ceap                                
+NA     0   0   0   2  13   2   0  10
+C0     0   0   0   1   6   1   1   7
+C1     0   0   1   0   1   2   0   0
+C2     0   0   1   7  10   2   1   8
+C3    13   3   0   7  52   9   1   8
+C4     4   1   0   2  10  15   4   3
+C5     4   3   1   3   2   2   5   7
+C6    15  16   1  19   3   3   4  12
+:Index(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6'], dtype='object', name='ceap')
+:Index(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6'], dtype='object', name='ceap')
+Residuals : Expected:
+       NA    C0    C1     C2     C3     C4    C5     C6
+NA   3.16  2.02  0.35   3.59   8.50   3.16  1.40   4.82
+C0   1.87  1.19  0.21   2.13   5.04   1.87  0.83   2.86
+C1   0.47  0.30  0.05   0.53   1.26   0.47  0.21   0.71
+C2   3.39  2.17  0.38   3.86   9.13   3.39  1.51   5.18
+C3  10.87  6.94  1.21  12.38  29.29  10.87  4.83  16.61
+C4   4.56  2.91  0.51   5.19  12.28   4.56  2.03   6.96
+C5   3.16  2.02  0.35   3.59   8.50   3.16  1.40   4.82
+C6   8.53  5.45  0.95   9.72  22.99   8.53  3.79  13.04
+:Index(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6'], dtype='object', name='ceap')
+:Index(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6'], dtype='object', name='ceap')
+Residuals : Residuals:
+      NA    C0    C1    C2    C3    C4    C5    C6
+NA -1.78 -1.42 -0.59 -0.84  1.54 -0.65 -1.18  2.36
+C0 -1.37 -1.09 -0.46 -0.77  0.43 -0.64  0.19  2.45
+C1 -0.68 -0.55  4.16 -0.73 -0.23  2.24 -0.46 -0.85
+C2 -1.84 -1.47  1.02  1.60  0.29 -0.75 -0.41  1.24
+C3  0.65 -1.50 -1.10 -1.53  4.20 -0.57 -1.74 -2.11
+C4 -0.26 -1.12 -0.71 -1.40 -0.65  4.89  1.39 -1.50
+C5  0.48  0.69  1.10 -0.31 -2.23 -0.65  3.04  0.99
+C6  2.21  4.52  0.05  2.98 -4.17 -1.89  0.11 -0.29
+:Index(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6'], dtype='object', name='ceap')
+:Index(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6'], dtype='object', name='ceap')
+Residuals : Freeman-Tukey Deviates:
+ceap     NA     C0    C1     C2     C3     C4    C5     C6
+ceap                                                      
+NA     2.69   2.01  0.55   0.92  13.20   0.69  1.57  10.91
+C0     1.91   1.40  0.35   0.85   9.60   0.68  4.32   8.91
+C1     0.69   0.48  3.34   0.77   0.22   4.69  0.35   0.96
+C2     2.82   2.11  3.82   9.44  12.53   0.82  0.41  10.40
+C3    13.95   1.76  1.41   1.72  25.33   0.59  2.27   2.47
+C4     0.26   1.32  0.74   1.67   0.68  12.20  7.14   1.77
+C5     7.81   6.62  3.79   0.32   2.92   0.69  7.15   9.89
+C6    13.74  12.84  4.43  15.09   6.04   2.32  8.14   0.29
+:Index(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6'], dtype='object', name='ceap')
+:Index(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6'], dtype='object', name='ceap')
+Residuals : Observed,Expected,Residuals,Deviates:
+        NA     C0    C1     C2     C3     C4    C5     C6
+NAO   0.00   0.00  0.00   2.00  13.00   2.00  0.00  10.00
+C0O   0.00   0.00  0.00   1.00   6.00   1.00  1.00   7.00
+C1O   0.00   0.00  1.00   0.00   1.00   2.00  0.00   0.00
+C2O   0.00   0.00  1.00   7.00  10.00   2.00  1.00   8.00
+C3O  13.00   3.00  0.00   7.00  52.00   9.00  1.00   8.00
+C4O   4.00   1.00  0.00   2.00  10.00  15.00  4.00   3.00
+C5O   4.00   3.00  1.00   3.00   2.00   2.00  5.00   7.00
+C6O  15.00  16.00  1.00  19.00   3.00   3.00  4.00  12.00
+NAE   3.16   2.02  0.35   3.59   8.50   3.16  1.40   4.82
+C0E   1.87   1.19  0.21   2.13   5.04   1.87  0.83   2.86
+C1E   0.47   0.30  0.05   0.53   1.26   0.47  0.21   0.71
+C2E   3.39   2.17  0.38   3.86   9.13   3.39  1.51   5.18
+C3E  10.87   6.94  1.21  12.38  29.29  10.87  4.83  16.61
+C4E   4.56   2.91  0.51   5.19  12.28   4.56  2.03   6.96
+C5E   3.16   2.02  0.35   3.59   8.50   3.16  1.40   4.82
+C6E   8.53   5.45  0.95   9.72  22.99   8.53  3.79  13.04
+NAR  -1.78  -1.42 -0.59  -0.84   1.54  -0.65 -1.18   2.36
+C0R  -1.37  -1.09 -0.46  -0.77   0.43  -0.64  0.19   2.45
+C1R  -0.68  -0.55  4.16  -0.73  -0.23   2.24 -0.46  -0.85
+C2R  -1.84  -1.47  1.02   1.60   0.29  -0.75 -0.41   1.24
+C3R   0.65  -1.50 -1.10  -1.53   4.20  -0.57 -1.74  -2.11
+C4R  -0.26  -1.12 -0.71  -1.40  -0.65   4.89  1.39  -1.50
+C5R   0.48   0.69  1.10  -0.31  -2.23  -0.65  3.04   0.99
+C6R   2.21   4.52  0.05   2.98  -4.17  -1.89  0.11  -0.29
+NAD   2.69   2.01  0.55   0.92  13.20   0.69  1.57  10.91
+C0D   1.91   1.40  0.35   0.85   9.60   0.68  4.32   8.91
+C1D   0.69   0.48  3.34   0.77   0.22   4.69  0.35   0.96
+C2D   2.82   2.11  3.82   9.44  12.53   0.82  0.41  10.40
+C3D  13.95   1.76  1.41   1.72  25.33   0.59  2.27   2.47
+C4D   0.26   1.32  0.74   1.67   0.68  12.20  7.14   1.77
+C5D   7.81   6.62  3.79   0.32   2.92   0.69  7.15   9.89
+C6D  13.74  12.84  4.43  15.09   6.04   2.32  8.14   0.29
+Residuals : Synthesis threshold_05:1.960, threshold_01:2.576 
+     NA  C0  C1  C2  C3  C4  C5 C6
+ceap                              
+NA    .   .   .   .   .   .   .  +
+C0    .   .   .   .   .   .   .  +
+C1    .   .  ++   .   .   +   .  .
+C2    .   .   .   .   .   .   .  .
+C3    .   .   .   .  ++   .   .  -
+C4    .   .   .   .   .  ++   .  .
+C5    .   .   .   .   -   .  ++  .
+C6    +  ++   .  ++  --   .   .  .
+Classes  Obs(abs)  Diagonal Obs(abs)  Off-Diagonal Obs(abs)  C6 Row Obs(abs)  C6 Column Obs(abs)  Obs(%)
+     ++       108                 73                     35               35                   0      35
+     --         3                  0                      3                3                   0       1
+      +        34                  0                     34               15                  17      11
+      -        10                  0                     10                0                   8       3
+      .       153                 19                    134                8                  18      50
+  Total       308                 92                    216               61                  43     100
+
+Data : 'ceap' 'ceap' ; ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+(mist) Cramer V : Stat:0.267 Intp: asso(effect size):Weak association between the variables. Pval:4.826e-20 Dof:49
+(mist) Cramer V : Reject the null hypothesis:
+(mist) Ha : There is an association between the 'ceap' categories for the 'ceap' categories.
+(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']) vs (['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6'])
+
+Data : 'ceap' 'ceap' ; ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+(perp) Cramer V (1) : Stat:0.304 Intp: asso(effect size):Moderate association between the variables. Pval:4.826e-20 Dof:49
+(perp) Cramer V (1) : For large sample sizes, even small associations can be statistically significant.
+(perp) Cramer V (1) : For large sample sizes, even small associations can be statistically significant.
+(perp) Cramer V (1) : Reject the null hypothesis:
+(perp) Ha : There is an association between the 'ceap' categories for the 'ceap' categories.
+(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']) vs (['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6'])
+
+Data : 'ceap' 'ceap' ; ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+(perp) Cramer V (2) : Stat:0.304 Intp: asso(effect size):Moderate association between the variables. Pval:4.826e-20 Dof:49
+(perp) Cramer V (2) : For large sample sizes, even small associations can be statistically significant.
+(perp) Cramer V (2) : For large sample sizes, even small associations can be statistically significant.
+(perp) Cramer V (2) : Reject the null hypothesis:
+(perp) Ha : There is an association between the 'ceap' categories for the 'ceap' categories.
+(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']) vs (['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6'])
+
+Data : 'ceap' 'ceap' ; ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+(perp) Pearson : Stat:0.627 Intp: asso(effect size):Strong association between the variables. Pval:4.826e-20 Dof:49
+(perp) Pearson : For large sample sizes, even small associations can be statistically significant.
+(perp) Pearson : For large sample sizes, even small associations can be statistically significant.
+(perp) Pearson : Reject the null hypothesis:
+(perp) Ha : There is an association between the 'ceap' categories for the 'ceap' categories.
+(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']) vs (['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6'])
+
+Data : 'ceap' 'ceap' ; ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+(perp) Tschuprow : Stat:0.304 Intp: asso(effect size):Moderate association between the variables. Pval:4.826e-20 Dof:49
+(perp) Tschuprow : For large sample sizes, even small associations can be statistically significant.
+(perp) Tschuprow : For large sample sizes, even small associations can be statistically significant.
+(perp) Tschuprow : Reject the null hypothesis:
+(perp) Ha : There is an association between the 'ceap' categories for the 'ceap' categories.
+(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']) vs (['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6'])
+
+Data : 'ceap' 'ceap' ; ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+(perp) Mann-Whitney U : Stat:75893.500 Pval:1.598e-04 Effect size:0.137(small)
+(perp) Mann-Whitney U : Median for 'ceap' groups : ceap=5.000,ceap=4.000 : ceap(r) tends to have higher CEAP classifications.
+(perp) Mann-Whitney U : assesses whether the distribution of CEAP classifications differs significantly between left and right legs, without assuming normality.
+(perp) Mann-Whitney U : Reject the null hypothesis:
+Ha : There is a difference in 'ceap' distribution between 'ceap' groups
+(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']) vs (['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6'])
+
+Data : 'ceap' 'ceap' ; ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+Kolmogorov-Smirnov : Stat:0.122 Pval:0.009
+Kolmogorov-Smirnov : test is sensitive to both the location and shape of the distributions.
+Kolmogorov-Smirnov : Reject the null hypothesis:
+Ha : There is a difference in 'ceap' distribution between 'ceap' groups
+(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']) vs (['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6'])
+
+Data : 'ceap' 'ceap' ; ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+Wilkoxon Rank : Stat:12366.500 Pval:0.001 Skewness:-4.646e-02
+Wilkoxon Rank : Severity in 'ceaL' > 'ceaR'
+Wilkoxon Rank : Skewness:-4.646e-02 hence : Symmetry assumption is met (The test assumes the differences between pairs are symmetrically distributed)
+Wilkoxon Rank : This test is appropriate when the data doesn't follow a normal distribution.
+Wilkoxon Rank : Reject the null hypothesis:
+Ha : The difference between 'ceaL' and 'ceaR' severity is statistically significant.
+
+Data : 'ceap' 'ceap' ; ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+Cohen D : Stat:0.283 Effe:small
+Cohen D : The positive Cohen's d value indicates that, on average, ceaL tends to have higher severity.
+Cohen D : The average severity in the left leg is 0.638 points higher than in the right leg.
+Cohen D : Mean difference (ceaL - ceaR): 0.638 95%CI between 0.253 and 1.024.
+Cohen D : The average severity in ceaL is 0.638 points higher than in ceaR.
+Cohen D : The test provides a standardized measure of the difference between the two groups.
+Cohen D : The test interprets the magnitude of the effect, regardless of the scale of the original variables.
+
+Data : 'ceap' 'ceap' ; ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+Jaccard similarity : Stat:0.314 average Jaccard Similarity between ceaL and ceaR CEAP classifications
+Jaccard similarity : Wilcoxon    Stat :19153.000 Pval:9.046e-13
+Jaccard similarity : Bootstrap   95%CI:0.269 - 0.362
+Jaccard similarity : Permutation Pval :0.323
+Jaccard similarity : Wilcoxon   : Tests if the median Jaccard similarity is significantly different from 0.5. A small p-value suggests a significant difference.
+Jaccard similarity : Bootstrap  : Provides a range of plausible CI values for the true population mean Jaccard similarity. If 0.5 is not in this interval, it suggests a significant difference from 0.5.
+Jaccard similarity : Permutation: Tests if the observed mean Jaccard similarity is significantly different from what would be expected by chance. A small p-value suggests a significant difference.
+
+Data : 'ceap' 'ceap' ; ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+Spearman's Rank : Stat:-3.587e-01 Pval:1.957e-12
+Spearman's Rank : Asso:'negative GE -1 (increase in ceaL, decrease in ceaR)' Effe:weak
+Spearman's Rank : Additional Insights:
+
+- In 29.8% of cases, the severity is equal in both ceaL and ceaR.
+- In 40.1% of cases, the ceaL shows higher severity.
+- In 30.1% of cases, the ceaR higher severity.
+Spearman's Rank : Reject the null hypothesis:
+Ha : There is a monotonic relationship between the two variables 'ceaL' and 'ceaR' : Rho NE 0.
+
+Data : 'ceap' 'ceap' ; ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+Cohen Kappa : Stat:0.127 Pval:6.325e-06 Intp:Slight agreement between ceaL and ceaR severity classifications.
+Cohen Kappa : The test measures the agreement between two raters (in this case, ceaL and ceaR classifications).
+Cohen Kappa : The test takes into account the agreement that would be expected by chance. Values closer to 1 indicate stronger agreement.
+Cohen Kappa : Reject the null hypothesis:
+Ha : The agreement between 'ceaL' and 'ceaR' severity classifications is statistically significant.
+
+Data : 'ceap' 'ceap' ; ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+McNemar : Iterations per ceap
+
+Data : 'ceap' 'ceap' ; ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+McNemar :
+H0 : There is no significant difference in the presence/absence of the CEAP classification between ceap and ceap classifications.
+Ha : There is a significant difference in the presence/absence of the CEAP classification between ceap and ceap classifications.
+
+   CEAP   stat   pval   H
+NA   NA  1.016  0.154  H0
+C0   C0  0.923  0.174  H0
+C1   C1  0.167  1.000  H0
+C2   C2  2.161  0.038  Ha
+C3   C3  0.105  0.647  H0
+C4   C4  0.089  0.673  H0
+C5   C5  3.030  0.014  Ha
+C6   C6  2.779  0.018  Ha
+McNemar :H0 : There is no significant difference in the presence/absence of the CEAP classification between ceap and ceap classifications.
+McNemar :Ha : There is a significant difference in the presence/absence of the CEAP classification between ceap and ceap classifications.
+McNemar :The statistic represents the strength of the disagreement, with higher values indicating stronger disagreement between ceap and ceap classifications.
+
+Data : 'ceap' 'ceap' ; ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+(perp) Stuart-Maxwell : Stat:8.863 Pval:0.263
+(perp) Stuart-Maxwell : Fail to reject the null hypothesis:
+H0 : There is no difference in 'ceap' distribution between 'ceap' groups
+(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']) vs (['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6'])
+
+Data : 'ceap' 'ceap' ; ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+(clau) Stuart-Maxwell : Stat:8.863 Pval:0.263
+(clau) Stuart-Maxwell : Fail to reject the null hypothesis:
+(clau) H0: The marginal probabilities ('ceap' and 'ceap' totals) are equal
+(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']) vs (['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6'])
+
+Data : 'ceap' 'ceap' ; ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+(perp) Symmetry : Stat:22.698 Pval:0.748
+(perp) Symmetry : Fail to reject the null hypothesis:
+H0 : There is no difference in 'ceap' distribution between 'ceap' groups
+(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']) vs (['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6'])

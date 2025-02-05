@@ -1,0 +1,209 @@
+*******************
+01
+*******************
+
+having examined 326 patients * 2 legs = 724 observations to decide whether each subject to veinous insufficiency disease (CEAP level C0 up to C6) we have a df_line with columns :
+doss (patient) : D99999
+sexe M,F
+limb L,R
+age_bin 10_19 thru 90..99
+ceap C0...C6
+
+The goal here is to analyze the influence of variables (doss, sexe, limb, age_bin, age) on the severity of venous insufficiency (ceap).
+
+Provide a conceptual framework for py code statistics  
+
+***********
+***********
+To analyze the influence of variables (`doss`, `sexe`, `limb`, `age_bin`, and `age`) on the severity of venous insufficiency (`ceap`), we can use a combination of descriptive and inferential statistical techniques. Below is a conceptual framework for implementing this analysis in Python:
+
+---
+
+### **1. Data Preparation**
+- **Validate Input Data:**
+  - Ensure no missing values or invalid entries in critical columns.
+  - Verify data consistency (e.g., patient `doss` matches `sexe` across legs).
+- **Transform Variables if Needed:**
+  - Encode categorical variables (`sexe`, `limb`, `age_bin`, `ceap`) for statistical analysis.
+
+---
+
+### **2. Exploratory Data Analysis (EDA)**
+1. **Summary Statistics:**
+   - Frequency distribution of `ceap` by `sexe`, `limb`, and `age_bin`.
+   - Mean/median `age` for each `ceap` level.
+
+2. **Visualization:**
+   - Bar plots for `ceap` distribution by `sexe` and `limb`.
+   - Heatmap of `ceap` counts by `age_bin` and `sexe`.
+   - Boxplots for `age` distribution across `ceap` levels.
+
+---
+
+### **3. Inferential Statistics**
+#### A. **Assessing Individual Effects**
+1. **Ordinal Logistic Regression:**
+   - Model `ceap` (ordinal outcome: C0 < C1 < ... < C6) using `sexe`, `limb`, `age_bin`, and `age` as predictors.
+   - Use **statsmodels** for implementation.
+
+2. **Generalized Linear Model (GLM):**
+   - Treat `ceap` as a categorical variable (nominal).
+   - Fit a multinomial logistic regression model.
+
+3. **Mixed-Effects Model:**
+   - Account for repeated measures (left/right legs) per patient using a random effect for `doss`.
+
+#### B. **Testing Relationships**
+1. **Chi-Square Test of Independence:**
+   - Test for independence between `ceap` and categorical variables like `sexe`, `limb`, and `age_bin`.
+
+2. **ANOVA/Kruskal-Wallis Test:**
+   - Compare `age` distributions across `ceap` levels.
+
+3. **Cochran-Armitage Trend Test:**
+   - Test for trends in `ceap` severity across `age_bin` or by gender.
+
+---
+
+### **4. Model Evaluation**
+1. **Model Fit:**
+   - Assess model fit using goodness-of-fit metrics (e.g., AIC, BIC).
+   - Check residuals for patterns to validate assumptions.
+
+2. **Predictive Power:**
+   - Evaluate the model's accuracy in predicting `ceap` levels using cross-validation.
+
+3. **Interpret Coefficients:**
+   - Identify significant predictors and interpret effect sizes.
+
+---
+
+### **5. Advanced Analysis**
+1. **Interaction Effects:**
+   - Include interactions (e.g., `sexe:age`, `limb:age_bin`) to explore combined effects.
+
+2. **Age Bin Refinement:**
+   - If `age_bin` has uneven group sizes, consider merging sparse bins or switching to continuous `age`.
+
+3. **Trend Analysis:**
+   - Conduct specific trend tests for age effects across `ceap` classes.
+
+---
+
+### **6. Implementation in Python**
+Here's a high-level outline for the Python code:
+
+```python
+import pandas as pd
+import numpy as np
+import seaborn as sns
+import matplotlib.pyplot as plt
+from scipy.stats import chi2_contingency, kruskal
+from statsmodels.formula.api import ols, ordinal_logit
+from statsmodels.stats.proportion import cochran_armitage_test
+from statsmodels.stats.anova import anova_lm
+
+# Load Data
+df = pd.read_csv('data.csv')
+
+# 1. Data Preparation
+df.dropna(subset=['ceap', 'sexe', 'limb', 'age_bin'], inplace=True)
+
+# 2. EDA
+# Visualizations
+sns.countplot(data=df, x='ceap', hue='sexe')
+plt.show()
+
+# 3. Statistical Modeling
+# Ordinal Logistic Regression
+import statsmodels.api as sm
+import statsmodels.formula.api as smf
+
+model = smf.mnlogit("ceap ~ sexe + limb + age + age_bin", data=df)
+results = model.fit()
+print(results.summary())
+
+# Mixed Effects Model
+from statsmodels.regression.mixed_linear_model import MixedLM
+
+mixed_model = MixedLM.from_formula("ceap ~ sexe + limb + age", groups="doss", data=df)
+mixed_results = mixed_model.fit()
+print(mixed_results.summary())
+
+# 4. Advanced Analysis
+# Cochran-Armitage Trend Test
+trend_result = cochran_armitage_test(df['age_bin'], df['ceap'])
+print(trend_result)
+```
+
+---
+
+This framework covers a comprehensive statistical workflow for your dataset and provides a solid foundation for deeper exploration. Adjust and refine based on your specific research goals!
+
+****************************
+02
+****************************
+The **Cochran-Armitage Trend Test** is specifically designed to test for a **linear trend** in proportions across ordered groups (e.g., increasing disease severity with age groups or other ordinal predictors). It assesses whether the probability of a binary outcome (e.g., presence/absence of a condition) changes monotonically (increases or decreases) as the levels of an ordinal predictor increase.
+
+---
+
+### **Type of Trend**
+- The trend tested is **linear** (monotonic) across the ordered categories.
+- For example:
+  - Testing whether the proportion of patients with a certain condition increases across age bins (e.g., `10-19`, `20-29`, ..., `90-99`).
+  - The null hypothesis assumes no consistent trend, while the alternative hypothesis assumes a monotonic change (increase or decrease).
+
+---
+
+### **Hypotheses**
+1. **Null Hypothesis (\(H_0\)):**
+   - There is **no linear trend** in the proportions of the binary outcome across the levels of the ordinal predictor.
+   - Example: The proportion of patients with CEAP class C6 is constant across age bins.
+
+2. **Alternative Hypothesis (\(H_a\)):**
+   - There **is a linear trend** in the proportions of the binary outcome across the levels of the ordinal predictor.
+   - Example: The proportion of patients with CEAP class C6 increases with age bins.
+
+---
+
+### **Key Points:**
+- The test assumes:
+  1. The predictor variable is ordinal (e.g., age bins, severity levels).
+  2. The response variable is binary (e.g., presence/absence of CEAP C6).
+- The test statistic follows a chi-square distribution with 1 degree of freedom.
+
+---
+
+### **Implementation in Python**
+Here's an example of implementing the Cochran-Armitage Trend Test in Python:
+
+#### For Binary Outcome:
+
+```python
+from statsmodels.stats.proportion import cochran_armitage_test
+import numpy as np
+
+# Data: age bins and binary response (e.g., CEAP C6 presence/absence)
+# Rows: Age Bins; Columns: [Non-CEAP C6, CEAP C6]
+data = np.array([
+    [50, 5],   # Age Bin 10-19
+    [40, 15],  # Age Bin 20-29
+    [30, 25],  # Age Bin 30-39
+    [20, 35],  # Age Bin 40-49
+    [10, 45],  # Age Bin 50-59
+])
+
+# Perform the Cochran-Armitage Trend Test
+result = cochran_armitage_test(data)
+print("Statistic:", result.statistic)
+print("P-value:", result.pvalue)
+```
+
+---
+
+### **Interpreting Results:**
+- **P-value > 0.05**: Fail to reject \(H_0\); there is no significant trend.
+- **P-value ≤ 0.05**: Reject \(H_0\); a significant linear trend exists in the proportions.
+
+If you suspect a non-linear trend, alternative methods (e.g., generalized linear models with ordinal predictors) would be more appropriate.
+

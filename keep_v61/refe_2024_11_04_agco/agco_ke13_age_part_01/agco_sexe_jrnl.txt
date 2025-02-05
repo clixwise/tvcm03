@@ -1,0 +1,125 @@
+
+
+
+>>> >>> >>>
+AGCO = f(sexe=None) : 2025-01-26 11:18:16
+>>> >>> >>>
+
+Step 1 : df2.size:362 df2.type:<class 'pandas.core.frame.DataFrame'>
+       #        date                       name    doss  age age_bin sexe unbi mbas mbre ceap c0c6 c3c6    seve
+0      1  2021-01-27         YENGE MARCELA JOAO   D9972   54   50-59    F    B   G2    G   C2   VI   NA  C0..C2
+4      2  2021-01-21  TSHIBASU KAPUNGI DONATIEN   D9921   54   50-59    M    B   G2    G   C3   VI   VI  C3..C6
+6      3  2021-01-21      LUKOMBO KIANIAZA ATHY   D9908   51   50-59    F    B   G2    G   C4   VI   VI  C3..C6
+8      4  2021-01-18       LIFENYA LOFITI CATHY   D9894   55   50-59    F    B   G2    G   C5   VI   VI  C3..C6
+10     5  2021-01-12  FULAKIO DIAMFUMU JOACHIME   D9825   70   70-79    M    B   G2    G   C4   VI   VI  C3..C6
+..   ...         ...                        ...     ...  ...     ...  ...  ...  ...  ...  ...  ...  ...     ...
+765  518  2021-10-19   MUKALABAMA MUNGO ROMANIE  D10188   48   40-49    F    U   G2    G   C4   VI   VI  C3..C6
+766  520  2022-02-24         KASEYA GIBISI JEAN  D10129   75   70-79    M    B   G2    G   C3   VI   VI  C3..C6
+768  523  2022-12-16     EFONDA LIYOKE PATIENCE  D10120   48   40-49    F    U   G2    G   C6   VI   VI  C3..C6
+769  526  2021-02-15         NGOMA BALO CHARLES  D10103   68   60-69    M    U   G2    D   C3   VI   VI  C3..C6
+770  527  2022-02-18   DILUABANZA MAVEMA ARIANA  D10077   67   60-69    F    U   G2    D   C3   VI   VI  C3..C6
+
+[362 rows x 14 columns]
+:Index([  0,   4,   6,   8,  10,  12,  14,  16,  18,  20,
+       ...
+       753, 756, 758, 761, 764, 765, 766, 768, 769, 770],
+      dtype='int64', length=362)
+:Index(['#', 'date', 'name', 'doss', 'age', 'age_bin', 'sexe', 'unbi', 'mbas',
+       'mbre', 'ceap', 'c0c6', 'c3c6', 'seve'],
+      dtype='object')
+
+Data : 'indx' 'colu' ['age'] 'sexe'='None'
+Shapiro-Wilk test for Normality age: Stat:0.983 Pval:2.653e-04
+Shapiro-Wilk test for Normality : Reject the null hypothesis:
+The data does not appear to be normally distributed
+
+Data : 'indx' 'colu' ['age'] 'sexe'='None'
+Desc age:
+
+       Mu   Sigma      Q1      Q3 Below_Q1 Above_Q3 Within_IQR Patients_Below_Q1 Patients_Within_IQR Patients_Above_Q3 5th_perc 10th_perc 90th_perc 95th_perc  Median     Mad    Mean     Std    Mode    Skewness    Kurtosis Shapiro-Wilk Stat Shapiro-Wilk Pval
+0  56.721  15.356  47.000  69.000   87.000   85.000    190.000            24.033              52.486            23.481   30.000    35.000    76.000    78.950  58.000  11.000  56.721  15.356  52.000  -3.421e-01  -4.231e-01             0.983         2.653e-04
+
+
+>>> >>> >>>
+AGCO = f(sexe=M) : 2025-01-26 11:18:16
+>>> >>> >>>
+
+Step 1 : df2.size:156 df2.type:<class 'pandas.core.frame.DataFrame'>
+       #        date                       name    doss  age age_bin sexe unbi mbas mbre ceap c0c6 c3c6    seve
+4      2  2021-01-21  TSHIBASU KAPUNGI DONATIEN   D9921   54   50-59    M    B   G2    G   C3   VI   VI  C3..C6
+10     5  2021-01-12  FULAKIO DIAMFUMU JOACHIME   D9825   70   70-79    M    B   G2    G   C4   VI   VI  C3..C6
+12     6  2021-02-22          TENA-TENA  DELONN   D9730   73   70-79    M    B   G2    G   C3   VI   VI  C3..C6
+16     8  2020-12-21         TUELA MABIALA PAPY   D9674   47   40-49    M    B   G2    G   C3   VI   VI  C3..C6
+21    12  2020-12-09      BOLUA LIWONGU CAMILLE   D9574   60   60-69    M    U   G2    D   C4   VI   VI  C3..C6
+..   ...         ...                        ...     ...  ...     ...  ...  ...  ...  ...  ...  ...  ...     ...
+751  510  2022-10-08      ALI USENI JEAN ROBERT  D10315   57   50-59    M    B   G2    G   C6   VI   VI  C3..C6
+756  513  2021-04-16   KIEFU KEMBO PAUL CLEMENT  D10291   75   70-79    M    B   G2    G   C3   VI   VI  C3..C6
+761  516  2021-04-02      BAJAY TCHUMAH RAPHAEL  D10213   67   60-69    M    B   G2    G   C3   VI   VI  C3..C6
+766  520  2022-02-24         KASEYA GIBISI JEAN  D10129   75   70-79    M    B   G2    G   C3   VI   VI  C3..C6
+769  526  2021-02-15         NGOMA BALO CHARLES  D10103   68   60-69    M    U   G2    D   C3   VI   VI  C3..C6
+
+[156 rows x 14 columns]
+:Index([  4,  10,  12,  16,  21,  22,  28,  33,  36,  38,
+       ...
+       740, 741, 745, 748, 750, 751, 756, 761, 766, 769],
+      dtype='int64', length=156)
+:Index(['#', 'date', 'name', 'doss', 'age', 'age_bin', 'sexe', 'unbi', 'mbas',
+       'mbre', 'ceap', 'c0c6', 'c3c6', 'seve'],
+      dtype='object')
+
+Data : 'indx' 'colu' ['age'] 'sexe'='M'
+Shapiro-Wilk test for Normality age: Stat:0.976 Pval:0.008
+Shapiro-Wilk test for Normality : Reject the null hypothesis:
+The data does not appear to be normally distributed
+
+Data : 'indx' 'colu' ['age'] 'sexe'='M'
+Desc age:
+
+       Mu   Sigma      Q1      Q3 Below_Q1 Above_Q3 Within_IQR Patients_Below_Q1 Patients_Within_IQR Patients_Above_Q3 5th_perc 10th_perc 90th_perc 95th_perc  Median     Mad    Mean     Std    Mode    Skewness    Kurtosis Shapiro-Wilk Stat Shapiro-Wilk Pval
+0  56.686  14.810  48.000  68.250   36.000   39.000     81.000            23.077              51.923            25.000   29.000    36.000    75.000    77.250  57.000  10.000  56.686  14.810  75.000  -4.391e-01  -1.810e-01             0.976             0.008
+
+
+>>> >>> >>>
+AGCO = f(sexe=F) : 2025-01-26 11:18:16
+>>> >>> >>>
+
+Step 1 : df2.size:206 df2.type:<class 'pandas.core.frame.DataFrame'>
+       #        date                      name    doss  age age_bin sexe unbi mbas mbre ceap c0c6 c3c6    seve
+0      1  2021-01-27        YENGE MARCELA JOAO   D9972   54   50-59    F    B   G2    G   C2   VI   NA  C0..C2
+6      3  2021-01-21     LUKOMBO KIANIAZA ATHY   D9908   51   50-59    F    B   G2    G   C4   VI   VI  C3..C6
+8      4  2021-01-18      LIFENYA LOFITI CATHY   D9894   55   50-59    F    B   G2    G   C5   VI   VI  C3..C6
+14     7  2020-12-25    MAKULU MEDI BENARDETTE   D9704   52   50-59    F    B   G1    G   C1   VI   NA  C0..C2
+18    10  2020-12-15       KABEYA NGALULA MAMY   D9619   46   40-49    F    B   G2    G   C6   VI   VI  C3..C6
+..   ...         ...                       ...     ...  ...     ...  ...  ...  ...  ...  ...  ...  ...     ...
+758  515  2021-09-17      KEGBA MINGI CLEMENCE  D10261   76   70-79    F    B   G2    G   C3   VI   VI  C3..C6
+764  517  2021-02-27     MBUYI MUAMBA PATRICIA  D10211   26   20-29    F    U   G2    D   C6   VI   VI  C3..C6
+765  518  2021-10-19  MUKALABAMA MUNGO ROMANIE  D10188   48   40-49    F    U   G2    G   C4   VI   VI  C3..C6
+768  523  2022-12-16    EFONDA LIYOKE PATIENCE  D10120   48   40-49    F    U   G2    G   C6   VI   VI  C3..C6
+770  527  2022-02-18  DILUABANZA MAVEMA ARIANA  D10077   67   60-69    F    U   G2    D   C3   VI   VI  C3..C6
+
+[206 rows x 14 columns]
+:Index([  0,   6,   8,  14,  18,  20,  24,  26,  31,  42,
+       ...
+       736, 738, 743, 744, 753, 758, 764, 765, 768, 770],
+      dtype='int64', length=206)
+:Index(['#', 'date', 'name', 'doss', 'age', 'age_bin', 'sexe', 'unbi', 'mbas',
+       'mbre', 'ceap', 'c0c6', 'c3c6', 'seve'],
+      dtype='object')
+
+Data : 'indx' 'colu' ['age'] 'sexe'='F'
+Shapiro-Wilk test for Normality age: Stat:0.983 Pval:0.015
+Shapiro-Wilk test for Normality : Reject the null hypothesis:
+The data does not appear to be normally distributed
+
+Data : 'indx' 'colu' ['age'] 'sexe'='F'
+Desc age:
+
+       Mu   Sigma      Q1      Q3 Below_Q1 Above_Q3 Within_IQR Patients_Below_Q1 Patients_Within_IQR Patients_Above_Q3 5th_perc 10th_perc 90th_perc 95th_perc  Median     Mad    Mean     Std    Mode    Skewness    Kurtosis Shapiro-Wilk Stat Shapiro-Wilk Pval
+0  56.748  15.756  46.000  69.000   50.000   50.000    106.000            24.272              51.456            24.272   30.250    34.000    76.500    80.000  58.000  12.000  56.748  15.756  52.000  -2.810e-01  -5.819e-01             0.983             0.015
+
+RESU
+SEXE ages continus
+       Mu   Sigma      Q1      Q3 Below_Q1 Above_Q3 Within_IQR Patients_Below_Q1 Patients_Within_IQR Patients_Above_Q3 5th_perc 10th_perc 90th_perc 95th_perc  Median     Mad    Mean     Std    Mode    Skewness    Kurtosis Shapiro-Wilk Stat Shapiro-Wilk Pval
+T  56.721  15.356  47.000  69.000   87.000   85.000    190.000            24.033              52.486            23.481   30.000    35.000    76.000    78.950  58.000  11.000  56.721  15.356  52.000  -3.421e-01  -4.231e-01             0.983         2.653e-04
+M  56.686  14.810  48.000  68.250   36.000   39.000     81.000            23.077              51.923            25.000   29.000    36.000    75.000    77.250  57.000  10.000  56.686  14.810  75.000  -4.391e-01  -1.810e-01             0.976             0.008
+F  56.748  15.756  46.000  69.000   50.000   50.000    106.000            24.272              51.456            24.272   30.250    34.000    76.500    80.000  58.000  12.000  56.748  15.756  52.000  -2.810e-01  -5.819e-01             0.983             0.015

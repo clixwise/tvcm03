@@ -1,0 +1,247 @@
+
+>>> >>> >>>
+2025-02-02 16:07:20
+>>> >>> >>>
+
+Step 1 : df2.size:876 df2.type:<class 'pandas.core.frame.DataFrame'>
+      doss sexe mbre ceap
+0    D9972    F    G   C2
+1    D9972    F    G   C6
+2    D9972    F    D   C2
+3    D9972    F    D   C6
+4    D9921    M    G   C3
+..     ...  ...  ...  ...
+871  D8930    F    D   NA
+872  D8956    F    G   NA
+873  D9113    M    D   NA
+874  D9574    M    G   NA
+875  D9609    F    D   NA
+
+[876 rows x 4 columns]
+:RangeIndex(start=0, stop=876, step=1)
+:Index(['doss', 'sexe', 'mbre', 'ceap'], dtype='object')
+Step 2 : df3.size:362 df3.type:<class 'pandas.core.frame.DataFrame'>
+       doss sexe                      lisL                      lisR
+0    D10077    F  [1, 0, 0, 0, 0, 0, 0, 0]  [0, 0, 0, 0, 1, 0, 0, 0]
+1    D10103    M  [1, 0, 0, 0, 0, 0, 0, 0]  [0, 0, 0, 0, 1, 0, 0, 0]
+2    D10120    F  [0, 0, 0, 0, 0, 0, 0, 1]  [1, 0, 0, 0, 0, 0, 0, 0]
+3    D10129    M  [0, 0, 0, 0, 1, 0, 0, 0]  [0, 0, 0, 0, 1, 0, 0, 0]
+4    D10188    F  [0, 0, 0, 0, 0, 1, 0, 0]  [1, 0, 0, 0, 0, 0, 0, 0]
+..      ...  ...                       ...                       ...
+357   D9825    M  [0, 0, 0, 0, 0, 1, 0, 0]  [0, 0, 0, 0, 0, 0, 1, 0]
+358   D9894    F  [0, 0, 0, 0, 0, 0, 1, 0]  [0, 0, 0, 0, 0, 0, 1, 0]
+359   D9908    F  [0, 0, 0, 0, 0, 1, 0, 0]  [0, 0, 0, 0, 1, 0, 0, 0]
+360   D9921    M  [0, 0, 0, 0, 1, 0, 0, 0]  [0, 0, 0, 0, 1, 0, 0, 0]
+361   D9972    F  [0, 0, 0, 1, 0, 0, 0, 1]  [0, 0, 0, 1, 0, 0, 0, 1]
+
+[362 rows x 4 columns]
+:RangeIndex(start=0, stop=362, step=1)
+:Index(['doss', 'sexe', 'lisL', 'lisR'], dtype='object')
+sexe : M : df1.size=362 df2.size=156
+
+Step 2 : df2.size:9 df2.type:<class 'pandas.core.frame.DataFrame'>
+      NA  C0  C1  C2  C3  C4  C5  C6  tota
+NA     0   0   0   0   5   3   0  12    20
+C0     0   0   0   0   2   1   1   7    11
+C1     0   0   0   0   2   0   1   0     3
+C2     3   1   0   3   4   1   2  10    24
+C3     7   6   0   8  28   7   2   6    64
+C4     5   1   1   1   7   8   3   2    28
+C5     3   2   0   2   2   0   1   1    11
+C6    24  13   2  14   6   2   3   9    73
+tota  42  23   3  28  56  22  13  47   234
+:Index(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6', 'tota'], dtype='object')
+:Index(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6', 'tota'], dtype='object') sum:234
+
+Step 3 : df2.size:8 df2.type:<class 'pandas.core.frame.DataFrame'>
+      NA  C0  C1  C2  C3  C4  C5  C6
+ceap                                
+NA     0   0   0   0   5   3   0  12
+C0     0   0   0   0   2   1   1   7
+C1     0   0   0   0   2   0   1   0
+C2     3   1   0   3   4   1   2  10
+C3     7   6   0   8  28   7   2   6
+C4     5   1   1   1   7   8   3   2
+C5     3   2   0   2   2   0   1   1
+C6    24  13   2  14   6   2   3   9
+:Index(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6'], dtype='object', name='ceap')
+:Index(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6'], dtype='object')
+df2.size
+8 df2.type:<class 'pandas.core.frame.DataFrame'>
+ceap  NA  C0  C1  C2  C3  C4  C5  C6
+ceap                                
+NA     0   0   0   0   5   3   0  12
+C0     0   0   0   0   2   1   1   7
+C1     0   0   0   0   2   0   1   0
+C2     3   1   0   3   4   1   2  10
+C3     7   6   0   8  28   7   2   6
+C4     5   1   1   1   7   8   3   2
+C5     3   2   0   2   2   0   1   1
+C6    24  13   2  14   6   2   3   9
+:Index(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6'], dtype='object', name='ceap')
+:Index(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6'], dtype='object', name='ceap')
+:234
+ceap_unbi_abso_deta:<class 'pandas.core.frame.DataFrame'>
+       doss sexe unbi                      ceaL                      ceaR                           L                           R
+0    D10077    F    U  [1, 0, 0, 0, 0, 0, 0, 0]  [0, 0, 0, 0, 1, 0, 0, 0]   [NA, x, x, x, x, x, x, x]   [x, x, x, x, C3, x, x, x]
+1    D10103    M    U  [1, 0, 0, 0, 0, 0, 0, 0]  [0, 0, 0, 0, 1, 0, 0, 0]   [NA, x, x, x, x, x, x, x]   [x, x, x, x, C3, x, x, x]
+2    D10120    F    U  [0, 0, 0, 0, 0, 0, 0, 1]  [1, 0, 0, 0, 0, 0, 0, 0]   [x, x, x, x, x, x, x, C6]   [NA, x, x, x, x, x, x, x]
+3    D10129    M    B  [0, 0, 0, 0, 1, 0, 0, 0]  [0, 0, 0, 0, 1, 0, 0, 0]   [x, x, x, x, C3, x, x, x]   [x, x, x, x, C3, x, x, x]
+4    D10188    F    U  [0, 0, 0, 0, 0, 1, 0, 0]  [1, 0, 0, 0, 0, 0, 0, 0]   [x, x, x, x, x, C4, x, x]   [NA, x, x, x, x, x, x, x]
+..      ...  ...  ...                       ...                       ...                         ...                         ...
+357   D9825    M    B  [0, 0, 0, 0, 0, 1, 0, 0]  [0, 0, 0, 0, 0, 0, 1, 0]   [x, x, x, x, x, C4, x, x]   [x, x, x, x, x, x, C5, x]
+358   D9894    F    B  [0, 0, 0, 0, 0, 0, 1, 0]  [0, 0, 0, 0, 0, 0, 1, 0]   [x, x, x, x, x, x, C5, x]   [x, x, x, x, x, x, C5, x]
+359   D9908    F    B  [0, 0, 0, 0, 0, 1, 0, 0]  [0, 0, 0, 0, 1, 0, 0, 0]   [x, x, x, x, x, C4, x, x]   [x, x, x, x, C3, x, x, x]
+360   D9921    M    B  [0, 0, 0, 0, 1, 0, 0, 0]  [0, 0, 0, 0, 1, 0, 0, 0]   [x, x, x, x, C3, x, x, x]   [x, x, x, x, C3, x, x, x]
+361   D9972    F    B  [0, 0, 0, 1, 0, 0, 0, 1]  [0, 0, 0, 1, 0, 0, 0, 1]  [x, x, x, C2, x, x, x, C6]  [x, x, x, C2, x, x, x, C6]
+
+[362 rows x 7 columns]
+:RangeIndex(start=0, stop=362, step=1)
+Total1 'ceaL':[39, 24, 5, 41, 126, 52, 29, 113] 'ceaR':[66, 43, 6, 57, 123, 45, 24, 83] list:[105, 67, 11, 98, 249, 97, 53, 196]
+Total2 'ceaL:429 'ceaR':447 list:876
+\Input file filtered : df_line.size:362 df_line.type:<class 'pandas.core.frame.DataFrame'>
+       doss sexe unbi                      ceaL                      ceaR                           L                           R
+0    D10077    F    U  [1, 0, 0, 0, 0, 0, 0, 0]  [0, 0, 0, 0, 1, 0, 0, 0]   [NA, x, x, x, x, x, x, x]   [x, x, x, x, C3, x, x, x]
+1    D10103    M    U  [1, 0, 0, 0, 0, 0, 0, 0]  [0, 0, 0, 0, 1, 0, 0, 0]   [NA, x, x, x, x, x, x, x]   [x, x, x, x, C3, x, x, x]
+2    D10120    F    U  [0, 0, 0, 0, 0, 0, 0, 1]  [1, 0, 0, 0, 0, 0, 0, 0]   [x, x, x, x, x, x, x, C6]   [NA, x, x, x, x, x, x, x]
+3    D10129    M    B  [0, 0, 0, 0, 1, 0, 0, 0]  [0, 0, 0, 0, 1, 0, 0, 0]   [x, x, x, x, C3, x, x, x]   [x, x, x, x, C3, x, x, x]
+4    D10188    F    U  [0, 0, 0, 0, 0, 1, 0, 0]  [1, 0, 0, 0, 0, 0, 0, 0]   [x, x, x, x, x, C4, x, x]   [NA, x, x, x, x, x, x, x]
+..      ...  ...  ...                       ...                       ...                         ...                         ...
+357   D9825    M    B  [0, 0, 0, 0, 0, 1, 0, 0]  [0, 0, 0, 0, 0, 0, 1, 0]   [x, x, x, x, x, C4, x, x]   [x, x, x, x, x, x, C5, x]
+358   D9894    F    B  [0, 0, 0, 0, 0, 0, 1, 0]  [0, 0, 0, 0, 0, 0, 1, 0]   [x, x, x, x, x, x, C5, x]   [x, x, x, x, x, x, C5, x]
+359   D9908    F    B  [0, 0, 0, 0, 0, 1, 0, 0]  [0, 0, 0, 0, 1, 0, 0, 0]   [x, x, x, x, x, C4, x, x]   [x, x, x, x, C3, x, x, x]
+360   D9921    M    B  [0, 0, 0, 0, 1, 0, 0, 0]  [0, 0, 0, 0, 1, 0, 0, 0]   [x, x, x, x, C3, x, x, x]   [x, x, x, x, C3, x, x, x]
+361   D9972    F    B  [0, 0, 0, 1, 0, 0, 0, 1]  [0, 0, 0, 1, 0, 0, 0, 1]  [x, x, x, C2, x, x, x, C6]  [x, x, x, C2, x, x, x, C6]
+
+[362 rows x 7 columns]
+:RangeIndex(start=0, stop=362, step=1)
+:Index(['doss', 'sexe', 'unbi', 'ceaL', 'ceaR', 'L', 'R'], dtype='object')
+
+Contingency table  : df_tabl.size:8 df_tabl.type:<class 'pandas.core.frame.DataFrame'>
+ceap  NA  C0  C1  C2  C3  C4  C5  C6
+ceap                                
+NA     0   0   0   0   5   3   0  12
+C0     0   0   0   0   2   1   1   7
+C1     0   0   0   0   2   0   1   0
+C2     3   1   0   3   4   1   2  10
+C3     7   6   0   8  28   7   2   6
+C4     5   1   1   1   7   8   3   2
+C5     3   2   0   2   2   0   1   1
+C6    24  13   2  14   6   2   3   9
+:Index(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6'], dtype='object', name='ceap')
+:Index(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6'], dtype='object', name='ceap')
+
+Contingency table  : df_tabl.size:8 df_tabl.type:<class 'pandas.core.frame.DataFrame'>
+Rcea  NA  C0  C1  C2  C3  C4  C5  C6
+Lcea                                
+NA     0   0   0   0   5   3   0  12
+C0     0   0   0   0   2   1   1   7
+C1     0   0   0   0   2   0   1   0
+C2     3   1   0   3   4   1   2  10
+C3     7   6   0   8  28   7   2   6
+C4     5   1   1   1   7   8   3   2
+C5     3   2   0   2   2   0   1   1
+C6    24  13   2  14   6   2   3   9
+:Index(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6'], dtype='object', name='Lcea')
+:Index(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6'], dtype='object', name='Rcea')
+Sum:234
+
+Data : 'Lcea' 'Rcea' ; ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+(perp) Mood's Median : Stat:8.882 Pval:0.003
+(perp) Mood's Median : Median for 'Lcea' groups : Lcea=5.000,Rcea=4.000
+(perp) Mood's Median : The Stat:'8.882' follows a chi-square distribution with 1 degree of freedom.
+A larger test statistic indicates a greater difference between the medians.
+(perp) Mood's Median : assesses whether the distribution of CEAP classifications differs significantly between left and right legs, without assuming normality.
+(perp) Mood's Median : Reject the null hypothesis:
+Ha : There is a difference in the median CEAP classifications between left and right legs.
+
+Data : 'Lcea' 'Rcea' ; ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+Variance : Brown-Forsythe : Stat:0.838 Pval:0.360 Effect Size (Eta squared) : 0.001 (negligible)
+Variance : Brown-Forsythe : Fail to reject the null hypothesis:
+H0 : There is no difference in variances of 'Lcea' and 'Rcea' values
+
+Data : 'Lcea' 'Rcea' ; ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+Variance : (prep) Fligner-Killeen : Stat:0.448 Pval:0.503
+(prep) Fligner-Killeen : Stat:0.448 indicates the degree of difference in variances.
+(prep) Fligner-Killeen : A larger test statistic suggests greater differences in variability between the two groups.
+(prep) Fligner-Killeen : Fail to reject the null hypothesis:
+H0 : There is no difference in variances of 'Lcea' and 'Rcea' values
+
+Data : 'Lcea' 'Rcea' ; ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+Variance : (prep) Ansari-Bradley : Stat:67355.500 Pval:0.208
+(prep) Ansari-Bradley : Stat:67355.500 indicates the degree of difference in variances.
+(prep) Ansari-Bradley : A larger test statistic suggests greater differences in variability between the two groups.
+Ansari-Bradley : Fail to reject the null hypothesis:
+H0 : There is no difference in variances of 'Lcea' and 'Rcea' values
+
+Data : 'Lcea' 'Rcea' ; ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+Chi-Square : Stat:130.013 Pval:2.894e-09 Dof:49
+Chi-Square : Reject the null hypothesis:
+Ha : there is a association between the categorical 'Rcea' and the group 'Lcea' variables
+(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']) vs (['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6'])
+
+Data : 'Lcea' 'Rcea' ; ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+Residuals
+Residuals : Observed:
+Rcea  NA  C0  C1  C2  C3  C4  C5  C6
+Lcea                                
+NA     0   0   0   0   5   3   0  12
+C0     0   0   0   0   2   1   1   7
+C1     0   0   0   0   2   0   1   0
+C2     3   1   0   3   4   1   2  10
+C3     7   6   0   8  28   7   2   6
+C4     5   1   1   1   7   8   3   2
+C5     3   2   0   2   2   0   1   1
+C6    24  13   2  14   6   2   3   9
+:Index(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6'], dtype='object', name='Lcea')
+:Index(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6'], dtype='object', name='Rcea')
+Residuals : Expected:
+       NA    C0    C1    C2     C3    C4    C5     C6
+NA   3.59  1.97  0.26  2.39   4.79  1.88  1.11   4.02
+C0   1.97  1.08  0.14  1.32   2.63  1.03  0.61   2.21
+C1   0.54  0.29  0.04  0.36   0.72  0.28  0.17   0.60
+C2   4.31  2.36  0.31  2.87   5.74  2.26  1.33   4.82
+C3  11.49  6.29  0.82  7.66  15.32  6.02  3.56  12.85
+C4   5.03  2.75  0.36  3.35   6.70  2.63  1.56   5.62
+C5   1.97  1.08  0.14  1.32   2.63  1.03  0.61   2.21
+C6  13.10  7.18  0.94  8.74  17.47  6.86  4.06  14.66
+:Index(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6'], dtype='object', name='Lcea')
+:Index(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6'], dtype='object', name='Rcea')
+Residuals : Residuals standardized:
+      NA    C0    C1    C2    C3    C4    C5    C6
+NA -1.89 -1.40 -0.51 -1.55  0.10  0.82 -1.05  3.98
+C0 -1.41 -1.04 -0.38 -1.15 -0.39 -0.03  0.50  3.22
+C1 -0.73 -0.54 -0.20 -0.60  1.51 -0.53  2.04 -0.78
+C2 -0.63 -0.88 -0.55  0.08 -0.73 -0.84  0.58  2.36
+C3 -1.32 -0.12 -0.91  0.12  3.24  0.40 -0.82 -1.91
+C4 -0.01 -1.06  1.07 -1.28  0.12  3.31  1.16 -1.53
+C5  0.73  0.88 -0.38  0.60 -0.39 -1.02  0.50 -0.81
+C6  3.01  2.17  1.10  1.78 -2.74 -1.86 -0.52 -1.48
+:Index(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6'], dtype='object', name='Lcea')
+:Index(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6'], dtype='object', name='Rcea')
+Residuals : Residuals adjusted:
+Rcea    NA    C0    C1    C2    C3    C4    C5    C6
+Lcea                                                
+NA   -2.19 -1.54 -0.53 -1.72  0.12  0.90 -1.13  4.66
+C0   -1.59 -1.12 -0.39 -1.25 -0.46 -0.04  0.52  3.69
+C1   -0.82 -0.58 -0.20 -0.64  1.75 -0.56  2.11 -0.87
+C2   -0.73 -0.98 -0.59  0.09 -0.88 -0.93  0.63  2.79
+C3   -1.71 -0.14 -1.07  0.15  4.36  0.49 -1.00 -2.51
+C4   -0.01 -1.19  1.15 -1.46  0.14  3.70  1.27 -1.82
+C5    0.83  0.95 -0.39  0.65 -0.46 -1.09  0.52 -0.93
+C6    4.01  2.76  1.33  2.29 -3.79 -2.35 -0.65 -1.99
+:Index(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6'], dtype='object', name='Lcea')
+:Index(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6'], dtype='object', name='Rcea')
+Residuals : Freeman-Tukey Deviates:
+Rcea     NA     C0    C1     C2     C3     C4    C5     C6
+Lcea                                                      
+NA     2.92   1.98  0.42   2.25   9.07   6.52  1.33  11.13
+C0     1.98   1.31  0.25   1.50   0.40   0.03  4.09   8.52
+C1     0.78   0.48  0.07   0.56   4.97   0.46  3.53   0.85
+C2     0.66   0.99  0.49   7.14   0.77   0.93  5.52  10.91
+C3     1.47   0.11  1.07  11.37  18.52  10.39  0.90   2.24
+C4     0.01   1.23  3.80   1.56  10.66   9.14  6.29   1.85
+C5     6.59   5.31  0.25   5.50   0.40   1.27  4.09   0.90
+C6    17.16  12.73  5.18  13.54   3.42   2.33  0.54   1.64
+:Index(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6'], dtype='object', name='Lcea')
+:Index(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6'], dtype='object', name='Rcea')

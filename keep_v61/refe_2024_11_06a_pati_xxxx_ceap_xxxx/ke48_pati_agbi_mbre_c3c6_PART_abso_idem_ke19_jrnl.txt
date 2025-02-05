@@ -1,0 +1,594 @@
+
+>>> >>> >>>
+2025-01-17 11:45:37
+>>> >>> >>>
+sexe : None : df1.size=876 df2.size=876
+
+Step 1 : df2.size:595 df2.type:<class 'pandas.core.frame.DataFrame'>
+       doss age_bin sexe mbre unbi ceap
+1     D9972   50-59    F    G    B   C6
+3     D9972   50-59    F    D    B   C6
+4     D9921   50-59    M    G    B   C3
+5     D9921   50-59    M    D    B   C3
+6     D9908   50-59    F    G    B   C4
+..      ...     ...  ...  ...  ...  ...
+766  D10129   70-79    M    G    B   C3
+767  D10129   70-79    M    D    B   C3
+768  D10120   40-49    F    G    U   C6
+769  D10103   60-69    M    D    U   C3
+770  D10077   60-69    F    D    U   C3
+
+[595 rows x 6 columns]
+:Index([  1,   3,   4,   5,   6,   7,   8,   9,  10,  11,
+       ...
+       759, 760, 761, 764, 765, 766, 767, 768, 769, 770],
+      dtype='int64', length=595)
+:Index(['doss', 'age_bin', 'sexe', 'mbre', 'unbi', 'ceap'], dtype='object')
+
+Step 1 : df2.size:595 df2.type:<class 'pandas.core.frame.DataFrame'>
+       doss age_bin sexe mbre unbi ceap
+1     D9972   50-59    F    G    B   C6
+3     D9972   50-59    F    D    B   C6
+4     D9921   50-59    M    G    B   C3
+5     D9921   50-59    M    D    B   C3
+6     D9908   50-59    F    G    B   C4
+..      ...     ...  ...  ...  ...  ...
+766  D10129   70-79    M    G    B   C3
+767  D10129   70-79    M    D    B   C3
+768  D10120   40-49    F    G    U   C6
+769  D10103   60-69    M    D    U   C3
+770  D10077   60-69    F    D    U   C3
+
+[595 rows x 6 columns]
+:Index([  1,   3,   4,   5,   6,   7,   8,   9,  10,  11,
+       ...
+       759, 760, 761, 764, 765, 766, 767, 768, 769, 770],
+      dtype='int64', length=595)
+:Index(['doss', 'age_bin', 'sexe', 'mbre', 'unbi', 'ceap'], dtype='object')
+sexe : None : df1.size=595 df2.size=595
+
+df1.size:595 df1.type:<class 'pandas.core.frame.DataFrame'>
+       doss age_bin sexe mbre unbi ceap
+1     D9972   50-59    F    G    B   C6
+3     D9972   50-59    F    D    B   C6
+4     D9921   50-59    M    G    B   C3
+5     D9921   50-59    M    D    B   C3
+6     D9908   50-59    F    G    B   C4
+..      ...     ...  ...  ...  ...  ...
+766  D10129   70-79    M    G    B   C3
+767  D10129   70-79    M    D    B   C3
+768  D10120   40-49    F    G    U   C6
+769  D10103   60-69    M    D    U   C3
+770  D10077   60-69    F    D    U   C3
+
+[595 rows x 6 columns]
+:Index([  1,   3,   4,   5,   6,   7,   8,   9,  10,  11,
+       ...
+       759, 760, 761, 764, 765, 766, 767, 768, 769, 770],
+      dtype='int64', length=595)
+:Index(['doss', 'age_bin', 'sexe', 'mbre', 'unbi', 'ceap'], dtype='object')
+
+Step 1 : df2.size:2 df2.type:<class 'pandas.core.frame.DataFrame'>
+   10-19  20-29  30-39  40-49  50-59  60-69  70-79  80-89  90-99
+G      6      7     35     53     75     71     60     12      1
+D      1     11     20     40     65     69     55     12      2
+:Index(['G', 'D'], dtype='object')
+:Index(['10-19', '20-29', '30-39', '40-49', '50-59', '60-69', '70-79', '80-89',
+       '90-99'],
+      dtype='object')
+
+Step 2 : df2.size:3 df2.type:<class 'pandas.core.frame.DataFrame'>
+      10-19  20-29  30-39  40-49  50-59  60-69  70-79  80-89  90-99  tota
+G         6      7     35     53     75     71     60     12      1   320
+D         1     11     20     40     65     69     55     12      2   275
+tota      7     18     55     93    140    140    115     24      3   595
+:Index(['G', 'D', 'tota'], dtype='object')
+:Index(['10-19', '20-29', '30-39', '40-49', '50-59', '60-69', '70-79', '80-89',
+       '90-99', 'tota'],
+      dtype='object')
+
+Step 3 : df2.size:2 df2.type:<class 'pandas.core.frame.DataFrame'>
+      10-19  20-29  30-39  40-49  50-59  60-69  70-79  80-89  90-99
+mbre                                                               
+G         6      7     35     53     75     71     60     12      1
+D         1     11     20     40     65     69     55     12      2
+:Index(['G', 'D'], dtype='object', name='mbre')
+:Index(['10-19', '20-29', '30-39', '40-49', '50-59', '60-69', '70-79', '80-89',
+       '90-99'],
+      dtype='object')
+df2.size2 df2.type:<class 'pandas.core.frame.DataFrame'>
+age_bin  10-19  20-29  30-39  40-49  50-59  60-69  70-79  80-89  90-99
+mbre                                                                  
+G            6      7     35     53     75     71     60     12      1
+D            1     11     20     40     65     69     55     12      2
+:Index(['G', 'D'], dtype='object', name='mbre')
+:Index(['10-19', '20-29', '30-39', '40-49', '50-59', '60-69', '70-79', '80-89',
+       '90-99'],
+      dtype='object', name='age_bin')
+:595
+
+Step 0 : df2.size:595 df2.type:<class 'pandas.core.frame.DataFrame'>
+       #        date                       name    doss  age age_bin sexe unbi mbas mbre ceap c0c6 c3c6    seve  mbre_stra  age_bin_ordi
+0      1  2021-01-27         YENGE MARCELA JOAO   D9972   54   50-59    F    B   G2    G   C6   VI   VI  C3..C6          0             4
+1      1  2021-01-27         YENGE MARCELA JOAO   D9972   54   50-59    F    B   G2    D   C6   VI   VI  C3..C6          1             4
+2      2  2021-01-21  TSHIBASU KAPUNGI DONATIEN   D9921   54   50-59    M    B   G2    G   C3   VI   VI  C3..C6          0             4
+3      2  2021-01-21  TSHIBASU KAPUNGI DONATIEN   D9921   54   50-59    M    B   G2    D   C3   VI   VI  C3..C6          1             4
+4      3  2021-01-21      LUKOMBO KIANIAZA ATHY   D9908   51   50-59    F    B   G2    G   C4   VI   VI  C3..C6          0             4
+..   ...         ...                        ...     ...  ...     ...  ...  ...  ...  ...  ...  ...  ...     ...        ...           ...
+590  520  2022-02-24         KASEYA GIBISI JEAN  D10129   75   70-79    M    B   G2    G   C3   VI   VI  C3..C6          0             6
+591  520  2022-02-24         KASEYA GIBISI JEAN  D10129   75   70-79    M    B   G2    D   C3   VI   VI  C3..C6          1             6
+592  523  2022-12-16     EFONDA LIYOKE PATIENCE  D10120   48   40-49    F    U   G2    G   C6   VI   VI  C3..C6          0             3
+593  526  2021-02-15         NGOMA BALO CHARLES  D10103   68   60-69    M    U   G2    D   C3   VI   VI  C3..C6          1             5
+594  527  2022-02-18   DILUABANZA MAVEMA ARIANA  D10077   67   60-69    F    U   G2    D   C3   VI   VI  C3..C6          1             5
+
+[595 rows x 16 columns]
+:RangeIndex(start=0, stop=595, step=1)
+:Index(['#', 'date', 'name', 'doss', 'age', 'age_bin', 'sexe', 'unbi', 'mbas',
+       'mbre', 'ceap', 'c0c6', 'c3c6', 'seve', 'mbre_stra', 'age_bin_ordi'],
+      dtype='object')
+\Input file filtered : df_line.size:595 df_line.type:<class 'pandas.core.frame.DataFrame'>
+       #        date                       name    doss  age age_bin sexe unbi mbas mbre ceap c0c6 c3c6    seve  mbre_stra  age_bin_ordi
+0      1  2021-01-27         YENGE MARCELA JOAO   D9972   54   50-59    F    B   G2    G   C6   VI   VI  C3..C6          0             4
+1      1  2021-01-27         YENGE MARCELA JOAO   D9972   54   50-59    F    B   G2    D   C6   VI   VI  C3..C6          1             4
+2      2  2021-01-21  TSHIBASU KAPUNGI DONATIEN   D9921   54   50-59    M    B   G2    G   C3   VI   VI  C3..C6          0             4
+3      2  2021-01-21  TSHIBASU KAPUNGI DONATIEN   D9921   54   50-59    M    B   G2    D   C3   VI   VI  C3..C6          1             4
+4      3  2021-01-21      LUKOMBO KIANIAZA ATHY   D9908   51   50-59    F    B   G2    G   C4   VI   VI  C3..C6          0             4
+..   ...         ...                        ...     ...  ...     ...  ...  ...  ...  ...  ...  ...  ...     ...        ...           ...
+590  520  2022-02-24         KASEYA GIBISI JEAN  D10129   75   70-79    M    B   G2    G   C3   VI   VI  C3..C6          0             6
+591  520  2022-02-24         KASEYA GIBISI JEAN  D10129   75   70-79    M    B   G2    D   C3   VI   VI  C3..C6          1             6
+592  523  2022-12-16     EFONDA LIYOKE PATIENCE  D10120   48   40-49    F    U   G2    G   C6   VI   VI  C3..C6          0             3
+593  526  2021-02-15         NGOMA BALO CHARLES  D10103   68   60-69    M    U   G2    D   C3   VI   VI  C3..C6          1             5
+594  527  2022-02-18   DILUABANZA MAVEMA ARIANA  D10077   67   60-69    F    U   G2    D   C3   VI   VI  C3..C6          1             5
+
+[595 rows x 16 columns]
+:RangeIndex(start=0, stop=595, step=1)
+:Index(['#', 'date', 'name', 'doss', 'age', 'age_bin', 'sexe', 'unbi', 'mbas',
+       'mbre', 'ceap', 'c0c6', 'c3c6', 'seve', 'mbre_stra', 'age_bin_ordi'],
+      dtype='object')
+
+Contingency table  : df_tabl.size:2 df_tabl.type:<class 'pandas.core.frame.DataFrame'>
+age_bin  10-19  20-29  30-39  40-49  50-59  60-69  70-79  80-89  90-99
+mbre                                                                  
+G            6      7     35     53     75     71     60     12      1
+D            1     11     20     40     65     69     55     12      2
+:Index(['G', 'D'], dtype='object', name='mbre')
+
+Contingency table  : totals:        G    D    T
+mbre  320  275  595
+
+Contingency table normalized : df_norm.size:0 df_norm.type:<class 'pandas.core.frame.DataFrame'>
+Empty DataFrame
+Columns: []
+Index: []
+:RangeIndex(start=0, stop=0, step=1)
+:RangeIndex(start=0, stop=0, step=1)
+
+
+>>> >>> >>>
+2025-01-17 11:45:38 : stat_glob_perp_2024_12_15
+>>> >>> >>>
+
+---
+Data : 'mbre' 'age_bin' ; ['G', 'D'] ['10-19', '20-29', '30-39', '40-49', '50-59', '60-69', '70-79', '80-89', '90-99']
+Chi2 2024_12_15 [2025_01_17] :
+H0 : The proportions in G and D are similar for column age_bin
+Ha : The proportions in G and D are not similar for column age_bin
+---
+
+      age_bin   G   D  G_thi  G_tha  G_sum  D_thi  D_tha  D_sum  _sum       stat   pval   H
+10-19   10-19   6   1      6    314    320      1    274    275   595      1.751  0.186  H0
+20-29   20-29   7  11      7    313    320     11    264    275   595      1.096  0.295  H0
+30-39   30-39  35  20     35    285    320     20    255    275   595      1.951  0.162  H0
+40-49   40-49  53  40     53    267    320     40    235    275   595      0.316  0.574  H0
+50-59   50-59  75  65     75    245    320     65    210    275   595  0.000e+00  1.000  H0
+60-69   60-69  71  69     71    249    320     69    206    275   595      0.541  0.462  H0
+70-79   70-79  60  55     60    260    320     55    220    275   595      0.079  0.779  H0
+80-89   80-89  12  12     12    308    320     12    263    275   595      0.029  0.865  H0
+90-99   90-99   1   2      1    319    320      2    273    275   595      0.017  0.895  H0
+(['10-19', '20-29', '30-39', '40-49', '50-59', '60-69', '70-79', '80-89', '90-99']) vs (['G', 'D'])
+
+---
+Data : 'mbre' 'age_bin' ; ['G', 'D'] ['10-19', '20-29', '30-39', '40-49', '50-59', '60-69', '70-79', '80-89', '90-99']
+Fisher Exact odds ratio 2024_12_15 [2025_01_17] :
+H0 : The proportions in G and D are similar for column age_bin
+Ha : The proportions in G and D are not similar for column age_bin
+---
+
+      age_bin   G   D  G_thi  G_tha  G_sum  D_thi  D_tha  D_sum  _sum stat (odds_ratio)   pval  ci_lower   ci_upper   H
+10-19   10-19   6   1      6    314    320      1    274    275   595             5.236  0.130  0.626441  43.758650  H0
+20-29   20-29   7  11      7    313    320     11    264    275   595             0.537  0.234  0.205170   1.404161  H0
+30-39   30-39  35  20     35    285    320     20    255    275   595             1.566  0.155  0.881271   2.782001  H0
+40-49   40-49  53  40     53    267    320     40    235    275   595             1.166  0.572  0.746301   1.822346  H0
+50-59   50-59  75  65     75    245    320     65    210    275   595             0.989  1.000  0.676444   1.446008  H0
+60-69   60-69  71  69     71    249    320     69    206    275   595             0.851  0.438  0.582583   1.243932  H0
+70-79   70-79  60  55     60    260    320     55    220    275   595             0.923  0.755  0.614097   1.387519  H0
+80-89   80-89  12  12     12    308    320     12    263    275   595             0.854  0.835  0.377251   1.932765  H0
+90-99   90-99   1   2      1    319    320      2    273    275   595             0.428  0.598  0.038590   4.744673  H0
+(['10-19', '20-29', '30-39', '40-49', '50-59', '60-69', '70-79', '80-89', '90-99']) vs (['G', 'D'])
+
+---
+Data : 'mbre' 'age_bin' ; ['G', 'D'] ['10-19', '20-29', '30-39', '40-49', '50-59', '60-69', '70-79', '80-89', '90-99']
+Proportion (1) [ceap/colu] 2024_12_15 [2025_01_17] [REJECT THIS OPTION] :
+H0 : The proportions in G and D are equal for the given age_bin (Two-tailed test)
+Ha : The proportions in G and D are unequal for the given age_bin (Two-tailed test)
+---
+
+      age_bin   G   D  totG  totD   proG   proD        stat   pval   H
+10-19   10-19   6   1     7     7  0.857  0.143       2.673  0.008  Ha
+20-29   20-29   7  11    18    18  0.389  0.611  -1.333e+00  0.182  H0
+30-39   30-39  35  20    55    55  0.636  0.364       2.860  0.004  Ha
+40-49   40-49  53  40    93    93  0.570  0.430       1.906  0.057  H0
+50-59   50-59  75  65   140   140  0.536  0.464       1.195  0.232  H0
+60-69   60-69  71  69   140   140  0.507  0.493       0.239  0.811  H0
+70-79   70-79  60  55   115   115  0.522  0.478       0.659  0.510  H0
+80-89   80-89  12  12    24    24  0.500  0.500   0.000e+00  1.000  H0
+90-99   90-99   1   2     3     3  0.333  0.667  -8.165e-01  0.414  H0
+(['10-19', '20-29', '30-39', '40-49', '50-59', '60-69', '70-79', '80-89', '90-99']) vs (['G', 'D'])
+
+---
+Data : 'mbre' 'age_bin' ; ['G', 'D'] ['10-19', '20-29', '30-39', '40-49', '50-59', '60-69', '70-79', '80-89', '90-99']
+Proportion (2) [ceap/colu] 2024_12_15 [2025_01_17] [ACCEPT THIS OPTION] ::
+H0 : The proportions in G and D are equal for the given age_bin (Two-tailed test)
+Ha : The proportions in G and D are unequal for the given age_bin (Two-tailed test)
+---
+
+      age_bin   G   D  totG  totD   proG   proD        stat   pval   H
+10-19   10-19   6   1   320   275  0.019  0.004       1.705  0.088  H0
+20-29   20-29   7  11   320   275  0.022  0.040  -1.287e+00  0.198  H0
+30-39   30-39  35  20   320   275  0.109  0.073       1.539  0.124  H0
+40-49   40-49  53  40   320   275  0.166  0.145       0.675  0.499  H0
+50-59   50-59  75  65   320   275  0.234  0.236  -5.701e-02  0.955  H0
+60-69   60-69  71  69   320   275  0.222  0.251  -8.324e-01  0.405  H0
+70-79   70-79  60  55   320   275  0.188  0.200  -3.850e-01  0.700  H0
+80-89   80-89  12  12   320   275  0.037  0.044  -3.793e-01  0.704  H0
+90-99   90-99   1   2   320   275  0.003  0.007  -7.122e-01  0.476  H0
+(['10-19', '20-29', '30-39', '40-49', '50-59', '60-69', '70-79', '80-89', '90-99']) vs (['G', 'D'])
+
+---
+Data : 'mbre' 'age_bin' ; ['G', 'D'] ['10-19', '20-29', '30-39', '40-49', '50-59', '60-69', '70-79', '80-89', '90-99']
+Proportion (3) [ceap/colu] 2024_12_15 [2025_01_17] [REJECT THIS OPTION] :
+H0 : The proportions in G and D are equal for the given age_bin (Two-tailed test)
+Ha : The proportions in G and D are unequal for the given age_bin (Two-tailed test)
+---
+
+      age_bin   G   D  totG  totD   proG   proD  stat       pval   H
+10-19   10-19   6   1   320   275  0.019  0.004  -inf  0.000e+00  Ha
+20-29   20-29   7  11   320   275  0.022  0.040   inf  0.000e+00  Ha
+30-39   30-39  35  20   320   275  0.109  0.073  -inf  0.000e+00  Ha
+40-49   40-49  53  40   320   275  0.166  0.145  -inf  0.000e+00  Ha
+50-59   50-59  75  65   320   275  0.234  0.236   inf  0.000e+00  Ha
+60-69   60-69  71  69   320   275  0.222  0.251   inf  0.000e+00  Ha
+70-79   70-79  60  55   320   275  0.188  0.200   inf  0.000e+00  Ha
+80-89   80-89  12  12   320   275  0.037  0.044   inf  0.000e+00  Ha
+90-99   90-99   1   2   320   275  0.003  0.007   inf  0.000e+00  Ha
+(['10-19', '20-29', '30-39', '40-49', '50-59', '60-69', '70-79', '80-89', '90-99']) vs (['G', 'D'])
+
+---
+Data : 'mbre' 'age_bin' ; ['G', 'D'] ['10-19', '20-29', '30-39', '40-49', '50-59', '60-69', '70-79', '80-89', '90-99']
+Proportion (4) 2024_12_15 [2025_01_17] [REJECT THIS OPTION] :
+H0 : The proportions in G and D are equal for the given age_bin (Two-tailed test)
+Ha : The proportions in G and D are unequal for the given age_bin (Two-tailed test)
+---
+
+        age_bin mbre  coun  tota  obs_prop  exp_prop        stat   pval   H
+10-19_G   10-19    G     6     7  0.857143  0.537815       2.414  0.016  Ha
+10-19_D   10-19    D     1     7  0.142857  0.462185  -2.414e+00  0.016  Ha
+20-29_G   20-29    G     7    18  0.388889  0.537815  -1.296e+00  0.195  H0
+20-29_D   20-29    D    11    18  0.611111  0.462185       1.296  0.195  H0
+30-39_G   30-39    G    35    55  0.636364  0.537815       1.519  0.129  H0
+30-39_D   30-39    D    20    55  0.363636  0.462185  -1.519e+00  0.129  H0
+40-49_G   40-49    G    53    93  0.569892  0.537815       0.625  0.532  H0
+40-49_D   40-49    D    40    93  0.430108  0.462185  -6.248e-01  0.532  H0
+50-59_G   50-59    G    75   140  0.535714  0.537815  -4.984e-02  0.960  H0
+50-59_D   50-59    D    65   140  0.464286  0.462185       0.050  0.960  H0
+60-69_G   60-69    G    71   140  0.507143  0.537815  -7.259e-01  0.468  H0
+60-69_D   60-69    D    69   140  0.492857  0.462185       0.726  0.468  H0
+70-79_G   70-79    G    60   115  0.521739  0.537815  -3.451e-01  0.730  H0
+70-79_D   70-79    D    55   115  0.478261  0.462185       0.345  0.730  H0
+80-89_G   80-89    G    12    24  0.500000  0.537815  -3.705e-01  0.711  H0
+80-89_D   80-89    D    12    24  0.500000  0.462185       0.371  0.711  H0
+90-99_G   90-99    G     1     3  0.333333  0.537815  -7.513e-01  0.452  H0
+90-99_D   90-99    D     2     3  0.666667  0.462185       0.751  0.452  H0
+(['10-19', '20-29', '30-39', '40-49', '50-59', '60-69', '70-79', '80-89', '90-99']) vs (['G', 'D'])
+
+---
+Data : 'mbre' 'age_bin' ; ['G', 'D'] ['10-19', '20-29', '30-39', '40-49', '50-59', '60-69', '70-79', '80-89', '90-99']
+Binomial (1) 2024_12_15 [2025_01_17] [REJECT THIS OPTION] :
+H0 : Observed 'G' and 'D' counts for 'age_bin' do not differ from the expected count
+Ha : Observed 'G' and 'D' counts for 'age_bin' differ from the expected count
+---
+
+      age_bin   G   D  tota   stat   pval   H
+10-19   10-19   6   1     7  0.857  0.125  H0
+20-29   20-29   7  11    18  0.389  0.481  H0
+30-39   30-39  35  20    55  0.636  0.058  H0
+40-49   40-49  53  40    93  0.570  0.213  H0
+50-59   50-59  75  65   140  0.536  0.447  H0
+60-69   60-69  71  69   140  0.507  0.933  H0
+70-79   70-79  60  55   115  0.522  0.709  H0
+80-89   80-89  12  12    24  0.500  1.000  H0
+90-99   90-99   1   2     3  0.333  1.000  H0
+(['10-19', '20-29', '30-39', '40-49', '50-59', '60-69', '70-79', '80-89', '90-99']) vs (['G', 'D'])
+
+---
+Data : 'mbre' 'age_bin' ; ['G', 'D'] ['10-19', '20-29', '30-39', '40-49', '50-59', '60-69', '70-79', '80-89', '90-99']
+Binomial (2) 2024_12_15 [2025_01_17] [ACCEPT THIS OPTION]  :
+H0 : Observed 'G' or 'D' count for 'age_bin' does not differ from the expected count
+Ha : Observed 'G' or 'D' count for 'age_bin' differs from the expected count
+---
+        age_bin mbre  count  tota   stat   pval   H obse_prop expe_prop ci_lowr ci_uppr
+10-19_G   10-19    G      6     7  0.857  0.133  H0     0.857     0.538   0.421   0.996
+10-19_D   10-19    D      1     7  0.143  0.133  H0     0.143     0.462   0.004   0.579
+20-29_G   20-29    G      7    18  0.389  0.241  H0     0.389     0.538   0.173   0.643
+20-29_D   20-29    D     11    18  0.611  0.241  H0     0.611     0.462   0.357   0.827
+30-39_G   30-39    G     35    55  0.636  0.176  H0     0.636     0.538   0.496   0.762
+30-39_D   30-39    D     20    55  0.364  0.176  H0     0.364     0.462   0.238   0.504
+40-49_G   40-49    G     53    93  0.570  0.603  H0     0.570     0.538   0.463   0.672
+40-49_D   40-49    D     40    93  0.430  0.603  H0     0.430     0.462   0.328   0.537
+50-59_G   50-59    G     75   140  0.536  1.000  H0     0.536     0.538   0.450   0.620
+50-59_D   50-59    D     65   140  0.464  1.000  H0     0.464     0.462   0.380   0.550
+60-69_G   60-69    G     71   140  0.507  0.498  H0     0.507     0.538   0.421   0.593
+60-69_D   60-69    D     69   140  0.493  0.498  H0     0.493     0.462   0.407   0.579
+70-79_G   70-79    G     60   115  0.522  0.779  H0     0.522     0.538   0.427   0.616
+70-79_D   70-79    D     55   115  0.478  0.779  H0     0.478     0.462   0.384   0.573
+80-89_G   80-89    G     12    24  0.500  0.838  H0     0.500     0.538   0.291   0.709
+80-89_D   80-89    D     12    24  0.500  0.838  H0     0.500     0.462   0.291   0.709
+90-99_G   90-99    G      1     3  0.333  0.599  H0     0.333     0.538   0.008   0.906
+90-99_D   90-99    D      2     3  0.667  0.599  H0     0.667     0.462   0.094   0.992
+(['10-19', '20-29', '30-39', '40-49', '50-59', '60-69', '70-79', '80-89', '90-99']) vs (['G', 'D'])
+
+---
+Data : 'mbre' 'age_bin' ; ['G', 'D'] ['10-19', '20-29', '30-39', '40-49', '50-59', '60-69', '70-79', '80-89', '90-99']
+Wilson score interval 2024_12_15 [2025_01_17]:
+---
+
+      age_bin   G   D G_proport G_ci_lowr G_ci_uppr D_proport D_ci_lowr D_ci_uppr
+10-19   10-19   6   1     0.857     0.487     0.974     0.143     0.026     0.513
+20-29   20-29   7  11     0.389     0.203     0.614     0.611     0.386     0.797
+30-39   30-39  35  20     0.636     0.504     0.751     0.364     0.249     0.496
+40-49   40-49  53  40     0.570     0.468     0.666     0.430     0.334     0.532
+50-59   50-59  75  65     0.536     0.453     0.616     0.464     0.384     0.547
+60-69   60-69  71  69     0.507     0.425     0.589     0.493     0.411     0.575
+70-79   70-79  60  55     0.522     0.431     0.611     0.478     0.389     0.569
+80-89   80-89  12  12     0.500     0.314     0.686     0.500     0.314     0.686
+90-99   90-99   1   2     0.333     0.061     0.792     0.667     0.208     0.939
+
+
+>>> >>> >>>
+2025-01-17 11:45:38 : stat_glob_clau_2024_10_01
+>>> >>> >>>
+
+Data : 'mbre' 'age_bin' ; ['G', 'D'] ['10-19', '20-29', '30-39', '40-49', '50-59', '60-69', '70-79', '80-89', '90-99']
+Median Test : Stat:1.392 Pval:0.238 Left median: 4.0 Median: 4.0 Righ median: 5.0 Contingency table:[[144, 138], [176, 137]]
+Median Test : Fail to reject the null hypothesis:
+H0 : There is no difference in the central tendency (median) of 'age_bin' values between 'G' and 'D'
+
+Data : 'mbre' 'age_bin' ; ['G', 'D'] ['10-19', '20-29', '30-39', '40-49', '50-59', '60-69', '70-79', '80-89', '90-99']
+Variance : Brown-Forsythe : Stat:0.029 Pval:0.864 Effect Size (Eta squared) : 4.945e-05 (negligible)
+Variance : Brown-Forsythe : Fail to reject the null hypothesis:
+H0 : There is no difference in the dispersion (spread) of 'age_bin' values between 'G' and 'D'
+
+Data : 'mbre' 'age_bin' ; ['G', 'D'] ['10-19', '20-29', '30-39', '40-49', '50-59', '60-69', '70-79', '80-89', '90-99']
+Variance : Fligner-Killeen : Stat:0.023 Pval:0.879 Effect Size (Cramer's V) : 0.006 (negligible)
+Fligner-Killeen : Fail to reject the null hypothesis:
+H0 : There is no difference in the dispersion (spread) of 'age_bin' values between 'G' and 'D'
+
+Data : 'mbre' 'age_bin' ; ['G', 'D'] ['10-19', '20-29', '30-39', '40-49', '50-59', '60-69', '70-79', '80-89', '90-99']
+Variance : Ansari-Bradley : Stat:47363.500 Pval:0.686 Effect Size (Cliff's delta) : -6.644e-02 (negligible)
+Ansari-Bradley : Fail to reject the null hypothesis:
+H0 : There is no difference in the dispersion (spread) of 'age_bin' values between 'G' and 'D'
+
+Data : 'mbre' 'age_bin' ; ['G', 'D'] ['10-19', '20-29', '30-39', '40-49', '50-59', '60-69', '70-79', '80-89', '90-99']
+Chi-Square : Stat:8.306 Pval:0.404 Dof:8
+Chi-Square : Fail to reject the null hypothesis:
+H0 : there is no association between the categorical 'age_bin' and the group 'mbre' variables
+(['10-19', '20-29', '30-39', '40-49', '50-59', '60-69', '70-79', '80-89', '90-99']) vs (['G', 'D'])
+
+Data : 'mbre' 'age_bin' ; ['G', 'D'] ['10-19', '20-29', '30-39', '40-49', '50-59', '60-69', '70-79', '80-89', '90-99']
+Residuals
+Residuals : Observed:
+age_bin  10-19  20-29  30-39  40-49  50-59  60-69  70-79  80-89  90-99
+mbre                                                                  
+G            6      7     35     53     75     71     60     12      1
+D            1     11     20     40     65     69     55     12      2
+:Index(['G', 'D'], dtype='object', name='mbre')
+:Index(['10-19', '20-29', '30-39', '40-49', '50-59', '60-69', '70-79', '80-89',
+       '90-99'],
+      dtype='object', name='age_bin')
+Residuals : Expected:
+   10-19  20-29  30-39  40-49  50-59  60-69  70-79  80-89  90-99
+G   3.76   9.68  29.58  50.02  75.29  75.29  61.85  12.91   1.61
+D   3.24   8.32  25.42  42.98  64.71  64.71  53.15  11.09   1.39
+:Index(['G', 'D'], dtype='object', name='mbre')
+:Index(['10-19', '20-29', '30-39', '40-49', '50-59', '60-69', '70-79', '80-89',
+       '90-99'],
+      dtype='object', name='age_bin')
+Residuals : Residuals standardized:
+   10-19  20-29  30-39  40-49  50-59  60-69  70-79  80-89  90-99
+G   1.15  -0.86   1.00   0.42  -0.03  -0.49  -0.24  -0.25  -0.48
+D  -1.24   0.93  -1.08  -0.46   0.04   0.53   0.25   0.27   0.52
+:Index(['G', 'D'], dtype='object', name='mbre')
+:Index(['10-19', '20-29', '30-39', '40-49', '50-59', '60-69', '70-79', '80-89',
+       '90-99'],
+      dtype='object', name='age_bin')
+Residuals : Residuals adjusted:
+age_bin  10-19  20-29  30-39  40-49  50-59  60-69  70-79  80-89  90-99
+mbre                                                                  
+G          1.7  -1.29   1.54   0.68  -0.06  -0.83  -0.38  -0.38  -0.71
+D         -1.7   1.29  -1.54  -0.68   0.06   0.83   0.38   0.38   0.71
+:Index(['G', 'D'], dtype='object', name='mbre')
+:Index(['10-19', '20-29', '30-39', '40-49', '50-59', '60-69', '70-79', '80-89',
+       '90-99'],
+      dtype='object', name='age_bin')
+Residuals : Freeman-Tukey Deviates:
+age_bin  10-19  20-29  30-39  40-49  50-59  60-69  70-79  80-89  90-99
+mbre                                                                  
+G         9.01   0.92  22.80  28.77   0.03   0.50   0.24   0.25   0.49
+D         1.50  12.56   1.13   0.46  32.27  32.76  29.48  13.74   5.56
+:Index(['G', 'D'], dtype='object', name='mbre')
+:Index(['10-19', '20-29', '30-39', '40-49', '50-59', '60-69', '70-79', '80-89',
+       '90-99'],
+      dtype='object', name='age_bin')
+Residuals : Observed,Expected,Residuals std,Residuals adj,Deviates:
+    10-19  20-29  30-39  40-49  50-59  60-69  70-79  80-89  90-99
+GO   6.00   7.00  35.00  53.00  75.00  71.00  60.00  12.00   1.00
+DO   1.00  11.00  20.00  40.00  65.00  69.00  55.00  12.00   2.00
+GE   3.76   9.68  29.58  50.02  75.29  75.29  61.85  12.91   1.61
+DE   3.24   8.32  25.42  42.98  64.71  64.71  53.15  11.09   1.39
+GR   1.15  -0.86   1.00   0.42  -0.03  -0.49  -0.24  -0.25  -0.48
+DR  -1.24   0.93  -1.08  -0.46   0.04   0.53   0.25   0.27   0.52
+GA   1.70  -1.29   1.54   0.68  -0.06  -0.83  -0.38  -0.38  -0.71
+DA  -1.70   1.29  -1.54  -0.68   0.06   0.83   0.38   0.38   0.71
+GD   9.01   0.92  22.80  28.77   0.03   0.50   0.24   0.25   0.49
+DD   1.50  12.56   1.13   0.46  32.27  32.76  29.48  13.74   5.56
+Residuals standard: Symbol table threshold_05:1.960, threshold_01:2.576 
+     10-19 20-29 30-39 40-49 50-59 60-69 70-79 80-89 90-99
+mbre                                                      
+G        .     .     .     .     .     .     .     .     .
+D        .     .     .     .     .     .     .     .     .
+Residuals standard: Symbol list
+Classes  Obs(abs)  Diagonal Obs(abs)  Off-Diagonal Obs(abs)  C6 Row Obs(abs)  C6 Column Obs(abs)  Obs(%)
+     ++         0                  0                      0                0                   0       0
+     --         0                  0                      0                0                   0       0
+      +         0                  0                      0                0                   0       0
+      -         0                  0                      0                0                   0       0
+      .       595                  0                    595                0                   0     100
+  Total       595                  0                    595                0                   0     100
+Residuals adjusted: Symbol table threshold_05:1.960, threshold_01:2.576 
+age_bin 10-19 20-29 30-39 40-49 50-59 60-69 70-79 80-89 90-99
+mbre                                                         
+G           .     .     .     .     .     .     .     .     .
+D           .     .     .     .     .     .     .     .     .
+Residuals adjusted: Symbol list
+Classes  Obs(abs)  Diagonal Obs(abs)  Off-Diagonal Obs(abs)  C6 Row Obs(abs)  C6 Column Obs(abs)  Obs(%)
+     ++         0                  0                      0                0                   0       0
+     --         0                  0                      0                0                   0       0
+      +         0                  0                      0                0                   0       0
+      -         0                  0                      0                0                   0       0
+      .       595                  0                    595                0                   0     100
+  Total       595                  0                    595                0                   0     100
+
+Data : 'mbre' 'age_bin' ; ['G', 'D'] ['10-19', '20-29', '30-39', '40-49', '50-59', '60-69', '70-79', '80-89', '90-99']
+Fisher Exact : Stat:- Pval:1.000
+Fisher Exact : Fail to reject the null hypothesis:
+H0 : there is no association between the categorical 'age_bin' and the group 'mbre' variables
+(['10-19', '20-29', '30-39', '40-49', '50-59', '60-69', '70-79', '80-89', '90-99']) vs (['G', 'D'])
+
+Data : 'mbre' 'age_bin' ; ['G', 'D'] ['10-19', '20-29', '30-39', '40-49', '50-59', '60-69', '70-79', '80-89', '90-99']
+(perp) Cramer V : Stat:0.118 Intp: asso(effect size):medium Pval:0.404 Dof:8
+(perp) Cramer V : Fail to reject the null hypothesis:
+(perp) H0 : There is no association between the 'age_bin' and the counts for 'mbre' groups
+(['10-19', '20-29', '30-39', '40-49', '50-59', '60-69', '70-79', '80-89', '90-99']) vs (['G', 'D'])
+
+Data : 'mbre' 'age_bin' ; ['G', 'D'] ['10-19', '20-29', '30-39', '40-49', '50-59', '60-69', '70-79', '80-89', '90-99']
+(clau) Cramer V : Stat:0.118 Intp: asso(effect size):Weak association between the variables. Pval:0.404 Dof:8
+(clau) Cramer V : Fail to reject the null hypothesis:
+(clau) H0 : There is no association between the 'mbre' and 'age_bin' variables.
+(['10-19', '20-29', '30-39', '40-49', '50-59', '60-69', '70-79', '80-89', '90-99']) vs (['G', 'D'])
+
+Data : 'mbre' 'age_bin' ; ['G', 'D'] ['10-19', '20-29', '30-39', '40-49', '50-59', '60-69', '70-79', '80-89', '90-99']
+(mist) Cramer V : Stat:0.022 Intp: asso(effect size):Negligible association between the variables. Pval:0.404 Dof:8
+(mist) Cramer V : Fail to reject the null hypothesis:
+(mist) H0 : There is no association between the 'age_bin' categories for the 'mbre' categories.
+(['10-19', '20-29', '30-39', '40-49', '50-59', '60-69', '70-79', '80-89', '90-99']) vs (['G', 'D'])
+
+Data : 'mbre' 'age_bin' ; ['G', 'D'] ['10-19', '20-29', '30-39', '40-49', '50-59', '60-69', '70-79', '80-89', '90-99']
+Goodman and Kruskal's Lambda [Tabl] predicting 'age_bin' from 'mbre' : Stat:0.758 (Strong association) Pval:0.404 Dof:8
+
+Data : 'mbre' 'age_bin' ; ['G', 'D'] ['10-19', '20-29', '30-39', '40-49', '50-59', '60-69', '70-79', '80-89', '90-99']
+Goodman and Kruskal's Lambda [Tabl] predicting 'mbre' from 'age_bin' : Stat:0.454 (Moderate association) Pval:0.404 Dof:8
+Goodman and Kruskal's Lambda [Tabl] : Fail to reject the null hypothesis:
+H0 : there is no predictability between the categorical 'age_bin' and the group 'mbre' variables
+(['10-19', '20-29', '30-39', '40-49', '50-59', '60-69', '70-79', '80-89', '90-99']) vs (['G', 'D'])
+
+Step 0 : colu_list_ord1.size:320 df2.type:<class 'pandas.core.series.Series'>
+0      4
+2      4
+4      4
+6      4
+8      6
+      ..
+584    6
+587    5
+589    3
+590    6
+592    3
+Name: age_bin_ordi, Length: 320, dtype: int64
+:Index([  0,   2,   4,   6,   8,  10,  13,  15,  16,  18,
+       ...
+       576, 578, 579, 581, 582, 584, 587, 589, 590, 592],
+      dtype='int64', length=320)
+
+Step 0 : colu_list_ord2.size:275 df2.type:<class 'pandas.core.series.Series'>
+1      4
+3      4
+5      4
+7      4
+9      6
+      ..
+586    6
+588    1
+591    6
+593    5
+594    5
+Name: age_bin_ordi, Length: 275, dtype: int64
+:Index([  1,   3,   5,   7,   9,  11,  12,  14,  17,  19,
+       ...
+       575, 577, 580, 583, 585, 586, 588, 591, 593, 594],
+      dtype='int64', length=275)
+
+Data : 'mbre' 'age_bin' ; ['G', 'D'] ['10-19', '20-29', '30-39', '40-49', '50-59', '60-69', '70-79', '80-89', '90-99']
+(perp) Mann-Whitney U : Stat:41076.500 Pval:0.154
+Effect size:0.057(negligible) ; Median for 'mbre' groups : G=4.000,D=5.000
+(perp) Mann-Whitney U : Fail to reject the null hypothesis:
+H0 : There is no difference in 'age_bin' distribution between 'mbre' groups
+(['10-19', '20-29', '30-39', '40-49', '50-59', '60-69', '70-79', '80-89', '90-99']) vs (['G', 'D'])
+
+Step 0 : colu_list_ord1.size:320 df2.type:<class 'pandas.core.series.Series'>
+0      4
+2      4
+4      4
+6      4
+8      6
+      ..
+584    6
+587    5
+589    3
+590    6
+592    3
+Name: age_bin_ordi, Length: 320, dtype: int64
+:Index([  0,   2,   4,   6,   8,  10,  13,  15,  16,  18,
+       ...
+       576, 578, 579, 581, 582, 584, 587, 589, 590, 592],
+      dtype='int64', length=320)
+
+Step 0 : colu_list_ord2.size:275 df2.type:<class 'pandas.core.series.Series'>
+1      4
+3      4
+5      4
+7      4
+9      6
+      ..
+586    6
+588    1
+591    6
+593    5
+594    5
+Name: age_bin_ordi, Length: 275, dtype: int64
+:Index([  1,   3,   5,   7,   9,  11,  12,  14,  17,  19,
+       ...
+       575, 577, 580, 583, 585, 586, 588, 591, 593, 594],
+      dtype='int64', length=275)
+
+Data : 'mbre' 'age_bin' ; ['G', 'D'] ['10-19', '20-29', '30-39', '40-49', '50-59', '60-69', '70-79', '80-89', '90-99']
+(perp) Mann-Whitney U : Stat:41076.500 Pval:0.154
+Effect size:0.057(small) ; Median for 'mbre' groups : G=4.000,D=5.000
+(perp) Mann-Whitney U : Fail to reject the null hypothesis:
+H0 : H0: The 'age_bin' distributions have the same central tendency (median) across 'mbre'.
+(['10-19', '20-29', '30-39', '40-49', '50-59', '60-69', '70-79', '80-89', '90-99']) vs (['G', 'D'])
+
+Data : 'mbre' 'age_bin' ; ['G', 'D'] ['10-19', '20-29', '30-39', '40-49', '50-59', '60-69', '70-79', '80-89', '90-99']
+(perp) Stuart-Maxwell : table must be square
+
+Data : 'mbre' 'age_bin' ; ['G', 'D'] ['10-19', '20-29', '30-39', '40-49', '50-59', '60-69', '70-79', '80-89', '90-99']
+(perp) Stuart-Maxwell : table must be square

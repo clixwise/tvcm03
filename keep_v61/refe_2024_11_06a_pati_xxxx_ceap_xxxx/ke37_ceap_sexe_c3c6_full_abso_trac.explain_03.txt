@@ -1,0 +1,46 @@
+***
+***
+Yes, **bootstrapping** can be a key part of the **4.2 follow-up strategy** because it provides a **robust resampling method** to validate observed deviations and test their significance.
+
+---
+
+### Why Use Bootstrapping?
+
+Bootstrapping repeatedly samples the original data **with replacement** to:
+1. **Simulate variability** in the observed deviations.
+2. Build a **distribution** of deviations under the null hypothesis (global sex imbalance alone explains observed counts).
+3. Provide **confidence intervals** for the differences or validate p-values from Chi-square tests.
+
+---
+
+### Key Steps for Bootstrapping in Your Case:
+1. Generate **bootstrap samples** of male and female counts based on the expected proportions.
+2. Recalculate deviations (or test statistics) for each bootstrap sample.
+3. Build a distribution of the test statistic (e.g., Chi-square values).
+4. Compare the observed deviations (or Chi-square) to the bootstrapped distribution to check significance.
+
+---
+
+Would you like me to implement this as part of the current script? I can add bootstrapping to validate the Chi-square results for each CEAP class! Let me know.
+
+
+To **implement bootstrapping** into your current script, we will add the following steps:
+
+1. Generate **bootstrap samples** for each CEAP class using expected proportions for males and females.
+2. Recalculate the deviations (or Chi-square statistic) for each bootstrap sample.
+3. Compare the observed Chi-square values to the bootstrapped distribution to determine significance.
+
+Here is the updated script with **bootstrapping**:
+
+---
+
+### Key Changes:
+1. **Bootstrapping Logic**:
+   - Simulates data under the null hypothesis using **binomial sampling** based on expected proportions.
+   - Builds a distribution of Chi-square statistics.
+2. **Bootstrap p-value**:
+   - Compares the observed Chi-square statistic to the bootstrapped distribution to validate its significance.
+
+Run this code to see the results, including **bootstrap p-values** for each CEAP class. Let me know if you need further clarifications or adjustments!
+
+***

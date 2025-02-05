@@ -1,0 +1,38 @@
+No problem at all, and thanks for the updated results! Here's the interpretation:
+
+  CEAP   p_value  p_value_corrected_bonferroni  p_value_corrected_fdr
+0   C3  0.045228                      0.361821               0.315824
+1   NA  0.233038                      1.000000               0.621436
+2   C6  0.078956                      0.631648               0.315824
+3   C4  0.380970                      1.000000               0.761941
+4   C0  0.840457                      1.000000               0.955813
+5   C2  0.636338                      1.000000               0.955813
+6   C1  0.841270                      1.000000               0.955813
+7   C5  0.955813                      1.000000               0.955813
+---
+
+### Key Results:
+1. **CEAP Class C3**:
+   - **Raw p-value**: \( 0.045 \)  
+     This suggests a potential gender-based age difference for class **C3**.
+   - **Bonferroni-corrected p-value**: \( 0.361 \)  
+     After Bonferroni correction, the result is no longer significant.
+   - **FDR-corrected p-value**: \( 0.316 \)  
+     FDR correction is less conservative but still does not indicate significance.
+
+2. **All Other CEAP Classes (NA, C6, C4, C0, C2, C1, C5)**:
+   - **Raw p-values** are above \( 0.05 \), and after correction (Bonferroni/FDR), the results remain far from significance.
+
+---
+
+### Conclusion:
+- **C3** showed a potential signal in the raw p-value, but this signal disappears when correcting for multiple comparisons, both with Bonferroni and FDR.
+- Therefore, there is **no significant difference** in age between males and females across the tested CEAP classes after accounting for multiple testing.
+
+---
+
+### Takeaway:
+- The FDR correction is less conservative than Bonferroni, yet both methods agree on the final conclusion: **no significant differences**.
+- If needed, I can help with visualizing the results or performing further subgroup analyses.
+
+Let me know how you'd like to proceed! 🚀

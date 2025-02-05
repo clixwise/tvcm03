@@ -1,0 +1,1014 @@
+
+>>> >>> >>>
+2025-01-13 08:15:21
+>>> >>> >>>
+sexe : None : df1.size=876 df2.size=876
+
+Step 1 : df2.size:876 df2.type:<class 'pandas.core.frame.DataFrame'>
+      doss age_bin sexe mbre unbi ceap
+0    D9972   50-59    F    G    B   C2
+1    D9972   50-59    F    G    B   C6
+2    D9972   50-59    F    D    B   C2
+3    D9972   50-59    F    D    B   C6
+4    D9921   50-59    M    G    B   C3
+..     ...     ...  ...  ...  ...  ...
+871  D8930   40-49    F    D    U   NA
+872  D8956   50-59    F    G    U   NA
+873  D9113   50-59    M    D    U   NA
+874  D9574   60-69    M    G    U   NA
+875  D9609   70-79    F    D    U   NA
+
+[876 rows x 6 columns]
+:RangeIndex(start=0, stop=876, step=1)
+:Index(['doss', 'age_bin', 'sexe', 'mbre', 'unbi', 'ceap'], dtype='object')
+
+Step 1 : df2.size:876 df2.type:<class 'pandas.core.frame.DataFrame'>
+      doss age_bin sexe mbre unbi ceap
+0    D9972   50-59    F    G    B   C2
+1    D9972   50-59    F    G    B   C6
+2    D9972   50-59    F    D    B   C2
+3    D9972   50-59    F    D    B   C6
+4    D9921   50-59    M    G    B   C3
+..     ...     ...  ...  ...  ...  ...
+871  D8930   40-49    F    D    U   NA
+872  D8956   50-59    F    G    U   NA
+873  D9113   50-59    M    D    U   NA
+874  D9574   60-69    M    G    U   NA
+875  D9609   70-79    F    D    U   NA
+
+[876 rows x 6 columns]
+:RangeIndex(start=0, stop=876, step=1)
+:Index(['doss', 'age_bin', 'sexe', 'mbre', 'unbi', 'ceap'], dtype='object')
+sexe : None : df1.size=876 df2.size=876
+
+df1.size:876 df1.type:<class 'pandas.core.frame.DataFrame'>
+      doss age_bin sexe mbre unbi ceap
+0    D9972   50-59    F    G    B   C2
+1    D9972   50-59    F    G    B   C6
+2    D9972   50-59    F    D    B   C2
+3    D9972   50-59    F    D    B   C6
+4    D9921   50-59    M    G    B   C3
+..     ...     ...  ...  ...  ...  ...
+871  D8930   40-49    F    D    U   NA
+872  D8956   50-59    F    G    U   NA
+873  D9113   50-59    M    D    U   NA
+874  D9574   60-69    M    G    U   NA
+875  D9609   70-79    F    D    U   NA
+
+[876 rows x 6 columns]
+:RangeIndex(start=0, stop=876, step=1)
+:Index(['doss', 'age_bin', 'sexe', 'mbre', 'unbi', 'ceap'], dtype='object')
+
+Step 1 : df2.size:2 df2.type:<class 'pandas.core.frame.DataFrame'>
+   NA  C0  C1  C2   C3  C4  C5  C6
+M  52  31   5  44   93  38  18  97
+F  53  36   6  54  156  59  35  99
+:Index(['M', 'F'], dtype='object')
+:Index(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6'], dtype='object')
+
+Step 2 : df2.size:3 df2.type:<class 'pandas.core.frame.DataFrame'>
+       NA  C0  C1  C2   C3  C4  C5   C6  tota
+M      52  31   5  44   93  38  18   97   378
+F      53  36   6  54  156  59  35   99   498
+tota  105  67  11  98  249  97  53  196   876
+:Index(['M', 'F', 'tota'], dtype='object')
+:Index(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6', 'tota'], dtype='object')
+
+Step 3 : df2.size:2 df2.type:<class 'pandas.core.frame.DataFrame'>
+      NA  C0  C1  C2   C3  C4  C5  C6
+sexe                                 
+M     52  31   5  44   93  38  18  97
+F     53  36   6  54  156  59  35  99
+:Index(['M', 'F'], dtype='object', name='sexe')
+:Index(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6'], dtype='object')
+df2.size2 df2.type:<class 'pandas.core.frame.DataFrame'>
+ceap  NA  C0  C1  C2   C3  C4  C5  C6
+sexe                                 
+M     52  31   5  44   93  38  18  97
+F     53  36   6  54  156  59  35  99
+:Index(['M', 'F'], dtype='object', name='sexe')
+:Index(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6'], dtype='object', name='ceap')
+:876
+
+Step 0 : df2.size:876 df2.type:<class 'pandas.core.frame.DataFrame'>
+      #        date                       name   doss  age age_bin sexe unbi mbas mbre ceap c0c6 c3c6    seve  sexe_stra  ceap_ordi
+0     1  2021-01-27         YENGE MARCELA JOAO  D9972   54   50-59    F    B   G2    G   C2   VI   NA  C0..C2          1          3
+1     1  2021-01-27         YENGE MARCELA JOAO  D9972   54   50-59    F    B   G2    G   C6   VI   VI  C3..C6          1          7
+2     1  2021-01-27         YENGE MARCELA JOAO  D9972   54   50-59    F    B   G2    D   C2   VI   NA  C0..C2          1          3
+3     1  2021-01-27         YENGE MARCELA JOAO  D9972   54   50-59    F    B   G2    D   C6   VI   VI  C3..C6          1          7
+4     2  2021-01-21  TSHIBASU KAPUNGI DONATIEN  D9921   54   50-59    M    B   G2    G   C3   VI   VI  C3..C6          0          4
+..   ..         ...                        ...    ...  ...     ...  ...  ...  ...  ...  ...  ...  ...     ...        ...        ...
+871  44  2020-10-06       MIYALU MAMUD JEANINE  D8930   45   40-49    F    U   NA    D   NA   NA   NA      NA          1          0
+872  37  2020-10-07      KIEMBI LUSIKILA FANNY  D8956   50   50-59    F    U   NA    G   NA   NA   NA      NA          1          0
+873  33  2021-11-29       DIGATA MAFUTA CLAUDE  D9113   55   50-59    M    U   NA    D   NA   NA   NA      NA          0          0
+874  12  2020-12-09      BOLUA LIWONGU CAMILLE  D9574   60   60-69    M    U   NA    G   NA   NA   NA      NA          0          0
+875  11  2020-12-14   NGALULA MUTEBA ADOLPHINE  D9609   76   70-79    F    U   NA    D   NA   NA   NA      NA          1          0
+
+[876 rows x 16 columns]
+:RangeIndex(start=0, stop=876, step=1)
+:Index(['#', 'date', 'name', 'doss', 'age', 'age_bin', 'sexe', 'unbi', 'mbas',
+       'mbre', 'ceap', 'c0c6', 'c3c6', 'seve', 'sexe_stra', 'ceap_ordi'],
+      dtype='object')
+\Input file filtered : df.size:2 df.type:<class 'pandas.core.frame.DataFrame'>
+ceap  NA  C0  C1  C2   C3  C4  C5  C6
+sexe                                 
+M     52  31   5  44   93  38  18  97
+F     53  36   6  54  156  59  35  99
+:Index(['M', 'F'], dtype='object', name='sexe')
+:Index(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6'], dtype='object', name='ceap')
+
+Contingency table  : totals:        M    F    T
+sexe  378  498  876
+\Input file filtered : dfc.size:0 dfc.type:<class 'pandas.core.frame.DataFrame'>
+Empty DataFrame
+Columns: []
+Index: []
+:RangeIndex(start=0, stop=0, step=1)
+:RangeIndex(start=0, stop=0, step=1)
+\Input file filtered : dfc.size:8 dfc.type:<class 'pandas.core.frame.DataFrame'>
+       M    F      M_expe      F_expe
+ceap                                 
+NA    52   53   45.308219   59.691781
+C0    31   36   28.910959   38.089041
+C1     5    6    4.746575    6.253425
+C2    44   54   42.287671   55.712329
+C3    93  156  107.445205  141.554795
+C4    38   59   41.856164   55.143836
+C5    18   35   22.869863   30.130137
+C6    97   99   84.575342  111.424658
+:Index(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6'], dtype='object', name='ceap')
+:Index(['M', 'F', 'M_expe', 'F_expe'], dtype='object')
+\Input file filtered : dfc.size:4 dfc.type:<class 'pandas.core.frame.DataFrame'>
+ceap           NA         C0        C1         C2          C3         C4         C5          C6
+M       52.000000  31.000000  5.000000  44.000000   93.000000  38.000000  18.000000   97.000000
+F       53.000000  36.000000  6.000000  54.000000  156.000000  59.000000  35.000000   99.000000
+M_expe  45.308219  28.910959  4.746575  42.287671  107.445205  41.856164  22.869863   84.575342
+F_expe  59.691781  38.089041  6.253425  55.712329  141.554795  55.143836  30.130137  111.424658
+:Index(['M', 'F', 'M_expe', 'F_expe'], dtype='object')
+:Index(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6'], dtype='object', name='ceap')
+\Input file filtered : df_line.size:876 df_line.type:<class 'pandas.core.frame.DataFrame'>
+      #        date                       name   doss  age age_bin sexe unbi mbas mbre ceap c0c6 c3c6    seve  sexe_stra  ceap_ordi
+0     1  2021-01-27         YENGE MARCELA JOAO  D9972   54   50-59    F    B   G2    G   C2   VI   NA  C0..C2          1          3
+1     1  2021-01-27         YENGE MARCELA JOAO  D9972   54   50-59    F    B   G2    G   C6   VI   VI  C3..C6          1          7
+2     1  2021-01-27         YENGE MARCELA JOAO  D9972   54   50-59    F    B   G2    D   C2   VI   NA  C0..C2          1          3
+3     1  2021-01-27         YENGE MARCELA JOAO  D9972   54   50-59    F    B   G2    D   C6   VI   VI  C3..C6          1          7
+4     2  2021-01-21  TSHIBASU KAPUNGI DONATIEN  D9921   54   50-59    M    B   G2    G   C3   VI   VI  C3..C6          0          4
+..   ..         ...                        ...    ...  ...     ...  ...  ...  ...  ...  ...  ...  ...     ...        ...        ...
+871  44  2020-10-06       MIYALU MAMUD JEANINE  D8930   45   40-49    F    U   NA    D   NA   NA   NA      NA          1          0
+872  37  2020-10-07      KIEMBI LUSIKILA FANNY  D8956   50   50-59    F    U   NA    G   NA   NA   NA      NA          1          0
+873  33  2021-11-29       DIGATA MAFUTA CLAUDE  D9113   55   50-59    M    U   NA    D   NA   NA   NA      NA          0          0
+874  12  2020-12-09      BOLUA LIWONGU CAMILLE  D9574   60   60-69    M    U   NA    G   NA   NA   NA      NA          0          0
+875  11  2020-12-14   NGALULA MUTEBA ADOLPHINE  D9609   76   70-79    F    U   NA    D   NA   NA   NA      NA          1          0
+
+[876 rows x 16 columns]
+:RangeIndex(start=0, stop=876, step=1)
+:Index(['#', 'date', 'name', 'doss', 'age', 'age_bin', 'sexe', 'unbi', 'mbas',
+       'mbre', 'ceap', 'c0c6', 'c3c6', 'seve', 'sexe_stra', 'ceap_ordi'],
+      dtype='object')
+
+Contingency table  : df_tabl.size:2 df_tabl.type:<class 'pandas.core.frame.DataFrame'>
+ceap  NA  C0  C1  C2   C3  C4  C5  C6
+sexe                                 
+M     52  31   5  44   93  38  18  97
+F     53  36   6  54  156  59  35  99
+:Index(['M', 'F'], dtype='object', name='sexe')
+
+Contingency table  : totals:        M    F    T
+sexe  378  498  876
+
+Contingency table normalized : df_norm.size:8 df_norm.type:<class 'pandas.core.frame.DataFrame'>
+       M    F      M_expe      F_expe
+ceap                                 
+NA    52   53   45.308219   59.691781
+C0    31   36   28.910959   38.089041
+C1     5    6    4.746575    6.253425
+C2    44   54   42.287671   55.712329
+C3    93  156  107.445205  141.554795
+C4    38   59   41.856164   55.143836
+C5    18   35   22.869863   30.130137
+C6    97   99   84.575342  111.424658
+:Index(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6'], dtype='object', name='ceap')
+:Index(['M', 'F', 'M_expe', 'F_expe'], dtype='object')
+
+
+>>> >>> >>>
+2025-01-13 08:15:22 : stat_glob_perp_2024_12_15
+>>> >>> >>>
+
+Data : 'sexe' 'ceap' ; ['M', 'F'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+Chi2 2024_12_15 : Iterations per ceap
+Chi2 2024_12_15: Fail to reject the null hypothesis:
+H0 : The proportions in M and F are similar for column ceap
+Chi2 2024_12_15: Fail to reject the null hypothesis:
+H0 : The proportions in M and F are similar for column ceap
+Chi2 2024_12_15: Fail to reject the null hypothesis:
+H0 : The proportions in M and F are similar for column ceap
+Chi2 2024_12_15: Fail to reject the null hypothesis:
+H0 : The proportions in M and F are similar for column ceap
+Chi2 2024_12_15: Reject the null hypothesis:
+Ha : The proportions in M and F are not similar for column ceap
+Chi2 2024_12_15: Fail to reject the null hypothesis:
+H0 : The proportions in M and F are similar for column ceap
+Chi2 2024_12_15: Fail to reject the null hypothesis:
+H0 : The proportions in M and F are similar for column ceap
+Chi2 2024_12_15: Fail to reject the null hypothesis:
+H0 : The proportions in M and F are similar for column ceap
+
+Data : 'sexe' 'ceap' ; ['M', 'F'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+Chi2 2024_12_15 :
+H0 : The proportions in M and F are similar for column ceap
+Ha : The proportions in M and F are not similar for column ceap
+
+   ceap   M    F  M_thi  M_tha  M_sum  F_thi  F_tha  F_sum  _sum       stat   pval   H
+NA   NA  52   53     52    326    378     53    445    498   876      1.691  0.193  H0
+C0   C0  31   36     31    347    378     36    462    498   876      0.166  0.683  H0
+C1   C1   5    6      5    373    378      6    492    498   876  0.000e+00  1.000  H0
+C2   C2  44   54     44    334    378     54    444    498   876      0.069  0.793  H0
+C3   C3  93  156     93    285    378    156    342    498   876      4.448  0.035  Ha
+C4   C4  38   59     38    340    378     59    439    498   876      0.532  0.466  H0
+C5   C5  18   35     18    360    378     35    463    498   876      1.563  0.211  H0
+C6   C6  97   99     97    281    378     99    399    498   876      3.810  0.051  H0
+(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']) vs (['M', 'F'])
+
+Data : 'sexe' 'ceap' ; ['M', 'F'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+Fisher Exact odds ratio 2024_12_15 : Iterations per ceap
+Fisher Exact odds ratio 2024_12_15: Fail to reject the null hypothesis:
+H0 : The proportions in M and F are similar for column ceap
+Fisher Exact odds ratio 2024_12_15: Fail to reject the null hypothesis:
+H0 : The proportions in M and F are similar for column ceap
+Fisher Exact odds ratio 2024_12_15: Fail to reject the null hypothesis:
+H0 : The proportions in M and F are similar for column ceap
+Fisher Exact odds ratio 2024_12_15: Fail to reject the null hypothesis:
+H0 : The proportions in M and F are similar for column ceap
+Fisher Exact odds ratio 2024_12_15: Reject the null hypothesis:
+Ha : The proportions in M and F are not similar for column ceap
+Fisher Exact odds ratio 2024_12_15: Fail to reject the null hypothesis:
+H0 : The proportions in M and F are similar for column ceap
+Fisher Exact odds ratio 2024_12_15: Fail to reject the null hypothesis:
+H0 : The proportions in M and F are similar for column ceap
+Fisher Exact odds ratio 2024_12_15: Reject the null hypothesis:
+Ha : The proportions in M and F are not similar for column ceap
+
+Data : 'sexe' 'ceap' ; ['M', 'F'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+Fisher Exact odds ratio 2024_12_15 :
+H0 : The proportions in M and F are similar for column ceap
+Ha : The proportions in M and F are not similar for column ceap
+
+   ceap   M    F  M_thi  M_tha  M_sum  F_thi  F_tha  F_sum  _sum stat (odds_ratio)   pval  ci_lower  ci_upper   H
+NA   NA  52   53     52    326    378     53    445    498   876             1.339  0.173  0.890255  2.014769  H0
+C0   C0  31   36     31    347    378     36    462    498   876             1.146  0.609  0.695376  1.890269  H0
+C1   C1   5    6      5    373    378      6    492    498   876             1.099  1.000  0.332924  3.629155  H0
+C2   C2  44   54     44    334    378     54    444    498   876             1.083  0.746  0.709838  1.652843  H0
+C3   C3  93  156     93    285    378    156    342    498   876             0.715  0.034  0.529404  0.966700  Ha
+C4   C4  38   59     38    340    378     59    439    498   876             0.832  0.447  0.540120  1.280395  H0
+C5   C5  18   35     18    360    378     35    463    498   876             0.661  0.198  0.368513  1.187170  H0
+C6   C6  97   99     97    281    378     99    399    498   876             1.391  0.049  1.011352  1.913833  Ha
+(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']) vs (['M', 'F'])
+
+Data : 'sexe' 'ceap' ; ['M', 'F'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+Proportion (1) [ceap/colu]: Iterations per ceap
+Proportion (1) [ceap/colu]: Fail to reject the null hypothesis:
+H0 : The proportions in M and F are equal for the given ceap (Two-tailed test)
+Proportion (1) [ceap/colu]: Fail to reject the null hypothesis:
+H0 : The proportions in M and F are equal for the given ceap (Two-tailed test)
+Proportion (1) [ceap/colu]: Fail to reject the null hypothesis:
+H0 : The proportions in M and F are equal for the given ceap (Two-tailed test)
+Proportion (1) [ceap/colu]: Fail to reject the null hypothesis:
+H0 : The proportions in M and F are equal for the given ceap (Two-tailed test)
+Proportion (1) [ceap/colu]: Reject the null hypothesis:
+Ha : The proportions in M and F are unequal for the given ceap (Two-tailed test)
+Proportion (1) [ceap/colu]: Reject the null hypothesis:
+Ha : The proportions in M and F are unequal for the given ceap (Two-tailed test)
+Proportion (1) [ceap/colu]: Reject the null hypothesis:
+Ha : The proportions in M and F are unequal for the given ceap (Two-tailed test)
+Proportion (1) [ceap/colu]: Fail to reject the null hypothesis:
+H0 : The proportions in M and F are equal for the given ceap (Two-tailed test)
+
+Data : 'sexe' 'ceap' ; ['M', 'F'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+Proportion (1) [ceap/colu]:
+H0 : The proportions in M and F are equal for the given ceap (Two-tailed test)
+Ha : The proportions in M and F are unequal for the given ceap (Two-tailed test)
+
+   ceap   M    F  totM  totF   proM   proF        stat       pval   H
+NA   NA  52   53   105   105  0.495  0.505  -1.380e-01      0.890  H0
+C0   C0  31   36    67    67  0.463  0.537  -8.639e-01      0.388  H0
+C1   C1   5    6    11    11  0.455  0.545  -4.264e-01      0.670  H0
+C2   C2  44   54    98    98  0.449  0.551  -1.429e+00      0.153  H0
+C3   C3  93  156   249   249  0.373  0.627  -5.646e+00  1.640e-08  Ha
+C4   C4  38   59    97    97  0.392  0.608  -3.015e+00      0.003  Ha
+C5   C5  18   35    53    53  0.340  0.660  -3.302e+00  9.587e-04  Ha
+C6   C6  97   99   196   196  0.495  0.505  -2.020e-01      0.840  H0
+(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']) vs (['M', 'F'])
+
+Data : 'sexe' 'ceap' ; ['M', 'F'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+Proportion (2) [ceap/line]: Iterations per ceap
+Proportion (2) [ceap/line]: Fail to reject the null hypothesis:
+H0 : The proportions in M and F are equal for the given ceap (Two-tailed test)
+Proportion (2) [ceap/line]: Fail to reject the null hypothesis:
+H0 : The proportions in M and F are equal for the given ceap (Two-tailed test)
+Proportion (2) [ceap/line]: Fail to reject the null hypothesis:
+H0 : The proportions in M and F are equal for the given ceap (Two-tailed test)
+Proportion (2) [ceap/line]: Fail to reject the null hypothesis:
+H0 : The proportions in M and F are equal for the given ceap (Two-tailed test)
+Proportion (2) [ceap/line]: Reject the null hypothesis:
+Ha : The proportions in M and F are unequal for the given ceap (Two-tailed test)
+Proportion (2) [ceap/line]: Fail to reject the null hypothesis:
+H0 : The proportions in M and F are equal for the given ceap (Two-tailed test)
+Proportion (2) [ceap/line]: Fail to reject the null hypothesis:
+H0 : The proportions in M and F are equal for the given ceap (Two-tailed test)
+Proportion (2) [ceap/line]: Reject the null hypothesis:
+Ha : The proportions in M and F are unequal for the given ceap (Two-tailed test)
+
+Data : 'sexe' 'ceap' ; ['M', 'F'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+Proportion (2) [ceap/colu]:
+H0 : The proportions in M and F are equal for the given ceap (Two-tailed test)
+Ha : The proportions in M and F are unequal for the given ceap (Two-tailed test)
+
+   ceap   M    F  totM  totF   proM   proF        stat   pval   H
+NA   NA  52   53   378   498  0.138  0.106       1.405  0.160  H0
+C0   C0  31   36   378   498  0.082  0.072       0.536  0.592  H0
+C1   C1   5    6   378   498  0.013  0.012       0.155  0.877  H0
+C2   C2  44   54   378   498  0.116  0.108       0.371  0.711  H0
+C3   C3  93  156   378   498  0.246  0.313  -2.185e+00  0.029  Ha
+C4   C4  38   59   378   498  0.101  0.118  -8.383e-01  0.402  H0
+C5   C5  18   35   378   498  0.048  0.070  -1.393e+00  0.164  H0
+C6   C6  97   99   378   498  0.257  0.199       2.034  0.042  Ha
+(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']) vs (['M', 'F'])
+
+Data : 'sexe' 'ceap' ; ['M', 'F'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+Proportion (3) [weighted analysis]: Iterations per ceap
+Proportion (3) [weighted analysis]: Reject the null hypothesis:
+Ha : The proportions in M and F are unequal for the given ceap (Two-tailed test)
+Proportion (3) [weighted analysis]: Reject the null hypothesis:
+Ha : The proportions in M and F are unequal for the given ceap (Two-tailed test)
+Proportion (3) [weighted analysis]: Reject the null hypothesis:
+Ha : The proportions in M and F are unequal for the given ceap (Two-tailed test)
+Proportion (3) [weighted analysis]: Reject the null hypothesis:
+Ha : The proportions in M and F are unequal for the given ceap (Two-tailed test)
+Proportion (3) [weighted analysis]: Reject the null hypothesis:
+Ha : The proportions in M and F are unequal for the given ceap (Two-tailed test)
+Proportion (3) [weighted analysis]: Reject the null hypothesis:
+Ha : The proportions in M and F are unequal for the given ceap (Two-tailed test)
+Proportion (3) [weighted analysis]: Reject the null hypothesis:
+Ha : The proportions in M and F are unequal for the given ceap (Two-tailed test)
+Proportion (3) [weighted analysis]: Reject the null hypothesis:
+Ha : The proportions in M and F are unequal for the given ceap (Two-tailed test)
+
+Data : 'sexe' 'ceap' ; ['M', 'F'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+Proportion (3) [ceap/colu]:
+H0 : The proportions in M and F are equal for the given ceap (Two-tailed test)
+Ha : The proportions in M and F are unequal for the given ceap (Two-tailed test)
+
+   ceap   M    F  totM  totF   proM   proF           stat       pval   H
+NA   NA  52   53   378   498  0.138  0.106           -inf  0.000e+00  Ha
+C0   C0  31   36   378   498  0.082  0.072           -inf  0.000e+00  Ha
+C1   C1   5    6   378   498  0.013  0.012           -inf  0.000e+00  Ha
+C2   C2  44   54   378   498  0.116  0.108           -inf  0.000e+00  Ha
+C3   C3  93  156   378   498  0.246  0.313  175413280.403  0.000e+00  Ha
+C4   C4  38   59   378   498  0.101  0.118            inf  0.000e+00  Ha
+C5   C5  18   35   378   498  0.048  0.070            inf  0.000e+00  Ha
+C6   C6  97   99   378   498  0.257  0.199           -inf  0.000e+00  Ha
+(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']) vs (['M', 'F'])
+
+Data : 'sexe' 'ceap' ; ['M', 'F'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+Proportion (4) : Iterations per ceap and sexe
+Proportion (4): Fail to reject the null hypothesis:
+H0 : The proportions in M and F are equal for the given ceap (Two-tailed test)
+Proportion (4): Fail to reject the null hypothesis:
+H0 : The proportions in M and F are equal for the given ceap (Two-tailed test)
+Proportion (4): Fail to reject the null hypothesis:
+H0 : The proportions in M and F are equal for the given ceap (Two-tailed test)
+Proportion (4): Fail to reject the null hypothesis:
+H0 : The proportions in M and F are equal for the given ceap (Two-tailed test)
+Proportion (4): Fail to reject the null hypothesis:
+H0 : The proportions in M and F are equal for the given ceap (Two-tailed test)
+Proportion (4): Fail to reject the null hypothesis:
+H0 : The proportions in M and F are equal for the given ceap (Two-tailed test)
+Proportion (4): Fail to reject the null hypothesis:
+H0 : The proportions in M and F are equal for the given ceap (Two-tailed test)
+Proportion (4): Fail to reject the null hypothesis:
+H0 : The proportions in M and F are equal for the given ceap (Two-tailed test)
+Proportion (4): Fail to reject the null hypothesis:
+H0 : The proportions in M and F are equal for the given ceap (Two-tailed test)
+Proportion (4): Fail to reject the null hypothesis:
+H0 : The proportions in M and F are equal for the given ceap (Two-tailed test)
+Proportion (4): Fail to reject the null hypothesis:
+H0 : The proportions in M and F are equal for the given ceap (Two-tailed test)
+Proportion (4): Fail to reject the null hypothesis:
+H0 : The proportions in M and F are equal for the given ceap (Two-tailed test)
+Proportion (4): Fail to reject the null hypothesis:
+H0 : The proportions in M and F are equal for the given ceap (Two-tailed test)
+Proportion (4): Fail to reject the null hypothesis:
+H0 : The proportions in M and F are equal for the given ceap (Two-tailed test)
+Proportion (4): Fail to reject the null hypothesis:
+H0 : The proportions in M and F are equal for the given ceap (Two-tailed test)
+Proportion (4): Fail to reject the null hypothesis:
+H0 : The proportions in M and F are equal for the given ceap (Two-tailed test)
+
+Data : 'sexe' 'ceap' ; ['M', 'F'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+Proportion (4) :
+H0 : The proportions in M and F are equal for the given ceap (Two-tailed test)
+Ha : The proportions in M and F are unequal for the given ceap (Two-tailed test)
+
+     ceap sexe  coun  tota  obs_prop  exp_prop        stat   pval   H
+NA_M   NA    M    52   105  0.495238  0.431507       1.306  0.191  H0
+NA_F   NA    F    53   105  0.504762  0.568493  -1.306e+00  0.191  H0
+C0_M   C0    M    31    67  0.462687  0.431507       0.512  0.609  H0
+C0_F   C0    F    36    67  0.537313  0.568493  -5.119e-01  0.609  H0
+C1_M   C1    M     5    11  0.454545  0.431507       0.153  0.878  H0
+C1_F   C1    F     6    11  0.545455  0.568493  -1.535e-01  0.878  H0
+C2_M   C2    M    44    98  0.448980  0.431507       0.348  0.728  H0
+C2_F   C2    F    54    98  0.551020  0.568493  -3.478e-01  0.728  H0
+C3_M   C3    M    93   249  0.373494  0.431507  -1.892e+00  0.058  H0
+C3_F   C3    F   156   249  0.626506  0.568493       1.892  0.058  H0
+C4_M   C4    M    38    97  0.391753  0.431507  -8.021e-01  0.423  H0
+C4_F   C4    F    59    97  0.608247  0.568493       0.802  0.423  H0
+C5_M   C5    M    18    53  0.339623  0.431507  -1.412e+00  0.158  H0
+C5_F   C5    F    35    53  0.660377  0.568493       1.412  0.158  H0
+C6_M   C6    M    97   196  0.494898  0.431507       1.775  0.076  H0
+C6_F   C6    F    99   196  0.505102  0.568493  -1.775e+00  0.076  H0
+(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']) vs (['M', 'F'])
+
+Data : 'sexe' 'ceap' ; ['M', 'F'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+Binomial (1) : Iterations per ceap
+
+Data : 'sexe' 'ceap' ; ['M', 'F'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+Binomial (1) :
+H0 : Observed 'M' and 'F' counts for 'ceap' do not differ from the expected count
+Ha : Observed 'M' and 'F' counts for 'ceap' differ from the expected count
+
+   ceap   M    F  tota   stat       pval   H
+NA   NA  52   53   105  0.495      1.000  H0
+C0   C0  31   36    67  0.463      0.625  H0
+C1   C1   5    6    11  0.455      1.000  H0
+C2   C2  44   54    98  0.449      0.363  H0
+C3   C3  93  156   249  0.373  7.864e-05  Ha
+C4   C4  38   59    97  0.392      0.042  Ha
+C5   C5  18   35    53  0.340      0.027  Ha
+C6   C6  97   99   196  0.495      0.943  H0
+(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']) vs (['M', 'F'])
+
+Data : 'sexe' 'ceap' ; ['M', 'F'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+Binomial (2) : Iterations per ceap and sexe
+
+Data : 'sexe' 'ceap' ; ['M', 'F'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+Binomial (2) :
+H0 : Observed 'M' or 'F' count for 'ceap' does not differ from the expected count
+Ha : Observed 'M' or 'F' count for 'ceap' differs from the expected count
+     ceap sexe  count  tota   stat   pval   H obse_prop expe_prop ci_lowr ci_uppr
+NA_M   NA    M     52   105  0.495  0.201  H0     0.495     0.432   0.396   0.595
+NA_F   NA    F     53   105  0.505  0.201  H0     0.505     0.568   0.405   0.604
+C0_M   C0    M     31    67  0.463  0.623  H0     0.463     0.432   0.340   0.589
+C0_F   C0    F     36    67  0.537  0.623  H0     0.537     0.568   0.411   0.660
+C1_M   C1    M      5    11  0.455  1.000  H0     0.455     0.432   0.167   0.766
+C1_F   C1    F      6    11  0.545  1.000  H0     0.545     0.568   0.234   0.833
+C2_M   C2    M     44    98  0.449  0.760  H0     0.449     0.432   0.348   0.553
+C2_F   C2    F     54    98  0.551  0.760  H0     0.551     0.568   0.447   0.652
+C3_M   C3    M     93   249  0.373  0.073  H0     0.373     0.432   0.313   0.437
+C3_F   C3    F    156   249  0.627  0.073  H0     0.627     0.568   0.563   0.687
+C4_M   C4    M     38    97  0.392  0.474  H0     0.392     0.432   0.294   0.496
+C4_F   C4    F     59    97  0.608  0.474  H0     0.608     0.568   0.504   0.706
+C5_M   C5    M     18    53  0.340  0.212  H0     0.340     0.432   0.215   0.483
+C5_F   C5    F     35    53  0.660  0.212  H0     0.660     0.568   0.517   0.785
+C6_M   C6    M     97   196  0.495  0.083  H0     0.495     0.432   0.423   0.567
+C6_F   C6    F     99   196  0.505  0.083  H0     0.505     0.568   0.433   0.577
+(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']) vs (['M', 'F'])
+
+
+>>> >>> >>>
+2025-01-13 08:15:22 : stat_glob_clau_2024_10_01
+>>> >>> >>>
+
+Data : 'sexe' 'ceap' ; ['M', 'F'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+Median Test : Stat:0.199 Pval:0.655 Left median: 4.0 Median: 4.0 Righ median: 4.0 Contingency table:[[153, 193], [225, 305]]
+Median Test : Fail to reject the null hypothesis:
+H0 : There is no difference in the central tendency (median) of 'ceap' values between 'M' and 'F'
+
+Data : 'sexe' 'ceap' ; ['M', 'F'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+Variance : Brown-Forsythe : Stat:7.836 Pval:0.005 Effect Size (Eta squared) : 0.009 (negligible)
+Variance : Brown-Forsythe : Reject the null hypothesis:
+Ha : There is a difference in the dispersion (spread) of 'ceap' values between 'M' and 'F'
+
+Data : 'sexe' 'ceap' ; ['M', 'F'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+Variance : Fligner-Killeen : Stat:7.271 Pval:0.007 Effect Size (Cramer's V) : 0.091 (negligible)
+Fligner-Killeen : Reject the null hypothesis:
+Ha : There is a difference in the dispersion (spread) of 'ceap' values between 'M' and 'F'
+
+Data : 'sexe' 'ceap' ; ['M', 'F'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+Variance : Ansari-Bradley : Stat:80835.500 Pval:0.326 Effect Size (Cliff's delta) : -5.541e-03 (negligible)
+Ansari-Bradley : Fail to reject the null hypothesis:
+H0 : There is no difference in the dispersion (spread) of 'ceap' values between 'M' and 'F'
+
+Data : 'sexe' 'ceap' ; ['M', 'F'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+Chi-Square : Stat:11.226 Pval:0.129 Dof:7
+Chi-Square : Fail to reject the null hypothesis:
+H0 : there is no association between the categorical 'ceap' and the group 'sexe' variables
+(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']) vs (['M', 'F'])
+
+Data : 'sexe' 'ceap' ; ['M', 'F'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+Residuals
+Residuals : Observed:
+ceap  NA  C0  C1  C2   C3  C4  C5  C6
+sexe                                 
+M     52  31   5  44   93  38  18  97
+F     53  36   6  54  156  59  35  99
+:Index(['M', 'F'], dtype='object', name='sexe')
+:Index(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6'], dtype='object', name='ceap')
+Residuals : Expected:
+      NA     C0    C1     C2      C3     C4     C5      C6
+M  45.31  28.91  4.75  42.29  107.45  41.86  22.87   84.58
+F  59.69  38.09  6.25  55.71  141.55  55.14  30.13  111.42
+:Index(['M', 'F'], dtype='object', name='sexe')
+:Index(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6'], dtype='object', name='ceap')
+Residuals : Residuals standardized:
+     NA    C0    C1    C2    C3    C4    C5    C6
+M  0.99  0.39  0.12  0.26 -1.39 -0.60 -1.02  1.35
+F -0.87 -0.34 -0.10 -0.23  1.21  0.52  0.89 -1.18
+:Index(['M', 'F'], dtype='object', name='sexe')
+:Index(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6'], dtype='object', name='ceap')
+Residuals : Residuals adjusted:
+ceap    NA    C0    C1    C2    C3    C4    C5    C6
+sexe                                                
+M     1.41  0.54  0.16  0.37 -2.18 -0.84 -1.39  2.03
+F    -1.41 -0.54 -0.16 -0.37  2.18  0.84  1.39 -2.03
+:Index(['M', 'F'], dtype='object', name='sexe')
+:Index(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6'], dtype='object', name='ceap')
+Residuals : Freeman-Tukey Deviates:
+ceap     NA     C0    C1     C2     C3     C4     C5     C6
+sexe                                                       
+M     27.96  21.98  9.05  26.35   1.44   0.61   1.07  38.14
+F      0.89   0.34  0.10   0.23  48.82  30.28  22.90   1.21
+:Index(['M', 'F'], dtype='object', name='sexe')
+:Index(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6'], dtype='object', name='ceap')
+Residuals : Observed,Expected,Residuals std,Residuals adj,Deviates:
+       NA     C0    C1     C2      C3     C4     C5      C6
+MO  52.00  31.00  5.00  44.00   93.00  38.00  18.00   97.00
+FO  53.00  36.00  6.00  54.00  156.00  59.00  35.00   99.00
+ME  45.31  28.91  4.75  42.29  107.45  41.86  22.87   84.58
+FE  59.69  38.09  6.25  55.71  141.55  55.14  30.13  111.42
+MR   0.99   0.39  0.12   0.26   -1.39  -0.60  -1.02    1.35
+FR  -0.87  -0.34 -0.10  -0.23    1.21   0.52   0.89   -1.18
+MA   1.41   0.54  0.16   0.37   -2.18  -0.84  -1.39    2.03
+FA  -1.41  -0.54 -0.16  -0.37    2.18   0.84   1.39   -2.03
+MD  27.96  21.98  9.05  26.35    1.44   0.61   1.07   38.14
+FD   0.89   0.34  0.10   0.23   48.82  30.28  22.90    1.21
+Residuals standard: Symbol table threshold_05:1.960, threshold_01:2.576 
+     NA C0 C1 C2 C3 C4 C5 C6
+sexe                        
+M     .  .  .  .  .  .  .  .
+F     .  .  .  .  .  .  .  .
+Residuals standard: Symbol list
+Classes  Obs(abs)  Diagonal Obs(abs)  Off-Diagonal Obs(abs)  C6 Row Obs(abs)  C6 Column Obs(abs)  Obs(%)
+     ++         0                  0                      0                0                   0       0
+     --         0                  0                      0                0                   0       0
+      +         0                  0                      0                0                   0       0
+      -         0                  0                      0                0                   0       0
+      .       876                  0                    876                0                 196     100
+  Total       876                  0                    876                0                 196     100
+Residuals adjusted: Symbol table threshold_05:1.960, threshold_01:2.576 
+ceap NA C0 C1 C2 C3 C4 C5 C6
+sexe                        
+M     .  .  .  .  -  .  .  +
+F     .  .  .  .  +  .  .  -
+Residuals adjusted: Symbol list
+Classes  Obs(abs)  Diagonal Obs(abs)  Off-Diagonal Obs(abs)  C6 Row Obs(abs)  C6 Column Obs(abs)  Obs(%)
+     ++         0                  0                      0                0                   0       0
+     --         0                  0                      0                0                   0       0
+      +       253                  0                    253                0                  97      29
+      -       192                  0                    192                0                  99      22
+      .       431                  0                    431                0                   0      49
+  Total       876                  0                    876                0                 196     100
+
+Data : 'sexe' 'ceap' ; ['M', 'F'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+Fisher Exact : Stat:- Pval:1.000
+Fisher Exact : Fail to reject the null hypothesis:
+H0 : there is no association between the categorical 'ceap' and the group 'sexe' variables
+(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']) vs (['M', 'F'])
+
+Data : 'sexe' 'ceap' ; ['M', 'F'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+(perp) Cramer V : Stat:0.113 Intp: asso(effect size):medium Pval:0.129 Dof:7
+(perp) Cramer V : Fail to reject the null hypothesis:
+(perp) H0 : There is no association between the 'ceap' and the counts for 'sexe' groups
+(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']) vs (['M', 'F'])
+
+Data : 'sexe' 'ceap' ; ['M', 'F'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+(clau) Cramer V : Stat:0.113 Intp: asso(effect size):Weak association between the variables. Pval:0.129 Dof:7
+(clau) Cramer V : Fail to reject the null hypothesis:
+(clau) H0 : There is no association between the 'sexe' and 'ceap' variables.
+(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']) vs (['M', 'F'])
+
+Data : 'sexe' 'ceap' ; ['M', 'F'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+(mist) Cramer V : Stat:0.069 Intp: asso(effect size):Negligible association between the variables. Pval:0.129 Dof:7
+(mist) Cramer V : Fail to reject the null hypothesis:
+(mist) H0 : There is no association between the 'ceap' categories for the 'sexe' categories.
+(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']) vs (['M', 'F'])
+
+Data : 'sexe' 'ceap' ; ['M', 'F'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+Goodman and Kruskal's Lambda [Tabl] predicting 'ceap' from 'sexe' : Stat:0.711 (Strong association) Pval:0.129 Dof:7
+
+Data : 'sexe' 'ceap' ; ['M', 'F'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+Goodman and Kruskal's Lambda [Tabl] predicting 'sexe' from 'ceap' : Stat:0.432 (Moderate association) Pval:0.129 Dof:7
+Goodman and Kruskal's Lambda [Tabl] : Fail to reject the null hypothesis:
+H0 : there is no predictability between the categorical 'ceap' and the group 'sexe' variables
+(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']) vs (['M', 'F'])
+
+Step 0 : colu_list_ord1.size:378 df2.type:<class 'pandas.core.series.Series'>
+4      4
+5      4
+10     5
+11     6
+12     4
+      ..
+866    0
+868    0
+869    0
+873    0
+874    0
+Name: ceap_ordi, Length: 378, dtype: int64
+:Index([  4,   5,  10,  11,  12,  13,  16,  17,  21,  22,
+       ...
+       857, 859, 860, 864, 865, 866, 868, 869, 873, 874],
+      dtype='int64', length=378)
+
+Step 0 : colu_list_ord2.size:498 df2.type:<class 'pandas.core.series.Series'>
+0      3
+1      7
+2      3
+3      7
+6      5
+      ..
+867    0
+870    0
+871    0
+872    0
+875    0
+Name: ceap_ordi, Length: 498, dtype: int64
+:Index([  0,   1,   2,   3,   6,   7,   8,   9,  14,  15,
+       ...
+       852, 858, 861, 862, 863, 867, 870, 871, 872, 875],
+      dtype='int64', length=498)
+
+Data : 'sexe' 'ceap' ; ['M', 'F'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+(perp) Mann-Whitney U : Stat:93600.500 Pval:0.886
+Effect size:0.005(negligible) ; Median for 'sexe' groups : M=4.000,F=4.000
+(perp) Mann-Whitney U : Fail to reject the null hypothesis:
+H0 : There is no difference in 'ceap' distribution between 'sexe' groups
+(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']) vs (['M', 'F'])
+
+Step 0 : colu_list_ord1.size:378 df2.type:<class 'pandas.core.series.Series'>
+4      4
+5      4
+10     5
+11     6
+12     4
+      ..
+866    0
+868    0
+869    0
+873    0
+874    0
+Name: ceap_ordi, Length: 378, dtype: int64
+:Index([  4,   5,  10,  11,  12,  13,  16,  17,  21,  22,
+       ...
+       857, 859, 860, 864, 865, 866, 868, 869, 873, 874],
+      dtype='int64', length=378)
+
+Step 0 : colu_list_ord2.size:498 df2.type:<class 'pandas.core.series.Series'>
+0      3
+1      7
+2      3
+3      7
+6      5
+      ..
+867    0
+870    0
+871    0
+872    0
+875    0
+Name: ceap_ordi, Length: 498, dtype: int64
+:Index([  0,   1,   2,   3,   6,   7,   8,   9,  14,  15,
+       ...
+       852, 858, 861, 862, 863, 867, 870, 871, 872, 875],
+      dtype='int64', length=498)
+
+Data : 'sexe' 'ceap' ; ['M', 'F'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+(perp) Mann-Whitney U : Stat:93600.500 Pval:0.886
+Effect size:0.005(small) ; Median for 'sexe' groups : M=4.000,F=4.000
+(perp) Mann-Whitney U : Fail to reject the null hypothesis:
+H0 : H0: The 'ceap' distributions have the same central tendency (median) across 'sexe'.
+(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']) vs (['M', 'F'])
+
+Data : 'sexe' 'ceap' ; ['M', 'F'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+(perp) Stuart-Maxwell : table must be square
+
+Data : 'sexe' 'ceap' ; ['M', 'F'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+(perp) Stuart-Maxwell : table must be square
+
+Data : 'sexe' 'ceap' ; ['M', 'F'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+Chi2 : Iterations per ceap
+Chi2: Fail to reject the null hypothesis:
+H0 : The proportions in M and F approach a 50-50 split for the given ceap
+Chi2: Fail to reject the null hypothesis:
+H0 : The proportions in M and F approach a 50-50 split for the given ceap
+Chi2: Fail to reject the null hypothesis:
+H0 : The proportions in M and F approach a 50-50 split for the given ceap
+Chi2: Fail to reject the null hypothesis:
+H0 : The proportions in M and F approach a 50-50 split for the given ceap
+Chi2: Reject the null hypothesis:
+Ha : The proportions in M and F are distant from a 50-50 split for the given ceap
+Chi2: Reject the null hypothesis:
+Ha : The proportions in M and F are distant from a 50-50 split for the given ceap
+Chi2: Reject the null hypothesis:
+Ha : The proportions in M and F are distant from a 50-50 split for the given ceap
+Chi2: Fail to reject the null hypothesis:
+H0 : The proportions in M and F approach a 50-50 split for the given ceap
+
+Data : 'sexe' 'ceap' ; ['M', 'F'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+Chi2 :
+H0 : The proportions in M and F approach a 50-50 split for the given ceap
+Ha : The proportions in M and F are distant from a 50-50 split for the given ceap
+
+   ceap   M    F  totM  totF   tot50%    stat       pval   H
+NA   NA  52   53    52    53   52.500   0.010      0.922  H0
+C0   C0  31   36    31    36   33.500   0.373      0.541  H0
+C1   C1   5    6     5     6    5.500   0.091      0.763  H0
+C2   C2  44   54    44    54   49.000   1.020      0.312  H0
+C3   C3  93  156    93   156  124.500  15.940  6.539e-05  Ha
+C4   C4  38   59    38    59   48.500   4.546      0.033  Ha
+C5   C5  18   35    18    35   26.500   5.453      0.020  Ha
+C6   C6  97   99    97    99   98.000   0.020      0.886  H0
+(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']) vs (['M', 'F'])
+
+Data : 'sexe' 'ceap' ; ['M', 'F'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+Fisher Exact odds ratio : Iterations per ceap
+Fisher Exact odds ratio : Fail to reject the null hypothesis:
+H0 : There is no association between the 'ceap' and the counts for 'sexe' groups
+This suggests that the odds ratio is not significantly different from 1.
+Fisher Exact odds ratio : Fail to reject the null hypothesis:
+H0 : There is no association between the 'ceap' and the counts for 'sexe' groups
+This suggests that the odds ratio is not significantly different from 1.
+Fisher Exact odds ratio : Fail to reject the null hypothesis:
+H0 : There is no association between the 'ceap' and the counts for 'sexe' groups
+This suggests that the odds ratio is not significantly different from 1.
+Fisher Exact odds ratio : Fail to reject the null hypothesis:
+H0 : There is no association between the 'ceap' and the counts for 'sexe' groups
+This suggests that the odds ratio is not significantly different from 1.
+Fisher Exact odds ratio : Reject the null hypothesis:
+Ha : There is an association between the 'ceap' and the counts for 'sexe' groups
+This suggests that the odds ratio is significantly different from 1.
+Fisher Exact odds ratio : Fail to reject the null hypothesis:
+H0 : There is no association between the 'ceap' and the counts for 'sexe' groups
+This suggests that the odds ratio is not significantly different from 1.
+Fisher Exact odds ratio : Fail to reject the null hypothesis:
+H0 : There is no association between the 'ceap' and the counts for 'sexe' groups
+This suggests that the odds ratio is not significantly different from 1.
+Fisher Exact odds ratio : Reject the null hypothesis:
+Ha : There is an association between the 'ceap' and the counts for 'sexe' groups
+This suggests that the odds ratio is significantly different from 1.
+
+Data : 'sexe' 'ceap' ; ['M', 'F'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+Fisher Exact odds ratio :
+H0 : There is no association between the 'ceap' and the counts for 'sexe' groups
+This suggests that the odds ratio is not significantly different from 1.
+Ha : There is an association between the 'ceap' and the counts for 'sexe' groups
+This suggests that the odds ratio is significantly different from 1.
+
+    odds_ratio      pval  ci_lower  ci_upper   H
+NA    1.339275  0.172735  0.890255  2.014769  H0
+C0    1.146494  0.609470  0.695376  1.890269  H0
+C1    1.099196  1.000000  0.332924  3.629155  H0
+C2    1.083167  0.745924  0.709838  1.652843  H0
+C3    0.715385  0.034114  0.529404  0.966700  Ha
+C4    0.831605  0.447226  0.540120  1.280395  H0
+C5    0.661429  0.197898  0.368513  1.187170  H0
+C6    1.391243  0.049345  1.011352  1.913833  Ha
+(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']) vs (['M', 'F'])
+
+Data : 'sexe' 'ceap' ; ['M', 'F'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+Proportional (1) : Iterations per ceap
+Proportion (1): Fail to reject the null hypothesis:
+H0 : The proportions in M and F are equal for the given ceap (Two-tailed test)
+Proportion (1): Fail to reject the null hypothesis:
+H0 : The proportions in M and F are equal for the given ceap (Two-tailed test)
+Proportion (1): Fail to reject the null hypothesis:
+H0 : The proportions in M and F are equal for the given ceap (Two-tailed test)
+Proportion (1): Fail to reject the null hypothesis:
+H0 : The proportions in M and F are equal for the given ceap (Two-tailed test)
+Proportion (1): Reject the null hypothesis:
+Ha : The proportions in M and F are unequal for the given ceap (Two-tailed test)
+Proportion (1): Fail to reject the null hypothesis:
+H0 : The proportions in M and F are equal for the given ceap (Two-tailed test)
+Proportion (1): Fail to reject the null hypothesis:
+H0 : The proportions in M and F are equal for the given ceap (Two-tailed test)
+Proportion (1): Reject the null hypothesis:
+Ha : The proportions in M and F are unequal for the given ceap (Two-tailed test)
+
+Data : 'sexe' 'ceap' ; ['M', 'F'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+Proportional (1) :
+H0 : The proportions in M and F are equal for the given ceap (Two-tailed test)
+Ha : The proportions in M and F are unequal for the given ceap (Two-tailed test)
+
+   ceap   M    F  totM  totF   proM   proF        stat   pval   H
+NA   NA  52   53   378   498  0.138  0.106       1.405  0.160  H0
+C0   C0  31   36   378   498  0.082  0.072       0.536  0.592  H0
+C1   C1   5    6   378   498  0.013  0.012       0.155  0.877  H0
+C2   C2  44   54   378   498  0.116  0.108       0.371  0.711  H0
+C3   C3  93  156   378   498  0.246  0.313  -2.185e+00  0.029  Ha
+C4   C4  38   59   378   498  0.101  0.118  -8.383e-01  0.402  H0
+C5   C5  18   35   378   498  0.048  0.070  -1.393e+00  0.164  H0
+C6   C6  97   99   378   498  0.257  0.199       2.034  0.042  Ha
+(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']) vs (['M', 'F'])
+
+Data : 'sexe' 'ceap' ; ['M', 'F'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+Proportional (2) : Iterations per ceap and sexe
+Proportion (2): Fail to reject the null hypothesis:
+H0 : The proportions in M and F are equal for the given ceap (Two-tailed test)
+Proportion (2): Fail to reject the null hypothesis:
+H0 : The proportions in M and F are equal for the given ceap (Two-tailed test)
+Proportion (2): Fail to reject the null hypothesis:
+H0 : The proportions in M and F are equal for the given ceap (Two-tailed test)
+Proportion (2): Fail to reject the null hypothesis:
+H0 : The proportions in M and F are equal for the given ceap (Two-tailed test)
+Proportion (2): Fail to reject the null hypothesis:
+H0 : The proportions in M and F are equal for the given ceap (Two-tailed test)
+Proportion (2): Fail to reject the null hypothesis:
+H0 : The proportions in M and F are equal for the given ceap (Two-tailed test)
+Proportion (2): Fail to reject the null hypothesis:
+H0 : The proportions in M and F are equal for the given ceap (Two-tailed test)
+Proportion (2): Fail to reject the null hypothesis:
+H0 : The proportions in M and F are equal for the given ceap (Two-tailed test)
+Proportion (2): Fail to reject the null hypothesis:
+H0 : The proportions in M and F are equal for the given ceap (Two-tailed test)
+Proportion (2): Fail to reject the null hypothesis:
+H0 : The proportions in M and F are equal for the given ceap (Two-tailed test)
+Proportion (2): Fail to reject the null hypothesis:
+H0 : The proportions in M and F are equal for the given ceap (Two-tailed test)
+Proportion (2): Fail to reject the null hypothesis:
+H0 : The proportions in M and F are equal for the given ceap (Two-tailed test)
+Proportion (2): Fail to reject the null hypothesis:
+H0 : The proportions in M and F are equal for the given ceap (Two-tailed test)
+Proportion (2): Fail to reject the null hypothesis:
+H0 : The proportions in M and F are equal for the given ceap (Two-tailed test)
+Proportion (2): Fail to reject the null hypothesis:
+H0 : The proportions in M and F are equal for the given ceap (Two-tailed test)
+Proportion (2): Fail to reject the null hypothesis:
+H0 : The proportions in M and F are equal for the given ceap (Two-tailed test)
+
+Data : 'sexe' 'ceap' ; ['M', 'F'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+Proportional (2) :
+H0 : The proportions in M and F are equal for the given ceap (Two-tailed test)
+Ha : The proportions in M and F are unequal for the given ceap (Two-tailed test)
+
+     ceap sexe  coun  tota  obs_prop  exp_prop        stat   pval   H
+NA_M   NA    M    52   105  0.495238  0.431507       1.306  0.191  H0
+NA_F   NA    F    53   105  0.504762  0.568493  -1.306e+00  0.191  H0
+C0_M   C0    M    31    67  0.462687  0.431507       0.512  0.609  H0
+C0_F   C0    F    36    67  0.537313  0.568493  -5.119e-01  0.609  H0
+C1_M   C1    M     5    11  0.454545  0.431507       0.153  0.878  H0
+C1_F   C1    F     6    11  0.545455  0.568493  -1.535e-01  0.878  H0
+C2_M   C2    M    44    98  0.448980  0.431507       0.348  0.728  H0
+C2_F   C2    F    54    98  0.551020  0.568493  -3.478e-01  0.728  H0
+C3_M   C3    M    93   249  0.373494  0.431507  -1.892e+00  0.058  H0
+C3_F   C3    F   156   249  0.626506  0.568493       1.892  0.058  H0
+C4_M   C4    M    38    97  0.391753  0.431507  -8.021e-01  0.423  H0
+C4_F   C4    F    59    97  0.608247  0.568493       0.802  0.423  H0
+C5_M   C5    M    18    53  0.339623  0.431507  -1.412e+00  0.158  H0
+C5_F   C5    F    35    53  0.660377  0.568493       1.412  0.158  H0
+C6_M   C6    M    97   196  0.494898  0.431507       1.775  0.076  H0
+C6_F   C6    F    99   196  0.505102  0.568493  -1.775e+00  0.076  H0
+(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']) vs (['M', 'F'])
+
+Data : 'sexe' 'ceap' ; ['M', 'F'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+Binomial (1) : Iterations per ceap
+
+Data : 'sexe' 'ceap' ; ['M', 'F'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+Binomial (1) :
+H0 : Observed 'M' and 'F' counts for 'ceap' do not differ from the expected count
+Ha : Observed 'M' and 'F' counts for 'ceap' differ from the expected count
+
+   ceap   M    F  tota   stat       pval   H
+NA   NA  52   53   105  0.495      1.000  H0
+C0   C0  31   36    67  0.463      0.625  H0
+C1   C1   5    6    11  0.455      1.000  H0
+C2   C2  44   54    98  0.449      0.363  H0
+C3   C3  93  156   249  0.373  7.864e-05  Ha
+C4   C4  38   59    97  0.392      0.042  Ha
+C5   C5  18   35    53  0.340      0.027  Ha
+C6   C6  97   99   196  0.495      0.943  H0
+(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']) vs (['M', 'F'])
+
+Data : 'sexe' 'ceap' ; ['M', 'F'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+Binomial (2) : Iterations per ceap and sexe
+
+Data : 'sexe' 'ceap' ; ['M', 'F'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+Binomial (2) :
+H0 : Observed 'M' or 'F' count for 'ceap' does not differ from the expected count
+Ha : Observed 'M' or 'F' count for 'ceap' differs from the expected count
+     ceap sexe  count  tota   stat   pval   H obse_prop expe_prop ci_lowr ci_uppr
+NA_M   NA    M     52   105  0.495  0.201  H0     0.495     0.432   0.396   0.595
+NA_F   NA    F     53   105  0.505  0.201  H0     0.505     0.568   0.405   0.604
+C0_M   C0    M     31    67  0.463  0.623  H0     0.463     0.432   0.340   0.589
+C0_F   C0    F     36    67  0.537  0.623  H0     0.537     0.568   0.411   0.660
+C1_M   C1    M      5    11  0.455  1.000  H0     0.455     0.432   0.167   0.766
+C1_F   C1    F      6    11  0.545  1.000  H0     0.545     0.568   0.234   0.833
+C2_M   C2    M     44    98  0.449  0.760  H0     0.449     0.432   0.348   0.553
+C2_F   C2    F     54    98  0.551  0.760  H0     0.551     0.568   0.447   0.652
+C3_M   C3    M     93   249  0.373  0.073  H0     0.373     0.432   0.313   0.437
+C3_F   C3    F    156   249  0.627  0.073  H0     0.627     0.568   0.563   0.687
+C4_M   C4    M     38    97  0.392  0.474  H0     0.392     0.432   0.294   0.496
+C4_F   C4    F     59    97  0.608  0.474  H0     0.608     0.568   0.504   0.706
+C5_M   C5    M     18    53  0.340  0.212  H0     0.340     0.432   0.215   0.483
+C5_F   C5    F     35    53  0.660  0.212  H0     0.660     0.568   0.517   0.785
+C6_M   C6    M     97   196  0.495  0.083  H0     0.495     0.432   0.423   0.567
+C6_F   C6    F     99   196  0.505  0.083  H0     0.505     0.568   0.433   0.577
+(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']) vs (['M', 'F'])
+
+Data : 'sexe' 'ceap' ; ['M', 'F'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+Wilson score interval : Iterations per ceap
+
+Data : 'sexe' 'ceap' ; ['M', 'F'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+Wilson score interval :
+
+   ceap   M    F M_proport M_ci_lowr M_ci_uppr F_proport F_ci_lowr F_ci_uppr
+NA   NA  52   53     0.495     0.401     0.589     0.505     0.411     0.599
+C0   C0  31   36     0.463     0.349     0.581     0.537     0.419     0.651
+C1   C1   5    6     0.455     0.213     0.720     0.545     0.280     0.787
+C2   C2  44   54     0.449     0.354     0.548     0.551     0.452     0.646
+C3   C3  93  156     0.373     0.316     0.435     0.627     0.565     0.684
+C4   C4  38   59     0.392     0.301     0.491     0.608     0.509     0.699
+C5   C5  18   35     0.340     0.227     0.474     0.660     0.526     0.773
+C6   C6  97   99     0.495     0.426     0.564     0.505     0.436     0.574
+
+Step 4 : X.size:876 X.type:<class 'pandas.core.frame.DataFrame'>
+     NA  C0  C1  C2  C3  C4  C5  C6
+0     0   0   0   1   0   0   0   0
+1     0   0   0   0   0   0   0   1
+2     0   0   0   1   0   0   0   0
+3     0   0   0   0   0   0   0   1
+4     0   0   0   0   1   0   0   0
+..   ..  ..  ..  ..  ..  ..  ..  ..
+871   1   0   0   0   0   0   0   0
+872   1   0   0   0   0   0   0   0
+873   1   0   0   0   0   0   0   0
+874   1   0   0   0   0   0   0   0
+875   1   0   0   0   0   0   0   0
+
+[876 rows x 8 columns]
+:RangeIndex(start=0, stop=876, step=1)
+
+Step 4 : y.size:876 y.type:<class 'pandas.core.series.Series'>
+0      1
+1      1
+2      1
+3      1
+4      0
+      ..
+871    1
+872    1
+873    0
+874    0
+875    1
+Name: sexe_stra, Length: 876, dtype: int64
+:RangeIndex(start=0, stop=876, step=1)
+
+Data : 'sexe' 'ceap' ; ['M', 'F'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+Logit :
+                           Logit Regression Results                           
+==============================================================================
+Dep. Variable:              sexe_stra   No. Observations:                  876
+Model:                          Logit   Df Residuals:                      868
+Method:                           MLE   Df Model:                            7
+Date:                Mon, 13 Jan 2025   Pseudo R-squ.:                0.009411
+Time:                        08:15:23   Log-Likelihood:                -593.31
+converged:                       True   LL-Null:                       -598.95
+Covariance Type:            nonrobust   LLR p-value:                    0.1271
+==============================================================================
+                 coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------
+const          0.2443   6.41e+06   3.81e-08      1.000   -1.26e+07    1.26e+07
+NA            -0.2252   6.41e+06  -3.51e-08      1.000   -1.26e+07    1.26e+07
+C0            -0.0947   6.41e+06  -1.48e-08      1.000   -1.26e+07    1.26e+07
+C1            -0.0619   6.41e+06  -9.66e-09      1.000   -1.26e+07    1.26e+07
+C2            -0.0395   6.41e+06  -6.15e-09      1.000   -1.26e+07    1.26e+07
+C3             0.2730   6.41e+06   4.26e-08      1.000   -1.26e+07    1.26e+07
+C4             0.1957   6.41e+06   3.05e-08      1.000   -1.26e+07    1.26e+07
+C5             0.4207   6.41e+06   6.56e-08      1.000   -1.26e+07    1.26e+07
+C6            -0.2238   6.41e+06  -3.49e-08      1.000   -1.26e+07    1.26e+07
+==============================================================================
+
+Data : 'sexe' 'ceap' ; ['M', 'F'] ['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']
+Logit regression :
+H0 : No association between 'sexe' and 'ceap' (coef EQ 0)
+Ha : Association between 'sexe' and 'ceap' (coef NE 0)
+
+            Coef.   Std.Err.           z  P>|z|      [0.025     0.975]   H
+const       0.244  6.413e+06   3.809e-08    1.0  -1.257e+07  1.257e+07  H0
+NA     -2.252e-01  6.413e+06  -3.512e-08    1.0  -1.257e+07  1.257e+07  H0
+C0     -9.472e-02  6.413e+06  -1.477e-08    1.0  -1.257e+07  1.257e+07  H0
+C1     -6.193e-02  6.413e+06  -9.657e-09    1.0  -1.257e+07  1.257e+07  H0
+C2     -3.946e-02  6.413e+06  -6.153e-09    1.0  -1.257e+07  1.257e+07  H0
+C3          0.273  6.413e+06   4.257e-08    1.0  -1.257e+07  1.257e+07  H0
+C4          0.196  6.413e+06   3.051e-08    1.0  -1.257e+07  1.257e+07  H0
+C5          0.421  6.413e+06   6.560e-08    1.0  -1.257e+07  1.257e+07  H0
+C6     -2.238e-01  6.413e+06  -3.490e-08    1.0  -1.257e+07  1.257e+07  H0
+(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6']) vs (['M', 'F'])

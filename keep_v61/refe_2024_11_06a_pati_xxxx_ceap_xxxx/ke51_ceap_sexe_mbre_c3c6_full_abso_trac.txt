@@ -1,0 +1,140 @@
+
+>>> >>> >>>
+2025-01-04 17:22:02
+>>> >>> >>>
+sexe : None : df1.size=876 df2.size=876
+df11:<class 'pandas.core.frame.DataFrame'> len:876
+      #        date                       name   doss  age age_bin sexe unbi mbas mbre ceap c0c6 c3c6    seve
+0     1  2021-01-27         YENGE MARCELA JOAO  D9972   54   50-59    F    B   G2    G   C2   VI   NA  C0..C2
+1     1  2021-01-27         YENGE MARCELA JOAO  D9972   54   50-59    F    B   G2    G   C6   VI   VI  C3..C6
+2     1  2021-01-27         YENGE MARCELA JOAO  D9972   54   50-59    F    B   G2    D   C2   VI   NA  C0..C2
+3     1  2021-01-27         YENGE MARCELA JOAO  D9972   54   50-59    F    B   G2    D   C6   VI   VI  C3..C6
+4     2  2021-01-21  TSHIBASU KAPUNGI DONATIEN  D9921   54   50-59    M    B   G2    G   C3   VI   VI  C3..C6
+..   ..         ...                        ...    ...  ...     ...  ...  ...  ...  ...  ...  ...  ...     ...
+871  44  2020-10-06       MIYALU MAMUD JEANINE  D8930   45   40-49    F    U   NA    D   NA   NA   NA      NA
+872  37  2020-10-07      KIEMBI LUSIKILA FANNY  D8956   50   50-59    F    U   NA    G   NA   NA   NA      NA
+873  33  2021-11-29       DIGATA MAFUTA CLAUDE  D9113   55   50-59    M    U   NA    D   NA   NA   NA      NA
+874  12  2020-12-09      BOLUA LIWONGU CAMILLE  D9574   60   60-69    M    U   NA    G   NA   NA   NA      NA
+875  11  2020-12-14   NGALULA MUTEBA ADOLPHINE  D9609   76   70-79    F    U   NA    D   NA   NA   NA      NA
+
+[876 rows x 14 columns]
+:RangeIndex(start=0, stop=876, step=1)
+:Index(['#', 'date', 'name', 'doss', 'age', 'age_bin', 'sexe', 'unbi', 'mbas',
+       'mbre', 'ceap', 'c0c6', 'c3c6', 'seve'],
+      dtype='object')
+df_ini1:<class 'pandas.core.frame.DataFrame'>
+   sexe ceap mbre  coun
+0     F   C0    D    23
+1     F   C0    G    13
+2     F   C1    D     3
+3     F   C1    G     3
+4     F   C2    D    34
+5     F   C2    G    20
+6     F   C3    D    78
+7     F   C3    G    78
+8     F   C4    D    29
+9     F   C4    G    30
+10    F   C5    D    14
+11    F   C5    G    21
+12    F   C6    D    44
+13    F   C6    G    55
+14    F   NA    D    32
+15    F   NA    G    21
+16    M   C0    D    20
+17    M   C0    G    11
+18    M   C1    D     3
+19    M   C1    G     2
+20    M   C2    D    23
+21    M   C2    G    21
+22    M   C3    D    45
+23    M   C3    G    48
+24    M   C4    D    16
+25    M   C4    G    22
+26    M   C5    D    10
+27    M   C5    G     8
+28    M   C6    D    39
+29    M   C6    G    58
+30    M   NA    D    34
+31    M   NA    G    18
+:RangeIndex(start=0, stop=32, step=1)
+:Index(['sexe', 'ceap', 'mbre', 'coun'], dtype='object')
+df_out:<class 'pandas.core.frame.DataFrame'>
+mbre   G       D    
+sexe   M   F   M   F
+NA    18  21  34  32
+C0    11  13  20  23
+C1     2   3   3   3
+C2    21  20  23  34
+C3    48  78  45  78
+C4    22  30  16  29
+C5     8  21  10  14
+C6    58  55  39  44
+:Index(['NA', 'C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6'], dtype='object')
+:MultiIndex([('G', 'M'),
+            ('G', 'F'),
+            ('D', 'M'),
+            ('D', 'F')],
+           names=['mbre', 'sexe'])
+Sum:876
+Chi-Square Statistic: 35.89383291126164 P-value: 0.022473170531995056 Degrees of Freedom: 21 Expected Frequencies: [[22.53424658 28.8869863  22.7739726  30.80479452]
+ [14.37899543 18.4326484  14.53196347 19.65639269]
+ [ 2.36073059  3.02625571  2.38584475  3.22716895]
+ [21.03196347 26.96118721 21.25570776 28.75114155]
+ [53.43835616 68.50342466 54.00684932 73.05136986]
+ [20.8173516  26.68607306 21.03881279 28.45776256]
+ [11.37442922 14.58105023 11.49543379 15.54908676]
+ [42.06392694 53.92237443 42.51141553 57.50228311]]
+df_flat:<class 'pandas.core.frame.DataFrame'>
+   ceap mbre_sexe  count
+0    NA       G_M     18
+1    C0       G_M     11
+2    C1       G_M      2
+3    C2       G_M     21
+4    C3       G_M     48
+5    C4       G_M     22
+6    C5       G_M      8
+7    C6       G_M     58
+8    NA       G_F     21
+9    C0       G_F     13
+10   C1       G_F      3
+11   C2       G_F     20
+12   C3       G_F     78
+13   C4       G_F     30
+14   C5       G_F     21
+15   C6       G_F     55
+16   NA       D_M     34
+17   C0       D_M     20
+18   C1       D_M      3
+19   C2       D_M     23
+20   C3       D_M     45
+21   C4       D_M     16
+22   C5       D_M     10
+23   C6       D_M     39
+24   NA       D_F     32
+25   C0       D_F     23
+26   C1       D_F      3
+27   C2       D_F     34
+28   C3       D_F     78
+29   C4       D_F     29
+30   C5       D_F     14
+31   C6       D_F     44
+:RangeIndex(start=0, stop=32, step=1)
+:Index(['ceap', 'mbre_sexe', 'count'], dtype='object')
+Comparison: G_M vs G_F Chi-Square Statistic: 8.484395703592256 P-value: 0.2918217174674129 Degrees of Freedom: 7
+Comparison: G_M vs D_M Chi-Square Statistic: 12.804680014219015 P-value: 0.07701276447638543 Degrees of Freedom: 7
+Comparison: G_M vs D_F Chi-Square Statistic: 12.695960302024911 P-value: 0.07987199683240653 Degrees of Freedom: 7
+Comparison: G_F vs D_M Chi-Square Statistic: 18.73556628755698 P-value: 0.009057327949839707 Degrees of Freedom: 7
+Comparison: G_F vs D_F Chi-Square Statistic: 10.826717211095708 P-value: 0.14635816731147444 Degrees of Freedom: 7
+Comparison: D_M vs D_F Chi-Square Statistic: 6.063521218388672 P-value: 0.5323522210849896 Degrees of Freedom: 7
+df_swapped:<class 'pandas.core.frame.DataFrame'>
+  Comparison1 Comparison2  Chi-Square Statistic  P-value  Degrees of Freedom
+3         F_G         M_D                18.736    0.009                   7
+1         M_G         M_D                12.805    0.077                   7
+2         M_G         F_D                12.696    0.080                   7
+4         F_G         F_D                10.827    0.146                   7
+0         M_G         F_G                 8.484    0.292                   7
+5         M_D         F_D                 6.064    0.532                   7
+:Index([3, 1, 2, 4, 0, 5], dtype='int64')
+:Index(['Comparison1', 'Comparison2', 'Chi-Square Statistic', 'P-value',
+       'Degrees of Freedom'],
+      dtype='object')

@@ -1,0 +1,82 @@
+Great! We'll proceed as follows:
+
+---
+
+### **Steps for Option 2** (one unique age per patient per CEAP class):
+1. **Aggregate Ages by Patient, CEAP, and Gender**:
+   - Since patients (`doss`) can have multiple rows for the same CEAP class, we will compute the **mean or median age** per `doss`, `sexe`, and `ceap`.
+
+2. **Perform Mann-Whitney U Test**:
+   - For each CEAP class (C0, C1, ..., C6, NA), compare the aggregated ages of males (M) and females (F) using `scipy.stats.mannwhitneyu`.
+
+3. **Correct for Multiple Comparisons**:
+   - Use **Bonferroni correction** or **FDR adjustment** to account for multiple tests across CEAP classes.
+
+4. **Summarize Results**:
+   - Output the **p-values** and indicate which CEAP classes show significant gender differences after correction.
+
+---
+
+### Example Code:
+Here's a Python implementation of the above approach using `pandas` and `scipy`:
+
+```python
+import pandas as pd
+from scipy.stats import mannwhitneyu
+from statsmodels.stats.multitest import multipletests
+
+# Sample DataFrame setup (replace this with your actual df_line)
+data = {
+    'name': ['YENGE MARCELA JOAO', 'YENGE MARCELA JOAO', 'YENGE MARCELA JOAO',
+             'ROTT  MARC    JII', 'TSHIBASU KAGI DON'],
+    'doss': ['D9972', 'D9972', 'D9972', 'D9844', 'D9921'],
+    'age': [54, 54, 54, 50, 58],
+    'sexe': ['F', 'F', 'F', 'M', 'M'],
+    'limb': ['L', 'L', 'R', 'R', 'G'],
+    'ceap': ['C2', 'C6', 'C2', 'C6', 'C3']
+}
+
+df_line = pd.DataFrame(data)
+
+# Step 1: Aggregate ages per patient (doss), sexe, and CEAP class
+df_agg = df_line.groupby(['doss', 'sexe', 'ceap']).agg({'age': 'mean'}).reset_index()
+
+# Step 2: Perform Mann-Whitney U Test for each CEAP class
+results = []
+ceap_classes = df_agg['ceap'].unique()
+
+for ceap in ceap_classes:
+    ages_m = df_agg[(df_agg['ceap'] == ceap) & (df_agg['sexe'] == 'M')]['age']
+    ages_f = df_agg[(df_agg['ceap'] == ceap) & (df_agg['sexe'] == 'F')]['age']
+    
+    if len(ages_m) > 0 and len(ages_f) > 0:  # Only run the test if both groups have data
+        stat, p_value = mannwhitneyu(ages_m, ages_f, alternative='two-sided')
+        results.append({'CEAP': ceap, 'p_value': p_value})
+    else:
+        results.append({'CEAP': ceap, 'p_value': None})
+
+# Step 3: Correct for multiple comparisons
+results_df = pd.DataFrame(results).dropna()
+p_values = results_df['p_value'].values
+_, p_corrected, _, _ = multipletests(p_values, method='bonferroni')  # Bonferroni correction
+results_df['p_value_corrected'] = p_corrected
+
+# Step 4: Display results
+print(results_df)
+```
+
+---
+
+### Output:
+The resulting DataFrame `results_df` will include:
+- CEAP class.
+- **Raw p-values** from the Mann-Whitney U test.
+- **Corrected p-values** after Bonferroni adjustment.
+
+---
+
+### Notes:
+1. If you have a large dataset, consider using **FDR correction** (`method='fdr_bh'`) instead of Bonferroni for a more balanced correction.
+2. Replace `'age': 'mean'` with `'age': 'median'` in `groupby` if you prefer to aggregate by the median.
+
+Let me know if you need help running the code or interpreting the results! 🚀
