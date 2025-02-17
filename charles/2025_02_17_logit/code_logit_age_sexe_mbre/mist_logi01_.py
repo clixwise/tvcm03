@@ -100,13 +100,21 @@ def logi(what, df, colu_cate_list, x_list):
             "aic": result.aic,
             "bic": result.bic
         }
+        odds_ratio = np.exp(result.params)
+        ci_lower = np.exp(result.conf_int().iloc[:, 0])
+        ci_upper = np.exp(result.conf_int().iloc[:, 1])
+        odds_ratio_neg = np.exp(-result.params)
         resu_dict_deta[ceap] = {
             "coef": result.params, # odds ratios
             "std err": result.bse,
             "z": result.tvalues,
             "P>|z|": result.pvalues,
             "[0.025": result.conf_int().iloc[:, 0], # CI
-            "0.975]": result.conf_int().iloc[:, 1] # CI
+            "0.975]": result.conf_int().iloc[:, 1], # CI
+            'odds_ratio' : odds_ratio,
+            'ci_lower' : ci_lower,
+            'ci_upper' : ci_upper,
+            'odds_ratio_neg' : odds_ratio_neg
         }
         # break
 
@@ -140,6 +148,11 @@ def logi(what, df, colu_cate_list, x_list):
     df_resu_deta['P>|z|'] = df_resu_deta['P>|z|'].apply(frmt)
     df_resu_deta['[0.025'] = df_resu_deta['[0.025'].apply(frmt)
     df_resu_deta['0.975]'] = df_resu_deta['0.975]'].apply(frmt)
+    df_resu_deta['odds_ratio'] = df_resu_deta['odds_ratio'].apply(frmt)
+    df_resu_deta['ci_lower'] = df_resu_deta['ci_lower'].apply(frmt)
+    df_resu_deta['ci_upper'] = df_resu_deta['ci_upper'].apply(frmt)
+    df_resu_deta['odds_ratio_neg'] = df_resu_deta['odds_ratio_neg'].apply(frmt)
+
     #
     cols = list(df_resu_deta.columns)
     df_resu_deta['pval'] = df_resu_deta.apply(lambda row: row['P>|z|'] if row['index'] not in ['-', 'const'] and pd.to_numeric(row['P>|z|'], errors='coerce') <= 0.05 else '', axis=1)
@@ -148,9 +161,9 @@ def logi(what, df, colu_cate_list, x_list):
     #
     df_resu_deta['accs'] = df_resu_deta['ceap'].astype(str) + '_' + df_resu_deta['index'].astype(str)
     df_resu_deta.set_index('accs', drop=False, inplace=True) # drop column ; inplace ie same df
-    df_resu_deta = df_resu_deta[['ceap', 'index', 'coef', 'std err', 'z', 'P>|z|', '[0.025', '0.975]']]
+    df_resu_deta = df_resu_deta[['ceap', 'index', 'coef', 'std err', 'z', 'P>|z|', '[0.025', '0.975]','odds_ratio', 'ci_lower', 'ci_upper', 'odds_ratio_neg']]
     df_resu_deta = df_resu_deta.rename(columns={'ceap': 'ceap=y(dependant)', 'index': 'coef=x(independant)'})
-    
+
     # Exit
     # ----
     return df_resu_glob, df_resu_deta
