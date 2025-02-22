@@ -1,13 +1,13 @@
 
 >>> >>> >>>
-2025-02-17 20:09:37
+2025-02-22 06:53:44
 >>> >>> >>>
 sexe : None : df1.size=876 df2.size=876
 sexe : None : df1.size=876 df2.size=876
 
 
 >>> >>> >>>
-2025-02-17 20:09:37 : stat_glob_perp_2025_02_13
+2025-02-22 06:53:44 : stat_glob_perp_2025_02_13
 >>> >>> >>>
 
 ---
@@ -19,8 +19,8 @@ Logistic Regression Perplexity [2025_02_12] : y='ceap'='C3' ; x='sexe','age'
 Dep. Variable:                     C3   No. Observations:                  876
 Model:                          Logit   Df Residuals:                      873
 Method:                           MLE   Df Model:                            2
-Date:                Mon, 17 Feb 2025   Pseudo R-squ.:                0.004617
-Time:                        20:09:37   Log-Likelihood:                -520.49
+Date:                Sat, 22 Feb 2025   Pseudo R-squ.:                0.004617
+Time:                        06:53:44   Log-Likelihood:                -520.49
 converged:                       True   LL-Null:                       -522.90
 Covariance Type:            nonrobust   LLR p-value:                   0.08944
 ==============================================================================
@@ -40,8 +40,8 @@ Logistic Regression Perplexity [2025_02_12] : y=['NA', 'C0', 'C1', 'C2', 'C3', '
 Dep. Variable:                     NA   No. Observations:                  876
 Model:                          Logit   Df Residuals:                      873
 Method:                           MLE   Df Model:                            2
-Date:                Mon, 17 Feb 2025   Pseudo R-squ.:                0.005337
-Time:                        20:09:38   Log-Likelihood:                -319.47
+Date:                Sat, 22 Feb 2025   Pseudo R-squ.:                0.005337
+Time:                        06:53:44   Log-Likelihood:                -319.47
 converged:                       True   LL-Null:                       -321.19
 Covariance Type:            nonrobust   LLR p-value:                    0.1801
 ==============================================================================
@@ -56,8 +56,8 @@ age           -0.0081      0.007     -1.216      0.224      -0.021       0.005
 Dep. Variable:                     C0   No. Observations:                  876
 Model:                          Logit   Df Residuals:                      873
 Method:                           MLE   Df Model:                            2
-Date:                Mon, 17 Feb 2025   Pseudo R-squ.:                0.001003
-Time:                        20:09:38   Log-Likelihood:                -236.37
+Date:                Sat, 22 Feb 2025   Pseudo R-squ.:                0.001003
+Time:                        06:53:44   Log-Likelihood:                -236.37
 converged:                       True   LL-Null:                       -236.60
 Covariance Type:            nonrobust   LLR p-value:                    0.7888
 ==============================================================================
@@ -72,8 +72,8 @@ age           -0.0036      0.008     -0.435      0.664      -0.020       0.012
 Dep. Variable:                     C1   No. Observations:                  876
 Model:                          Logit   Df Residuals:                      873
 Method:                           MLE   Df Model:                            2
-Date:                Mon, 17 Feb 2025   Pseudo R-squ.:                0.003493
-Time:                        20:09:38   Log-Likelihood:                -58.876
+Date:                Sat, 22 Feb 2025   Pseudo R-squ.:                0.003493
+Time:                        06:53:44   Log-Likelihood:                -58.876
 converged:                       True   LL-Null:                       -59.083
 Covariance Type:            nonrobust   LLR p-value:                    0.8135
 ==============================================================================
@@ -88,8 +88,8 @@ age           -0.0121      0.019     -0.628      0.530      -0.050       0.026
 Dep. Variable:                     C2   No. Observations:                  876
 Model:                          Logit   Df Residuals:                      873
 Method:                           MLE   Df Model:                            2
-Date:                Mon, 17 Feb 2025   Pseudo R-squ.:                0.001022
-Time:                        20:09:38   Log-Likelihood:                -306.65
+Date:                Sat, 22 Feb 2025   Pseudo R-squ.:                0.001022
+Time:                        06:53:44   Log-Likelihood:                -306.65
 converged:                       True   LL-Null:                       -306.96
 Covariance Type:            nonrobust   LLR p-value:                    0.7308
 ==============================================================================
@@ -104,8 +104,8 @@ age           -0.0048      0.007     -0.702      0.483      -0.018       0.009
 Dep. Variable:                     C3   No. Observations:                  876
 Model:                          Logit   Df Residuals:                      873
 Method:                           MLE   Df Model:                            2
-Date:                Mon, 17 Feb 2025   Pseudo R-squ.:                0.004617
-Time:                        20:09:38   Log-Likelihood:                -520.49
+Date:                Sat, 22 Feb 2025   Pseudo R-squ.:                0.004617
+Time:                        06:53:44   Log-Likelihood:                -520.49
 converged:                       True   LL-Null:                       -522.90
 Covariance Type:            nonrobust   LLR p-value:                   0.08944
 ==============================================================================
@@ -120,8 +120,8 @@ age            0.0006      0.005      0.124      0.902      -0.009       0.010
 Dep. Variable:                     C4   No. Observations:                  876
 Model:                          Logit   Df Residuals:                      873
 Method:                           MLE   Df Model:                            2
-Date:                Mon, 17 Feb 2025   Pseudo R-squ.:                0.005836
-Time:                        20:09:38   Log-Likelihood:                -303.10
+Date:                Sat, 22 Feb 2025   Pseudo R-squ.:                0.005836
+Time:                        06:53:44   Log-Likelihood:                -303.10
 converged:                       True   LL-Null:                       -304.88
 Covariance Type:            nonrobust   LLR p-value:                    0.1687
 ==============================================================================
@@ -136,8 +136,8 @@ age            0.0120      0.007      1.670      0.095      -0.002       0.026
 Dep. Variable:                     C5   No. Observations:                  876
 Model:                          Logit   Df Residuals:                      873
 Method:                           MLE   Df Model:                            2
-Date:                Mon, 17 Feb 2025   Pseudo R-squ.:                0.005731
-Time:                        20:09:38   Log-Likelihood:                -198.89
+Date:                Sat, 22 Feb 2025   Pseudo R-squ.:                0.005731
+Time:                        06:53:44   Log-Likelihood:                -198.89
 converged:                       True   LL-Null:                       -200.03
 Covariance Type:            nonrobust   LLR p-value:                    0.3178
 ==============================================================================
@@ -152,8 +152,8 @@ age            0.0051      0.009      0.553      0.581      -0.013       0.023
 Dep. Variable:                     C6   No. Observations:                  876
 Model:                          Logit   Df Residuals:                      873
 Method:                           MLE   Df Model:                            2
-Date:                Mon, 17 Feb 2025   Pseudo R-squ.:                0.004460
-Time:                        20:09:38   Log-Likelihood:                -463.61
+Date:                Sat, 22 Feb 2025   Pseudo R-squ.:                0.004460
+Time:                        06:53:44   Log-Likelihood:                -463.61
 converged:                       True   LL-Null:                       -465.69
 Covariance Type:            nonrobust   LLR p-value:                    0.1253
 ==============================================================================
@@ -217,8 +217,8 @@ Logistic Regression Perplexity [2025_02_12] : y=['NA', 'C0', 'C1', 'C2', 'C3', '
 Dep. Variable:                     NA   No. Observations:                  876
 Model:                          Logit   Df Residuals:                      873
 Method:                           MLE   Df Model:                            2
-Date:                Mon, 17 Feb 2025   Pseudo R-squ.:                 0.01265
-Time:                        20:09:38   Log-Likelihood:                -317.12
+Date:                Sat, 22 Feb 2025   Pseudo R-squ.:                 0.01265
+Time:                        06:53:44   Log-Likelihood:                -317.12
 converged:                       True   LL-Null:                       -321.19
 Covariance Type:            nonrobust   LLR p-value:                   0.01721
 ==============================================================================
@@ -233,8 +233,8 @@ age           -0.0078      0.007     -1.173      0.241      -0.021       0.005
 Dep. Variable:                     C0   No. Observations:                  876
 Model:                          Logit   Df Residuals:                      873
 Method:                           MLE   Df Model:                            2
-Date:                Mon, 17 Feb 2025   Pseudo R-squ.:                 0.01111
-Time:                        20:09:38   Log-Likelihood:                -233.98
+Date:                Sat, 22 Feb 2025   Pseudo R-squ.:                 0.01111
+Time:                        06:53:44   Log-Likelihood:                -233.98
 converged:                       True   LL-Null:                       -236.60
 Covariance Type:            nonrobust   LLR p-value:                   0.07223
 ==============================================================================
@@ -249,8 +249,8 @@ age           -0.0033      0.008     -0.403      0.687      -0.019       0.013
 Dep. Variable:                     C1   No. Observations:                  876
 Model:                          Logit   Df Residuals:                      873
 Method:                           MLE   Df Model:                            2
-Date:                Mon, 17 Feb 2025   Pseudo R-squ.:                0.003709
-Time:                        20:09:38   Log-Likelihood:                -58.864
+Date:                Sat, 22 Feb 2025   Pseudo R-squ.:                0.003709
+Time:                        06:53:44   Log-Likelihood:                -58.864
 converged:                       True   LL-Null:                       -59.083
 Covariance Type:            nonrobust   LLR p-value:                    0.8032
 ==============================================================================
@@ -265,8 +265,8 @@ age           -0.0120      0.019     -0.623      0.533      -0.050       0.026
 Dep. Variable:                     C2   No. Observations:                  876
 Model:                          Logit   Df Residuals:                      873
 Method:                           MLE   Df Model:                            2
-Date:                Mon, 17 Feb 2025   Pseudo R-squ.:                0.004431
-Time:                        20:09:38   Log-Likelihood:                -305.60
+Date:                Sat, 22 Feb 2025   Pseudo R-squ.:                0.004431
+Time:                        06:53:44   Log-Likelihood:                -305.60
 converged:                       True   LL-Null:                       -306.96
 Covariance Type:            nonrobust   LLR p-value:                    0.2567
 ==============================================================================
@@ -281,8 +281,8 @@ age           -0.0047      0.007     -0.680      0.496      -0.018       0.009
 Dep. Variable:                     C3   No. Observations:                  876
 Model:                          Logit   Df Residuals:                      873
 Method:                           MLE   Df Model:                            2
-Date:                Mon, 17 Feb 2025   Pseudo R-squ.:               0.0003639
-Time:                        20:09:38   Log-Likelihood:                -522.71
+Date:                Sat, 22 Feb 2025   Pseudo R-squ.:               0.0003639
+Time:                        06:53:44   Log-Likelihood:                -522.71
 converged:                       True   LL-Null:                       -522.90
 Covariance Type:            nonrobust   LLR p-value:                    0.8267
 ==============================================================================
@@ -297,8 +297,8 @@ age            0.0005      0.005      0.104      0.917      -0.009       0.010
 Dep. Variable:                     C4   No. Observations:                  876
 Model:                          Logit   Df Residuals:                      873
 Method:                           MLE   Df Model:                            2
-Date:                Mon, 17 Feb 2025   Pseudo R-squ.:                0.006146
-Time:                        20:09:38   Log-Likelihood:                -303.01
+Date:                Sat, 22 Feb 2025   Pseudo R-squ.:                0.006146
+Time:                        06:53:44   Log-Likelihood:                -303.01
 converged:                       True   LL-Null:                       -304.88
 Covariance Type:            nonrobust   LLR p-value:                    0.1535
 ==============================================================================
@@ -313,8 +313,8 @@ age            0.0119      0.007      1.657      0.097      -0.002       0.026
 Dep. Variable:                     C5   No. Observations:                  876
 Model:                          Logit   Df Residuals:                      873
 Method:                           MLE   Df Model:                            2
-Date:                Mon, 17 Feb 2025   Pseudo R-squ.:                0.002590
-Time:                        20:09:38   Log-Likelihood:                -199.51
+Date:                Sat, 22 Feb 2025   Pseudo R-squ.:                0.002590
+Time:                        06:53:44   Log-Likelihood:                -199.51
 converged:                       True   LL-Null:                       -200.03
 Covariance Type:            nonrobust   LLR p-value:                    0.5957
 ==============================================================================
@@ -329,8 +329,8 @@ age            0.0050      0.009      0.537      0.591      -0.013       0.023
 Dep. Variable:                     C6   No. Observations:                  876
 Model:                          Logit   Df Residuals:                      873
 Method:                           MLE   Df Model:                            2
-Date:                Mon, 17 Feb 2025   Pseudo R-squ.:                0.008229
-Time:                        20:09:38   Log-Likelihood:                -461.85
+Date:                Sat, 22 Feb 2025   Pseudo R-squ.:                0.008229
+Time:                        06:53:44   Log-Likelihood:                -461.85
 converged:                       True   LL-Null:                       -465.69
 Covariance Type:            nonrobust   LLR p-value:                   0.02166
 ==============================================================================
@@ -394,8 +394,8 @@ Logistic Regression Perplexity [2025_02_12] : y=['NA', 'C0', 'C1', 'C2', 'C3', '
 Dep. Variable:                     NA   No. Observations:                  876
 Model:                          Logit   Df Residuals:                      872
 Method:                           MLE   Df Model:                            3
-Date:                Mon, 17 Feb 2025   Pseudo R-squ.:                 0.01593
-Time:                        20:09:38   Log-Likelihood:                -316.07
+Date:                Sat, 22 Feb 2025   Pseudo R-squ.:                 0.01593
+Time:                        06:53:45   Log-Likelihood:                -316.07
 converged:                       True   LL-Null:                       -321.19
 Covariance Type:            nonrobust   LLR p-value:                   0.01670
 ==============================================================================
@@ -411,8 +411,8 @@ age           -0.0080      0.007     -1.187      0.235      -0.021       0.005
 Dep. Variable:                     C0   No. Observations:                  876
 Model:                          Logit   Df Residuals:                      872
 Method:                           MLE   Df Model:                            3
-Date:                Mon, 17 Feb 2025   Pseudo R-squ.:                 0.01179
-Time:                        20:09:38   Log-Likelihood:                -233.81
+Date:                Sat, 22 Feb 2025   Pseudo R-squ.:                 0.01179
+Time:                        06:53:45   Log-Likelihood:                -233.81
 converged:                       True   LL-Null:                       -236.60
 Covariance Type:            nonrobust   LLR p-value:                    0.1339
 ==============================================================================
@@ -428,8 +428,8 @@ age           -0.0033      0.008     -0.407      0.684      -0.019       0.013
 Dep. Variable:                     C1   No. Observations:                  876
 Model:                          Logit   Df Residuals:                      872
 Method:                           MLE   Df Model:                            3
-Date:                Mon, 17 Feb 2025   Pseudo R-squ.:                0.003938
-Time:                        20:09:38   Log-Likelihood:                -58.850
+Date:                Sat, 22 Feb 2025   Pseudo R-squ.:                0.003938
+Time:                        06:53:45   Log-Likelihood:                -58.850
 converged:                       True   LL-Null:                       -59.083
 Covariance Type:            nonrobust   LLR p-value:                    0.9264
 ==============================================================================
@@ -445,8 +445,8 @@ age           -0.0120      0.019     -0.625      0.532      -0.050       0.026
 Dep. Variable:                     C2   No. Observations:                  876
 Model:                          Logit   Df Residuals:                      872
 Method:                           MLE   Df Model:                            3
-Date:                Mon, 17 Feb 2025   Pseudo R-squ.:                0.004685
-Time:                        20:09:38   Log-Likelihood:                -305.52
+Date:                Sat, 22 Feb 2025   Pseudo R-squ.:                0.004685
+Time:                        06:53:45   Log-Likelihood:                -305.52
 converged:                       True   LL-Null:                       -306.96
 Covariance Type:            nonrobust   LLR p-value:                    0.4111
 ==============================================================================
@@ -462,8 +462,8 @@ age           -0.0047      0.007     -0.683      0.494      -0.018       0.009
 Dep. Variable:                     C3   No. Observations:                  876
 Model:                          Logit   Df Residuals:                      872
 Method:                           MLE   Df Model:                            3
-Date:                Mon, 17 Feb 2025   Pseudo R-squ.:                0.005005
-Time:                        20:09:38   Log-Likelihood:                -520.28
+Date:                Sat, 22 Feb 2025   Pseudo R-squ.:                0.005005
+Time:                        06:53:45   Log-Likelihood:                -520.28
 converged:                       True   LL-Null:                       -522.90
 Covariance Type:            nonrobust   LLR p-value:                    0.1554
 ==============================================================================
@@ -479,8 +479,8 @@ age            0.0006      0.005      0.115      0.908      -0.009       0.010
 Dep. Variable:                     C4   No. Observations:                  876
 Model:                          Logit   Df Residuals:                      872
 Method:                           MLE   Df Model:                            3
-Date:                Mon, 17 Feb 2025   Pseudo R-squ.:                0.007350
-Time:                        20:09:38   Log-Likelihood:                -302.64
+Date:                Sat, 22 Feb 2025   Pseudo R-squ.:                0.007350
+Time:                        06:53:45   Log-Likelihood:                -302.64
 converged:                       True   LL-Null:                       -304.88
 Covariance Type:            nonrobust   LLR p-value:                    0.2139
 ==============================================================================
@@ -496,8 +496,8 @@ age            0.0119      0.007      1.659      0.097      -0.002       0.026
 Dep. Variable:                     C5   No. Observations:                  876
 Model:                          Logit   Df Residuals:                      872
 Method:                           MLE   Df Model:                            3
-Date:                Mon, 17 Feb 2025   Pseudo R-squ.:                0.007649
-Time:                        20:09:38   Log-Likelihood:                -198.50
+Date:                Sat, 22 Feb 2025   Pseudo R-squ.:                0.007649
+Time:                        06:53:45   Log-Likelihood:                -198.50
 converged:                       True   LL-Null:                       -200.03
 Covariance Type:            nonrobust   LLR p-value:                    0.3825
 ==============================================================================
@@ -513,8 +513,8 @@ age            0.0050      0.009      0.542      0.588      -0.013       0.023
 Dep. Variable:                     C6   No. Observations:                  876
 Model:                          Logit   Df Residuals:                      872
 Method:                           MLE   Df Model:                            3
-Date:                Mon, 17 Feb 2025   Pseudo R-squ.:                 0.01252
-Time:                        20:09:38   Log-Likelihood:                -459.86
+Date:                Sat, 22 Feb 2025   Pseudo R-squ.:                 0.01252
+Time:                        06:53:45   Log-Likelihood:                -459.86
 converged:                       True   LL-Null:                       -465.69
 Covariance Type:            nonrobust   LLR p-value:                  0.008646
 ==============================================================================
@@ -580,5 +580,5 @@ age            0.0009      0.005      0.174      0.862      -0.009       0.011
 
 
 >>> >>> >>>
-2025-02-17 20:09:38 : stat_glob_perp_2024_12_15
+2025-02-22 06:53:45 : stat_glob_perp_2024_12_15
 >>> >>> >>>

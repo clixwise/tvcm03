@@ -19,6 +19,7 @@ from matplotlib.patches import Patch
 from matplotlib.lines import Line2D
 from scipy.interpolate import CubicSpline
 import scipy.stats as scs
+from statsmodels.miscmodels.ordinal_model import OrderedModel
 
 from scipy.interpolate import make_interp_spline
 
@@ -92,6 +93,12 @@ def logi(what, df, colu_cate_list, x_list):
         y = df[ceap]
         log_model = sm.Logit(y, sm.add_constant(X))
         result = log_model.fit()
+        
+        # Fit the OrderedModel
+        '''
+        ord_model = OrderedModel(y, X, distr='logit')
+        result = ord_model.fit(method='bfgs')
+        '''
         print(result.summary())
         write(result.summary().as_text())
         resu_dict_glob[ceap] = {
