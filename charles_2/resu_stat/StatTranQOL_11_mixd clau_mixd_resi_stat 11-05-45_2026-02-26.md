@@ -1,0 +1,9 @@
+|   index | ID                  | Timepoint   | Assumption   | Metric             |   Value | Effect Size                        |   P-value | Assumption Met   |   Sample Size | Comment                      |
+|--------:|:--------------------|:------------|:-------------|:-------------------|--------:|:-----------------------------------|----------:|:-----------------|--------------:|:-----------------------------|
+|       0 | StatTranQOL_11_mixd | T0          | Normality    | Shapiro-Wilk       |  0.9793 | W (closer to 1 = more normal)      |    0.8069 | True             |            30 | ✓ Normal (p > 0.05)          |
+|       1 | StatTranQOL_11_mixd | T0          | Normality    | D'Agostino-Pearson |  0.7598 | Skewness=-0.2379, Kurtosis=-0.6482 |    0.6839 | True             |            30 | ✓ Normal (p > 0.05)          |
+|       2 | StatTranQOL_11_mixd | T1          | Normality    | Shapiro-Wilk       |  0.9596 | W (closer to 1 = more normal)      |    0.3024 | True             |            30 | ✓ Normal (p > 0.05)          |
+|       3 | StatTranQOL_11_mixd | T1          | Normality    | D'Agostino-Pearson |  1.7247 | Skewness=0.4563, Kurtosis=0.0707   |    0.4222 | True             |            30 | ✓ Normal (p > 0.05)          |
+|       4 | StatTranQOL_11_mixd | T2          | Normality    | Shapiro-Wilk       |  0.9769 | W (closer to 1 = more normal)      |    0.7381 | True             |            30 | ✓ Normal (p > 0.05)          |
+|       5 | StatTranQOL_11_mixd | T2          | Normality    | D'Agostino-Pearson |  0.6996 | Skewness=-0.3101, Kurtosis=-0.19   |    0.7048 | True             |            30 | ✓ Normal (p > 0.05)          |
+|       6 | StatTranQOL_11_mixd | All         | Homogeneity  | Levene's test      |  8.6458 | Variance Ratio=11.1017             |    0.0004 | False            |            90 | ⚠ Heteroscedastic (p < 0.05) |

@@ -1,0 +1,10 @@
+|   index | Timepoint   | Assumption                  | Metric              |   Value | Effect Size                        |   P-value |   Assumption Met |   Sample Size | Comment                       |
+|--------:|:------------|:----------------------------|:--------------------|--------:|:-----------------------------------|----------:|-----------------:|--------------:|:------------------------------|
+|       0 | All         | Residual mean close to zero | Residual mean > 0.1 |  0      | nan                                |  nan      |              nan |           nan | ✓ Residual mean close to zero |
+|       1 | T0          | Normality                   | Shapiro-Wilk        |  0.9808 | W (closer to 1 = more normal)      |    0.8472 |                1 |            30 | ✓ Normal (p > 0.05)           |
+|       2 | T0          | Normality                   | D'Agostino-Pearson  |  0.623  | Skewness=0.1867, Kurtosis=-0.6513  |    0.7323 |                1 |            30 | ✓ Normal (p > 0.05)           |
+|       3 | T1          | Normality                   | Shapiro-Wilk        |  0.945  | W (closer to 1 = more normal)      |    0.2106 |                1 |            24 | ✓ Normal (p > 0.05)           |
+|       4 | T1          | Normality                   | D'Agostino-Pearson  |  3.9369 | Skewness=0.7353, Kurtosis=0.4523   |    0.1397 |                1 |            24 | ✓ Normal (p > 0.05)           |
+|       5 | T2          | Normality                   | Shapiro-Wilk        |  0.9763 | W (closer to 1 = more normal)      |    0.7219 |                1 |            30 | ✓ Normal (p > 0.05)           |
+|       6 | T2          | Normality                   | D'Agostino-Pearson  |  0.7219 | Skewness=-0.2672, Kurtosis=-0.0163 |    0.697  |                1 |            30 | ✓ Normal (p > 0.05)           |
+|       7 | All         | Homogeneity                 | Levene's test       |  7.7582 | Variance Ratio=9.9606              |    0.0008 |                0 |            84 | ⚠ Heteroscedastic (p < 0.05)  |

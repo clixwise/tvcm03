@@ -1,0 +1,10 @@
+|   index | Variable                                                                 | Value                                                                                         | Script                      |
+|--------:|:-------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------|:----------------------------|
+|       0 | Anchor-based (mean change)                                               | 6.50 (N=13) [3.67, 9.32]                                                                      | c02_qol_71_stat_mcid_copi_1 |
+|       1 | Mean change in 'Somewhat better'                                         | 6.50 [3.67, 9.32]                                                                             | c02_qol_71_stat_mcid_copi_1 |
+|       2 | Best threshold                                                           | 11.79 N/A (threshold)                                                                         | c02_qol_71_stat_mcid_copi_1 |
+|       3 | Distribution-based (0.5 SD baseline)                                     | 1.76 [1.24, 2.19]                                                                             | c02_qol_71_stat_mcid_copi_1 |
+|       4 | Distribution-based (0.3 SD baseline)                                     | 1.05 [0.75, 1.32]                                                                             | c02_qol_71_stat_mcid_copi_1 |
+|       5 | Distribution-based (SEM)                                                 | 1.11 [0.76, 1.36]                                                                             | c02_qol_71_stat_mcid_copi_1 |
+|       6 | Distribution-based (MDC95 : Minimal Detectable Change at 95% confidence) | Value    3.08                                                                                 | c02_qol_71_stat_mcid_copi_1 |
+|         |                                                                          | Name: Distribution-based (MDC95 : Minimal Detectable Change at 95% confidence), dtype: object |                             |

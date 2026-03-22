@@ -1,0 +1,5 @@
+| index   |   COMPLETE_vali_prct | COMPLETE_vali_flag   |   CEIL_FLOO_floo_prct | CEIL_FLOO_floo_flag   |   CEIL_FLOO_ceil_prct | CEIL_FLOO_ceil_flag   |   NORM_skew | NORM_skew_flag   |   NORM_kurt | NORM_kurt_flag   | all_passed   |
+|:--------|---------------------:|:---------------------|----------------------:|:----------------------|----------------------:|:----------------------|------------:|:-----------------|------------:|:-----------------|:-------------|
+| T0      |                  100 | False                |               3.33333 | False                 |               3.33333 | False                 |  -0.630168  | False            |   0.571579  | False            | True         |
+| T1      |                  100 | False                |               4.16667 | False                 |               4.16667 | False                 |   0.256139  | False            |   0.0683856 | False            | True         |
+| T2      |                  100 | False                |               3.33333 | False                 |               3.33333 | False                 |  -0.0172559 | False            |  -0.671421  | False            | True         |
